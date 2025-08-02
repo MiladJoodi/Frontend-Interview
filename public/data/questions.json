@@ -3,231 +3,1911 @@
     "id": "1",
     "category": "all",
     "difficulty": "easy",
-    "question": "What is the difference between let, const, and var in JavaScript?",
-    "answer": "var is function-scoped and can be redeclared and updated. let is block-scoped and can be updated but not redeclared. const is block-scoped and cannot be updated or redeclared after initialization. var also has hoisting behavior that can lead to unexpected results, while let and const have temporal dead zones."
+    "question": "What is Next.js?",
+    "answer": "Next.js is a popular React framework designed for building scalable, production-ready web applications. It provides features like server-side rendering, static site generation, and API routes."
   },
   {
     "id": "2",
-    "category": "react",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "What is the Virtual DOM and how does it work in React?",
-    "answer": "The Virtual DOM is a JavaScript representation of the actual DOM. React creates a virtual copy of the DOM in memory, and when state changes occur, it creates a new virtual DOM tree. React then compares (diffs) the new tree with the previous one and updates only the parts of the real DOM that have changed. This process is called reconciliation and makes React applications faster."
+    "question": "What are the key features of Next.js?",
+    "answer": "Key features of Next.js include: Server-Side Rendering (SSR), Static Site Generation (SSG), Incremental Static Regeneration (ISR), API Routes, File-based routing, Image Optimization, Automatic code splitting"
   },
   {
     "id": "3",
     "category": "react",
     "difficulty": "easy",
-    "question": "What are React Hooks and why were they introduced?",
-    "answer": "React Hooks are functions that let you use state and other React features in functional components. They were introduced to solve problems like wrapper hell, huge components, and confusing classes. Common hooks include useState for state management, useEffect for side effects, useContext for consuming context, and useCallback/useMemo for performance optimization."
+    "question": "How is Next.js different from React.js?",
+    "answer": "While React.js is a library for building UIs, Next.js is a framework built on top of React, providing additional features such as SSR, SSG, and routing out of the box."
   },
   {
     "id": "4",
-    "category": "react",
-    "difficulty": "hard",
-    "question": "What is the difference between useCallback and useMemo?",
-    "answer": "useCallback is used to memoize functions to prevent unnecessary re-renders. useMemo is used to memoize the result of expensive calculations. useCallback(fn, deps) is equivalent to useMemo(() => fn, deps). useCallback returns the memoized function, while useMemo returns the memoized value."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the advantages of using Next.js over React.js?",
+    "answer": "Next.js offers: Better SEO performance through SSR, Built-in routing with file-based routing, Static site generation for faster page loads, Automatic code-splitting, leading to better performance."
   },
   {
     "id": "5",
     "category": "nextjs",
-    "difficulty": "medium",
-    "question": "What is the difference between SSR, SSG, and CSR in Next.js?",
-    "answer": "SSR (Server-Side Rendering): Page is rendered on the server for each request. SSG (Static Site Generation): Page is generated at build time. CSR (Client-Side Rendering): Page is rendered in the browser. Next.js supports all three methods, and you can choose the best one for each page based on your needs."
+    "difficulty": "hard",
+    "question": "How does Server-Side Rendering (SSR) work in Next.js?",
+    "answer": "SSR in Next.js allows pages to be rendered on the server at request time, ensuring that the page's content is available to search engines and improving the initial load time."
   },
   {
     "id": "6",
     "category": "nextjs",
-    "difficulty": "easy",
-    "question": "What is the difference between App Router and Pages Router in Next.js?",
-    "answer": "App Router is the new routing system in Next.js 13+ that uses React Server Components and is located in the app directory. Pages Router is the traditional routing system located in the pages directory. App Router provides better performance, more flexibility, and improved developer experience."
+    "difficulty": "medium",
+    "question": "What is Static Site Generation (SSG) in Next.js, and when would you use it?",
+    "answer": "SSG generates HTML at build time for fast loading and improved SEO. It’s ideal for pages that don’t change often, such as blogs or marketing pages."
   },
   {
     "id": "7",
-    "category": "tailwind",
-    "difficulty": "easy",
-    "question": "What are the advantages of using TailwindCSS?",
-    "answer": "TailwindCSS is a utility-first CSS framework. Advantages include: faster development, smaller file sizes, design consistency, no need to write custom CSS, easy responsive design, high customization, and better maintainability. It promotes a component-based approach to styling."
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "What are API routes in Next.js, and how do they work?",
+    "answer": "API routes allow you to build backend functionality directly in your Next.js app. These are serverless functions that handle HTTP requests like GET, POST, PUT, etc."
   },
   {
     "id": "8",
-    "category": "tailwind",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "How do you create custom classes in TailwindCSS?",
-    "answer": "You can create custom classes using @apply directive in CSS, define custom classes in tailwind.config.js, use arbitrary values like w-[32px], or write plugins. The @apply directive is most common: @apply flex items-center justify-center;"
+    "question": "What is Incremental Static Regeneration (ISR) in Next.js, and how is it different from SSG?",
+    "answer": "ISR enables static content to be updated after the site has been built, allowing you to regenerate pages in the background while serving static content to users."
   },
   {
     "id": "9",
-    "category": "css",
-    "difficulty": "medium",
-    "question": "What is the difference between Flexbox and CSS Grid?",
-    "answer": "Flexbox is designed for one-dimensional layouts (either row or column). CSS Grid is designed for two-dimensional layouts (rows and columns simultaneously). Grid is better for page-level layouts, while Flexbox is better for component-level layouts and when items need to grow/shrink dynamically."
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How do you handle dynamic routes in Next.js?",
+    "answer": "Dynamic routes in Next.js are handled using brackets ([]). For example, pages/[id].js will create dynamic routes based on the id parameter."
   },
   {
     "id": "10",
-    "category": "css",
-    "difficulty": "easy",
-    "question": "What are the different ways to center an element in CSS?",
-    "answer": "Several methods: 1) Flexbox: display: flex; justify-content: center; align-items: center; 2) Grid: display: grid; place-items: center; 3) Absolute positioning: position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 4) Margin auto for horizontal: margin: 0 auto; 5) Text-align: center for inline elements."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does code splitting work in Next.js?",
+    "answer": "Next.js automatically splits code by page. This means only the necessary code for each page is loaded, improving performance and reducing bundle size."
   },
   {
     "id": "11",
-    "category": "html",
-    "difficulty": "easy",
-    "question": "What is the difference between semantic and non-semantic HTML elements?",
-    "answer": "Semantic elements like header, nav, main, article clearly describe their meaning and content to both browsers and developers. Non-semantic elements like div and span don't provide information about their content. Semantic HTML improves SEO, accessibility, and code maintainability."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the difference between Static Rendering (SSG) and Server Rendering (SSR) in Next.js?",
+    "answer": "SSG generates HTML at build time and serves it for faster page loads. SSR generates HTML on the server for each request, ensuring dynamic content."
   },
   {
     "id": "12",
-    "category": "html",
-    "difficulty": "medium",
-    "question": "What are the new features introduced in HTML5?",
-    "answer": "HTML5 introduced semantic elements (header, nav, section), Canvas API, Local Storage, Geolocation API, Video/Audio elements, Form validation, Web Workers, WebSocket, Drag and Drop API, and many other features that enhanced web development capabilities."
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "What is the App Router in Next.js?",
+    "answer": "The App Router in Next.js is a new routing system introduced to simplify the routing mechanism, offering enhanced flexibility and control compared to the Pages Router."
   },
   {
     "id": "13",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Explain the concept of closures in JavaScript",
-    "answer": "A closure is a function that has access to variables in its outer (enclosing) scope even after the outer function has returned. Closures are created every time a function is created. They're useful for data privacy, creating function factories, and maintaining state in asynchronous operations."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How do layouts work with the App Router?",
+    "answer": "Layouts in the App Router allow you to structure reusable components across multiple pages, making it easier to manage UI consistency and shared components."
   },
   {
     "id": "14",
-    "category": "javascript",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "What is the difference between == and === in JavaScript?",
-    "answer": "== (loose equality) performs type coercion before comparison, meaning it converts operands to the same type before comparing. === (strict equality) compares both value and type without any conversion. For example: '5' == 5 is true, but '5' === 5 is false. It's generally recommended to use === to avoid unexpected behavior."
+    "question": "What is the difference between the app directory and the pages directory?",
+    "answer": "The app directory is used with the new App Router and supports features like layouts, loading states, and more advanced routing capabilities. The pages directory is used in the traditional Pages Router."
   },
   {
     "id": "15",
-    "category": "typescript",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "What are the advantages of using TypeScript?",
-    "answer": "TypeScript provides static type checking, better IntelliSense, early error detection at compile time, easier refactoring, improved code readability, better documentation, and support for modern ES6+ features. It helps catch bugs before runtime and improves developer productivity."
+    "question": "What are Server Components and Client Components in Next.js?",
+    "answer": "Server Components are rendered on the server and sent as HTML. Client Components are rendered on the client and allow for interactivity."
   },
   {
     "id": "16",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "How do Generic Types work in TypeScript?",
-    "answer": "Generics allow you to create reusable components that work with multiple types. They're defined with <T> syntax and the type is specified when used. Example: function identity<T>(arg: T): T { return arg; }. Generics provide type safety while maintaining flexibility."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does Next.js improve SEO compared to traditional client-side rendering?",
+    "answer": "Next.js supports SSR and SSG, which generates pre-rendered HTML content, making it more SEO-friendly compared to traditional client-side rendering (CSR)."
   },
   {
     "id": "17",
-    "category": "sass",
-    "difficulty": "easy",
-    "question": "What are the advantages of using Sass?",
-    "answer": "Sass provides variables, nesting, mixins, functions, partials, inheritance, and mathematical operations. It makes CSS more organized, maintainable, and DRY (Don't Repeat Yourself). Sass helps write cleaner and more efficient stylesheets."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does Next.js handle environment variables?",
+    "answer": "Environment variables are handled via .env files (e.g., .env.local) and can be accessed in both the client and server-side code using process.env."
   },
   {
     "id": "18",
-    "category": "sass",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "What is the difference between Sass and SCSS?",
-    "answer": "Sass has two syntaxes: Sass (indented syntax) uses indentation and no braces/semicolons, while SCSS (Sassy CSS) uses braces and semicolons like regular CSS but with additional features. SCSS is more popular because it's closer to CSS syntax."
+    "question": "How do you create dynamic API routes in Next.js?",
+    "answer": "Dynamic API routes are created by using the same bracket notation ([param]) in the pages/api directory."
   },
   {
     "id": "19",
-    "category": "regex",
+    "category": "nextjs",
     "difficulty": "medium",
-    "question": "What is Regex and what are its common use cases?",
-    "answer": "Regular Expression (Regex) is a pattern used to match character combinations in strings. Common use cases include: form validation (email, phone), search and replace operations, data parsing, input sanitization, and text processing. In JavaScript, it's used with /pattern/flags or new RegExp()."
+    "question": "What is Middleware in Next.js, and how do they work?",
+    "answer": "Middleware allows you to run code before a request is completed, enabling features like authentication, logging, or redirecting users."
   },
   {
     "id": "20",
-    "category": "regex",
-    "difficulty": "hard",
-    "question": "What are Lookahead and Lookbehind in Regex?",
-    "answer": "Lookahead (?=pattern) and Negative Lookahead (?!pattern) check if a pattern exists or doesn't exist after the current position without including it in the match. Lookbehind (?<=pattern) and Negative Lookbehind (?<!pattern) check patterns before the current position. They're useful for complex pattern matching."
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are React Server Components, and how are they used in Next.js?",
+    "answer": "React Server Components allow parts of the UI to be rendered on the server, reducing the client-side JavaScript bundle size."
   },
   {
     "id": "21",
-    "category": "prisma",
-    "difficulty": "medium",
-    "question": "What is Prisma ORM and what are its advantages?",
-    "answer": "Prisma is a modern ORM for Node.js and TypeScript. Advantages include: Type-safe database access, auto-generated client, database migrations, introspection, multi-database support, excellent developer experience, and powerful query capabilities with intuitive API."
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "Can you explain the difference between var, let, and const in JavaScript?",
+    "answer": "var: Function-scoped and can be redeclared and updated. It is hoisted, meaning its declaration is moved to the top of its scope at compile time. let: Block-scoped and can be updated but not redeclared within the same scope. It is not hoisted in the same way as var. const: Block-scoped and cannot be updated or redeclared. The value must be assigned at declaration. It provides a way to define constants. Using let and const helps prevent common bugs due to scope issues and accidental reassignment."
   },
   {
     "id": "22",
-    "category": "prisma",
-    "difficulty": "hard",
-    "question": "How does Prisma Schema work?",
-    "answer": "Prisma Schema is defined in schema.prisma file and includes data model, database connection, and generator configuration. With 'prisma generate', the client is generated, and with 'prisma migrate', the database is synchronized. The schema serves as the single source of truth for your database structure."
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How do you manage state in a React application?",
+    "answer": "State management in React can be handled through: Local Component State: Using useState or class component state for simple scenarios. Context API: For prop drilling issues, to pass data through the component tree without passing props down manually at every level. State Management Libraries: Such as Redux, MobX, or Zustand for complex applications requiring a global state. Hooks: Custom hooks to encapsulate and reuse stateful logic. React Query or SWR: For server state management. The choice depends on the complexity and requirements of the application."
   },
   {
     "id": "23",
-    "category": "drizzle",
+    "category": "react",
     "difficulty": "medium",
-    "question": "What is Drizzle ORM and how does it differ from Prisma?",
-    "answer": "Drizzle is a lightweight TypeScript ORM with SQL-like syntax. Differences from Prisma: lighter weight, closer to SQL, no code generation, better performance, smaller learning curve, and more direct database interaction while maintaining type safety."
+    "question": "What is the Virtual DOM, and how does React use it?",
+    "answer": "The Virtual DOM is an in-memory representation of the real DOM elements generated by React components. When the state of a component changes, React updates the Virtual DOM tree. It then efficiently computes the minimal set of changes (diffing) needed to update the real DOM. This process improves performance by reducing direct manipulation of the DOM, which is an expensive operation."
   },
   {
     "id": "24",
-    "category": "drizzle",
-    "difficulty": "hard",
-    "question": "How does Query building work in Drizzle?",
-    "answer": "Drizzle uses a chainable API similar to SQL: db.select().from(users).where(eq(users.id, 1)). It's SQL-like but type-safe. Relations are supported with relational queries and joins. The API is intuitive for developers familiar with SQL."
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain event delegation in JavaScript.",
+    "answer": "Event Delegation leverages event bubbling to handle events at a higher level in the DOM rather than on individual nodes. Instead of adding event listeners to each child element, you attach a single event listener to a parent element. When an event is triggered on a child element, it bubbles up to the parent, where it can be captured and processed. This approach improves performance and simplifies code management, especially when dealing with dynamically added elements."
   },
   {
     "id": "25",
-    "category": "backend",
-    "difficulty": "easy",
-    "question": "What is the difference between REST and GraphQL?",
-    "answer": "REST uses HTTP methods and multiple endpoints for different resources. GraphQL uses a single endpoint where clients request exactly the data they need. GraphQL solves over-fetching and under-fetching problems but has a steeper learning curve and more complexity."
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are Web Components, and how do they relate to custom elements?",
+    "answer": "Web Components are a set of standardized APIs that enable the creation of reusable, encapsulated HTML tags. They consist of: Custom Elements: Define new types of HTML elements. Shadow DOM: Provides encapsulation for styles and markup. HTML Templates: Allow you to define reusable templates. Custom Elements are a key part of Web Components, allowing developers to create their own HTML tags with custom behavior and styling."
   },
   {
     "id": "26",
-    "category": "backend",
+    "category": "css",
     "difficulty": "medium",
-    "question": "What is the difference between Authentication and Authorization?",
-    "answer": "Authentication verifies who the user is (identity verification). Authorization determines what the user can do (permission verification). Authentication typically happens first, followed by authorization. Example: login is authentication, accessing admin panel is authorization."
+    "question": "How does CSS specificity work?",
+    "answer": "CSS specificity determines which style rules apply to an element when multiple rules could apply: Inline Styles (style attribute) have the highest specificity. IDs (#id) have higher specificity than classes. Classes, Attributes, and Pseudo-classes (.class, [type=\"text\"], :hover) have medium specificity. Elements and Pseudo-elements (div, ::before) have the lowest specificity. Specificity is calculated based on the combination of selectors. When specificity is equal, the last rule defined takes precedence."
   },
   {
     "id": "27",
-    "category": "nodejs",
+    "category": "javascript",
     "difficulty": "medium",
-    "question": "How does the Event Loop work in Node.js?",
-    "answer": "The Event Loop is Node.js's main mechanism for handling asynchronous operations. It has different phases: Timer, Pending callbacks, Poll, Check, Close callbacks. It enables non-blocking I/O operations by offloading operations to the system kernel whenever possible."
+    "question": "What are Promises in JavaScript, and how do they differ from callbacks?",
+    "answer": "Promises are objects representing the eventual completion or failure of an asynchronous operation. They provide methods like .then(), .catch(), and .finally() for handling asynchronous results. Promises vs. Callbacks: Promises allow for cleaner, more maintainable asynchronous code and better error handling. Callbacks can lead to \"callback hell,\" where nested callbacks make code difficult to read and maintain. Promises improve code readability and manageability compared to traditional callbacks."
   },
   {
     "id": "28",
-    "category": "nodejs",
-    "difficulty": "hard",
-    "question": "What is the difference between process.nextTick and setImmediate?",
-    "answer": "process.nextTick executes at the beginning of each phase and has higher priority. setImmediate executes in the check phase. nextTick can potentially block the event loop if used excessively, while setImmediate is more predictable and safer for recursive calls."
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Can you explain how closures work in JavaScript?",
+    "answer": "A closure is a function that remembers its outer variables and can access them. This means a function can access variables from its own scope, the outer function's scope, and the global scope. Closures are created every time a function is created, at function creation time. They are useful for data privacy and emulating private methods."
   },
   {
     "id": "29",
-    "category": "express",
-    "difficulty": "easy",
-    "question": "What is Middleware in Express?",
-    "answer": "Middleware are functions that execute during the request-response cycle. They have access to req, res, and next objects. Common uses include: authentication, logging, parsing request bodies, error handling, and CORS. Middleware can modify request/response objects or end the cycle."
+    "category": "performance",
+    "difficulty": "medium",
+    "question": "How do you optimize the performance of a web application?",
+    "answer": "Minimize HTTP Requests: Combine files, use sprites. Asynchronous Loading: Use async and defer for scripts. Caching: Implement browser caching and use a Content Delivery Network (CDN). Optimize Images: Compress images and use next-gen formats like WebP. Code Splitting: Use tools like Webpack to split code for lazy loading. Reduce Render-Blocking Resources: Optimize CSS and JavaScript delivery. Performance Monitoring: Use tools like Lighthouse and Chrome DevTools for auditing."
   },
   {
     "id": "30",
-    "category": "express",
+    "category": "pwa",
     "difficulty": "medium",
-    "question": "How does Error Handling work in Express?",
-    "answer": "Express uses error-handling middleware with 4 parameters: (err, req, res, next). It should be defined last in the middleware stack. Errors can be passed to error handlers using next(error). Express has a default error handler, but custom ones provide better control."
+    "question": "What is the purpose of a Service Worker in a Progressive Web App (PWA)?",
+    "answer": "Service Workers act as a proxy between the web application and the network. They enable features like offline support by caching assets and intercepting network requests. Support background synchronization and push notifications. Improve performance by controlling resource caching and retrieval."
   },
   {
     "id": "31",
-    "category": "new_category",
+    "category": "css",
     "difficulty": "easy",
-    "question": "New Easy Question?",
-    "answer": "New Easy Answer."
+    "question": "Explain the Box Model in CSS.",
+    "answer": "The CSS Box Model is a box that wraps around every HTML element. It consists of: Content: The actual content like text or images. Padding: Space around the content inside the border. Border: A border that goes around the padding and content. Margin: Space outside the border between this and other elements. Understanding the box model is essential for layout and design."
   },
   {
     "id": "32",
-    "category": "new_category",
+    "category": "react",
     "difficulty": "medium",
-    "question": "New Medium Question?",
-    "answer": "New Medium Answer."
+    "question": "What are Higher-Order Components (HOCs) in React?",
+    "answer": "An HOC is a function that takes a component and returns a new component. They are used to share common functionality between components. HOCs can inject props, manage state, or handle side effects. Example usage: const EnhancedComponent = withFeature(WrappedComponent);"
   },
   {
     "id": "33",
-    "category": "new_category",
+    "category": "accessibility",
+    "difficulty": "medium",
+    "question": "How do you ensure accessibility in web applications?",
+    "answer": "Use Semantic HTML: Proper use of HTML elements. ARIA Attributes: Provide additional context where necessary. Keyboard Navigation: Ensure all interactive elements are accessible via keyboard. Contrast and Readability: Use appropriate color contrasts and text sizes. Alt Text for Images: Provide descriptive alt attributes. Testing: Use accessibility testing tools and assistive technologies."
+  },
+  {
+    "id": "34",
+    "category": "security",
+    "difficulty": "medium",
+    "question": "What is Cross-Origin Resource Sharing (CORS), and how does it work?",
+    "answer": "CORS is a security feature that allows or restricts resources requested from another domain. It works by adding HTTP headers that specify which origins are permitted to read responses. Browsers enforce CORS policies, and servers must include appropriate headers like Access-Control-Allow-Origin. Preflight requests (OPTIONS method) are used for complex requests to check permissions."
+  },
+  {
+    "id": "35",
+    "category": "performance",
+    "difficulty": "medium",
+    "question": "Describe how you would implement lazy loading in a web application.",
+    "answer": "For Images and Media: Use the loading=\"lazy\" attribute in <img> tags. Implement Intersection Observer API to load media when they enter the viewport. For Code: Use dynamic imports with Webpack or other bundlers. In React, use React.lazy() and Suspense for component-level code splitting. Benefits: Improves initial load time and performance. Reduces unnecessary data usage."
+  },
+  {
+    "id": "36",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between == and === in JavaScript?",
+    "answer": "== (Abstract Equality): Compares values after performing type coercion if types differ. === (Strict Equality): Compares both value and type without type coercion. Example: 0 == '0' is true. 0 === '0' is false. It's generally recommended to use === to avoid unexpected results due to type coercion."
+  },
+  {
+    "id": "37",
+    "category": "error_handling",
+    "difficulty": "medium",
+    "question": "How do you handle errors in asynchronous code?",
+    "answer": "Promises: Use .catch() to handle rejections. Async/Await: Wrap await calls in try...catch blocks. Global Error Handlers: For unhandled promise rejections. Error Boundaries (React): Catch errors in component trees. Proper error handling ensures a better user experience and easier debugging."
+  },
+  {
+    "id": "38",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the concept of responsive design and how you implement it.",
+    "answer": "Responsive Design ensures that a website adapts to various screen sizes and devices. Implementation: Use flexible grid layouts with CSS Flexbox or Grid. Implement media queries to adjust styles based on viewport size. Use relative units like percentages and em or rem. Optimize images for different screen resolutions. Testing: Use browser developer tools and physical devices to test responsiveness."
+  },
+  {
+    "id": "39",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is a CSS preprocessor, and why would you use one?",
+    "answer": "CSS Preprocessors extend the capabilities of CSS by adding features like variables, nesting, mixins, and functions. Examples include Sass, Less, and Stylus. Benefits: Code reusability and maintainability. Easier to manage large CSS codebases. Can compile down to standard CSS for browser compatibility."
+  },
+  {
+    "id": "40",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "Can you explain the concept of immutability and its importance in React?",
+    "answer": "Immutability means that data cannot be changed after it's created. In React, immutability is important because it: Allows for predictable state changes. Helps in performance optimizations, as React can make shallow comparisons. Avoids unintended side effects. Implementation: Use methods that return new copies of data structures, like Object.assign or the spread operator. Utilize libraries like Immutable.js for complex data structures."
+  },
+  {
+    "id": "41",
+    "category": "webpack",
+    "difficulty": "medium",
+    "question": "What is Webpack, and why is it used?",
+    "answer": "Webpack is a module bundler for JavaScript applications. Uses: Bundles JavaScript files for usage in a browser. Processes and bundles assets like CSS, images, and fonts through loaders. Enables code splitting and lazy loading. Supports plugins for extended functionality. Benefits: Manages dependencies efficiently. Optimizes assets for production."
+  },
+  {
+    "id": "42",
+    "category": "security",
+    "difficulty": "medium",
+    "question": "How do you prevent Cross-Site Scripting (XSS) attacks?",
+    "answer": "Input Sanitization: Clean and validate all user inputs on the server side. Output Encoding: Escape user inputs before rendering them in the browser. Content Security Policy (CSP): Define trusted sources of content to prevent malicious scripts. Avoid Inline Scripts: Keep JavaScript code in external files. Use HTTPOnly Cookies: To prevent access to cookies via JavaScript. Regular Security Audits: Stay updated with security best practices."
+  },
+  {
+    "id": "43",
+    "category": "spa",
+    "difficulty": "medium",
+    "question": "What are the benefits and drawbacks of using Single Page Applications (SPAs)?",
+    "answer": "Benefits: Smooth user experience with no full page reloads. Better performance after initial load. Easier to create mobile-like experiences. Drawbacks: SEO challenges, although this can be mitigated with server-side rendering. Initial load time might be longer. Browser history management can be complex. Choosing between SPA and traditional multi-page applications depends on the project requirements."
+  },
+  {
+    "id": "44",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the this keyword work in JavaScript?",
+    "answer": "this refers to the object that is executing the current function. Contexts: Global Context: this refers to the global object (window in browsers). Object Method: this refers to the object owning the method. Event Handlers: this refers to the DOM element that triggered the event. Arrow Functions: Do not have their own this; they inherit it from the enclosing scope. Understanding this is crucial for object-oriented programming in JavaScript."
+  },
+  {
+    "id": "45",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "Explain the difference between RESTful APIs and GraphQL.",
+    "answer": "RESTful APIs: Use HTTP methods and endpoints to access resources. Data is organized around resources. Can lead to over-fetching or under-fetching data. GraphQL: Uses a single endpoint. Clients specify exactly what data they need. Reduces the number of network requests. Requires a schema and resolvers. Choice Factors: Project requirements, data complexity, and team expertise."
+  },
+  {
+    "id": "46",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How do you manage styles in a large-scale React application?",
+    "answer": "CSS Modules: Locally scoped CSS classes to components. Styled Components: CSS-in-JS library that allows writing CSS within JavaScript. Sass/Less: Use preprocessors for advanced CSS features. BEM Methodology: For naming conventions and organization. Theming: Use context or libraries to provide consistent styling. The approach depends on team preferences and project needs."
+  },
+  {
+    "id": "47",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Hooks, and why were they introduced?",
+    "answer": "React Hooks are functions that let you use state and other React features without writing a class. Common Hooks: useState for state management. useEffect for side effects. useContext for context API. Reasons for Introduction: Simplify stateful logic in functional components. Avoid the complexity of classes. Enable better code reuse through custom hooks."
+  },
+  {
+    "id": "48",
+    "category": "security",
+    "difficulty": "medium",
+    "question": "Describe how you would implement authentication in a single-page application.",
+    "answer": "Token-Based Authentication: Use JWTs stored securely (preferably in HTTP-only cookies). Implement login flows to receive and store tokens. Route Protection: Use higher-order components or route guards to protect authenticated routes. Backend Integration: Set up API endpoints for authentication. Validate tokens on the server side. Security Considerations: Protect against XSS and CSRF attacks. Use HTTPS to encrypt data transmission."
+  },
+  {
+    "id": "49",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is functional programming, and how does it apply to JavaScript?",
+    "answer": "Functional Programming is a paradigm that treats computation as the evaluation of mathematical functions. Core Concepts: Pure Functions: No side effects and return the same output for the same input. Immutability: Data is not changed after creation. First-Class Functions: Functions are treated as values. Higher-Order Functions: Functions that take or return other functions. In JavaScript: Supports functional programming with features like map, reduce, filter, and function expressions."
+  },
+  {
+    "id": "50",
+    "category": "browser",
+    "difficulty": "medium",
+    "question": "How do you handle browser compatibility and polyfills?",
+    "answer": "Feature Detection: Use Modernizr or similar tools to detect unsupported features. Polyfills: Include scripts that replicate modern functionality in older browsers (e.g., Babel polyfill). Transpilation: Use tools like Babel to convert ES6+ code to ES5. Progressive Enhancement: Build functionality that works on all browsers, enhancing where possible. Testing: Regularly test across different browsers and devices. Use Can I Use: Check feature support before implementation."
+  },
+  {
+    "id": "51",
+    "category": "user_centered_design",
+    "difficulty": "easy",
+    "question": "What is User Centered Design?",
+    "answer": "User-Centered Design is all about designing with the user in mind at every step. By focusing on real user needs and involving them throughout the development process, products are more likely to be successful, user-friendly, and meet the actual demands of the target audience."
+  },
+  {
+    "id": "52",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is callback hell?",
+    "answer": "Callback Hell refers to the anti-pattern of having multiple nested callbacks, which leads to code that's hard to read and maintain. By using Promises, Async/Await, and proper code structuring, you can write cleaner asynchronous code and avoid falling into Callback Hell."
+  },
+  {
+    "id": "53",
+    "category": "solid",
+    "difficulty": "medium",
+    "question": "What does SOLID stand for?",
+    "answer": "The SOLID principles serve as guidelines for developers to build software that is easy to manage, extend, and scale. By following these principles, you can create robust systems that stand the test of time and adapt gracefully to new requirements."
+  },
+  {
+    "id": "54",
+    "category": "security",
+    "difficulty": "medium",
+    "question": "What is Clickjacking?",
+    "answer": "Clickjacking, also known as a \"UI redress attack,\" is a malicious technique where an attacker tricks a user into clicking on something different from what the user perceives, potentially leading to unauthorized actions or revealing confidential information. Example: A user visits a malicious website that loads a banking website's login button underneath a fake \"Play Video\" button. When the user clicks to play the video, they are actually clicking the login button on the banking site, potentially initiating an unintended action."
+  },
+  {
+    "id": "55",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is Coercion in JavaScript?",
+    "answer": "Coercion in JavaScript refers to the process of converting a value from one data type to another. JavaScript performs coercion in two ways: implicit (automatic) and explicit (manual)."
+  },
+  {
+    "id": "56",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is IIFE in JavaScript?",
+    "answer": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It's a design pattern that provides a private scope for your code."
+  },
+  {
+    "id": "57",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is a Grid System in CSS?",
+    "answer": "A Grid System in CSS is a layout framework that allows developers to create complex, responsive web designs with ease. It provides a structured way to arrange content in rows and columns, facilitating the creation of responsive and flexible layouts."
+  },
+  {
+    "id": "58",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are Namespaces in JavaScript?",
+    "answer": "In JavaScript, a namespace is a container that allows developers to group related code under a unique name to avoid naming collisions and keep the global scope clean. Since JavaScript doesn't have built-in namespace support like some other languages, developers create namespaces using objects, modules, or immediately invoked function expressions (IIFEs)."
+  },
+  {
+    "id": "59",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the use of use strict directive in JavaScript?",
+    "answer": "The use strict directive is used to write the clean JavaScript code which is less prone to errors. It catches common coding errors like assigning a variable without declaring it or passing different parameters with same names to a function etc."
+  },
+  {
+    "id": "60",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of passing defer or async attributes to the script tag?",
+    "answer": "Passing the defer or async attributes to a <script> tag controls how the browser loads and executes external JavaScript files, improving page load performance by optimizing script handling. defer Attribute Purpose: Instructs the browser to download the script in parallel with HTML parsing but delay execution until after the entire document has been parsed. async Attribute Purpose: Tells the browser to download the script in parallel and execute it as soon as it's ready, without waiting for HTML parsing to complete."
+  },
+  {
+    "id": "61",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a high-level programming language mainly used to create interactive features on websites. It runs in browsers but can also run on servers with Node.js. It supports different programming styles like object-oriented and functional programming."
+  },
+  {
+    "id": "62",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between var, let, and const?",
+    "answer": "var is function-scoped, can be redeclared, and hoisted with an initial value of undefined. let is block-scoped, cannot be redeclared in the same scope, hoisted but uninitialized (temporal dead zone). const is block-scoped and cannot be reassigned, but objects declared with it can be mutated."
+  },
+  {
+    "id": "63",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are data types in JavaScript?",
+    "answer": "There are primitive types like string, number, boolean, null, undefined, symbol, bigint which are immutable and stored by value. Non-primitive types like objects, arrays, and functions are mutable and stored by reference."
+  },
+  {
+    "id": "64",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between == and ===?",
+    "answer": "== compares values after type coercion (loose equality). === compares both value and type strictly. Use === to avoid unexpected bugs."
+  },
+  {
+    "id": "65",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting means variable and function declarations are moved to the top of their scope before execution. var variables are hoisted and initialized with undefined. let and const are hoisted but not initialized (temporal dead zone). Functions are fully hoisted."
+  },
+  {
+    "id": "66",
+    "category": "javascript",
     "difficulty": "hard",
-    "question": "New Hard Question?",
-    "answer": "New Hard Answer."
+    "question": "What are closures in JavaScript?",
+    "answer": "Closures happen when a function remembers variables from its outer scope, even after the outer function has finished running."
+  },
+  {
+    "id": "67",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between synchronous and asynchronous code?",
+    "answer": "Synchronous code runs line by line and blocks further execution until it finishes. Asynchronous code runs in the background, letting other code continue, using callbacks, promises, or async/await."
+  },
+  {
+    "id": "68",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are arrow functions?",
+    "answer": "Arrow functions provide a shorter syntax and do not have their own this context, making them useful for callbacks but not as object methods or constructors."
+  },
+  {
+    "id": "69",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is lexical scope?",
+    "answer": "Lexical scope means variables are accessible based on where they are written in the code, not where they are called from."
+  },
+  {
+    "id": "70",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event loop?",
+    "answer": "The event loop manages how JavaScript handles asynchronous tasks by moving them between the call stack and the task queue, ensuring the code runs smoothly without blocking."
+  },
+  {
+    "id": "71",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "How do you clone an object?",
+    "answer": "For shallow copies, use Object.assign({}, obj) or spread syntax {...obj}. For deep copies, use JSON.parse(JSON.stringify(obj)) but it loses functions and special types. For complex needs, use libraries like Lodash’s cloneDeep()."
+  },
+  {
+    "id": "72",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between map(), filter(), and reduce()?",
+    "answer": "map() transforms each item and returns a new array. filter() returns items that match a condition. reduce() combines all items into one value."
+  },
+  {
+    "id": "73",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "How do you check if a value is an array?",
+    "answer": "Use Array.isArray(value). Avoid typeof because it returns \"object\" for arrays."
+  },
+  {
+    "id": "74",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is destructuring in JavaScript?",
+    "answer": "Destructuring lets you extract values from arrays or objects into variables easily."
+  },
+  {
+    "id": "75",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the spread operator?",
+    "answer": "The spread operator ... expands elements of arrays or objects, useful for cloning or merging."
+  },
+  {
+    "id": "76",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are promises in JavaScript?",
+    "answer": "Promises represent the result of an async operation and have states: pending, fulfilled, or rejected. They help avoid callback hell."
+  },
+  {
+    "id": "77",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is async/await?",
+    "answer": "async functions return promises. await pauses the function until the promise resolves, making async code easier to read."
+  },
+  {
+    "id": "78",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the use of fetch()?",
+    "answer": "fetch() is a browser API to make HTTP requests. It returns a promise and works well with async/await."
+  },
+  {
+    "id": "79",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle errors with async/await?",
+    "answer": "Use try...catch blocks around await calls to catch errors gracefully."
+  },
+  {
+    "id": "80",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is Promise.all()?",
+    "answer": "Promise.all() runs multiple promises in parallel and resolves when all succeed or rejects if any fail."
+  },
+  {
+    "id": "81",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules?",
+    "answer": "Modules let you organize code using export and import, making code reusable and maintainable."
+  },
+  {
+    "id": "82",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What's the difference between null and undefined?",
+    "answer": "undefined means a variable is declared but not assigned a value. null is an explicit assignment meaning no value."
+  },
+  {
+    "id": "83",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain debounce and throttle.",
+    "answer": "Debounce delays a function until a certain time has passed since the last call. Throttle limits a function to run at most once in a set time interval."
+  },
+  {
+    "id": "84",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the this keyword?",
+    "answer": "this refers to the object that owns the current function or method. Arrow functions do not have their own this."
+  },
+  {
+    "id": "85",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is prototypal inheritance?",
+    "answer": "Objects inherit properties and methods from other objects through a prototype chain instead of classical classes."
+  },
+  {
+    "id": "86",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is the DOM?",
+    "answer": "The Document Object Model is a tree structure representing HTML elements of a webpage, which JavaScript can manipulate."
+  },
+  {
+    "id": "87",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What's the difference between == and === in DOM comparison?",
+    "answer": "Use === to check if two DOM nodes refer to the exact same element."
+  },
+  {
+    "id": "88",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you select elements in the DOM?",
+    "answer": "Use methods like document.getElementById(), document.querySelector(), and document.querySelectorAll()."
+  },
+  {
+    "id": "89",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is event delegation?",
+    "answer": "Event delegation involves attaching a single event listener to a parent element to handle events on its children, improving performance."
+  },
+  {
+    "id": "90",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you prevent default behavior in an event?",
+    "answer": "Call event.preventDefault() inside the event handler."
+  },
+  {
+    "id": "91",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template literals?",
+    "answer": "Template literals use backticks to create strings with embedded expressions and multiline support."
+  },
+  {
+    "id": "92",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a callback function?",
+    "answer": "A callback is a function passed to another function to be executed later, common in async programming and event handling."
+  },
+  {
+    "id": "93",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are the falsy values in JavaScript?",
+    "answer": "Falsy values are: false, 0, '' (empty string), null, undefined, and NaN."
+  },
+  {
+    "id": "94",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Difference between typeof and instanceof?",
+    "answer": "typeof returns the type as a string. instanceof checks if an object inherits from a constructor’s prototype."
+  },
+  {
+    "id": "95",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are immediately invoked function expressions (IIFE)?",
+    "answer": "An IIFE is a function that runs as soon as it is defined, helping to avoid polluting the global scope."
+  },
+  {
+    "id": "96",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between shallow and deep copy?",
+    "answer": "Shallow copy copies only the top-level properties, while deep copy duplicates everything recursively."
+  },
+  {
+    "id": "97",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does garbage collection work in JavaScript?",
+    "answer": "JavaScript automatically removes objects from memory when there are no references left to them."
+  },
+  {
+    "id": "98",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between localStorage, sessionStorage, and cookies?",
+    "answer": "localStorage stores data permanently, sessionStorage clears data when the tab closes, and cookies are small data sent with requests and used for things like authentication."
+  },
+  {
+    "id": "99",
+    "category": "pwa",
+    "difficulty": "medium",
+    "question": "What is a service worker?",
+    "answer": "A service worker is a background script that enables offline access, push notifications, and caching in Progressive Web Apps."
+  },
+  {
+    "id": "100",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are higher-order functions?",
+    "answer": "Higher-order functions take other functions as arguments or return functions, enabling powerful functional programming patterns."
+  },
+  {
+    "id": "101",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is JavaScript?",
+    "answer": "JavaScript, created by Brendan Eich in 1995, is one of the most widely used web development languages. It was designed to build dynamic web pages at first. A script is a JS program that may be added to the HTML of any web page. When the page loads, these scripts execute automatically."
+  },
+  {
+    "id": "102",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between var, let, and const?",
+    "answer": "var is function-scoped, can be redeclared, and hoisted with an initial value of undefined. let is block-scoped, cannot be redeclared in the same scope, hoisted but uninitialized (temporal dead zone). const is block-scoped and cannot be reassigned, but objects declared with it can be mutated."
+  },
+  {
+    "id": "103",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are data types in JavaScript?",
+    "answer": "There are primitive types like string, number, boolean, null, undefined, symbol, bigint which are immutable and stored by value. Non-primitive types like objects, arrays, and functions are mutable and stored by reference."
+  },
+  {
+    "id": "104",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between == and ===?",
+    "answer": "== compares values after type coercion (loose equality). === compares both value and type strictly. Use === to avoid unexpected bugs."
+  },
+  {
+    "id": "105",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting means variable and function declarations are moved to the top of their scope before execution. var variables are hoisted and initialized with undefined. let and const are hoisted but not initialized (temporal dead zone). Functions are fully hoisted."
+  },
+  {
+    "id": "106",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are closures in JavaScript?",
+    "answer": "Closures happen when a function remembers variables from its outer scope, even after the outer function has finished running."
+  },
+  {
+    "id": "107",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between synchronous and asynchronous code?",
+    "answer": "Synchronous code runs line by line and blocks further execution until it finishes. Asynchronous code runs in the background, letting other code continue, using callbacks, promises, or async/await."
+  },
+  {
+    "id": "108",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are arrow functions?",
+    "answer": "Arrow functions provide a shorter syntax and do not have their own this context, making them useful for callbacks but not as object methods or constructors."
+  },
+  {
+    "id": "109",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is lexical scope?",
+    "answer": "Lexical scope means variables are accessible based on where they are written in the code, not where they are called from."
+  },
+  {
+    "id": "110",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event loop?",
+    "answer": "The event loop manages how JavaScript handles asynchronous tasks by moving them between the call stack and the task queue, ensuring the code runs smoothly without blocking."
+  },
+  {
+    "id": "111",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "How do you clone an object?",
+    "answer": "For shallow copies, use Object.assign({}, obj) or spread syntax {...obj}. For deep copies, use JSON.parse(JSON.stringify(obj)) but it loses functions and special types. For complex needs, use libraries like Lodash’s cloneDeep()."
+  },
+  {
+    "id": "112",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between map(), filter(), and reduce()?",
+    "answer": "map() transforms each item and returns a new array. filter() returns items that match a condition. reduce() combines all items into one value."
+  },
+  {
+    "id": "113",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "How do you check if a value is an array?",
+    "answer": "Use Array.isArray(value). Avoid typeof because it returns \"object\" for arrays."
+  },
+  {
+    "id": "114",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is destructuring in JavaScript?",
+    "answer": "Destructuring lets you extract values from arrays or objects into variables easily."
+  },
+  {
+    "id": "115",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the spread operator?",
+    "answer": "The spread operator ... expands elements of arrays or objects, useful for cloning or merging."
+  },
+  {
+    "id": "116",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are promises in JavaScript?",
+    "answer": "Promises represent the result of an async operation and have states: pending, fulfilled, or rejected. They help avoid callback hell."
+  },
+  {
+    "id": "117",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is async/await?",
+    "answer": "async functions return promises. await pauses the function until the promise resolves, making async code easier to read."
+  },
+  {
+    "id": "118",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the use of fetch()?",
+    "answer": "fetch() is a browser API to make HTTP requests. It returns a promise and works well with async/await."
+  },
+  {
+    "id": "119",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle errors with async/await?",
+    "answer": "Use try...catch blocks around await calls to catch errors gracefully."
+  },
+  {
+    "id": "20",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is Promise.all()?",
+    "answer": "Promise.all() runs multiple promises in parallel and resolves when all succeed or rejects if any fail."
+  },
+  {
+    "id": "21",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules?",
+    "answer": "Modules let you organize code using export and import, making code reusable and maintainable."
+  },
+  {
+    "id": "22",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What's the difference between null and undefined?",
+    "answer": "undefined means a variable is declared but not assigned a value. null is an explicit assignment meaning no value."
+  },
+  {
+    "id": "23",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain debounce and throttle.",
+    "answer": "Debounce delays a function until a certain time has passed since the last call. Throttle limits a function to run at most once in a set time interval."
+  },
+  {
+    "id": "24",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the this keyword?",
+    "answer": "this refers to the object that owns the current function or method. Arrow functions do not have their own this."
+  },
+  {
+    "id": "25",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is prototypal inheritance?",
+    "answer": "Objects inherit properties and methods from other objects through a prototype chain instead of classical classes."
+  },
+  {
+    "id": "26",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is the DOM?",
+    "answer": "The Document Object Model is a tree structure representing HTML elements of a webpage, which JavaScript can manipulate."
+  },
+  {
+    "id": "27",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What's the difference between == and === in DOM comparison?",
+    "answer": "Use === to check if two DOM nodes refer to the exact same element."
+  },
+  {
+    "id": "28",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you select elements in the DOM?",
+    "answer": "Use methods like document.getElementById(), document.querySelector(), and document.querySelectorAll()."
+  },
+  {
+    "id": "29",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is event delegation?",
+    "answer": "Event delegation involves attaching a single event listener to a parent element to handle events on its children, improving performance."
+  },
+  {
+    "id": "30",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you prevent default behavior in an event?",
+    "answer": "Call event.preventDefault() inside the event handler."
+  },
+  {
+    "id": "31",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template literals?",
+    "answer": "Template literals use backticks to create strings with embedded expressions and multiline support."
+  },
+  {
+    "id": "32",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a callback function?",
+    "answer": "A callback is a function passed to another function to be executed later, common in async programming and event handling."
+  },
+  {
+    "id": "33",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are the falsy values in JavaScript?",
+    "answer": "Falsy values are: false, 0, '' (empty string), null, undefined, and NaN."
+  },
+  {
+    "id": "34",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Difference between typeof and instanceof?",
+    "answer": "typeof returns the type as a string. instanceof checks if an object inherits from a constructor’s prototype."
+  },
+  {
+    "id": "35",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are immediately invoked function expressions (IIFE)?",
+    "answer": "An IIFE is a function that runs as soon as it is defined, helping to avoid polluting the global scope."
+  },
+  {
+    "id": "36",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between shallow and deep copy?",
+    "answer": "Shallow copy copies only the top-level properties, while deep copy duplicates everything recursively."
+  },
+  {
+    "id": "37",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does garbage collection work in JavaScript?",
+    "answer": "JavaScript automatically removes objects from memory when there are no references left to them."
+  },
+  {
+    "id": "38",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between localStorage, sessionStorage, and cookies?",
+    "answer": "localStorage stores data permanently, sessionStorage clears data when the tab closes, and cookies are small data sent with requests and used for things like authentication."
+  },
+  {
+    "id": "39",
+    "category": "pwa",
+    "difficulty": "medium",
+    "question": "What is a service worker?",
+    "answer": "A service worker is a background script that enables offline access, push notifications, and caching in Progressive Web Apps."
+  },
+  {
+    "id": "40",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are higher-order functions?",
+    "answer": "Higher-order functions take other functions as arguments or return functions, enabling powerful functional programming patterns."
+  },
+  {
+    "id": "41",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How can you optimize performance in a Next.js app?",
+    "answer": "Use next/image for images, Use SSR or SSG where appropriate, Enable lazy loading for components, Use dynamic imports and code splitting, Minimize third-party libraries"
+  },
+  {
+    "id": "42",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is ISR (Incremental Static Regeneration) and how do you use it?",
+    "answer": "ISR allows you to update static content after the site is built using revalidate in getStaticProps."
+  },
+  {
+    "id": "43",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle redirects in Next.js?",
+    "answer": "Redirects are configured in next.config.js using the redirects() function."
+  },
+  {
+    "id": "44",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between getStaticProps and getServerSideProps?",
+    "answer": "getStaticProps: Fetches data at build time. getServerSideProps: Fetches data on each request."
+  },
+  {
+    "id": "45",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you use environment variables in Next.js?",
+    "answer": "Store variables in .env.local, and access them with process.env.MY_VAR. Prefix with NEXT_PUBLIC_ to use them in the client."
+  },
+  {
+    "id": "46",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you add custom headers in Next.js?",
+    "answer": "Use headers() in next.config.js to add custom HTTP headers."
+  },
+  {
+    "id": "47",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the Image component in Next.js?",
+    "answer": "It’s a built-in component that optimizes images with lazy loading, resizing, and format conversion."
+  },
+  {
+    "id": "48",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you prefetch pages in Next.js?",
+    "answer": "Using next/link, prefetching is enabled by default on visible links. You can also manually enable it with prefetch={true}."
+  },
+  {
+    "id": "49",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between useRouter and Link?",
+    "answer": "useRouter: Hook to access routing methods. Link: Component for client-side navigation."
+  },
+  {
+    "id": "50",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you implement middleware in Next.js?",
+    "answer": "Add a middleware.ts file in the root or a route directory to intercept requests and modify behavior."
+  },
+  {
+    "id": "51",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is Edge Middleware in Next.js?",
+    "answer": "Runs on the edge (closer to users) for faster response times, used for auth, redirects, rewrites, etc."
+  },
+  {
+    "id": "52",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you protect routes in Next.js?",
+    "answer": "Use middleware or HOCs to check authentication before rendering protected routes."
+  },
+  {
+    "id": "53",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you set up API rate limiting in Next.js?",
+    "answer": "Use libraries like express-rate-limit or custom logic inside API routes to track and limit requests."
+  },
+  {
+    "id": "54",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is ISR's revalidate property?",
+    "answer": "It defines how often a page should be regenerated in seconds."
+  },
+  {
+    "id": "55",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you deploy a Next.js app?",
+    "answer": "You can deploy to Vercel, Netlify, or any server that supports Node.js. Vercel is the recommended platform."
+  },
+  {
+    "id": "56",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you use Next.js with Tailwind CSS?",
+    "answer": "Install Tailwind, add it to postcss.config.js, and import it in your main CSS file."
+  },
+  {
+    "id": "57",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between next dev, next build, and next start?",
+    "answer": "next dev: Starts the dev server, next build: Builds the app for production, next start: Starts the production server"
+  },
+  {
+    "id": "58",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What’s new in Next.js 13/14/15?",
+    "answer": "Includes App Router, Server Components, Layouts, React 18 support, and better performance tools."
+  },
+  {
+    "id": "59",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How does ISR help improve performance?",
+    "answer": "ISR delivers static pages but allows them to be updated in the background, improving freshness and speed."
+  },
+  {
+    "id": "60",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle errors in API routes?",
+    "answer": "Use try-catch blocks, return proper status codes and messages, and log errors."
+  },
+  {
+    "id": "61",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you add analytics to a Next.js app?",
+    "answer": "Use tools like Google Analytics, Plausible, or Vercel Analytics, often via custom _app.tsx."
+  },
+  {
+    "id": "62",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to create a custom App component?",
+    "answer": "Create _app.js or _app.tsx inside the pages directory to override default App behavior."
+  },
+  {
+    "id": "63",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to create a custom Document?",
+    "answer": "Use _document.js to customize the HTML structure, add fonts, or manage the <html> and <body> tags."
+  },
+  {
+    "id": "64",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are loading UI components in the App Router?",
+    "answer": "Special files like loading.tsx used to show UI during lazy data fetching or navigation."
+  },
+  {
+    "id": "65",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is a fallback page in Next.js?",
+    "answer": "Used during ISR or dynamic routes to show a loading state while a page is being generated."
+  },
+  {
+    "id": "66",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are dynamic imports?",
+    "answer": "They allow you to load components on demand using next/dynamic."
+  },
+  {
+    "id": "67",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How does Next.js support internationalization (i18n)?",
+    "answer": "Define locales and defaultLocale in next.config.js, and Next.js will handle route-based translations."
+  },
+  {
+    "id": "68",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are Parallel Routes in Next.js?",
+    "answer": "Allow rendering different layouts or content in parallel within the same page structure."
+  },
+  {
+    "id": "69",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are Intercepting Routes?",
+    "answer": "Enable custom rendering for a nested route from a parent segment without full remounting."
+  },
+  {
+    "id": "70",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can you use Redux with Next.js?",
+    "answer": "Yes, use next-redux-wrapper to integrate Redux for SSR and SSG support."
+  },
+  {
+    "id": "71",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you add meta tags in Next.js?",
+    "answer": "Use the Head component from next/head to manage <title>, <meta>, etc."
+  },
+  {
+    "id": "72",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you fetch data from an external API?",
+    "answer": "Use fetch, axios, or getServerSideProps/getStaticProps for server-side fetching."
+  },
+  {
+    "id": "73",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle 404 pages in Next.js?",
+    "answer": "Create pages/404.js to customize the \"Page Not Found\" experience."
+  },
+  {
+    "id": "74",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is next export?",
+    "answer": "Exports your Next.js app as a static site with no server rendering or dynamic routes."
+  },
+  {
+    "id": "75",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can you use GraphQL in Next.js?",
+    "answer": "Yes, with libraries like Apollo Client or urql."
+  },
+  {
+    "id": "76",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle authentication in Next.js?",
+    "answer": "Use libraries like next-auth, or custom logic with JWTs, cookies, sessions."
+  },
+  {
+    "id": "77",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can Next.js be used for mobile apps?",
+    "answer": "Not directly, but you can build PWAs or use APIs with React Native frontends."
+  },
+  {
+    "id": "78",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is pre-rendering?",
+    "answer": "Rendering HTML in advance either at build time (SSG) or request time (SSR)."
+  },
+  {
+    "id": "79",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you create a sitemap?",
+    "answer": "Use packages like next-sitemap or write custom scripts to generate one during build."
+  },
+  {
+    "id": "80",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you create a robots.txt?",
+    "answer": "Add it to the public folder or generate it dynamically in API routes or middleware."
+  },
+  {
+    "id": "81",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to add Google Fonts in Next.js?",
+    "answer": "Use the <link> tag in _document.js or use @next/font for better performance."
+  },
+  {
+    "id": "82",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How does lazy loading work?",
+    "answer": "Lazy loading in Next.js loads components/images only when they enter the viewport."
+  },
+  {
+    "id": "83",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you test a Next.js app?",
+    "answer": "Use Jest and React Testing Library for unit/integration tests; Playwright or Cypress for E2E."
+  },
+  {
+    "id": "84",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle state across pages?",
+    "answer": "Use global state tools like Redux, Context API, Zustand, or Jotai."
+  },
+  {
+    "id": "85",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can you use MongoDB with Next.js?",
+    "answer": "Yes. You can use it via API routes or connect in getServerSideProps."
+  },
+  {
+    "id": "86",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to create breadcrumbs in Next.js?",
+    "answer": "Use useRouter to track path and build a breadcrumb component dynamically."
+  },
+  {
+    "id": "87",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you improve accessibility?",
+    "answer": "Use semantic HTML, ARIA labels, and audit with Lighthouse or axe-core."
+  },
+  {
+    "id": "88",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to add a loading spinner?",
+    "answer": "Use state to conditionally render a loading spinner or use App Router’s loading.tsx."
+  },
+  {
+    "id": "89",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to implement dark mode?",
+    "answer": "Use useState, localStorage, or libraries like next-themes."
+  },
+  {
+    "id": "90",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is a layout shift and how to prevent it?",
+    "answer": "It’s when content moves during load. Use defined image dimensions, avoid late-loading fonts."
+  },
+  {
+    "id": "91",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is hydration?",
+    "answer": "The process where React makes HTML interactive on the client side."
+  },
+  {
+    "id": "92",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between CSR and SSR?",
+    "answer": "CSR renders in the browser; SSR renders on the server and sends HTML to the browser."
+  },
+  {
+    "id": "93",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are RSC (React Server Components)?",
+    "answer": "React components rendered on the server to reduce JS sent to the client."
+  },
+  {
+    "id": "94",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can you use cookies in Next.js?",
+    "answer": "Yes. Read/write cookies in API routes, getServerSideProps, or middleware."
+  },
+  {
+    "id": "95",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle form submissions?",
+    "answer": "Use client-side fetch to call API routes or use traditional <form> with action set to your route."
+  },
+  {
+    "id": "96",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to add CORS support?",
+    "answer": "Add headers in API routes or middleware."
+  },
+  {
+    "id": "97",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What’s the best way to structure a Next.js project?",
+    "answer": "Use folders like components, pages, lib, styles, public, and hooks for better organization."
+  },
+  {
+    "id": "98",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you add custom fonts?",
+    "answer": "Add them to the public folder or use Google Fonts via _document.js."
+  },
+  {
+    "id": "99",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to create reusable layouts?",
+    "answer": "Use layout components and wrap them in _app.js or App Router’s layout.tsx."
+  },
+  {
+    "id": "100",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you implement role-based access control?",
+    "answer": "Check user roles in middleware, API routes, or getServerSideProps."
+  },
+  {
+    "id": "101",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are the limitations of Next.js?",
+    "answer": "Less flexible for dynamic content without SSR, Limited plugin ecosystem compared to Gatsby, SSR can increase server costs"
+  },
+  {
+    "id": "102",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are some good libraries to use with Next.js?",
+    "answer": "next-auth, swr, react-query, axios, tailwindcss"
+  },
+  {
+    "id": "103",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Why choose Next.js for your next project?",
+    "answer": "SEO-friendly, Fast performance, SSR/SSG flexibility, Developer experience"
+  },
+  {
+    "id": "104",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a high-level programming language mainly used to create interactive features on websites. It runs in browsers but can also run on servers with Node.js. It supports different programming styles like object-oriented and functional programming."
+  },
+  {
+    "id": "105",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between var, let, and const?",
+    "answer": "var is function-scoped, can be redeclared, and hoisted with an initial value of undefined. let is block-scoped, cannot be redeclared in the same scope, hoisted but uninitialized (temporal dead zone). const is block-scoped and cannot be reassigned, but objects declared with it can be mutated."
+  },
+  {
+    "id": "106",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are data types in JavaScript?",
+    "answer": "There are primitive types like string, number, boolean, null, undefined, symbol, bigint which are immutable and stored by value. Non-primitive types like objects, arrays, and functions are mutable and stored by reference."
+  },
+  {
+    "id": "107",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between == and ===?",
+    "answer": "== compares values after type coercion (loose equality). === compares both value and type strictly. Use === to avoid unexpected bugs."
+  },
+  {
+    "id": "108",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting means variable and function declarations are moved to the top of their scope before execution. var variables are hoisted and initialized with undefined. let and const are hoisted but not initialized (temporal dead zone). Functions are fully hoisted."
+  },
+  {
+    "id": "109",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are closures in JavaScript?",
+    "answer": "Closures happen when a function remembers variables from its outer scope, even after the outer function has finished running."
+  },
+  {
+    "id": "110",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between synchronous and asynchronous code?",
+    "answer": "Synchronous code runs line by line and blocks further execution until it finishes. Asynchronous code runs in the background, letting other code continue, using callbacks, promises, or async/await."
+  },
+  {
+    "id": "111",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are arrow functions?",
+    "answer": "Arrow functions provide a shorter syntax and do not have their own this context, making them useful for callbacks but not as object methods or constructors."
+  },
+  {
+    "id": "112",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is lexical scope?",
+    "answer": "Lexical scope means variables are accessible based on where they are written in the code, not where they are called from."
+  },
+  {
+    "id": "113",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event loop?",
+    "answer": "The event loop manages how JavaScript handles asynchronous tasks by moving them between the call stack and the task queue, ensuring the code runs smoothly without blocking."
+  },
+  {
+    "id": "114",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "How do you clone an object?",
+    "answer": "For shallow copies, use Object.assign({}, obj) or spread syntax {...obj}. For deep copies, use JSON.parse(JSON.stringify(obj)) but it loses functions and special types. For complex needs, use libraries like Lodash’s cloneDeep()."
+  },
+  {
+    "id": "115",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between map(), filter(), and reduce()?",
+    "answer": "map() transforms each item and returns a new array. filter() returns items that match a condition. reduce() combines all items into one value."
+  },
+  {
+    "id": "116",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "How do you check if a value is an array?",
+    "answer": "Use Array.isArray(value). Avoid typeof because it returns \"object\" for arrays."
+  },
+  {
+    "id": "117",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is destructuring in JavaScript?",
+    "answer": "Destructuring lets you extract values from arrays or objects into variables easily."
+  },
+  {
+    "id": "118",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the spread operator?",
+    "answer": "The spread operator ... expands elements of arrays or objects, useful for cloning or merging."
+  },
+  {
+    "id": "119",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are promises in JavaScript?",
+    "answer": "Promises represent the result of an async operation and have states: pending, fulfilled, or rejected. They help avoid callback hell."
+  },
+  {
+    "id": "120",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is async/await?",
+    "answer": "async functions return promises. await pauses the function until the promise resolves, making async code easier to read."
+  },
+  {
+    "id": "121",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the use of fetch()?",
+    "answer": "fetch() is a browser API to make HTTP requests. It returns a promise and works well with async/await."
+  },
+  {
+    "id": "122",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle errors with async/await?",
+    "answer": "Use try...catch blocks around await calls to catch errors gracefully."
+  },
+  {
+    "id": "123",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is Promise.all()?",
+    "answer": "Promise.all() runs multiple promises in parallel and resolves when all succeed or rejects if any fail."
+  },
+  {
+    "id": "124",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules?",
+    "answer": "Modules let you organize code using export and import, making code reusable and maintainable."
+  },
+  {
+    "id": "125",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What's the difference between null and undefined?",
+    "answer": "undefined means a variable is declared but not assigned a value. null is an explicit assignment meaning no value."
+  },
+  {
+    "id": "126",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain debounce and throttle.",
+    "answer": "Debounce delays a function until a certain time has passed since the last call. Throttle limits a function to run at most once in a set time interval."
+  },
+  {
+    "id": "127",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the this keyword?",
+    "answer": "this refers to the object that owns the current function or method. Arrow functions do not have their own this."
+  },
+  {
+    "id": "128",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is prototypal inheritance?",
+    "answer": "Objects inherit properties and methods from other objects through a prototype chain instead of classical classes."
+  },
+  {
+    "id": "129",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is the DOM?",
+    "answer": "The Document Object Model is a tree structure representing HTML elements of a webpage, which JavaScript can manipulate."
+  },
+  {
+    "id": "130",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What's the difference between == and === in DOM comparison?",
+    "answer": "Use === to check if two DOM nodes refer to the exact same element."
+  },
+  {
+    "id": "131",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you select elements in the DOM?",
+    "answer": "Use methods like document.getElementById(), document.querySelector(), and document.querySelectorAll()."
+  },
+  {
+    "id": "132",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "What is event delegation?",
+    "answer": "Event delegation involves attaching a single event listener to a parent element to handle events on its children, improving performance."
+  },
+  {
+    "id": "133",
+    "category": "dom",
+    "difficulty": "medium",
+    "question": "How do you prevent default behavior in an event?",
+    "answer": "Call event.preventDefault() inside the event handler."
+  },
+  {
+    "id": "134",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template literals?",
+    "answer": "Template literals use backticks to create strings with embedded expressions and multiline support."
+  },
+  {
+    "id": "135",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a callback function?",
+    "answer": "A callback is a function passed to another function to be executed later, common in async programming and event handling."
+  },
+  {
+    "id": "136",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What are the falsy values in JavaScript?",
+    "answer": "Falsy values are: false, 0, '' (empty string), null, undefined, and NaN."
+  },
+  {
+    "id": "137",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Difference between typeof and instanceof?",
+    "answer": "typeof returns the type as a string. instanceof checks if an object inherits from a constructor’s prototype."
+  },
+  {
+    "id": "138",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are immediately invoked function expressions (IIFE)?",
+    "answer": "An IIFE is a function that runs as soon as it is defined, helping to avoid polluting the global scope."
+  },
+  {
+    "id": "139",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What's the difference between shallow and deep copy?",
+    "answer": "Shallow copy copies only the top-level properties, while deep copy duplicates everything recursively."
+  },
+  {
+    "id": "140",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does garbage collection work in JavaScript?",
+    "answer": "JavaScript automatically removes objects from memory when there are no references left to them."
+  },
+  {
+    "id": "141",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between localStorage, sessionStorage, and cookies?",
+    "answer": "localStorage stores data permanently, sessionStorage clears data when the tab closes, and cookies are small data sent with requests and used for things like authentication."
+  },
+  {
+    "id": "142",
+    "category": "pwa",
+    "difficulty": "medium",
+    "question": "What is a service worker?",
+    "answer": "A service worker is a background script that enables offline access, push notifications, and caching in Progressive Web Apps."
+  },
+  {
+    "id": "143",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are higher-order functions?",
+    "answer": "Higher-order functions take other functions as arguments or return functions, enabling powerful functional programming patterns."
+  },
+  {
+    "id": "144",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "What is TypeScript, and how does it differ from JavaScript?",
+    "answer": "TypeScript is a statically-typed superset of JavaScript that adds optional static typing, interfaces, and other advanced features to the language. Developed and maintained by Microsoft, TypeScript compiles down to standard JavaScript, which can then run anywhere JavaScript is supported, such as in browsers or Node.js."
+  },
+  {
+    "id": "145",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are the benefits of using TypeScript over JavaScript?",
+    "answer": "Using TypeScript over JavaScript offers several substantial benefits, particularly in larger codebases or when working in teams. Here are some of the key advantages: Type Safety and Early Error Detection, Improved Developer Productivity, Enhanced Maintainability, Support for Modern JavaScript Features, Object-Oriented Programming Support, Better Tooling for Large Teams, Type Definitions for External Libraries"
+  },
+  {
+    "id": "146",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "Explain the concept of \"type annotations\" in TypeScript.",
+    "answer": "Type annotations in TypeScript refer to the process of explicitly specifying the types of variables, function parameters, return values, and other data structures. By providing type annotations, you help TypeScript’s type checker understand the expected types in your code, which in turn allows TypeScript to catch potential errors during development before the code is executed."
+  },
+  {
+    "id": "147",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a variable in TypeScript with a specific type?",
+    "answer": "In TypeScript, you declare a variable with a specific type by using the : syntax followed by the type. TypeScript uses type annotations to ensure that variables hold values of the correct type, helping catch errors at compile time."
+  },
+  {
+    "id": "148",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the any type in TypeScript, and when should it be used?",
+    "answer": "The any type in TypeScript is a dynamic type that can represent any value, essentially opting out of TypeScript's strict type system for that variable. When you assign the any type to a variable, TypeScript allows that variable to hold any kind of data — be it a number, string, object, function, or even null."
+  },
+  {
+    "id": "149",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a function in TypeScript with specific argument and return types?",
+    "answer": "In TypeScript, you can define a function with specific argument types and a return type by annotating the types of the parameters and the return type after the function signature. Here’s the general syntax: function functionName(parameterName: type): returnType { // Function body }"
+  },
+  {
+    "id": "150",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is type inference in TypeScript?",
+    "answer": "Type inference in TypeScript refers to the compiler's ability to automatically deduce the type of a variable or expression based on its assigned value, without needing explicit type annotations. TypeScript uses inference to determine the type of variables, function return types, and other expressions at compile time."
+  },
+  {
+    "id": "151",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "Explain the difference between let, const, and var in TypeScript.",
+    "answer": "In TypeScript (and JavaScript), there are three ways to declare variables: let, const, and var. These keywords differ in how they handle scoping, mutability, and hoisting. let: Scope: Block-scoped (limited to the block, statement, or expression where it is used). Mutability: Variables declared with let can be reassigned to new values. Hoisting: Variables declared with let are hoisted to the top of their block, but are not initialized until their actual declaration, leading to a \"temporal dead zone\" where the variable cannot be accessed before its declaration. const: Scope: Block-scoped (same as let). Mutability: Variables declared with const cannot be reassigned after initialization. Hoisting: Like let, const variables are hoisted, but are also not initialized until their declaration. var: Scope: Function-scoped (variables declared with var are scoped to the nearest function block, or globally if declared outside of any function). Mutability: Variables declared with var can be reassigned. Hoisting: var declarations are hoisted to the top of their scope and initialized with undefined."
+  },
+  {
+    "id": "152",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "What are TypeScript's primitive types?",
+    "answer": "TypeScript provides several built-in primitive types. These types represent the simplest form of data in the language and cannot be broken down further: number, string, boolean, null, undefined, symbol, bigint"
+  },
+  {
+    "id": "153",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "What is the difference between undefined and null in TypeScript?",
+    "answer": "Both undefined and null represent \"empty\" or \"no value\" in TypeScript, but they are used in different contexts: undefined: This is the default value for uninitialized variables. It is assigned to a variable when it is declared but not given a value. null: Represents the intentional absence of any object value. It is one of JavaScript's primitive values."
+  },
+  {
+    "id": "154",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an array in TypeScript?",
+    "answer": "In TypeScript, you can define arrays in a few different ways, each allowing you to specify the type of elements the array will hold. Using the Array<T> syntax: This is the generic form where you specify the type of elements the array will hold inside the angle brackets. Using the type[] syntax: This is a shorthand version where you specify the element type followed by square brackets."
+  },
+  {
+    "id": "155",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is a tuple in TypeScript?",
+    "answer": "A tuple in TypeScript is an ordered collection of elements where each element can have a different type. Tuples are similar to arrays, but unlike arrays where all elements must be of the same type, tuples allow for heterogenous types (i.e., different types in the same collection)."
+  },
+  {
+    "id": "156",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is an enum in TypeScript, and how is it different from a regular object?",
+    "answer": "An enum in TypeScript is a special \"object\" that allows you to define a set of named constants. Enums can be used to represent a collection of related values, making your code more readable and less error-prone. The values in a numeric enum are assigned numeric values, starting from 0 by default. In string enums, each member must be initialized with a string value. Enums are more readable and can be used to represent a set of related constants. The javascript engine does not throw an error if you try to access a property that does not exist on an enum. Objects can hold any type of key-value pairs, but enums are more structured and provide better tooling and type safety."
+  },
+  {
+    "id": "157",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an object type in TypeScript?",
+    "answer": "In TypeScript, you can define the type of an object using interface or type alias, but the simplest way is to define an inline object type directly in the code. Using object type annotation: let person: { name: string; age: number } = { name: \"Alice\", age: 30 };"
+  },
+  {
+    "id": "158",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are the differences between TypeScript interfaces and types?",
+    "answer": "Both interfaces and type aliases in TypeScript can be used to define object shapes, function signatures, and other types. However, they have some differences in terms of usage, extensibility, and syntax. Interfaces can be extended using the extends keyword, making them more suitable for object-oriented designs and inheritance. Type aliases cannot use extends in the same way, but can be composed with intersection (&) and union (|) types. Interfaces support declaration merging, meaning if you declare the same interface multiple times, TypeScript will automatically merge their definitions. Type aliases do not support declaration merging."
+  },
+  {
+    "id": "159",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "What is the void type in TypeScript?",
+    "answer": "The void type in TypeScript represents the absence of any value, typically used for functions that do not return a value. In JavaScript, functions can implicitly return undefined, but in TypeScript, you can explicitly declare a function’s return type as void."
+  },
+  {
+    "id": "160",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What does never mean in TypeScript, and when is it used?",
+    "answer": "The never type represents values that never occur. It is used to define the return type of a function that will never successfully return a value, such as functions that always throw an error, or enters an infinite loop."
+  },
+  {
+    "id": "161",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How does TypeScript handle type compatibility?",
+    "answer": "TypeScript uses structural typing to handle type compatibility, meaning that two types are compatible if they have the same structure (i.e., the same properties with matching types), rather than relying on their names or definitions."
+  },
+  {
+    "id": "162",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is a type alias, and how does it work in TypeScript?",
+    "answer": "A type alias in TypeScript allows you to create a custom name for any type. You can use type aliases to simplify complex types, provide clarity, or define reusable type definitions."
+  },
+  {
+    "id": "163",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an optional property in TypeScript?",
+    "answer": "In TypeScript, you can define an optional property in an object or interface by appending a question mark (?) to the property name."
+  },
+  {
+    "id": "164",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the readonly modifier in TypeScript?",
+    "answer": "The readonly modifier in TypeScript is used to make properties or variables immutable, meaning their values cannot be changed once they are initialized. This can be applied to object properties, arrays, and class members."
+  },
+  {
+    "id": "165",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a function with optional parameters in TypeScript?",
+    "answer": "In TypeScript, you can define a function with optional parameters by appending a question mark (?) to the parameter's name in the function signature. This means that the parameter is not required when the function is called."
+  },
+  {
+    "id": "166",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define default values for function parameters in TypeScript?",
+    "answer": "In TypeScript, you can define default values for function parameters by assigning the default value directly in the function signature. This allows you to provide a fallback value if no argument is passed for that parameter."
+  },
+  {
+    "id": "167",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the as keyword in TypeScript?",
+    "answer": "The as keyword in TypeScript is used for type assertion, which tells the TypeScript compiler to treat a value as a specific type, overriding its inferred or existing type. It doesn’t perform any runtime type checking, it only affects TypeScript’s type system."
+  },
+  {
+    "id": "168",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you use the typeof operator in TypeScript?",
+    "answer": "In TypeScript, the typeof operator is used to obtain the type of a variable or expression. It can be used in both expressions and type annotations."
+  },
+  {
+    "id": "169",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is a namespace in TypeScript, and how is it used?",
+    "answer": "A namespace in TypeScript is a way to group related code, such as functions, classes, or variables, under a common name to avoid name collisions. Namespaces were previously used for module systems in TypeScript, but with the introduction of ES6 modules, their use has become less common. However, namespaces can still be useful in certain scenarios, especially when organizing code in large applications."
+  },
+  {
+    "id": "170",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you perform type checking in TypeScript?",
+    "answer": "TypeScript is statically typed, meaning that type checking is done at compile time. However, there are times when you might need to perform type checks at runtime as well. You can perform type checks using the typeof operator (for primitive types) or instanceof (for class instances)."
+  },
+  {
+    "id": "171",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between interface and class in TypeScript?",
+    "answer": "interface: Defines a contract for the structure of objects, classes, or function signatures. It does not provide any implementation, only the method and property signatures. abstract class: Can define both abstract methods (without implementation) and concrete methods (with implementation). It allows you to define common functionality that will be shared by derived classes."
+  },
+  {
+    "id": "172",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are the different ways to import and export modules in TypeScript?",
+    "answer": "TypeScript supports several ways to import and export modules, which align with ES6 module syntax. Named exports and imports: Export: You can export multiple named items from a module. Import: You import specific members from a module using curly braces. Default export and import: Export: You can export a single default value from a module. Import: You import the default value directly without curly braces."
+  },
+  {
+    "id": "173",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "Explain the concept of \"declaration merging\" in TypeScript.",
+    "answer": "Declaration merging is a feature in TypeScript that allows multiple declarations with the same name to be merged into a single definition. This is particularly useful for augmenting types and interfaces, allowing for flexible extension of existing code."
   }
 ]
