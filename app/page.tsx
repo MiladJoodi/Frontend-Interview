@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 type Difficulty = "easy" | "medium" | "hard"
 
@@ -19,7 +18,7 @@ interface Question {
   category: string
 }
 
-// Define the categories array
+// Define the categories array with display names and subcategories
 const categories: { id: string; name: string; count: number; subcategories?: string[] }[] = [
   { id: "all", name: "All", count: 0 },
   { id: "react", name: "React.js", count: 0, subcategories: ["hooks", "components", "jsx"] },
@@ -36,9 +35,11 @@ const categories: { id: string; name: string; count: number; subcategories?: str
   { id: "backend", name: "Backend", count: 0 },
   { id: "nodejs", name: "Node.js", count: 0 },
   { id: "express", name: "Express", count: 0 },
+  { id: "other", name: "Other", count: 0 }, // Added "Other" category
 ]
 
 const ITEMS_PER_PAGE = 8
+const MAX_PAGINATION_BUTTONS = 5 // Max number of pagination buttons to show
 
 const getDifficultyColor = (difficulty: Difficulty) => {
   switch (difficulty) {
@@ -66,6 +67,14 @@ const getDifficultyText = (difficulty: Difficulty) => {
   }
 }
 
+// Helper function to capitalize the first letter of each word
+const capitalizeWords = (str: string) => {
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")
+}
+
 // Define the main component
 export default function Component() {
   const [questions, setQuestions] = useState<Question[]>([])
@@ -80,7 +89,15 @@ export default function Component() {
       try {
         const response = await fetch("/data/questions.json")
         const data = await response.json()
-        setQuestions(data)
+        // Sort questions: first by category, then by question alphabetically
+        const sortedData = data.sort((a: Question, b: Question) => {
+          const categoryComparison = a.category.localeCompare(b.category)
+          if (categoryComparison !== 0) {
+            return categoryComparison
+          }
+          return a.question.localeCompare(b.question)
+        })
+        setQuestions(sortedData)
       } catch (error) {
         console.error("Error loading questions:", error)
       } finally {
@@ -125,6 +142,33 @@ export default function Component() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
+  // Logic to generate pagination buttons
+  const getPaginationButtons = () => {
+    const buttons = []
+    const startPage = Math.max(1, currentPage - Math.floor(MAX_PAGINATION_BUTTONS / 2))
+    const endPage = Math.min(totalPages, startPage + MAX_PAGINATION_BUTTONS - 1)
+
+    if (startPage > 1) {
+      buttons.push(1)
+      if (startPage > 2) {
+        buttons.push("...")
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      buttons.push(i)
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        buttons.push("...")
+      }
+      buttons.push(totalPages)
+    }
+
+    return buttons
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
@@ -138,11 +182,14 @@ export default function Component() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
+      <div className="container mx-auto px-4 py-8 max-w-6xl pb-16">
+        {" "}
+        {/* Added pb-16 for spacing */}
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
-            <h1 className="text-3xl font-bold tracking-tight">Frontend Interview Q&A</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900">Frontend Interview Q&A</h1>{" "}
+            {/* Changed title color */}
             <div style={{ marginLeft: "15px" }} className="flex items-center">
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=MiladJoodi&repo=Frontend-Interview&type=star&count=true&size=large"
@@ -166,7 +213,6 @@ export default function Component() {
             </p>
           </div>
         </div>
-
         {/* Search and Filter */}
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <div className="relative flex-1">
@@ -179,27 +225,24 @@ export default function Component() {
               className="pl-10 bg-white/70 backdrop-blur-sm border-gray-200"
             />
           </div>
-          <div className="sm:w-64">
-            <Select value={selectedCategory} onValueChange={handleCategoryChange}>
-              <SelectTrigger className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200">
-                <SelectValue placeholder="Select category" />
-              </SelectTrigger>
-              <SelectContent className="max-h-80 overflow-auto">
-                {categoriesWithCount.map((category) => (
-                  <SelectItem key={category.id} value={category.id} className="cursor-pointer">
-                    <div className="flex items-center justify-between w-full">
-                      <span>{category.name}</span>
-                      <Badge variant="secondary" className="ml-2 text-xs">
-                        {category.count}
-                      </Badge>
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
         </div>
-
+        {/* Horizontal Category Filters */}
+        <div className="flex flex-wrap gap-2 mb-6 justify-center sm:justify-start">
+          {categoriesWithCount.map((category) => (
+            <Badge
+              key={category.id}
+              variant={selectedCategory === category.id ? "default" : "outline"}
+              onClick={() => handleCategoryChange(category.id)}
+              className={`cursor-pointer px-3 py-1 text-sm font-medium transition-colors duration-200 ${
+                selectedCategory === category.id
+                  ? "bg-gray-900 text-white hover:bg-gray-800" // Active style
+                  : "bg-white/70 backdrop-blur-sm border-gray-200 text-gray-700 hover:bg-gray-100" // Inactive style
+              }`}
+            >
+              #{capitalizeWords(category.name)} ({category.count})
+            </Badge>
+          ))}
+        </div>
         {/* Stats */}
         <div className="flex justify-between items-center mb-6 text-sm text-muted-foreground">
           <div>
@@ -210,7 +253,6 @@ export default function Component() {
             Page {currentPage} of {totalPages}
           </div>
         </div>
-
         {/* Questions */}
         {paginatedQuestions.length === 0 ? (
           <div className="text-center py-8">
@@ -233,11 +275,13 @@ export default function Component() {
                         <span className="font-medium text-left">{item.question}</span>
                       </div>
                       <div className="flex items-center gap-2 ml-4">
-                        <Badge className={`text-xs ${getDifficultyColor(item.difficulty)}`}>
+                        <Badge className={`text-[0.65rem] px-1 py-0.5 ${getDifficultyColor(item.difficulty)}`}>
+                          {" "}
+                          {/* Smaller difficulty badge */}
                           {getDifficultyText(item.difficulty)}
                         </Badge>{" "}
                         <Badge variant="outline" className="text-xs">
-                          {item.category}
+                          {capitalizeWords(item.category)} {/* Capitalized category */}
                         </Badge>
                       </div>
                     </div>
@@ -250,7 +294,6 @@ export default function Component() {
             })}
           </Accordion>
         )}
-
         {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center gap-2 mt-8">
@@ -266,19 +309,27 @@ export default function Component() {
             </Button>
 
             <div className="flex gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <Button
-                  key={page}
-                  variant={currentPage === page ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => handlePageChange(page)}
-                  className={`cursor-pointer min-w-[40px] bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90 ${
-                    currentPage === page ? "font-bold shadow-md" : ""
-                  }`}
-                >
-                  {page}
-                </Button>
-              ))}
+              {getPaginationButtons().map((page, index) =>
+                page === "..." ? (
+                  <span key={index} className="px-2 py-1 text-muted-foreground">
+                    ...
+                  </span>
+                ) : (
+                  <Button
+                    key={page}
+                    variant={currentPage === page ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => handlePageChange(page as number)}
+                    className={`cursor-pointer min-w-[40px] ${
+                      currentPage === page
+                        ? "bg-gray-900 text-white hover:bg-gray-800" // Simple dark active style
+                        : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+                    }`}
+                  >
+                    {page}
+                  </Button>
+                ),
+              )}
             </div>
 
             <Button
@@ -293,7 +344,6 @@ export default function Component() {
             </Button>
           </div>
         )}
-
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground border-t pt-6">
           <p>Made with ❤️ for the developer community</p>
