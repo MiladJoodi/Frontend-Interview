@@ -208,5 +208,26 @@
     "difficulty": "medium",
     "question": "How does Error Handling work in Express?",
     "answer": "Express uses error-handling middleware with 4 parameters: (err, req, res, next). It should be defined last in the middleware stack. Errors can be passed to error handlers using next(error). Express has a default error handler, but custom ones provide better control."
+  },
+  {
+    "id": "31",
+    "category": "new_category",
+    "difficulty": "easy",
+    "question": "New Easy Question?",
+    "answer": "New Easy Answer."
+  },
+  {
+    "id": "32",
+    "category": "new_category",
+    "difficulty": "medium",
+    "question": "New Medium Question?",
+    "answer": "New Medium Answer."
+  },
+  {
+    "id": "33",
+    "category": "new_category",
+    "difficulty": "hard",
+    "question": "New Hard Question?",
+    "answer": "New Hard Answer."
   }
 ]

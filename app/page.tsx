@@ -235,6 +235,9 @@ export default function Component() {
                         <Badge className={getDifficultyColor(item.difficulty)}>
                           {getDifficultyText(item.difficulty)}
                         </Badge>
+                        <Badge variant="outline" className="text-xs">
+                          {item.category}
+                        </Badge>
                       </div>
                     </div>
                   </AccordionTrigger>
@@ -293,7 +296,7 @@ export default function Component() {
         )}
 
         {/* Footer */}
-        <div className="mt-12 text-center text-sm text-muted-foreground border-t border-gray-200 pt-6">
+        <div className="mt-12 text-center text-sm text-muted-foreground border-t pt-6">
           <p>Made with ❤️ for the developer community</p>
           <div className="flex justify-center items-center gap-4 mt-2">
             <a
