@@ -123,8 +123,19 @@ export default function Component() {
   }, [searchTerm, selectedCategory, questions])
 
   const totalPages = Math.ceil(filteredQuestions.length / ITEMS_PER_PAGE)
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
+  
+  // Ensure current page is valid when filtered results change
+  const validCurrentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages))
+  
+  const startIndex = (validCurrentPage - 1) * ITEMS_PER_PAGE
   const paginatedQuestions = filteredQuestions.slice(startIndex, startIndex + ITEMS_PER_PAGE)
+
+  // Update current page if it's invalid
+  useEffect(() => {
+    if (currentPage !== validCurrentPage) {
+      setCurrentPage(validCurrentPage)
+    }
+  }, [currentPage, validCurrentPage])
 
   // Update categories count
   const categoriesWithCount = categories.map((cat) => ({
@@ -135,37 +146,65 @@ export default function Component() {
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category)
     setCurrentPage(1)
+    // Reset search term when changing categories for better UX
+    if (searchTerm) {
+      setSearchTerm("")
+    }
   }
 
   const handlePageChange = (page: number) => {
-    setCurrentPage(page)
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
   }
 
-  // Logic to generate pagination buttons
-  const getPaginationButtons = () => {
-    const buttons = []
-    const startPage = Math.max(1, currentPage - Math.floor(MAX_PAGINATION_BUTTONS / 2))
-    const endPage = Math.min(totalPages, startPage + MAX_PAGINATION_BUTTONS - 1)
-
-    if (startPage > 1) {
-      buttons.push(1)
-      if (startPage > 2) {
-        buttons.push("...")
-      }
+  // Improved logic to generate pagination buttons
+  const getPaginationButtons = (): (number | string)[] => {
+    const buttons: (number | string)[] = []
+    
+    // If total pages is 1 or less, don't show pagination
+    if (totalPages <= 1) {
+      return buttons
     }
 
+    // Always show first page
+    buttons.push(1)
+    
+    // Calculate the range of pages to show around current page
+    const maxButtons = MAX_PAGINATION_BUTTONS - 2 // Reserve space for first and last page
+    const halfButtons = Math.floor(maxButtons / 2)
+    
+    let startPage = Math.max(2, validCurrentPage - halfButtons)
+    let endPage = Math.min(totalPages - 1, validCurrentPage + halfButtons)
+    
+    // Adjust if we're near the edges
+    if (startPage === 2) {
+      endPage = Math.min(totalPages - 1, startPage + maxButtons - 1)
+    } else if (endPage === totalPages - 1) {
+      startPage = Math.max(2, endPage - maxButtons + 1)
+    }
+    
+    // Add ellipsis after first page if needed
+    if (startPage > 2) {
+      buttons.push("...")
+    }
+    
+    // Add middle pages
     for (let i = startPage; i <= endPage; i++) {
       buttons.push(i)
     }
-
-    if (endPage < totalPages) {
-      if (endPage < totalPages - 1) {
-        buttons.push("...")
-      }
+    
+    // Add ellipsis before last page if needed
+    if (endPage < totalPages - 1) {
+      buttons.push("...")
+    }
+    
+    // Always show last page (if there is more than one page)
+    if (totalPages > 1) {
       buttons.push(totalPages)
     }
-
+    
     return buttons
   }
 
@@ -250,7 +289,7 @@ export default function Component() {
             {filteredQuestions.length} questions
           </div>
           <div className="text-center sm:text-right">
-            Page {currentPage} of {totalPages}
+            Page {validCurrentPage} of {totalPages}
           </div>
         </div>
         {/* Questions */}
@@ -301,8 +340,8 @@ export default function Component() {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
+                onClick={() => handlePageChange(validCurrentPage - 1)}
+                disabled={validCurrentPage === 1}
                 className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
               >
                 <ChevronLeft className="h-4 w-4 cursor-pointer" />
@@ -318,11 +357,11 @@ export default function Component() {
                   ) : (
                     <Button
                       key={page}
-                      variant={currentPage === page ? "default" : "outline"}
+                      variant={validCurrentPage === page ? "default" : "outline"}
                       size="sm"
                       onClick={() => handlePageChange(page as number)}
                       className={`cursor-pointer min-w-[35px] sm:min-w-[40px] text-xs sm:text-sm ${
-                        currentPage === page
+                        validCurrentPage === page
                           ? "bg-gray-900 text-white hover:bg-gray-800" // Simple dark active style
                           : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
                       }`}
@@ -336,8 +375,8 @@ export default function Component() {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => handlePageChange(currentPage + 1)}
-                disabled={currentPage === totalPages}
+                onClick={() => handlePageChange(validCurrentPage + 1)}
+                disabled={validCurrentPage === totalPages}
                 className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
               >
                 <span className="hidden sm:inline">Next</span>
