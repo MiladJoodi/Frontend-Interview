@@ -3639,12 +3639,6 @@
     "question": "What is the difference between `gap-x` and `space-x`?",
     "answer": "`gap-x` controls gaps between grid/flex items, `space-x` adds margin between siblings."
   },
-اینم ۵۰ سوال با موضوع CSS، از id 521 شروع کردم:
-
-json
-Copy
-Edit
-[
   {
     "id": "521",
     "category": "css",
