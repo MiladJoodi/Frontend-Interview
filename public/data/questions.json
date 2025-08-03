@@ -13865,5 +13865,642 @@
     "difficulty": "medium",
     "question": "How do you handle route redirection based on user roles in Express?",
     "answer": "Implement middleware that checks user role and redirects accordingly."
+  },
+  {
+    "id": "1982",
+    "category": "other",
+    "difficulty": "easy",
+    "question": "What is the difference between synchronous and asynchronous programming?",
+    "answer": "Synchronous programming executes tasks one after another, blocking until each finishes; asynchronous allows tasks to run concurrently without blocking."
+  },
+  {
+    "id": "1983",
+    "category": "other",
+    "difficulty": "easy",
+    "question": "What is REST and why is it important?",
+    "answer": "REST is an architectural style for designing networked applications that uses stateless HTTP requests and standard methods like GET and POST."
+  },
+  {
+    "id": "1984",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are HTTP status codes and why are they important?",
+    "answer": "They indicate the result of an HTTP request, helping clients understand if the request succeeded, failed, or needs further action."
+  },
+  {
+    "id": "1985",
+    "category": "other",
+    "difficulty": "easy",
+    "question": "What is the difference between a library and a framework?",
+    "answer": "A library offers specific functionality you call when needed; a framework defines the structure and flow, calling your code at specific points."
+  },
+  {
+    "id": "1986",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of version control systems like Git?",
+    "answer": "They track changes in code, enable collaboration, and allow reverting to previous states."
+  },
+  {
+    "id": "1987",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "Explain the difference between SQL and NoSQL databases.",
+    "answer": "SQL databases are relational with structured schemas; NoSQL databases are non-relational and flexible, often storing JSON-like documents."
+  },
+  {
+    "id": "1988",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are environment variables and why are they used?",
+    "answer": "Environment variables store configuration outside code, allowing different setups for development, testing, and production."
+  },
+  {
+    "id": "1989",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between client-side and server-side rendering?",
+    "answer": "Client-side rendering builds the UI in the browser after fetching data; server-side rendering builds HTML on the server and sends it to the client."
+  },
+  {
+    "id": "1990",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is continuous integration (CI)?",
+    "answer": "CI automates the process of merging code changes, building, and testing to catch issues early."
+  },
+  {
+    "id": "1991",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of API documentation?",
+    "answer": "It helps developers understand how to use the API, including available endpoints, parameters, and expected responses."
+  },
+  {
+    "id": "1992",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is caching and how does it improve performance?",
+    "answer": "Caching stores frequently accessed data temporarily to reduce latency and decrease load on servers."
+  },
+  {
+    "id": "1993",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between GET and POST HTTP methods?",
+    "answer": "GET requests retrieve data without side effects; POST requests send data to the server to create or update resources."
+  },
+  {
+    "id": "1994",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "Explain the concept of middleware in web development.",
+    "answer": "Middleware is code that processes requests and responses in a pipeline, often for tasks like authentication or logging."
+  },
+  {
+    "id": "1995",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is cross-origin resource sharing (CORS)?",
+    "answer": "CORS is a security feature that restricts web pages from making requests to a different domain than the one that served the page."
+  },
+  {
+    "id": "1996",
+    "category": "other",
+    "difficulty": "easy",
+    "question": "What is the difference between a process and a thread?",
+    "answer": "A process is an independent program execution; a thread is a smaller unit within a process sharing memory."
+  },
+  {
+    "id": "1997",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of a load balancer?",
+    "answer": "It distributes incoming network traffic across multiple servers to ensure availability and reliability."
+  },
+  {
+    "id": "1998",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are webhooks and how are they used?",
+    "answer": "Webhooks are HTTP callbacks that notify external systems when specific events happen."
+  },
+  {
+    "id": "1999",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "Explain the difference between monolithic and microservices architectures.",
+    "answer": "Monolithic apps bundle all components tightly; microservices split functionality into independent, loosely coupled services."
+  },
+  {
+    "id": "2000",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the event loop in JavaScript?",
+    "answer": "The event loop handles asynchronous callbacks by continuously checking the call stack and task queue."
+  },
+  {
+    "id": "2001",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between authentication and authorization?",
+    "answer": "Authentication verifies identity; authorization determines permissions."
+  },
+  {
+    "id": "2002",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a CDN and why is it useful?",
+    "answer": "A Content Delivery Network distributes content globally to reduce latency and improve availability."
+  },
+  {
+    "id": "2003",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of web sockets?",
+    "answer": "Web sockets provide full-duplex communication channels over a single TCP connection, useful for real-time apps."
+  },
+  {
+    "id": "2004",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between cookies and localStorage?",
+    "answer": "Cookies are sent with HTTP requests and have size limits; localStorage is client-only, larger, and persists until cleared."
+  },
+  {
+    "id": "2005",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are design patterns and why are they important?",
+    "answer": "Design patterns are reusable solutions to common software problems, improving code maintainability and clarity."
+  },
+  {
+    "id": "2006",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between blocking and non-blocking I/O?",
+    "answer": "Blocking I/O waits for operations to complete before moving on; non-blocking allows other tasks to proceed concurrently."
+  },
+  {
+    "id": "2007",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is containerization and how does it differ from virtualization?",
+    "answer": "Containers package applications with dependencies using OS-level virtualization; virtual machines emulate entire OS environments."
+  },
+  {
+    "id": "2008",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of unit testing?",
+    "answer": "Unit testing verifies individual components or functions behave as expected."
+  },
+  {
+    "id": "2009",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the CAP theorem in distributed systems?",
+    "answer": "It states that a distributed system can only guarantee two of three: Consistency, Availability, and Partition tolerance."
+  },
+  {
+    "id": "2010",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are promises in JavaScript?",
+    "answer": "Promises represent future values or errors of asynchronous operations."
+  },
+  {
+    "id": "2011",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "Explain the purpose of Docker.",
+    "answer": "Docker automates container creation, deployment, and management, ensuring consistent environments."
+  },
+  {
+    "id": "2012",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a NoSQL database?",
+    "answer": "A database designed for unstructured or semi-structured data, often schema-less."
+  },
+  {
+    "id": "2013",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is middleware in software architecture?",
+    "answer": "Middleware connects different software components or applications, enabling communication and data management."
+  },
+  {
+    "id": "2014",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between HTTP and HTTPS?",
+    "answer": "HTTPS is HTTP with encryption via SSL/TLS, providing secure data transfer."
+  },
+  {
+    "id": "2015",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a microfrontend architecture?",
+    "answer": "Splitting a frontend app into smaller, independently deployable parts."
+  },
+  {
+    "id": "2016",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a service worker?",
+    "answer": "A script that runs in the background to enable offline support, caching, and push notifications in web apps."
+  },
+  {
+    "id": "2017",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are the benefits of TypeScript over JavaScript?",
+    "answer": "Static typing, better tooling, early error detection, and improved code maintainability."
+  },
+  {
+    "id": "2018",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the SOLID principle?",
+    "answer": "Five design principles for writing maintainable and scalable software."
+  },
+  {
+    "id": "2019",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of a build tool like Webpack?",
+    "answer": "To bundle and optimize assets like JavaScript and CSS for deployment."
+  },
+  {
+    "id": "2020",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a shallow copy and a deep copy?",
+    "answer": "Shallow copy duplicates references; deep copy duplicates all nested objects."
+  },
+  {
+    "id": "2021",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between SQL JOIN types?",
+    "answer": "INNER JOIN returns matching rows; LEFT/RIGHT JOIN include unmatched rows from one side."
+  },
+  {
+    "id": "2022",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a race condition?",
+    "answer": "A bug where the system's behavior depends on the sequence or timing of uncontrollable events."
+  },
+  {
+    "id": "2023",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is garbage collection in programming languages?",
+    "answer": "Automatic memory management that frees unused objects."
+  },
+  {
+    "id": "2024",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of a proxy server?",
+    "answer": "To act as an intermediary between clients and servers for caching, filtering, or security."
+  },
+  {
+    "id": "2025",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is OAuth?",
+    "answer": "An open standard for authorization, allowing apps to access resources on behalf of users."
+  },
+ {
+    "id": "2026",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between REST and GraphQL?",
+    "answer": "REST exposes multiple endpoints for different resources; GraphQL provides a single endpoint where clients specify exactly what data they need."
+  },
+  {
+    "id": "2027",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a monorepo and what are its benefits?",
+    "answer": "A monorepo stores multiple projects in a single repository, easing code sharing and dependency management."
+  },
+  {
+    "id": "2028",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between horizontal and vertical scaling?",
+    "answer": "Horizontal scaling adds more machines; vertical scaling upgrades existing machines with more resources."
+  },
+  {
+    "id": "2029",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is eventual consistency?",
+    "answer": "A consistency model where updates propagate asynchronously, and all replicas eventually become consistent."
+  },
+  {
+    "id": "2030",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a circuit breaker pattern?",
+    "answer": "A design pattern to prevent a system from trying to execute an operation likely to fail, improving resilience."
+  },
+  {
+    "id": "2031",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is dependency injection?",
+    "answer": "A technique to supply dependencies to a class or function from external sources rather than creating them internally."
+  },
+  {
+    "id": "2032",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a memory leak?",
+    "answer": "When a program unintentionally retains memory it no longer needs, causing increased usage over time."
+  },
+  {
+    "id": "2033",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are WebAssembly's advantages?",
+    "answer": "WebAssembly runs code at near-native speed, supports multiple languages, and integrates with JavaScript in browsers."
+  },
+  {
+    "id": "2034",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is rate limiting?",
+    "answer": "Controlling the number of requests a client can make in a given time to protect resources."
+  },
+  {
+    "id": "2035",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a fork and a clone in Git?",
+    "answer": "Fork creates a copy on a remote server for independent development; clone copies a repo locally."
+  },
+  {
+    "id": "2036",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a deadlock?",
+    "answer": "A situation where two or more processes are waiting indefinitely for each other to release resources."
+  },
+  {
+    "id": "2037",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of a reverse proxy?",
+    "answer": "It forwards client requests to backend servers and can provide load balancing, caching, and security."
+  },
+  {
+    "id": "2038",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a message queue and a topic in messaging systems?",
+    "answer": "Queues deliver messages to one consumer; topics broadcast messages to multiple subscribers."
+  },
+  {
+    "id": "2039",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a race condition and how can it be avoided?",
+    "answer": "It occurs when multiple threads access shared data concurrently; avoid with synchronization or locks."
+  },
+  {
+    "id": "2040",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the CAP theorem?",
+    "answer": "It states that in a distributed system, only two of Consistency, Availability, and Partition tolerance can be achieved simultaneously."
+  },
+  {
+    "id": "2041",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a schema migration?",
+    "answer": "The process of modifying database schema in a controlled, versioned way."
+  },
+  {
+    "id": "2042",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a binary search tree?",
+    "answer": "A tree data structure where each node has at most two children, with left child values less and right child values greater than the node."
+  },
+  {
+    "id": "2043",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is sharding in databases?",
+    "answer": "Partitioning a database into smaller, faster, more manageable pieces called shards."
+  },
+  {
+    "id": "2044",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is an idempotent operation?",
+    "answer": "An operation that can be performed multiple times without changing the result beyond the initial application."
+  },
+  {
+    "id": "2045",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a dead letter queue?",
+    "answer": "A queue that stores messages that could not be delivered or processed successfully."
+  },
+  {
+    "id": "2046",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a bloom filter?",
+    "answer": "A space-efficient probabilistic data structure used to test whether an element is in a set."
+  },
+  {
+    "id": "2047",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between encryption and hashing?",
+    "answer": "Encryption is reversible with a key; hashing is a one-way function producing fixed-size output."
+  },
+  {
+    "id": "2048",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the purpose of a CDN edge server?",
+    "answer": "To cache and serve content closer to users, reducing latency."
+  },
+  {
+    "id": "2049",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a thread pool?",
+    "answer": "A collection of pre-instantiated threads used to perform multiple tasks concurrently."
+  },
+  {
+    "id": "2050",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a callback hell and how can it be avoided?",
+    "answer": "A nested structure of callbacks making code hard to read; avoid using promises or async/await."
+  },
+  {
+    "id": "2051",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a virtual DOM?",
+    "answer": "An in-memory representation of the real DOM used to optimize updates in frameworks like React."
+  },
+  {
+    "id": "2052",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a promise and an observable?",
+    "answer": "Promise handles a single async value; observable can emit multiple values over time."
+  },
+  {
+    "id": "2053",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is memoization?",
+    "answer": "An optimization technique caching the result of expensive function calls."
+  },
+  {
+    "id": "2054",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is an API gateway?",
+    "answer": "A server that acts as a single entry point for multiple backend services."
+  },
+  {
+    "id": "2055",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is rate limiting and how is it implemented?",
+    "answer": "Controlling how often a client can make requests, usually by counting requests in a time window."
+  },
+  {
+    "id": "2056",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a rollback in database management?",
+    "answer": "Undoing a set of operations to maintain data integrity."
+  },
+  {
+    "id": "2057",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "answer": "Symmetric uses the same key for encrypt/decrypt; asymmetric uses a key pair (public/private)."
+  },
+  {
+    "id": "2058",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a zero-downtime deployment?",
+    "answer": "Releasing new software versions without interrupting service availability."
+  },
+  {
+    "id": "2059",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a bug and a feature request?",
+    "answer": "A bug is an error or fault in software; a feature request is a new desired functionality."
+  },
+  {
+    "id": "2060",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is eventual consistency in distributed databases?",
+    "answer": "A model where data becomes consistent across nodes after some time, not immediately."
+  },
+  {
+    "id": "2061",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a software design pattern?",
+    "answer": "A reusable solution to a common software design problem."
+  },
+  {
+    "id": "2062",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is containerization?",
+    "answer": "Packaging software with its dependencies into isolated units for consistent deployment."
+  },
+  {
+    "id": "2063",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a CDN and why use it?",
+    "answer": "Content Delivery Network, used to distribute content geographically closer to users."
+  },
+  {
+    "id": "2064",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is latency in networking?",
+    "answer": "The delay between sending and receiving data."
+  },
+  {
+    "id": "2065",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is load balancing?",
+    "answer": "Distributing incoming network traffic across multiple servers."
+  },
+  {
+    "id": "2066",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is OAuth 2.0?",
+    "answer": "An authorization framework enabling third-party applications to obtain limited access to user accounts."
+  },
+  {
+    "id": "2067",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a webhook?",
+    "answer": "A way for apps to send real-time data to other apps via HTTP callbacks."
+  },
+  {
+    "id": "2068",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is continuous integration (CI)?",
+    "answer": "Automating code integration and testing to detect problems early."
+  },
+  {
+    "id": "2069",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between a thread and a process?",
+    "answer": "A process is an independent program execution; a thread is a lightweight unit of a process."
+  },
+  {
+    "id": "2070",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is cross-site scripting (XSS)?",
+    "answer": "A security vulnerability where attackers inject malicious scripts into trusted websites."
+  },
+  {
+    "id": "2071",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is a data race?",
+    "answer": "When two or more threads access shared data simultaneously with at least one write."
+  },
+  {
+    "id": "2072",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is the difference between HTTP and HTTPS?",
+    "answer": "HTTPS encrypts data sent between client and server; HTTP does not."
   }
 ]
