@@ -9691,7 +9691,7 @@
     "id": "1385",
     "category": "regex",
     "difficulty": "medium",
-    "question": "What is the difference between `\b` and `\B`?",
+    "question": "What is the difference between `\\b` and `\\B`?",
     "answer": "`\\b` matches a word boundary; `\\B` matches a position that is not a word boundary."
   },
   {
@@ -9810,7 +9810,7 @@
     "id": "1402",
     "category": "regex",
     "difficulty": "hard",
-    "question": "What is the difference between `\s` and `\S`?",
+    "question": "What is the difference between `\\s` and `\\S`?",
     "answer": "`\\s` matches whitespace characters; `\\S` matches non-whitespace characters."
   },
   {
@@ -9887,7 +9887,7 @@
     "id": "1413",
     "category": "regex",
     "difficulty": "hard",
-    "question": "Explain the difference between `\w` and `[a-zA-Z0-9_]`.",
+    "question": "Explain the difference between `\\w` and `[a-zA-Z0-9_]`.",
     "answer": "`\\w` matches any word character including underscore; equivalent to `[a-zA-Z0-9_]`."
   },
   {
@@ -10413,7 +10413,7 @@
     "category": "prisma",
     "difficulty": "medium",
     "question": "How do you log Prisma Client queries?",
-    "answer": "Set environment variable `DEBUG="prisma:client"` or configure logging in Prisma Client options."
+    "answer": "Set environment variable `DEBUG=\"prisma:client\"` or configure logging in Prisma Client options."
   },
   {
     "id": "1489",
