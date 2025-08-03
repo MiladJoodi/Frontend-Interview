@@ -137,12 +137,7 @@ export default function Component() {
   const startIndex = (validCurrentPage - 1) * ITEMS_PER_PAGE
   const paginatedQuestions = filteredQuestions.slice(startIndex, startIndex + ITEMS_PER_PAGE)
 
-  // Update current page if it's invalid
-  useEffect(() => {
-    if (currentPage !== validCurrentPage && validCurrentPage >= 1) {
-      setCurrentPage(validCurrentPage)
-    }
-  }, [currentPage, validCurrentPage, totalPages])
+
 
   // Update categories count
   const categoriesWithCount = categories.map((cat) => ({
@@ -166,70 +161,43 @@ export default function Component() {
     }
   }
 
-  // Fixed pagination logic to prevent duplicate buttons
+  // Simple pagination logic
   const getPaginationButtons = (): (number | string)[] => {
     const buttons: (number | string)[] = []
     
-    // If total pages is 1 or less, don't show pagination
     if (totalPages <= 1) {
       return buttons
     }
-
-    // For small number of pages, show all pages
-    if (totalPages <= MAX_PAGINATION_BUTTONS) {
-      for (let i = 1; i <= totalPages; i++) {
-        buttons.push(i)
-      }
-      return buttons
-    }
-
-    // For larger number of pages, show smart pagination
-    const current = validCurrentPage
-    const total = totalPages
     
     // Always show first page
     buttons.push(1)
     
-    // Calculate the range around current page
-    const delta = Math.floor((MAX_PAGINATION_BUTTONS - 4) / 2) // Reserve space for first, last, and ellipsis
-    let start = Math.max(2, current - delta)
-    let end = Math.min(total - 1, current + delta)
+    // Show current page and 2 pages around it
+    const current = validCurrentPage
+    const start = Math.max(2, current - 1)
+    const end = Math.min(totalPages - 1, current + 1)
     
-    // Adjust if we're near the edges
-    if (start === 2) {
-      end = Math.min(total - 1, start + (MAX_PAGINATION_BUTTONS - 4))
-    } else if (end === total - 1) {
-      start = Math.max(2, end - (MAX_PAGINATION_BUTTONS - 4))
-    }
-    
-    // Add ellipsis after first page if needed
+    // Add ellipsis if there's a gap
     if (start > 2) {
       buttons.push("...")
     }
     
-    // Add middle pages (avoid duplicates)
+    // Add middle pages
     for (let i = start; i <= end; i++) {
-      if (i !== 1 && i !== total) { // Don't add first or last page here
-        buttons.push(i)
-      }
+      buttons.push(i)
     }
     
-    // Add ellipsis before last page if needed
-    if (end < total - 1) {
+    // Add ellipsis if there's a gap
+    if (end < totalPages - 1) {
       buttons.push("...")
     }
     
     // Always show last page
-    if (total > 1) {
-      buttons.push(total)
+    if (totalPages > 1) {
+      buttons.push(totalPages)
     }
     
-    // Ensure no duplicates
-    const uniqueButtons = buttons.filter((button, index, self) => 
-      self.indexOf(button) === index
-    )
-    
-    return uniqueButtons
+    return buttons
   }
 
   if (loading) {
@@ -357,56 +325,58 @@ export default function Component() {
             })}
           </Accordion>
         )}
-        {/* Pagination */}
+        {/* Simple Pagination */}
         {totalPages > 1 && (
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mt-8">
-            <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handlePageChange(validCurrentPage - 1)}
-                disabled={validCurrentPage === 1}
-                className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-              >
-                <ChevronLeft className="h-4 w-4 cursor-pointer" />
-                <span className="hidden sm:inline">Previous</span>
-              </Button>
+          <div className="flex justify-center items-center gap-2 mt-8">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handlePageChange(validCurrentPage - 1)}
+              disabled={validCurrentPage === 1}
+              className="bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              <span className="hidden sm:inline ml-1">Previous</span>
+            </Button>
 
-              <div className="flex gap-1">
-                {getPaginationButtons().map((page, index) =>
-                  page === "..." ? (
-                    <span key={index} className="px-2 py-1 text-muted-foreground">
+            <div className="flex gap-1">
+              {getPaginationButtons().map((page, index) => {
+                if (page === "...") {
+                  return (
+                    <span key={`ellipsis-${index}`} className="px-2 py-1 text-gray-500">
                       ...
                     </span>
-                  ) : (
-                    <Button
-                      key={page}
-                      variant={validCurrentPage === page ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => handlePageChange(page as number)}
-                      className={`cursor-pointer min-w-[35px] sm:min-w-[40px] text-xs sm:text-sm ${
-                        validCurrentPage === page
-                          ? "bg-gray-900 text-white hover:bg-gray-800" // Simple dark active style
-                          : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-                      }`}
-                    >
-                      {page}
-                    </Button>
-                  ),
-                )}
-              </div>
-
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handlePageChange(validCurrentPage + 1)}
-                disabled={validCurrentPage === totalPages}
-                className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-              >
-                <span className="hidden sm:inline">Next</span>
-                <ChevronRight className="h-4 w-4 cursor-pointer" />
-              </Button>
+                  )
+                }
+                
+                return (
+                  <Button
+                    key={`page-${page}`}
+                    variant={validCurrentPage === page ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => handlePageChange(page as number)}
+                    className={`min-w-[35px] sm:min-w-[40px] text-xs sm:text-sm ${
+                      validCurrentPage === page
+                        ? "bg-gray-900 text-white hover:bg-gray-800"
+                        : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+                    }`}
+                  >
+                    {page}
+                  </Button>
+                )
+              })}
             </div>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handlePageChange(validCurrentPage + 1)}
+              disabled={validCurrentPage === totalPages}
+              className="bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+            >
+              <span className="hidden sm:inline mr-1">Next</span>
+              <ChevronRight className="h-4 w-4" />
+            </Button>
           </div>
         )}
         {/* Footer */}
