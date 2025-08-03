@@ -1,1682 +1,1052 @@
 [
   {
-    "id": "react-1",
-    "category": "react",
-    "difficulty": "hard",
-    "question": "What is JSX in React?",
-    "answer": "JSX is a syntax extension for JavaScript that lets you write HTML-like code inside JavaScript files. It’s used with React to describe the UI structure."
-  },
-  {
-    "id": "react-2",
-    "category": "react",
-    "difficulty": "hard",
-    "question": "What is the virtual DOM in React?",
-    "answer": "The virtual DOM is a lightweight JavaScript representation of the real DOM. React uses it to optimize UI updates by diffing and patching only the changed parts."
-  },
-  {
-    "id": "react-3",
-    "category": "react",
-    "difficulty": "hard",
-    "question": "How do you manage state in React?",
-    "answer": "State in React can be managed using the useState hook, useReducer for complex state logic, or external libraries like Zustand or Redux."
-  },
-  {
-    "id": "react-4",
-    "category": "react",
-    "difficulty": "medium",
-    "question": "Sample question 4 for React?",
-    "answer": "Sample answer for React question 4."
-  },
-  {
-    "id": "react-5",
-    "category": "react",
+    "id": "1",
+    "category": "all",
     "difficulty": "easy",
-    "question": "Sample question 5 for React?",
-    "answer": "Sample answer for React question 5."
+    "question": "What is Next.js?",
+    "answer": "Next.js is a popular React framework designed for building scalable, production-ready web applications. It provides features like server-side rendering, static site generation, and API routes."
   },
   {
-    "id": "react-6",
-    "category": "react",
-    "difficulty": "hard",
-    "question": "Sample question 6 for React?",
-    "answer": "Sample answer for React question 6."
-  },
-  {
-    "id": "react-7",
-    "category": "react",
-    "difficulty": "medium",
-    "question": "Sample question 7 for React?",
-    "answer": "Sample answer for React question 7."
-  },
-  {
-    "id": "nextjs-1",
+    "id": "2",
     "category": "nextjs",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "What are the key features of Next.js?",
     "answer": "Key features of Next.js include: Server-Side Rendering (SSR), Static Site Generation (SSG), Incremental Static Regeneration (ISR), API Routes, File-based routing, Image Optimization, Automatic code splitting"
   },
   {
-    "id": "nextjs-2",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "How does file-based routing work in Next.js?",
-    "answer": "In Next.js, the file structure in the 'app' or 'pages' directory defines the routes of your application. Each file automatically becomes a route."
-  },
-  {
-    "id": "nextjs-3",
-    "category": "nextjs",
-    "difficulty": "medium",
-    "question": "What is Incremental Static Regeneration (ISR)?",
-    "answer": "ISR allows you to update static content after you’ve built your site. You can regenerate individual pages in the background as traffic comes in."
-  },
-  {
-    "id": "nextjs-4",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 4 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 4."
-  },
-  {
-    "id": "nextjs-5",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 5 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 5."
-  },
-  {
-    "id": "nextjs-6",
-    "category": "nextjs",
-    "difficulty": "medium",
-    "question": "Sample question 6 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 6."
-  },
-  {
-    "id": "nextjs-7",
-    "category": "nextjs",
-    "difficulty": "medium",
-    "question": "Sample question 7 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 7."
-  },
-  {
-    "id": "nextjs-8",
-    "category": "nextjs",
-    "difficulty": "medium",
-    "question": "Sample question 8 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 8."
-  },
-  {
-    "id": "nextjs-9",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 9 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 9."
-  },
-  {
-    "id": "nextjs-10",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 10 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 10."
-  },
-  {
-    "id": "nextjs-11",
-    "category": "nextjs",
-    "difficulty": "medium",
-    "question": "Sample question 11 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 11."
-  },
-  {
-    "id": "nextjs-12",
-    "category": "nextjs",
+    "id": "3",
+    "category": "react",
     "difficulty": "easy",
-    "question": "Sample question 12 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 12."
+    "question": "How is Next.js different from React.js?",
+    "answer": "While React.js is a library for building UIs, Next.js is a framework built on top of React, providing additional features such as SSR, SSG, and routing out of the box."
   },
   {
-    "id": "nextjs-13",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 13 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 13."
-  },
-  {
-    "id": "nextjs-14",
-    "category": "nextjs",
-    "difficulty": "easy",
-    "question": "Sample question 14 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 14."
-  },
-  {
-    "id": "nextjs-15",
-    "category": "nextjs",
-    "difficulty": "easy",
-    "question": "Sample question 15 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 15."
-  },
-  {
-    "id": "nextjs-16",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 16 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 16."
-  },
-  {
-    "id": "nextjs-17",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 17 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 17."
-  },
-  {
-    "id": "nextjs-18",
-    "category": "nextjs",
-    "difficulty": "hard",
-    "question": "Sample question 18 for Nextjs?",
-    "answer": "Sample answer for Nextjs question 18."
-  },
-  {
-    "id": "tailwindcss-1",
-    "category": "tailwindcss",
+    "id": "4",
+    "category": "react",
     "difficulty": "medium",
-    "question": "What is Tailwind CSS?",
-    "answer": "Tailwind CSS is a utility-first CSS framework that lets you style elements by applying pre-defined utility classes directly in your HTML or JSX."
+    "question": "What are React Hooks and why are they important?",
+    "answer": "React Hooks are functions that let you use state and other React features without writing a class. They provide a more direct API to React concepts like props, state, context, refs, and lifecycle."
   },
   {
-    "id": "tailwindcss-2",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "How does Tailwind improve development speed?",
-    "answer": "Tailwind speeds up development by reducing the need to write custom CSS, enabling rapid prototyping and consistent design using utility classes."
+    "id": "5",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between 'let', 'const', and 'var' in JavaScript?",
+    "answer": "'var' is function-scoped and hoisted. 'let' and 'const' are block-scoped. 'let' allows reassignment while 'const' doesn't. 'const' variables must be initialized during declaration."
   },
   {
-    "id": "tailwindcss-3",
-    "category": "tailwindcss",
+    "id": "6",
+    "category": "typescript",
     "difficulty": "medium",
-    "question": "Sample question 3 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 3."
+    "question": "What are the main benefits of using TypeScript over JavaScript?",
+    "answer": "TypeScript provides static typing, better tooling support, early error detection, improved code maintainability, better documentation through types, and advanced features like interfaces and generics."
   },
   {
-    "id": "tailwindcss-4",
+    "id": "7",
     "category": "tailwindcss",
     "difficulty": "easy",
-    "question": "Sample question 4 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 4."
+    "question": "What is Tailwind CSS and how does it differ from traditional CSS frameworks?",
+    "answer": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs directly in markup, rather than offering pre-designed components like Bootstrap."
   },
   {
-    "id": "tailwindcss-5",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 5 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 5."
-  },
-  {
-    "id": "tailwindcss-6",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 6 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 6."
-  },
-  {
-    "id": "tailwindcss-7",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 7 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 7."
-  },
-  {
-    "id": "tailwindcss-8",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 8 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 8."
-  },
-  {
-    "id": "tailwindcss-9",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 9 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 9."
-  },
-  {
-    "id": "tailwindcss-10",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 10 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 10."
-  },
-  {
-    "id": "tailwindcss-11",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 11 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 11."
-  },
-  {
-    "id": "tailwindcss-12",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 12 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 12."
-  },
-  {
-    "id": "tailwindcss-13",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 13 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 13."
-  },
-  {
-    "id": "tailwindcss-14",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 14 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 14."
-  },
-  {
-    "id": "tailwindcss-15",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 15 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 15."
-  },
-  {
-    "id": "tailwindcss-16",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 16 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 16."
-  },
-  {
-    "id": "tailwindcss-17",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 17 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 17."
-  },
-  {
-    "id": "tailwindcss-18",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 18 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 18."
-  },
-  {
-    "id": "tailwindcss-19",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 19 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 19."
-  },
-  {
-    "id": "tailwindcss-20",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 20 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 20."
-  },
-  {
-    "id": "tailwindcss-21",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 21 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 21."
-  },
-  {
-    "id": "tailwindcss-22",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 22 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 22."
-  },
-  {
-    "id": "tailwindcss-23",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 23 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 23."
-  },
-  {
-    "id": "tailwindcss-24",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 24 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 24."
-  },
-  {
-    "id": "tailwindcss-25",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 25 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 25."
-  },
-  {
-    "id": "tailwindcss-26",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 26 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 26."
-  },
-  {
-    "id": "tailwindcss-27",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 27 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 27."
-  },
-  {
-    "id": "tailwindcss-28",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 28 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 28."
-  },
-  {
-    "id": "tailwindcss-29",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 29 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 29."
-  },
-  {
-    "id": "tailwindcss-30",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 30 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 30."
-  },
-  {
-    "id": "tailwindcss-31",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 31 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 31."
-  },
-  {
-    "id": "tailwindcss-32",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 32 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 32."
-  },
-  {
-    "id": "tailwindcss-33",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 33 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 33."
-  },
-  {
-    "id": "tailwindcss-34",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 34 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 34."
-  },
-  {
-    "id": "tailwindcss-35",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 35 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 35."
-  },
-  {
-    "id": "tailwindcss-36",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 36 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 36."
-  },
-  {
-    "id": "tailwindcss-37",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 37 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 37."
-  },
-  {
-    "id": "tailwindcss-38",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 38 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 38."
-  },
-  {
-    "id": "tailwindcss-39",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 39 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 39."
-  },
-  {
-    "id": "tailwindcss-40",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 40 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 40."
-  },
-  {
-    "id": "tailwindcss-41",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 41 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 41."
-  },
-  {
-    "id": "tailwindcss-42",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 42 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 42."
-  },
-  {
-    "id": "tailwindcss-43",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 43 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 43."
-  },
-  {
-    "id": "tailwindcss-44",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 44 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 44."
-  },
-  {
-    "id": "tailwindcss-45",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 45 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 45."
-  },
-  {
-    "id": "tailwindcss-46",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 46 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 46."
-  },
-  {
-    "id": "tailwindcss-47",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 47 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 47."
-  },
-  {
-    "id": "tailwindcss-48",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 48 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 48."
-  },
-  {
-    "id": "tailwindcss-49",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 49 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 49."
-  },
-  {
-    "id": "tailwindcss-50",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 50 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 50."
-  },
-  {
-    "id": "tailwindcss-51",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 51 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 51."
-  },
-  {
-    "id": "tailwindcss-52",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 52 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 52."
-  },
-  {
-    "id": "tailwindcss-53",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 53 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 53."
-  },
-  {
-    "id": "tailwindcss-54",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 54 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 54."
-  },
-  {
-    "id": "tailwindcss-55",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 55 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 55."
-  },
-  {
-    "id": "tailwindcss-56",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 56 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 56."
-  },
-  {
-    "id": "tailwindcss-57",
-    "category": "tailwindcss",
-    "difficulty": "medium",
-    "question": "Sample question 57 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 57."
-  },
-  {
-    "id": "tailwindcss-58",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 58 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 58."
-  },
-  {
-    "id": "tailwindcss-59",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 59 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 59."
-  },
-  {
-    "id": "tailwindcss-60",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 60 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 60."
-  },
-  {
-    "id": "tailwindcss-61",
-    "category": "tailwindcss",
-    "difficulty": "hard",
-    "question": "Sample question 61 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 61."
-  },
-  {
-    "id": "tailwindcss-62",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 62 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 62."
-  },
-  {
-    "id": "tailwindcss-63",
-    "category": "tailwindcss",
-    "difficulty": "easy",
-    "question": "Sample question 63 for Tailwindcss?",
-    "answer": "Sample answer for Tailwindcss question 63."
-  },
-  {
-    "id": "css-1",
+    "id": "8",
     "category": "css",
     "difficulty": "medium",
-    "question": "What is specificity in CSS?",
-    "answer": "Specificity determines which CSS rule applies when multiple rules target the same element. It is based on the type of selectors used."
+    "question": "Explain the CSS Box Model.",
+    "answer": "The CSS Box Model describes how elements are laid out, consisting of: content, padding, border, and margin. It determines how space is distributed around an element and how elements interact with each other."
   },
   {
-    "id": "css-2",
-    "category": "css",
-    "difficulty": "easy",
-    "question": "Sample question 2 for Css?",
-    "answer": "Sample answer for Css question 2."
-  },
-  {
-    "id": "css-3",
-    "category": "css",
-    "difficulty": "hard",
-    "question": "Sample question 3 for Css?",
-    "answer": "Sample answer for Css question 3."
-  },
-  {
-    "id": "css-4",
-    "category": "css",
-    "difficulty": "hard",
-    "question": "Sample question 4 for Css?",
-    "answer": "Sample answer for Css question 4."
-  },
-  {
-    "id": "css-5",
-    "category": "css",
-    "difficulty": "easy",
-    "question": "Sample question 5 for Css?",
-    "answer": "Sample answer for Css question 5."
-  },
-  {
-    "id": "javascript-1",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "What is a closure in JavaScript?",
-    "answer": "A closure is a function that retains access to variables from its lexical scope, even when executed outside of that scope."
-  },
-  {
-    "id": "javascript-2",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "What is hoisting in JavaScript?",
-    "answer": "Hoisting is JavaScript’s default behavior of moving declarations to the top of the current scope."
-  },
-  {
-    "id": "javascript-3",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 3 for Javascript?",
-    "answer": "Sample answer for Javascript question 3."
-  },
-  {
-    "id": "javascript-4",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 4 for Javascript?",
-    "answer": "Sample answer for Javascript question 4."
-  },
-  {
-    "id": "javascript-5",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 5 for Javascript?",
-    "answer": "Sample answer for Javascript question 5."
-  },
-  {
-    "id": "javascript-6",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 6 for Javascript?",
-    "answer": "Sample answer for Javascript question 6."
-  },
-  {
-    "id": "javascript-7",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 7 for Javascript?",
-    "answer": "Sample answer for Javascript question 7."
-  },
-  {
-    "id": "javascript-8",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 8 for Javascript?",
-    "answer": "Sample answer for Javascript question 8."
-  },
-  {
-    "id": "javascript-9",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 9 for Javascript?",
-    "answer": "Sample answer for Javascript question 9."
-  },
-  {
-    "id": "javascript-10",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 10 for Javascript?",
-    "answer": "Sample answer for Javascript question 10."
-  },
-  {
-    "id": "javascript-11",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 11 for Javascript?",
-    "answer": "Sample answer for Javascript question 11."
-  },
-  {
-    "id": "javascript-12",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 12 for Javascript?",
-    "answer": "Sample answer for Javascript question 12."
-  },
-  {
-    "id": "javascript-13",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 13 for Javascript?",
-    "answer": "Sample answer for Javascript question 13."
-  },
-  {
-    "id": "javascript-14",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 14 for Javascript?",
-    "answer": "Sample answer for Javascript question 14."
-  },
-  {
-    "id": "javascript-15",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 15 for Javascript?",
-    "answer": "Sample answer for Javascript question 15."
-  },
-  {
-    "id": "javascript-16",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 16 for Javascript?",
-    "answer": "Sample answer for Javascript question 16."
-  },
-  {
-    "id": "javascript-17",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 17 for Javascript?",
-    "answer": "Sample answer for Javascript question 17."
-  },
-  {
-    "id": "javascript-18",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 18 for Javascript?",
-    "answer": "Sample answer for Javascript question 18."
-  },
-  {
-    "id": "javascript-19",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 19 for Javascript?",
-    "answer": "Sample answer for Javascript question 19."
-  },
-  {
-    "id": "javascript-20",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 20 for Javascript?",
-    "answer": "Sample answer for Javascript question 20."
-  },
-  {
-    "id": "javascript-21",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 21 for Javascript?",
-    "answer": "Sample answer for Javascript question 21."
-  },
-  {
-    "id": "javascript-22",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 22 for Javascript?",
-    "answer": "Sample answer for Javascript question 22."
-  },
-  {
-    "id": "javascript-23",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 23 for Javascript?",
-    "answer": "Sample answer for Javascript question 23."
-  },
-  {
-    "id": "javascript-24",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 24 for Javascript?",
-    "answer": "Sample answer for Javascript question 24."
-  },
-  {
-    "id": "javascript-25",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 25 for Javascript?",
-    "answer": "Sample answer for Javascript question 25."
-  },
-  {
-    "id": "javascript-26",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 26 for Javascript?",
-    "answer": "Sample answer for Javascript question 26."
-  },
-  {
-    "id": "javascript-27",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 27 for Javascript?",
-    "answer": "Sample answer for Javascript question 27."
-  },
-  {
-    "id": "javascript-28",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 28 for Javascript?",
-    "answer": "Sample answer for Javascript question 28."
-  },
-  {
-    "id": "javascript-29",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 29 for Javascript?",
-    "answer": "Sample answer for Javascript question 29."
-  },
-  {
-    "id": "javascript-30",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 30 for Javascript?",
-    "answer": "Sample answer for Javascript question 30."
-  },
-  {
-    "id": "javascript-31",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 31 for Javascript?",
-    "answer": "Sample answer for Javascript question 31."
-  },
-  {
-    "id": "javascript-32",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 32 for Javascript?",
-    "answer": "Sample answer for Javascript question 32."
-  },
-  {
-    "id": "javascript-33",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 33 for Javascript?",
-    "answer": "Sample answer for Javascript question 33."
-  },
-  {
-    "id": "javascript-34",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 34 for Javascript?",
-    "answer": "Sample answer for Javascript question 34."
-  },
-  {
-    "id": "javascript-35",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 35 for Javascript?",
-    "answer": "Sample answer for Javascript question 35."
-  },
-  {
-    "id": "javascript-36",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 36 for Javascript?",
-    "answer": "Sample answer for Javascript question 36."
-  },
-  {
-    "id": "javascript-37",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 37 for Javascript?",
-    "answer": "Sample answer for Javascript question 37."
-  },
-  {
-    "id": "javascript-38",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 38 for Javascript?",
-    "answer": "Sample answer for Javascript question 38."
-  },
-  {
-    "id": "javascript-39",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 39 for Javascript?",
-    "answer": "Sample answer for Javascript question 39."
-  },
-  {
-    "id": "javascript-40",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 40 for Javascript?",
-    "answer": "Sample answer for Javascript question 40."
-  },
-  {
-    "id": "javascript-41",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 41 for Javascript?",
-    "answer": "Sample answer for Javascript question 41."
-  },
-  {
-    "id": "javascript-42",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 42 for Javascript?",
-    "answer": "Sample answer for Javascript question 42."
-  },
-  {
-    "id": "javascript-43",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 43 for Javascript?",
-    "answer": "Sample answer for Javascript question 43."
-  },
-  {
-    "id": "javascript-44",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 44 for Javascript?",
-    "answer": "Sample answer for Javascript question 44."
-  },
-  {
-    "id": "javascript-45",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 45 for Javascript?",
-    "answer": "Sample answer for Javascript question 45."
-  },
-  {
-    "id": "javascript-46",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 46 for Javascript?",
-    "answer": "Sample answer for Javascript question 46."
-  },
-  {
-    "id": "javascript-47",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 47 for Javascript?",
-    "answer": "Sample answer for Javascript question 47."
-  },
-  {
-    "id": "javascript-48",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 48 for Javascript?",
-    "answer": "Sample answer for Javascript question 48."
-  },
-  {
-    "id": "javascript-49",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 49 for Javascript?",
-    "answer": "Sample answer for Javascript question 49."
-  },
-  {
-    "id": "javascript-50",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 50 for Javascript?",
-    "answer": "Sample answer for Javascript question 50."
-  },
-  {
-    "id": "javascript-51",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 51 for Javascript?",
-    "answer": "Sample answer for Javascript question 51."
-  },
-  {
-    "id": "javascript-52",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 52 for Javascript?",
-    "answer": "Sample answer for Javascript question 52."
-  },
-  {
-    "id": "javascript-53",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 53 for Javascript?",
-    "answer": "Sample answer for Javascript question 53."
-  },
-  {
-    "id": "javascript-54",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 54 for Javascript?",
-    "answer": "Sample answer for Javascript question 54."
-  },
-  {
-    "id": "javascript-55",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 55 for Javascript?",
-    "answer": "Sample answer for Javascript question 55."
-  },
-  {
-    "id": "javascript-56",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 56 for Javascript?",
-    "answer": "Sample answer for Javascript question 56."
-  },
-  {
-    "id": "javascript-57",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 57 for Javascript?",
-    "answer": "Sample answer for Javascript question 57."
-  },
-  {
-    "id": "javascript-58",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 58 for Javascript?",
-    "answer": "Sample answer for Javascript question 58."
-  },
-  {
-    "id": "javascript-59",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 59 for Javascript?",
-    "answer": "Sample answer for Javascript question 59."
-  },
-  {
-    "id": "javascript-60",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 60 for Javascript?",
-    "answer": "Sample answer for Javascript question 60."
-  },
-  {
-    "id": "javascript-61",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 61 for Javascript?",
-    "answer": "Sample answer for Javascript question 61."
-  },
-  {
-    "id": "javascript-62",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 62 for Javascript?",
-    "answer": "Sample answer for Javascript question 62."
-  },
-  {
-    "id": "javascript-63",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 63 for Javascript?",
-    "answer": "Sample answer for Javascript question 63."
-  },
-  {
-    "id": "javascript-64",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 64 for Javascript?",
-    "answer": "Sample answer for Javascript question 64."
-  },
-  {
-    "id": "javascript-65",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 65 for Javascript?",
-    "answer": "Sample answer for Javascript question 65."
-  },
-  {
-    "id": "javascript-66",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 66 for Javascript?",
-    "answer": "Sample answer for Javascript question 66."
-  },
-  {
-    "id": "javascript-67",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 67 for Javascript?",
-    "answer": "Sample answer for Javascript question 67."
-  },
-  {
-    "id": "javascript-68",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 68 for Javascript?",
-    "answer": "Sample answer for Javascript question 68."
-  },
-  {
-    "id": "javascript-69",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 69 for Javascript?",
-    "answer": "Sample answer for Javascript question 69."
-  },
-  {
-    "id": "javascript-70",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 70 for Javascript?",
-    "answer": "Sample answer for Javascript question 70."
-  },
-  {
-    "id": "javascript-71",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 71 for Javascript?",
-    "answer": "Sample answer for Javascript question 71."
-  },
-  {
-    "id": "javascript-72",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 72 for Javascript?",
-    "answer": "Sample answer for Javascript question 72."
-  },
-  {
-    "id": "javascript-73",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 73 for Javascript?",
-    "answer": "Sample answer for Javascript question 73."
-  },
-  {
-    "id": "javascript-74",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 74 for Javascript?",
-    "answer": "Sample answer for Javascript question 74."
-  },
-  {
-    "id": "javascript-75",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 75 for Javascript?",
-    "answer": "Sample answer for Javascript question 75."
-  },
-  {
-    "id": "javascript-76",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 76 for Javascript?",
-    "answer": "Sample answer for Javascript question 76."
-  },
-  {
-    "id": "javascript-77",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 77 for Javascript?",
-    "answer": "Sample answer for Javascript question 77."
-  },
-  {
-    "id": "javascript-78",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 78 for Javascript?",
-    "answer": "Sample answer for Javascript question 78."
-  },
-  {
-    "id": "javascript-79",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 79 for Javascript?",
-    "answer": "Sample answer for Javascript question 79."
-  },
-  {
-    "id": "javascript-80",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 80 for Javascript?",
-    "answer": "Sample answer for Javascript question 80."
-  },
-  {
-    "id": "javascript-81",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 81 for Javascript?",
-    "answer": "Sample answer for Javascript question 81."
-  },
-  {
-    "id": "javascript-82",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 82 for Javascript?",
-    "answer": "Sample answer for Javascript question 82."
-  },
-  {
-    "id": "javascript-83",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 83 for Javascript?",
-    "answer": "Sample answer for Javascript question 83."
-  },
-  {
-    "id": "javascript-84",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 84 for Javascript?",
-    "answer": "Sample answer for Javascript question 84."
-  },
-  {
-    "id": "javascript-85",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 85 for Javascript?",
-    "answer": "Sample answer for Javascript question 85."
-  },
-  {
-    "id": "javascript-86",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 86 for Javascript?",
-    "answer": "Sample answer for Javascript question 86."
-  },
-  {
-    "id": "javascript-87",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 87 for Javascript?",
-    "answer": "Sample answer for Javascript question 87."
-  },
-  {
-    "id": "javascript-88",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 88 for Javascript?",
-    "answer": "Sample answer for Javascript question 88."
-  },
-  {
-    "id": "javascript-89",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 89 for Javascript?",
-    "answer": "Sample answer for Javascript question 89."
-  },
-  {
-    "id": "javascript-90",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 90 for Javascript?",
-    "answer": "Sample answer for Javascript question 90."
-  },
-  {
-    "id": "javascript-91",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 91 for Javascript?",
-    "answer": "Sample answer for Javascript question 91."
-  },
-  {
-    "id": "javascript-92",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 92 for Javascript?",
-    "answer": "Sample answer for Javascript question 92."
-  },
-  {
-    "id": "javascript-93",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 93 for Javascript?",
-    "answer": "Sample answer for Javascript question 93."
-  },
-  {
-    "id": "javascript-94",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 94 for Javascript?",
-    "answer": "Sample answer for Javascript question 94."
-  },
-  {
-    "id": "javascript-95",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 95 for Javascript?",
-    "answer": "Sample answer for Javascript question 95."
-  },
-  {
-    "id": "javascript-96",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 96 for Javascript?",
-    "answer": "Sample answer for Javascript question 96."
-  },
-  {
-    "id": "javascript-97",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 97 for Javascript?",
-    "answer": "Sample answer for Javascript question 97."
-  },
-  {
-    "id": "javascript-98",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 98 for Javascript?",
-    "answer": "Sample answer for Javascript question 98."
-  },
-  {
-    "id": "javascript-99",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 99 for Javascript?",
-    "answer": "Sample answer for Javascript question 99."
-  },
-  {
-    "id": "javascript-100",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 100 for Javascript?",
-    "answer": "Sample answer for Javascript question 100."
-  },
-  {
-    "id": "javascript-101",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 101 for Javascript?",
-    "answer": "Sample answer for Javascript question 101."
-  },
-  {
-    "id": "javascript-102",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 102 for Javascript?",
-    "answer": "Sample answer for Javascript question 102."
-  },
-  {
-    "id": "javascript-103",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 103 for Javascript?",
-    "answer": "Sample answer for Javascript question 103."
-  },
-  {
-    "id": "javascript-104",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 104 for Javascript?",
-    "answer": "Sample answer for Javascript question 104."
-  },
-  {
-    "id": "javascript-105",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 105 for Javascript?",
-    "answer": "Sample answer for Javascript question 105."
-  },
-  {
-    "id": "javascript-106",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 106 for Javascript?",
-    "answer": "Sample answer for Javascript question 106."
-  },
-  {
-    "id": "javascript-107",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 107 for Javascript?",
-    "answer": "Sample answer for Javascript question 107."
-  },
-  {
-    "id": "javascript-108",
-    "category": "javascript",
-    "difficulty": "hard",
-    "question": "Sample question 108 for Javascript?",
-    "answer": "Sample answer for Javascript question 108."
-  },
-  {
-    "id": "javascript-109",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 109 for Javascript?",
-    "answer": "Sample answer for Javascript question 109."
-  },
-  {
-    "id": "javascript-110",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 110 for Javascript?",
-    "answer": "Sample answer for Javascript question 110."
-  },
-  {
-    "id": "javascript-111",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 111 for Javascript?",
-    "answer": "Sample answer for Javascript question 111."
-  },
-  {
-    "id": "javascript-112",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 112 for Javascript?",
-    "answer": "Sample answer for Javascript question 112."
-  },
-  {
-    "id": "javascript-113",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 113 for Javascript?",
-    "answer": "Sample answer for Javascript question 113."
-  },
-  {
-    "id": "javascript-114",
-    "category": "javascript",
-    "difficulty": "easy",
-    "question": "Sample question 114 for Javascript?",
-    "answer": "Sample answer for Javascript question 114."
-  },
-  {
-    "id": "javascript-115",
-    "category": "javascript",
-    "difficulty": "medium",
-    "question": "Sample question 115 for Javascript?",
-    "answer": "Sample answer for Javascript question 115."
-  },
-  {
-    "id": "html-1",
+    "id": "9",
     "category": "html",
     "difficulty": "easy",
-    "question": "What is the purpose of the <meta> tag in HTML?",
-    "answer": "The <meta> tag provides metadata about the HTML document, such as character encoding, viewport settings, and SEO-related info."
+    "question": "What is the purpose of the DOCTYPE declaration in HTML?",
+    "answer": "The DOCTYPE declaration tells the web browser which version of HTML the page is written in, ensuring the page is rendered in standards mode rather than quirks mode."
   },
   {
-    "id": "typescript-1",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "What is the difference between `interface` and `type` in TypeScript?",
-    "answer": "`interface` is better for declaring shapes of objects and can be extended. `type` is more flexible and can represent unions, intersections, etc."
-  },
-  {
-    "id": "typescript-2",
-    "category": "typescript",
+    "id": "10",
+    "category": "sass",
     "difficulty": "medium",
-    "question": "Sample question 2 for Typescript?",
-    "answer": "Sample answer for Typescript question 2."
+    "question": "What are the main features of Sass that make it useful for CSS development?",
+    "answer": "Sass provides variables, nesting, mixins, functions, inheritance, operators, and other features that make CSS more maintainable and easier to write."
   },
   {
-    "id": "typescript-3",
-    "category": "typescript",
+    "id": "11",
+    "category": "regex",
     "difficulty": "hard",
-    "question": "Sample question 3 for Typescript?",
-    "answer": "Sample answer for Typescript question 3."
+    "question": "How would you write a regular expression to validate an email address?",
+    "answer": "A basic email regex: /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/. Note that complete email validation is complex and often better handled with libraries or simple confirmation emails."
   },
   {
-    "id": "typescript-4",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 4 for Typescript?",
-    "answer": "Sample answer for Typescript question 4."
+    "id": "12",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "What is Prisma ORM and how does it differ from traditional ORMs?",
+    "answer": "Prisma is a next-generation ORM that provides a type-safe database client, auto-generated queries, and a schema definition language. It differs from traditional ORMs by not using active record or data mapper patterns."
   },
   {
-    "id": "typescript-5",
-    "category": "typescript",
+    "id": "13",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "What are the key features of Drizzle ORM?",
+    "answer": "Drizzle ORM is a lightweight ORM with type safety, SQL-like syntax, schema migrations, and support for multiple databases. It's designed to be simple and close to SQL while providing TypeScript benefits."
+  },
+  {
+    "id": "14",
+    "category": "backend",
     "difficulty": "easy",
-    "question": "Sample question 5 for Typescript?",
-    "answer": "Sample answer for Typescript question 5."
+    "question": "What is the difference between authentication and authorization?",
+    "answer": "Authentication verifies who a user is (login), while authorization determines what resources a user can access and what actions they can perform."
   },
   {
-    "id": "typescript-6",
-    "category": "typescript",
+    "id": "15",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the event loop in Node.js.",
+    "answer": "The event loop is what allows Node.js to perform non-blocking I/O operations despite being single-threaded. It handles asynchronous callbacks by offloading operations when possible and processing events in phases."
+  },
+  {
+    "id": "16",
+    "category": "express",
     "difficulty": "easy",
-    "question": "Sample question 6 for Typescript?",
-    "answer": "Sample answer for Typescript question 6."
+    "question": "What is Express.js and what is it commonly used for?",
+    "answer": "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications, particularly for creating APIs."
   },
   {
-    "id": "typescript-7",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 7 for Typescript?",
-    "answer": "Sample answer for Typescript question 7."
-  },
-  {
-    "id": "typescript-8",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 8 for Typescript?",
-    "answer": "Sample answer for Typescript question 8."
-  },
-  {
-    "id": "typescript-9",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 9 for Typescript?",
-    "answer": "Sample answer for Typescript question 9."
-  },
-  {
-    "id": "typescript-10",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 10 for Typescript?",
-    "answer": "Sample answer for Typescript question 10."
-  },
-  {
-    "id": "typescript-11",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 11 for Typescript?",
-    "answer": "Sample answer for Typescript question 11."
-  },
-  {
-    "id": "typescript-12",
-    "category": "typescript",
+    "id": "17",
+    "category": "other",
     "difficulty": "easy",
-    "question": "Sample question 12 for Typescript?",
-    "answer": "Sample answer for Typescript question 12."
+    "question": "What is Git and why is it important for developers?",
+    "answer": "Git is a distributed version control system that tracks changes in source code during development. It enables collaboration, maintains history, and helps manage different versions of a project."
   },
   {
-    "id": "typescript-13",
+    "id": "18",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain React Fiber architecture.",
+    "answer": "React Fiber is a complete rewrite of React's core algorithm. It enables features like incremental rendering, better handling of animations, and the ability to split rendering work into chunks and spread it over multiple frames."
+  },
+  {
+    "id": "19",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle static site generation (SSG) and server-side rendering (SSR) differently?",
+    "answer": "SSG generates HTML at build time which is reused on each request, ideal for content that doesn't change often. SSR generates HTML on each request, better for frequently updated or personalized content."
+  },
+  {
+    "id": "20",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event delegation pattern in JavaScript?",
+    "answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. Events bubble up and can be handled based on the target element."
+  },
+  {
+    "id": "21",
     "category": "typescript",
     "difficulty": "hard",
-    "question": "Sample question 13 for Typescript?",
-    "answer": "Sample answer for Typescript question 13."
+    "question": "What are discriminated unions in TypeScript and how are they useful?",
+    "answer": "Discriminated unions are a pattern where a common property (the discriminant) is used to distinguish between different object shapes. This allows TypeScript to narrow types accurately in conditional blocks."
   },
   {
-    "id": "typescript-14",
-    "category": "typescript",
+    "id": "22",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How would you implement a responsive grid layout in Tailwind CSS?",
+    "answer": "Use the 'grid' class with responsive prefixes like 'md:grid-cols-3' for different breakpoints. Tailwind provides utilities for grid columns, rows, gaps, and alignment that can be combined responsively."
+  },
+  {
+    "id": "23",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "Explain how CSS specificity works.",
+    "answer": "CSS specificity determines which styles are applied when multiple rules target the same element. It's calculated based on selector types: inline styles (1000), IDs (100), classes/attributes (10), elements/pseudo-elements (1)."
+  },
+  {
+    "id": "24",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are semantic HTML elements and why are they important?",
+    "answer": "Semantic elements (like <header>, <article>, <nav>) clearly describe their meaning to both browser and developer. They improve accessibility, SEO, and make code more readable and maintainable."
+  },
+  {
+    "id": "25",
+    "category": "sass",
     "difficulty": "easy",
-    "question": "Sample question 14 for Typescript?",
-    "answer": "Sample answer for Typescript question 14."
+    "question": "How do you create and use variables in Sass?",
+    "answer": "Variables in Sass are declared with $ followed by the name: $primary-color: #333;. They're used by referencing the variable name: color: $primary-color;."
   },
   {
-    "id": "typescript-15",
-    "category": "typescript",
+    "id": "26",
+    "category": "regex",
     "difficulty": "medium",
-    "question": "Sample question 15 for Typescript?",
-    "answer": "Sample answer for Typescript question 15."
+    "question": "How would you use regex to find all numbers in a string?",
+    "answer": "In JavaScript: const numbers = str.match(/\\d+/g); This will return an array of all sequences of digits in the string."
   },
   {
-    "id": "typescript-16",
-    "category": "typescript",
-    "difficulty": "easy",
-    "question": "Sample question 16 for Typescript?",
-    "answer": "Sample answer for Typescript question 16."
-  },
-  {
-    "id": "typescript-17",
-    "category": "typescript",
+    "id": "27",
+    "category": "prisma orm",
     "difficulty": "hard",
-    "question": "Sample question 17 for Typescript?",
-    "answer": "Sample answer for Typescript question 17."
+    "question": "How does Prisma handle database migrations?",
+    "answer": "Prisma Migrate is a tool that generates and executes SQL migration files based on changes to your Prisma schema. It keeps track of applied migrations and can generate rollback migrations."
   },
   {
-    "id": "typescript-18",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 18 for Typescript?",
-    "answer": "Sample answer for Typescript question 18."
-  },
-  {
-    "id": "typescript-19",
-    "category": "typescript",
+    "id": "28",
+    "category": "drizzle orm",
     "difficulty": "hard",
-    "question": "Sample question 19 for Typescript?",
-    "answer": "Sample answer for Typescript question 19."
+    "question": "How does Drizzle ORM handle relations between tables?",
+    "answer": "Drizzle handles relations through its schema definition, allowing you to define one-to-one, one-to-many, and many-to-many relationships with type safety, which can then be queried with joins."
   },
   {
-    "id": "typescript-20",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 20 for Typescript?",
-    "answer": "Sample answer for Typescript question 20."
-  },
-  {
-    "id": "typescript-21",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 21 for Typescript?",
-    "answer": "Sample answer for Typescript question 21."
-  },
-  {
-    "id": "typescript-22",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 22 for Typescript?",
-    "answer": "Sample answer for Typescript question 22."
-  },
-  {
-    "id": "typescript-23",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 23 for Typescript?",
-    "answer": "Sample answer for Typescript question 23."
-  },
-  {
-    "id": "typescript-24",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 24 for Typescript?",
-    "answer": "Sample answer for Typescript question 24."
-  },
-  {
-    "id": "typescript-25",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 25 for Typescript?",
-    "answer": "Sample answer for Typescript question 25."
-  },
-  {
-    "id": "typescript-26",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 26 for Typescript?",
-    "answer": "Sample answer for Typescript question 26."
-  },
-  {
-    "id": "typescript-27",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 27 for Typescript?",
-    "answer": "Sample answer for Typescript question 27."
-  },
-  {
-    "id": "typescript-28",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 28 for Typescript?",
-    "answer": "Sample answer for Typescript question 28."
-  },
-  {
-    "id": "typescript-29",
-    "category": "typescript",
-    "difficulty": "hard",
-    "question": "Sample question 29 for Typescript?",
-    "answer": "Sample answer for Typescript question 29."
-  },
-  {
-    "id": "typescript-30",
-    "category": "typescript",
-    "difficulty": "medium",
-    "question": "Sample question 30 for Typescript?",
-    "answer": "Sample answer for Typescript question 30."
-  },
-  {
-    "id": "backend-1",
+    "id": "29",
     "category": "backend",
     "difficulty": "medium",
-    "question": "What is REST in backend development?",
-    "answer": "REST (Representational State Transfer) is an architectural style for building web services using standard HTTP methods like GET, POST, PUT, DELETE."
+    "question": "What is JWT and how is it used in authentication?",
+    "answer": "JSON Web Tokens (JWT) are compact, URL-safe tokens that represent claims between parties. They consist of a header, payload, and signature, and are commonly used for stateless authentication."
+  },
+  {
+    "id": "30",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What are worker threads in Node.js and when would you use them?",
+    "answer": "Worker threads allow running JavaScript in parallel. They're useful for CPU-intensive tasks that would otherwise block the event loop, though I/O operations are still better handled asynchronously."
+  },
+  {
+    "id": "31",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is middleware in Express.js?",
+    "answer": "Middleware are functions that have access to the request, response, and next function in the application's request-response cycle. They can execute code, modify objects, or end the request-response cycle."
+  },
+  {
+    "id": "32",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are the differences between HTTP/1.1 and HTTP/2?",
+    "answer": "HTTP/2 introduces multiplexing (multiple requests over a single connection), header compression, server push, binary protocol, and stream prioritization, improving performance over HTTP/1.1."
+  },
+  {
+    "id": "33",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the Virtual DOM in React?",
+    "answer": "The Virtual DOM is a lightweight copy of the actual DOM that React maintains. When state changes, React compares the new Virtual DOM with the previous one (diffing) and efficiently updates only the changed parts of the real DOM (reconciliation)."
+  },
+  {
+    "id": "34",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are API Routes in Next.js?",
+    "answer": "API Routes allow you to create API endpoints as Node.js serverless functions within your Next.js application. Files in the 'pages/api' directory are treated as API endpoints instead of pages."
+  },
+  {
+    "id": "35",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain the concept of closures in JavaScript.",
+    "answer": "A closure is a function that remembers its outer variables and can access them even after the outer function has returned. Closures are created every time a function is created, at function creation time."
+  },
+  {
+    "id": "36",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are generics in TypeScript and when would you use them?",
+    "answer": "Generics allow creating reusable components that work with multiple types while maintaining type safety. They're useful when you want to preserve type information when working with collections, utility functions, or reusable components."
+  },
+  {
+    "id": "37",
+    "category": "tailwindcss",
+    "difficulty": "hard",
+    "question": "How would you implement dark mode using Tailwind CSS?",
+    "answer": "Use the 'dark:' variant prefix with the 'dark' mode configuration set to 'class' in tailwind.config.js. Then toggle a 'dark' class on the HTML element, and style elements with classes like 'dark:bg-gray-800'."
+  },
+  {
+    "id": "38",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is CSS Flexbox and when would you use it?",
+    "answer": "Flexbox is a layout model that allows efficient alignment and distribution of space among items in a container, even when their size is unknown. It's ideal for one-dimensional layouts (either rows or columns)."
+  },
+  {
+    "id": "39",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are data attributes in HTML and how are they useful?",
+    "answer": "Data attributes (data-*) allow storing extra information on HTML elements without affecting presentation or behavior. They can be accessed via JavaScript and are useful for storing element-specific data."
+  },
+  {
+    "id": "40",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are mixins in Sass and how do they differ from functions?",
+    "answer": "Mixins are reusable blocks of styles that can be included in other rules. They can accept arguments but return CSS declarations rather than values. Functions return values that can be used in property assignments."
+  },
+  {
+    "id": "41",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to validate a password with specific requirements?",
+    "answer": "Example for 8+ chars with uppercase, lowercase, number: /^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\\d]{8,}$/. This uses positive lookaheads to ensure each requirement is met."
+  },
+  {
+    "id": "42",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle transactions in Prisma?",
+    "answer": "Prisma provides $transaction for interactive transactions where you can perform multiple operations in sequence, or batch transactions for independent operations that should succeed or fail together."
+  },
+  {
+    "id": "43",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How does Drizzle ORM handle raw SQL queries?",
+    "answer": "Drizzle provides a sql template tag for writing raw SQL queries with type safety. You can interpolate values safely and even infer return types for the results."
+  },
+  {
+    "id": "44",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What is the difference between REST and GraphQL?",
+    "answer": "REST is resource-based with fixed endpoints returning complete resources. GraphQL is query-based with a single endpoint, allowing clients to request exactly the data they need in one request."
+  },
+  {
+    "id": "45",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the package.json file in Node.js projects?",
+    "answer": "package.json is a manifest file that contains project metadata, dependencies, scripts, and configuration. It's used by npm/yarn to manage packages, versions, and project setup."
+  },
+  {
+    "id": "46",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you handle errors in an Express application?",
+    "answer": "Use middleware functions with four parameters (err, req, res, next). Organize errors with custom Error classes. Use try/catch in async routes or wrap with a higher-order function. Implement proper HTTP status codes."
+  },
+  {
+    "id": "47",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is CI/CD and why is it important?",
+    "answer": "CI (Continuous Integration) means regularly merging code changes into a shared repo with automated testing. CD (Continuous Delivery/Deployment) automates release processes. Together they enable faster, more reliable software releases."
+  },
+  {
+    "id": "48",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Portals and when would you use them?",
+    "answer": "Portals provide a way to render children into a DOM node outside the parent component's hierarchy. They're useful for modals, tooltips, or any UI that needs to break out of its container (e.g., for CSS z-index or positioning)."
+  },
+  {
+    "id": "49",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "What is Incremental Static Regeneration (ISR) in Next.js?",
+    "answer": "ISR allows you to update static pages after build time without rebuilding the entire site. You specify a revalidation time, and Next.js will regenerate the page in the background when it receives requests after that time."
+  },
+  {
+    "id": "50",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between '==' and '===' in JavaScript?",
+    "answer": "'==' performs type coercion before comparison, while '===' (strict equality) checks both value and type without coercion. '===' is generally preferred as it's more predictable."
+  },
+  {
+    "id": "51",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are type guards in TypeScript?",
+    "answer": "Type guards are expressions that perform runtime checks to narrow down the type of a variable within a block. They include typeof, instanceof checks, or custom functions with 'is' type predicates."
+  },
+  {
+    "id": "52",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you create custom animations in Tailwind CSS?",
+    "answer": "Define custom animations in tailwind.config.js under the 'extend.animation' key. Then apply them with the 'animate-' prefix. You can also use the @keyframes directive in your CSS and extend Tailwind's animation utilities."
+  },
+  {
+    "id": "53",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is CSS Grid and how does it differ from Flexbox?",
+    "answer": "CSS Grid is a two-dimensional layout system (rows and columns simultaneously), while Flexbox is one-dimensional (either rows or columns). Grid is better for overall page layouts, Flexbox for aligning content within components."
+  },
+  {
+    "id": "54",
+    "category": "html",
+    "difficulty": "hard",
+    "question": "What are Web Components and how do they work?",
+    "answer": "Web Components are a set of web platform APIs that allow creating reusable custom elements with encapsulated functionality. They consist of Custom Elements, Shadow DOM, and HTML Templates."
+  },
+  {
+    "id": "55",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you create a responsive grid system using Sass?",
+    "answer": "Create a mixin that generates grid classes based on breakpoints, using variables for column counts and gutters. The mixin would output media queries and calculate widths dynamically using Sass math operations."
+  },
+  {
+    "id": "56",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to parse and extract data from a URL?",
+    "answer": "Example to extract parts: /^(https?:\\/\\/)?([^\\/?#]+)([^?#]*)(\\?[^#]*)?(#.*)?/. This captures protocol, domain, path, query, and hash segments. More specific patterns can be created for particular URL structures."
+  },
+  {
+    "id": "57",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How does Prisma handle database schema validation?",
+    "answer": "Prisma validates the schema against the database during introspection (when pulling the schema from an existing DB) and when generating the client. It checks for type consistency, relation integrity, and other constraints."
+  },
+  {
+    "id": "58",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How would you implement complex joins with Drizzle ORM?",
+    "answer": "Drizzle provides a query builder with methods like .innerJoin(), .leftJoin(), etc. You can chain these to build complex joins while maintaining type safety, and use the .fields() method to select specific columns."
+  },
+  {
+    "id": "59",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some strategies for optimizing database queries?",
+    "answer": "Strategies include: adding proper indexes, optimizing query structure, using JOINs wisely, implementing pagination, caching results, using prepared statements, denormalizing where appropriate, and analyzing query plans."
+  },
+  {
+    "id": "60",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'cluster' module in Node.js?",
+    "answer": "The cluster module allows creating child processes (workers) that share server ports, enabling better utilization of multi-core systems by running multiple Node.js instances to handle the load."
+  },
+  {
+    "id": "61",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How would you implement rate limiting in Express?",
+    "answer": "Use middleware like 'express-rate-limit' which tracks requests from IPs. Configure it with windowMs (time window), max (max requests per window), and optional delayMs. Store counts in memory or Redis for distributed apps."
+  },
+  {
+    "id": "62",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "Explain the principles of secure authentication.",
+    "answer": "Principles include: never store plaintext passwords (use strong hashing like bcrypt), implement proper session management, use HTTPS, add rate limiting, implement CSRF protection, use secure cookies, and consider multi-factor authentication."
+  },
+  {
+    "id": "63",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the Context API in React and when would you use it?",
+    "answer": "Context provides a way to pass data through the component tree without manually passing props. It's useful for global data like themes, user auth, or preferences that many components need access to."
+  },
+  {
+    "id": "64",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does Next.js handle image optimization?",
+    "answer": "Next.js provides an Image component that automatically optimizes images (resizing, format conversion, lazy loading) and serves them via a built-in image optimization API. It works with both local and remote images."
+  },
+  {
+    "id": "65",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain the prototype chain in JavaScript.",
+    "answer": "JavaScript uses prototypal inheritance where objects can inherit properties from other objects. Each object has a prototype (accessed via __proto__), and when a property isn't found on an object, JavaScript looks up the prototype chain until it finds it or reaches null."
+  },
+  {
+    "id": "66",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are conditional types in TypeScript?",
+    "answer": "Conditional types select between two types based on a condition: T extends U ? X : Y. They're powerful when combined with generics, allowing type transformations based on input types."
+  },
+  {
+    "id": "67",
+    "category": "tailwindcss",
+    "difficulty": "easy",
+    "question": "How do you customize Tailwind's default theme?",
+    "answer": "In tailwind.config.js, use the 'theme' property to extend or override defaults. You can customize colors, spacing, fonts, breakpoints, etc., while preserving the rest of Tailwind's defaults."
+  },
+  {
+    "id": "68",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is CSS-in-JS and what are its advantages?",
+    "answer": "CSS-in-JS is a pattern where CSS is written in JavaScript instead of separate files. Advantages include scoped styles, dynamic styling based on props/state, automatic vendor prefixing, and elimination of unused CSS."
+  },
+  {
+    "id": "69",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'alt' attribute in images?",
+    "answer": "The 'alt' attribute provides alternative text for images when they can't be displayed. It's important for accessibility (screen readers), SEO, and when images fail to load."
+  },
+  {
+    "id": "70",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create loops in Sass and what are they useful for?",
+    "answer": "Sass has @for, @each, and @while loops. They're useful for generating utility classes, grid systems, or any repetitive CSS patterns. Example: @for $i from 1 through 12 { .col-#{$i} { width: $i * 8.33%; } }"
+  },
+  {
+    "id": "71",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to match HTML tags?",
+    "answer": "A basic pattern: /<([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)/. However, parsing HTML with regex is generally discouraged for complex cases - use a proper HTML parser instead."
+  },
+  {
+    "id": "72",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle database seeding with Prisma?",
+    "answer": "Create a seed script that uses the Prisma client to insert initial data. You can run it with 'prisma db seed' or a custom script. For larger datasets, consider using raw SQL for better performance."
+  },
+  {
+    "id": "73",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How does Drizzle ORM handle schema migrations?",
+    "answer": "Drizzle provides a migration API where you define schema changes in code. It can generate SQL migration files and track applied migrations, similar to other ORMs but with a more SQL-centric approach."
+  },
+  {
+    "id": "74",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is CORS and how do you handle it in a backend service?",
+    "answer": "CORS (Cross-Origin Resource Sharing) is a security mechanism that restricts cross-origin requests. Handle it by setting proper headers (Access-Control-Allow-Origin, etc.), implementing preflight request handling, and configuring allowed methods/headers."
+  },
+  {
+    "id": "75",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What is the 'stream' module in Node.js and when would you use it?",
+    "answer": "Streams are collections of data that might not be available all at once. They're useful for processing large files, handling real-time data, or any I/O operations where memory efficiency is important."
+  },
+  {
+    "id": "76",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you implement file uploads in Express?",
+    "answer": "Use middleware like 'multer' to handle multipart/form-data. Configure storage (disk/memory), file filters, size limits, and processing. For large files, consider streaming processing to avoid memory issues."
+  },
+  {
+    "id": "77",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is Docker and how does it benefit development?",
+    "answer": "Docker is a platform for containerizing applications. Benefits include consistent environments across machines, isolation, easy scaling, simplified dependency management, and reproducible builds."
+  },
+  {
+    "id": "78",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is React Suspense and how does it work?",
+    "answer": "Suspense lets components 'wait' for something before rendering. It's primarily used for code-splitting (with React.lazy) and data fetching. Components can suspend while loading, showing fallback UI until ready."
+  },
+  {
+    "id": "79",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle internationalization (i18n)?",
+    "answer": "Next.js has built-in i18n routing that supports sub-path (/en/page), domain (en.example.com), or hybrid strategies. It handles locale detection, routing, and can integrate with translation libraries."
+  },
+  {
+    "id": "80",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript Promises and how do they work?",
+    "answer": "Promises represent eventual completion of async operations. They can be in pending, fulfilled, or rejected states. You chain .then() for success cases and .catch() for errors, avoiding callback hell."
+  },
+  {
+    "id": "81",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are utility types in TypeScript and how are they useful?",
+    "answer": "Utility types (like Partial, Pick, Omit, Record) transform existing types in useful ways. They help create new types from existing ones without repetition, making type definitions more maintainable."
+  },
+  {
+    "id": "82",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you handle component variants in Tailwind CSS?",
+    "answer": "Use the @variant directive in your CSS to create component variants, or combine Tailwind with a JS framework's class binding system. For complex cases, consider using the 'classnames' library to conditionally apply classes."
+  },
+  {
+    "id": "83",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS custom properties (variables) and how do you use them?",
+    "answer": "CSS variables are defined with --prefix (--main-color: blue;) and accessed with var() (color: var(--main-color);). They're scoped to elements, can be changed dynamically, and help maintain consistent styling."
+  },
+  {
+    "id": "84",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are the benefits of using the 'picture' element over 'img'?",
+    "answer": "The 'picture' element provides art direction (different images for different viewports) and allows multiple source formats (via 'source' children) with fallback to 'img', helping with responsive images and modern formats like WebP."
+  },
+  {
+    "id": "85",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you implement a theming system with Sass?",
+    "answer": "Create a map of themes with color variables, then use mixins or functions to apply themes. Example: @mixin theme($theme) { --primary: map-get($theme, primary); } and apply with @include theme($light-theme);"
+  },
+  {
+    "id": "86",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to validate a date in YYYY-MM-DD format?",
+    "answer": "Pattern: /^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/. Note this validates format but not date logic (like Feb 30). For full validation, additional checks or a date library would be needed."
+  },
+  {
+    "id": "87",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle many-to-many relationships in Prisma?",
+    "answer": "Prisma supports implicit many-to-many relations where you define @relation fields on both models. For explicit relations (with additional fields), you create a join model with two @relation fields."
+  },
+  {
+    "id": "88",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How would you implement pagination with Drizzle ORM?",
+    "answer": "Use the .limit() and .offset() methods on your queries. Example: db.select().from(users).limit(10).offset(20). For cursor-based pagination, use .where() with conditions based on the cursor value."
+  },
+  {
+    "id": "89",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is Redis and what are its common use cases?",
+    "answer": "Redis is an in-memory data store used as a cache, message broker, or database. Common uses include session storage, rate limiting, real-time analytics, leaderboards, and pub/sub messaging systems."
+  },
+  {
+    "id": "90",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the 'require' cache in Node.js and how does it work?",
+    "answer": "Node caches modules after first require to improve performance. Subsequent requires return the cached version. The cache is stored in require.cache and can be deleted if you need to reload a module."
+  },
+  {
+    "id": "91",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How would you structure a large Express application?",
+    "answer": "Organize by features/routes (not by file type), separate concerns (routes, controllers, services), use middleware for cross-cutting concerns, implement proper error handling, and consider using a DI container for complex apps."
+  },
+  {
+    "id": "92",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "What are microservices and when would you choose them over a monolith?",
+    "answer": "Microservices are small, independent services that work together. Choose them for large teams, need for independent scaling, different tech stacks per component, or organizational alignment. Monoliths are simpler for small projects."
+  },
+  {
+    "id": "93",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Error Boundaries?",
+    "answer": "Error Boundaries are React components that catch JavaScript errors in their child component tree, log them, and display a fallback UI instead of crashing. They don't catch errors in event handlers, async code, or server-side rendering."
+  },
+  {
+    "id": "94",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are Next.js Dynamic Routes and how do they work?",
+    "answer": "Dynamic Routes allow creating pages with variable paths (like [id].js). The parameter is available in the router query object and during getStaticProps/getServerSideProps for data fetching based on the route."
+  },
+  {
+    "id": "95",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is the Event Loop in JavaScript and how does it work?",
+    "answer": "The Event Loop handles async operations by offloading tasks to system APIs when possible, then processing the callback queue. It continuously checks the call stack and when empty, moves callbacks from the queue to the stack."
+  },
+  {
+    "id": "96",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are declaration files (.d.ts) in TypeScript?",
+    "answer": "Declaration files provide type information for existing JavaScript code. They contain type declarations but no implementations, allowing TypeScript to understand the shape of JavaScript libraries without changing the original code."
+  },
+  {
+    "id": "97",
+    "category": "tailwindcss",
+    "difficulty": "hard",
+    "question": "How would you implement a design system with Tailwind CSS?",
+    "answer": "Define a comprehensive theme in tailwind.config.js with colors, typography, spacing, etc. Create reusable component templates. Use plugins for custom utilities. Document with Storybook or similar, and enforce consistency with linting rules."
+  },
+  {
+    "id": "98",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is the Cascade in CSS and how does it work?",
+    "answer": "The Cascade determines which styles apply when multiple rules target the same element. It considers origin (user agent, user, author), importance (!important), specificity, and source order to resolve conflicts."
+  },
+  {
+    "id": "99",
+    "category": "html",
+    "difficulty": "hard",
+    "question": "What is the Shadow DOM and how does it work?",
+    "answer": "The Shadow DOM is a browser technology that provides encapsulation for DOM and CSS. It allows creating scoped DOM trees with isolated styles and markup, used by Web Components to prevent style leakage and conflicts."
+  },
+  {
+    "id": "100",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create and use functions in Sass?",
+    "answer": "Define functions with @function name($params) { @return value; }. They can perform calculations, manipulate colors, etc. Use them like built-in functions: width: calculate-width(10px);"
+  },
+  {
+    "id": "101",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to find all words in a string?",
+    "answer": "Pattern: /\\w+/g will match sequences of word characters (letters, digits, underscores). For just letters, use /[a-zA-Z]+/g. Adjust based on your definition of 'word' (e.g., include apostrophes)."
+  },
+  {
+    "id": "102",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How would you optimize complex queries in Prisma?",
+    "answer": "Strategies include: selecting only needed fields, using proper indexes, batching queries, using raw SQL for complex operations, implementing caching, and using Prisma's query logging to identify slow queries."
+  },
+  {
+    "id": "103",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM handle complex transactions?",
+    "answer": "Drizzle provides a transaction API where you can wrap multiple operations in a callback. The transactions are atomic and can be nested. You can also use savepoints for partial rollbacks within transactions."
+  },
+  {
+    "id": "104",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some strategies for scaling a backend service?",
+    "answer": "Strategies include: horizontal scaling (more instances), vertical scaling (bigger machines), database read replicas, caching, CDNs, async processing, microservices, and optimizing database queries and indexes."
+  },
+  {
+    "id": "105",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What is libuv and how does Node.js use it?",
+    "answer": "libuv is a C library that provides the event loop and async I/O capabilities to Node.js. It handles the thread pool for file I/O, DNS, and other operations that can't be done asynchronously at the OS level."
+  },
+  {
+    "id": "106",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you implement real-time features in Express?",
+    "answer": "Use WebSockets with libraries like Socket.IO or ws. For HTTP-based approaches, consider Server-Sent Events (SSE) or long polling. Integrate with a pub/sub system like Redis for scaling across multiple servers."
+  },
+  {
+    "id": "107",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are WebSockets and when would you use them?",
+    "answer": "WebSockets provide full-duplex communication over a single TCP connection. Use them for real-time features like chat, live updates, multiplayer games, or any app needing low-latency server-client communication."
+  },
+  {
+    "id": "108",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is React Server Components?",
+    "answer": "React Server Components are components that render on the server and can access server-side resources directly. They're sent to the client as a lightweight serialized format, reducing bundle size and enabling zero-bundle-size components."
+  },
+  {
+    "id": "109",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle client-side navigation?",
+    "answer": "Next.js uses client-side navigation via its Link component, which prefetches linked pages in the background. This provides SPA-like navigation without full page reloads, while maintaining SEO benefits and proper URL handling."
+  },
+  {
+    "id": "110",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are JavaScript Generators and how do they work?",
+    "answer": "Generators are functions that can be exited and later re-entered, with their context saved across re-entrances. Defined with function*, they yield values via yield and can be iterated manually with .next() or in loops."
+  },
+  {
+    "id": "111",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are template literal types in TypeScript?",
+    "answer": "Template literal types allow creating new string types by combining existing ones, similar to template literals in JavaScript. Example: type EventName<T extends string> = `${T}Changed` lets you create 'nameChanged', 'ageChanged', etc."
+  },
+  {
+    "id": "112",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you handle responsive design in Tailwind CSS?",
+    "answer": "Tailwind uses mobile-first breakpoints (sm, md, lg, xl, 2xl) as prefixes to utility classes. Example: 'md:text-lg' applies the large text size from the 'md' breakpoint up. Customize breakpoints in the config file."
+  },
+  {
+    "id": "113",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is BEM methodology in CSS?",
+    "answer": "BEM (Block, Element, Modifier) is a naming convention: .block__element--modifier. Blocks are standalone components, elements are parts of blocks, and modifiers alter appearance/behavior. It aims to make CSS more maintainable and reduce specificity issues."
+  },
+  {
+    "id": "114",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are ARIA attributes and why are they important?",
+    "answer": "ARIA (Accessible Rich Internet Applications) attributes provide semantic information to assistive technologies. They're crucial for accessibility when native HTML semantics aren't sufficient, helping screen readers understand dynamic content and UI controls."
+  },
+  {
+    "id": "115",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you implement a responsive typography system with Sass?",
+    "answer": "Create a map of breakpoints and font sizes, then use mixins to generate responsive typography. Example: @mixin responsive-text($size) { font-size: map-get($sizes, $size); @each $bp, $value in $responsive-sizes { @media (min-width: $bp) { font-size: map-get($value, $size); } } }"
+  },
+  {
+    "id": "116",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to validate a phone number with international formatting?",
+    "answer": "Basic pattern: /^\\+[1-9]\\d{1,14}$/ (E.164 format). More specific patterns depend on country. For US: /^\\+1\\d{10}$/. Note that complete validation often requires additional checks or a library like libphonenumber."
+  },
+  {
+    "id": "117",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle database connections with Prisma?",
+    "answer": "Prisma manages connections via the Prisma Client, which uses a connection pool. Configure the connection URL in the DATABASE_URL environment variable or in the schema.prisma file. The client handles connection lifecycle automatically."
+  },
+  {
+    "id": "118",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How does Drizzle ORM handle schema validation?",
+    "answer": "Drizzle validates schemas at compile time through TypeScript types. It ensures your table definitions match your database structure and that queries are type-safe against your schema definitions."
+  },
+  {
+    "id": "119",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between stateful and stateless authentication?",
+    "answer": "Stateful auth stores session data server-side (in memory/database), while stateless (like JWT) encodes all needed data in the token. Stateless scales better but is harder to invalidate; stateful allows immediate invalidation but needs session storage."
+  },
+  {
+    "id": "120",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the 'fs' module in Node.js and what are its main methods?",
+    "answer": "The 'fs' module provides file system operations. Main methods include: readFile/writeFile (async file I/O), readFileSync/writeFileSync (sync versions), promises API (fs.promises), createReadStream/createWriteStream (for large files), and stat (file metadata)."
+  },
+  {
+    "id": "121",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is middleware chaining in Express?",
+    "answer": "Middleware chaining is the process where multiple middleware functions handle a request sequentially. Each middleware can process the request and either pass it to the next middleware with next() or end the chain by sending a response."
+  },
+  {
+    "id": "122",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "What is the CAP theorem and how does it affect database design?",
+    "answer": "CAP theorem states a distributed system can only guarantee two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition tolerance (system works despite network failures). Affects choice between CP (like MongoDB) or AP (like Cassandra) systems."
+  },
+  {
+    "id": "123",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Fragments and why are they useful?",
+    "answer": "Fragments (<></> or <Fragment>) let you group elements without adding extra DOM nodes. Useful when a component needs to return multiple adjacent elements but must have a single root, or when adding wrapper elements would break styling."
+  },
+  {
+    "id": "124",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the 'next/image' component and why is it important?",
+    "answer": "'next/image' is an optimized Image component that handles lazy loading, automatic resizing, format conversion, and proper sizing. It improves performance by serving correctly sized images for each device and using modern formats like WebP."
+  },
+  {
+    "id": "125",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is the Temporal API in JavaScript?",
+    "answer": "The Temporal API is a new proposal for better date/time handling in JavaScript. It provides immutable objects for dates, times, and durations, with better timezone support, arithmetic operations, and parsing/formatting capabilities than the Date object."
+  },
+  {
+    "id": "126",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are namespace in TypeScript and when would you use them?",
+    "answer": "Namespaces are TypeScript's way to organize code and prevent naming collisions. They're useful for grouping related functionality, especially in larger codebases. Modern TypeScript often uses ES modules instead, but namespaces remain for certain patterns."
+  },
+  {
+    "id": "127",
+    "category": "tailwindcss",
+    "difficulty": "hard",
+    "question": "How would you implement a dark/light theme toggle with Tailwind CSS?",
+    "answer": "Set dark mode to 'class' in config, toggle a 'dark' class on the HTML element, and use 'dark:' variants for dark mode styles. Combine with a state management solution (like React context) to persist the preference and handle toggling."
+  },
+  {
+    "id": "128",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What are CSS containment properties and how do they optimize rendering?",
+    "answer": "CSS containment (like 'contain: layout paint style size') tells the browser which parts of the DOM can be treated as independent, allowing optimizations like limiting repaints to specific subtrees or skipping layout calculations for isolated components."
+  },
+  {
+    "id": "129",
+    "category": "html",
+    "difficulty": "hard",
+    "question": "What is the difference between 'defer' and 'async' attributes in script tags?",
+    "answer": "'defer' scripts execute after HTML parsing is complete, in order. 'async' scripts download in parallel and execute as soon as available, potentially out of order. Both allow parallel downloading without blocking parsing."
+  },
+  {
+    "id": "130",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create and use maps in Sass?",
+    "answer": "Define maps with $map: (key: value, ...). Access values with map-get($map, key). Use @each to iterate: @each $key, $value in $map { ... }. Maps are useful for theme variables, breakpoints, or any key-value data."
+  },
+  {
+    "id": "131",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to extract hashtags from a string?",
+    "answer": "Pattern: /#\\w+/g will match hashtags starting with # followed by word characters. For more specific needs (like allowing underscores but not starting with numbers), adjust: /#[a-zA-Z_]\\w*/g."
+  },
+  {
+    "id": "132",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How do you handle database schema changes in production with Prisma?",
+    "answer": "Use Prisma Migrate to generate and apply migration files. For zero-downtime deployments, consider: writing backward-compatible migrations, splitting breaking changes into multiple deployments, or using shadow databases to test migrations first."
+  },
+  {
+    "id": "133",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How would you implement soft deletes with Drizzle ORM?",
+    "answer": "Add a 'deleted_at' column to your tables, then filter queries with .where(isNull(deletedAt)) or create a helper function that adds this condition automatically. For actual deletes, use a separate hard delete operation."
+  },
+  {
+    "id": "134",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some strategies for handling database migrations in production?",
+    "answer": "Strategies include: writing backward-compatible migrations, splitting large migrations into smaller ones, testing against a staging environment first, using blue-green deployments, having rollback plans, and considering zero-downtime migration patterns."
+  },
+  {
+    "id": "135",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What is the difference between 'setImmediate' and 'process.nextTick' in Node.js?",
+    "answer": "'process.nextTick' executes at the end of the current operation, before the event loop continues. 'setImmediate' runs during the check phase of the event loop. 'nextTick' has higher priority and can starve the event loop if misused."
+  },
+  {
+    "id": "136",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you implement API versioning in Express?",
+    "answer": "Common approaches include: URL path (/v1/resource), query parameter (/resource?version=1), custom headers, or content negotiation. Implement with route middleware that checks the version and routes to appropriate handlers or transforms responses accordingly."
+  },
+  {
+    "id": "137",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "SQL databases are relational, table-based, with predefined schemas and ACID transactions. NoSQL databases are non-relational, with flexible schemas (document, key-value, graph, etc.), and prioritize scalability and flexibility over strict consistency."
+  },
+  {
+    "id": "138",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is Concurrent Mode in React?",
+    "answer": "Concurrent Mode is a set of new React features that help apps stay responsive while rendering. It enables interruptible rendering, prioritized updates, and transitions between states. It's the foundation for features like Suspense and selective hydration."
+  },
+  {
+    "id": "139",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle code splitting?",
+    "answer": "Next.js automatically code splits by pages (each page is its own bundle). Dynamic imports (next/dynamic) allow component-level splitting. The framework also splits runtime, commons, and third-party libraries for optimal loading."
+  },
+  {
+    "id": "140",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are Web Workers and when would you use them?",
+    "answer": "Web Workers run scripts in background threads, separate from the main execution thread. Use them for CPU-intensive tasks (image processing, calculations) to avoid blocking the UI. They communicate with the main thread via message passing."
+  },
+  {
+    "id": "141",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are mapped types in TypeScript?",
+    "answer": "Mapped types create new types by transforming properties of existing types. Example: type Readonly<T> = { readonly [P in keyof T]: T[P] }. They're powerful for creating variations of types without repetition."
+  },
+  {
+    "id": "142",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you extend Tailwind's default configuration?",
+    "answer": "In tailwind.config.js, use the 'theme.extend' property to add to Tailwind's defaults without overriding them. For complete overrides, add properties directly to 'theme'. Plugins can also be used to add new utilities or components."
+  },
+  {
+    "id": "143",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS pseudo-elements and how do they differ from pseudo-classes?",
+    "answer": "Pseudo-elements (::before, ::first-line) style specific parts of an element or generate content. Pseudo-classes (:hover, :nth-child()) style elements based on state or position. Pseudo-elements create virtual elements, pseudo-classes select existing ones in specific states."
+  },
+  {
+    "id": "144",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'loading' attribute in images?",
+    "answer": "The 'loading' attribute controls lazy loading behavior: 'lazy' defers loading until near viewport, 'eager' loads immediately. It improves performance by prioritizing visible content loading, especially for long pages with many images."
+  },
+  {
+    "id": "145",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you implement a responsive grid system with Sass?",
+    "answer": "Create a mixin that generates grid classes based on breakpoints: @mixin grid($columns, $breakpoint) { @media (min-width: $breakpoint) { .grid-#{$columns} { display: grid; grid-template-columns: repeat($columns, 1fr); } } }. Call for each breakpoint/column count needed."
+  },
+  {
+    "id": "146",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to match a hexadecimal color code?",
+    "answer": "Pattern: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/. Matches # followed by 3 or 6 hex digits. For strict CSS colors (no shorthand): /^#([A-Fa-f0-9]{3}){1,2}$/. Add word boundaries if needed: /\\b#[A-Fa-f0-9]{3,6}\\b/"
+  },
+  {
+    "id": "147",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How do you handle database indexing with Prisma?",
+    "answer": "Define indexes in your Prisma schema using the @@index attribute on models. For complex indexes or full-text search, you may need to use raw SQL in migrations. Prisma also supports defining unique constraints with @@unique."
+  },
+  {
+    "id": "148",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM handle full-text search?",
+    "answer": "Drizzle provides SQL functions that can be used for full-text search, like to_tsvector and to_tsquery in PostgreSQL. You can write raw SQL queries with these functions or create helper functions that abstract the search implementation."
+  },
+  {
+    "id": "149",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some common API authentication methods?",
+    "answer": "Common methods include: API keys, JWT (JSON Web Tokens), OAuth/OAuth2, Session cookies, Basic Auth, and OpenID Connect. The choice depends on factors like security needs, client types, and whether you need third-party access."
+  },
+  {
+    "id": "150",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What is the 'vm' module in Node.js and when would you use it?",
+    "answer": "The 'vm' module provides APIs for compiling and running code within V8 Virtual Machine contexts. It's used for running code in isolated environments (sandboxing), though should be used carefully as it's not completely secure for running untrusted code."
   }
 ]
