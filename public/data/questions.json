@@ -78,14 +78,14 @@
   },
   {
     "id": "12",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "What is Prisma ORM and how does it differ from traditional ORMs?",
     "answer": "Prisma is a next-generation ORM that provides a type-safe database client, auto-generated queries, and a schema definition language. It differs from traditional ORMs by not using active record or data mapper patterns."
   },
   {
     "id": "13",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "What are the key features of Drizzle ORM?",
     "answer": "Drizzle ORM is a lightweight ORM with type safety, SQL-like syntax, schema migrations, and support for multiple databases. It's designed to be simple and close to SQL while providing TypeScript benefits."
@@ -183,14 +183,14 @@
   },
   {
     "id": "27",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How does Prisma handle database migrations?",
     "answer": "Prisma Migrate is a tool that generates and executes SQL migration files based on changes to your Prisma schema. It keeps track of applied migrations and can generate rollback migrations."
   },
   {
     "id": "28",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle relations between tables?",
     "answer": "Drizzle handles relations through its schema definition, allowing you to define one-to-one, one-to-many, and many-to-many relationships with type safety, which can then be queried with joins."
@@ -288,14 +288,14 @@
   },
   {
     "id": "42",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle transactions in Prisma?",
     "answer": "Prisma provides $transaction for interactive transactions where you can perform multiple operations in sequence, or batch transactions for independent operations that should succeed or fail together."
   },
   {
     "id": "43",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How does Drizzle ORM handle raw SQL queries?",
     "answer": "Drizzle provides a sql template tag for writing raw SQL queries with type safety. You can interpolate values safely and even infer return types for the results."
@@ -393,14 +393,14 @@
   },
   {
     "id": "57",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How does Prisma handle database schema validation?",
     "answer": "Prisma validates the schema against the database during introspection (when pulling the schema from an existing DB) and when generating the client. It checks for type consistency, relation integrity, and other constraints."
   },
   {
     "id": "58",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How would you implement complex joins with Drizzle ORM?",
     "answer": "Drizzle provides a query builder with methods like .innerJoin(), .leftJoin(), etc. You can chain these to build complex joins while maintaining type safety, and use the .fields() method to select specific columns."
@@ -498,14 +498,14 @@
   },
   {
     "id": "72",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle database seeding with Prisma?",
     "answer": "Create a seed script that uses the Prisma client to insert initial data. You can run it with 'prisma db seed' or a custom script. For larger datasets, consider using raw SQL for better performance."
   },
   {
     "id": "73",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How does Drizzle ORM handle schema migrations?",
     "answer": "Drizzle provides a migration API where you define schema changes in code. It can generate SQL migration files and track applied migrations, similar to other ORMs but with a more SQL-centric approach."
@@ -603,14 +603,14 @@
   },
   {
     "id": "87",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle many-to-many relationships in Prisma?",
     "answer": "Prisma supports implicit many-to-many relations where you define @relation fields on both models. For explicit relations (with additional fields), you create a join model with two @relation fields."
   },
   {
     "id": "88",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How would you implement pagination with Drizzle ORM?",
     "answer": "Use the .limit() and .offset() methods on your queries. Example: db.select().from(users).limit(10).offset(20). For cursor-based pagination, use .where() with conditions based on the cursor value."
@@ -708,14 +708,14 @@
   },
   {
     "id": "102",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How would you optimize complex queries in Prisma?",
     "answer": "Strategies include: selecting only needed fields, using proper indexes, batching queries, using raw SQL for complex operations, implementing caching, and using Prisma's query logging to identify slow queries."
   },
   {
     "id": "103",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle complex transactions?",
     "answer": "Drizzle provides a transaction API where you can wrap multiple operations in a callback. The transactions are atomic and can be nested. You can also use savepoints for partial rollbacks within transactions."
@@ -813,14 +813,14 @@
   },
   {
     "id": "117",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle database connections with Prisma?",
     "answer": "Prisma manages connections via the Prisma Client, which uses a connection pool. Configure the connection URL in the DATABASE_URL environment variable or in the schema.prisma file. The client handles connection lifecycle automatically."
   },
   {
     "id": "118",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How does Drizzle ORM handle schema validation?",
     "answer": "Drizzle validates schemas at compile time through TypeScript types. It ensures your table definitions match your database structure and that queries are type-safe against your schema definitions."
@@ -918,14 +918,14 @@
   },
   {
     "id": "132",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How do you handle database schema changes in production with Prisma?",
     "answer": "Use Prisma Migrate to generate and apply migration files. For zero-downtime deployments, consider: writing backward-compatible migrations, splitting breaking changes into multiple deployments, or using shadow databases to test migrations first."
   },
   {
     "id": "133",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How would you implement soft deletes with Drizzle ORM?",
     "answer": "Add a 'deleted_at' column to your tables, then filter queries with .where(isNull(deletedAt)) or create a helper function that adds this condition automatically. For actual deletes, use a separate hard delete operation."
@@ -1023,14 +1023,14 @@
   },
   {
     "id": "147",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How do you handle database indexing with Prisma?",
     "answer": "Define indexes in your Prisma schema using the @@index attribute on models. For complex indexes or full-text search, you may need to use raw SQL in migrations. Prisma also supports defining unique constraints with @@unique."
   },
   {
     "id": "148",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle full-text search?",
     "answer": "Drizzle provides SQL functions that can be used for full-text search, like to_tsvector and to_tsquery in PostgreSQL. You can write raw SQL queries with these functions or create helper functions that abstract the search implementation."
@@ -1121,14 +1121,14 @@
   },
   {
     "id": "161",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle one-to-many relationships in Prisma?",
     "answer": "In Prisma, define a @relation field on the 'many' side model that references the 'one' side. The relation can be made optional or required depending on your data model needs."
   },
   {
     "id": "162",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How does Drizzle ORM handle schema migrations?",
     "answer": "Drizzle provides a migration API where schema changes are defined in TypeScript. It generates SQL migration files that can be applied to the database while tracking which migrations have been executed."
@@ -1226,14 +1226,14 @@
   },
   {
     "id": "176",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How does Prisma handle database transactions?",
     "answer": "Prisma provides $transaction for interactive transactions where operations can depend on previous results. For batch transactions of independent operations, use transaction([]). Both ensure atomicity - all operations succeed or none do."
   },
   {
     "id": "177",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle raw SQL queries?",
     "answer": "Drizzle provides a sql template tag for writing raw SQL queries with type safety. Values can be interpolated safely, and return types can be inferred. This allows leveraging database-specific features while maintaining type safety."
@@ -1331,14 +1331,14 @@
   },
   {
     "id": "191",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle many-to-many relationships in Prisma?",
     "answer": "Prisma supports implicit many-to-many relations where you define @relation fields on both models. For explicit relations (with additional fields), create a join model with two @relation fields pointing to each side."
   },
   {
     "id": "192",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How would you implement pagination with Drizzle ORM?",
     "answer": "Use the .limit() and .offset() methods on queries. Example: db.select().from(users).limit(10).offset(20). For cursor-based pagination, use .where() with conditions based on the cursor value."
@@ -1436,14 +1436,14 @@
   },
   {
     "id": "206",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How does Prisma handle database schema validation?",
     "answer": "Prisma validates the schema against the database during introspection (when pulling the schema from an existing DB) and when generating the client. It checks for type consistency, relation integrity, and other constraints."
   },
   {
     "id": "207",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How would you implement soft deletes with Drizzle ORM?",
     "answer": "Add a 'deleted_at' column to your tables, then filter queries with .where(isNull(deletedAt)) or create a helper function that adds this condition automatically. For actual deletes, use a separate hard delete operation."
@@ -1541,14 +1541,14 @@
   },
   {
     "id": "221",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "medium",
     "question": "How do you handle database seeding with Prisma?",
     "answer": "Create a seed script that uses the Prisma client to insert initial data. You can run it with 'prisma db seed' or a custom script. For larger datasets, consider using raw SQL for better performance."
   },
   {
     "id": "222",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "medium",
     "question": "How does Drizzle ORM handle complex joins?",
     "answer": "Drizzle provides a query builder with methods like .innerJoin(), .leftJoin(), etc. You can chain these to build complex joins while maintaining type safety, and use the .fields() method to select specific columns."
@@ -1646,14 +1646,14 @@
   },
   {
     "id": "236",
-    "category": "prisma orm",
+    "category": “prisma”,
     "difficulty": "hard",
     "question": "How do you handle database indexing with Prisma?",
     "answer": "Define indexes in your Prisma schema using the @@index attribute on models. For complex indexes or full-text search, you may need to use raw SQL in migrations. Prisma also supports defining unique constraints with @@unique."
   },
   {
     "id": "237",
-    "category": "drizzle orm",
+    "category": “drizzle”,
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle full-text search?",
     "answer": "Drizzle provides SQL functions that can be used for full-text search, like to_tsvector and to_tsquery in PostgreSQL. You can write raw SQL queries with these functions or create helper functions that abstract the search implementation."
