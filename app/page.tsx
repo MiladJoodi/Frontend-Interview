@@ -127,15 +127,22 @@ export default function Component() {
   // Ensure current page is valid when filtered results change
   const validCurrentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages))
   
+  // Reset to page 1 if current page is invalid after filtering
+  useEffect(() => {
+    if (totalPages > 0 && currentPage > totalPages) {
+      setCurrentPage(1)
+    }
+  }, [totalPages, currentPage])
+  
   const startIndex = (validCurrentPage - 1) * ITEMS_PER_PAGE
   const paginatedQuestions = filteredQuestions.slice(startIndex, startIndex + ITEMS_PER_PAGE)
 
   // Update current page if it's invalid
   useEffect(() => {
-    if (currentPage !== validCurrentPage) {
+    if (currentPage !== validCurrentPage && validCurrentPage >= 1) {
       setCurrentPage(validCurrentPage)
     }
-  }, [currentPage, validCurrentPage])
+  }, [currentPage, validCurrentPage, totalPages])
 
   // Update categories count
   const categoriesWithCount = categories.map((cat) => ({
@@ -159,7 +166,7 @@ export default function Component() {
     }
   }
 
-  // Improved logic to generate pagination buttons
+  // Fixed pagination logic to prevent duplicate buttons
   const getPaginationButtons = (): (number | string)[] => {
     const buttons: (number | string)[] = []
     
@@ -168,44 +175,61 @@ export default function Component() {
       return buttons
     }
 
+    // For small number of pages, show all pages
+    if (totalPages <= MAX_PAGINATION_BUTTONS) {
+      for (let i = 1; i <= totalPages; i++) {
+        buttons.push(i)
+      }
+      return buttons
+    }
+
+    // For larger number of pages, show smart pagination
+    const current = validCurrentPage
+    const total = totalPages
+    
     // Always show first page
     buttons.push(1)
     
-    // Calculate the range of pages to show around current page
-    const maxButtons = MAX_PAGINATION_BUTTONS - 2 // Reserve space for first and last page
-    const halfButtons = Math.floor(maxButtons / 2)
-    
-    let startPage = Math.max(2, validCurrentPage - halfButtons)
-    let endPage = Math.min(totalPages - 1, validCurrentPage + halfButtons)
+    // Calculate the range around current page
+    const delta = Math.floor((MAX_PAGINATION_BUTTONS - 4) / 2) // Reserve space for first, last, and ellipsis
+    let start = Math.max(2, current - delta)
+    let end = Math.min(total - 1, current + delta)
     
     // Adjust if we're near the edges
-    if (startPage === 2) {
-      endPage = Math.min(totalPages - 1, startPage + maxButtons - 1)
-    } else if (endPage === totalPages - 1) {
-      startPage = Math.max(2, endPage - maxButtons + 1)
+    if (start === 2) {
+      end = Math.min(total - 1, start + (MAX_PAGINATION_BUTTONS - 4))
+    } else if (end === total - 1) {
+      start = Math.max(2, end - (MAX_PAGINATION_BUTTONS - 4))
     }
     
     // Add ellipsis after first page if needed
-    if (startPage > 2) {
+    if (start > 2) {
       buttons.push("...")
     }
     
-    // Add middle pages
-    for (let i = startPage; i <= endPage; i++) {
-      buttons.push(i)
+    // Add middle pages (avoid duplicates)
+    for (let i = start; i <= end; i++) {
+      if (i !== 1 && i !== total) { // Don't add first or last page here
+        buttons.push(i)
+      }
     }
     
     // Add ellipsis before last page if needed
-    if (endPage < totalPages - 1) {
+    if (end < total - 1) {
       buttons.push("...")
     }
     
-    // Always show last page (if there is more than one page)
-    if (totalPages > 1) {
-      buttons.push(totalPages)
+    // Always show last page
+    if (total > 1) {
+      buttons.push(total)
     }
     
-    return buttons
+    // Ensure no duplicates
+    const uniqueButtons = buttons.filter((button, index, self) => 
+      self.indexOf(button) === index
+    )
+    
+    return uniqueButtons
   }
 
   if (loading) {
