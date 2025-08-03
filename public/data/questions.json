@@ -7978,5 +7978,992 @@
     "difficulty": "medium",
     "question": "How do you specify a favicon in an HTML document?",
     "answer": "Use `<link rel='icon' href='favicon.ico'>` in `<head>`."
+  },
+  {
+    "id": "1841",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is Express.js and why is it popular?",
+    "answer": "Express.js is a minimal and flexible Node.js web framework that simplifies building web applications and APIs."
+  },
+  {
+    "id": "1842",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you create a simple server using Express?",
+    "answer": "Import express, create an app with express(), define routes using app.get/post, and listen on a port."
+  },
+  {
+    "id": "1843",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What are middleware functions in Express?",
+    "answer": "Middleware are functions that have access to request and response objects and can modify them or end the request-response cycle."
+  },
+  {
+    "id": "1844",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle errors in Express applications?",
+    "answer": "By defining error-handling middleware with four arguments (err, req, res, next) and placing it after other middleware."
+  },
+  {
+    "id": "1845",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between app.use() and app.get() in Express?",
+    "answer": "app.use() mounts middleware for all HTTP methods; app.get() handles GET requests for specific routes."
+  },
+  {
+    "id": "1846",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you serve static files in Express?",
+    "answer": "Use express.static middleware pointing to the directory containing static assets."
+  },
+  {
+    "id": "1847",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the purpose of next() function in Express middleware?",
+    "answer": "next() passes control to the next middleware function in the stack."
+  },
+  {
+    "id": "1848",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you parse JSON request bodies in Express?",
+    "answer": "Use express.json() middleware to parse incoming JSON payloads."
+  },
+  {
+    "id": "1849",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you handle URL parameters and query strings in Express?",
+    "answer": "Access URL params via req.params and query strings via req.query."
+  },
+  {
+    "id": "1850",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement route-level middleware in Express?",
+    "answer": "Pass middleware functions as additional arguments to route handlers."
+  },
+  {
+    "id": "1851",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to implement CORS in an Express app.",
+    "answer": "Use the cors middleware package to enable Cross-Origin Resource Sharing."
+  },
+  {
+    "id": "1852",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle file uploads in Express?",
+    "answer": "Use middleware like multer to parse and handle multipart/form-data uploads."
+  },
+  {
+    "id": "1853",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the role of router in Express?",
+    "answer": "Router allows creating modular, mountable route handlers and organizing routes."
+  },
+  {
+    "id": "1854",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement sessions in Express?",
+    "answer": "Use express-session middleware to manage user sessions with cookies."
+  },
+  {
+    "id": "1855",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between app.route() and app.use()?",
+    "answer": "app.route() chains route handlers for specific paths; app.use() applies middleware globally or for a path."
+  },
+  {
+    "id": "1856",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement rate limiting in Express?",
+    "answer": "Use middleware like express-rate-limit to restrict repeated requests."
+  },
+  {
+    "id": "1857",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you send different HTTP status codes in Express responses?",
+    "answer": "Use res.status(code) before sending the response with res.send or res.json."
+  },
+  {
+    "id": "1858",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of res.locals in Express?",
+    "answer": "res.locals stores data accessible in templates or subsequent middleware during a request."
+  },
+  {
+    "id": "1859",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you redirect requests in Express?",
+    "answer": "Use res.redirect(url) to send a 302 redirect to the client."
+  },
+  {
+    "id": "1860",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to implement authentication in Express apps.",
+    "answer": "Use middleware like Passport.js to handle authentication strategies."
+  },
+  {
+    "id": "1861",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the significance of order when defining middleware in Express?",
+    "answer": "Middleware is executed in the order defined; incorrect order can cause bugs or skipped handlers."
+  },
+  {
+    "id": "1862",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement template engines with Express?",
+    "answer": "Set the view engine with app.set and use res.render to serve templates."
+  },
+  {
+    "id": "1863",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What methods are available to send responses in Express?",
+    "answer": "res.send, res.json, res.end, res.redirect, res.render, and res.sendFile."
+  },
+  {
+    "id": "1864",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you handle query string validation in Express?",
+    "answer": "Use middleware or libraries like express-validator to validate req.query parameters."
+  },
+  {
+    "id": "1865",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain the concept of route parameters in Express.",
+    "answer": "Route parameters define dynamic segments in URL paths accessible via req.params."
+  },
+  {
+    "id": "1866",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you create nested routes using Express Router?",
+    "answer": "Mount routers on specific paths inside another router or the main app."
+  },
+  {
+    "id": "1867",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle 404 errors in Express?",
+    "answer": "Add a middleware at the end that catches unmatched routes and sends a 404 response."
+  },
+  {
+    "id": "1868",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of req.params versus req.query?",
+    "answer": "req.params captures dynamic path segments; req.query contains URL query string parameters."
+  },
+  {
+    "id": "1869",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle cross-site scripting (XSS) in Express apps?",
+    "answer": "Sanitize user inputs and use security middleware like helmet."
+  },
+  {
+    "id": "1870",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement CORS manually without middleware in Express?",
+    "answer": "Set Access-Control-Allow-Origin and related headers in response for incoming requests."
+  },
+  {
+    "id": "1871",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you parse URL-encoded form data in Express?",
+    "answer": "Use express.urlencoded() middleware to parse application/x-www-form-urlencoded data."
+  },
+  {
+    "id": "1872",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is a mounted middleware in Express?",
+    "answer": "Middleware attached to a specific path or router, executed only when requests match."
+  },
+  {
+    "id": "1873",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you test Express applications?",
+    "answer": "Use testing frameworks like Mocha or Jest with supertest to test routes and middleware."
+  },
+  {
+    "id": "1874",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle JSONP requests in Express?",
+    "answer": "Use res.jsonp() to send JSONP responses."
+  },
+  {
+    "id": "1875",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to use app.param() in Express.",
+    "answer": "app.param registers middleware to preprocess route parameters."
+  },
+  {
+    "id": "1876",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you secure HTTP headers in Express?",
+    "answer": "Use helmet middleware to set secure headers."
+  },
+  {
+    "id": "1877",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle compression in Express responses?",
+    "answer": "Use compression middleware to gzip responses for faster delivery."
+  },
+  {
+    "id": "1878",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you configure Express to trust proxy headers?",
+    "answer": "Set app.set('trust proxy', true) to trust headers like X-Forwarded-For."
+  },
+  {
+    "id": "1879",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement WebSocket integration with Express?",
+    "answer": "Use libraries like socket.io or ws alongside Express for real-time communication."
+  },
+  {
+    "id": "1880",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle multipart form data for file uploads in Express?",
+    "answer": "Use multer middleware to parse multipart/form-data and handle files."
+  },
+  {
+    "id": "1881",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement logging in Express apps?",
+    "answer": "Use middleware like morgan to log HTTP requests."
+  },
+  {
+    "id": "1882",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the role of req.body in Express?",
+    "answer": "req.body contains the parsed data sent in the request body, available after body parsing middleware."
+  },
+  {
+    "id": "1883",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle HTTPS in Express?",
+    "answer": "Create an HTTPS server with Node's https module and pass the Express app as a handler."
+  },
+  {
+    "id": "1884",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement API versioning in Express?",
+    "answer": "Use different route prefixes or headers to separate API versions."
+  },
+  {
+    "id": "1885",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you use environment variables in Express apps?",
+    "answer": "Access via process.env and manage them with packages like dotenv."
+  },
+  {
+    "id": "1886",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What are the security best practices for Express apps?",
+    "answer": "Validate inputs, use HTTPS, set security headers, sanitize data, and handle errors properly."
+  },
+  {
+    "id": "1887",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle JSON schema validation in Express?",
+    "answer": "Use libraries like Ajv or Joi integrated as middleware to validate request bodies."
+  },
+  {
+    "id": "1888",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement graceful shutdown in Express servers?",
+    "answer": "Listen to process signals and close server connections properly before exiting."
+  },
+  {
+    "id": "1889",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle cookies in Express?",
+    "answer": "Use cookie-parser middleware to parse cookies from incoming requests."
+  },
+  {
+    "id": "1890",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between res.send() and res.json()?",
+    "answer": "res.send() sends any type of response, res.json() specifically sends JSON and sets Content-Type header."
+  },
+{
+    "id": "1891",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement middleware for authentication in Express?",
+    "answer": "Create a middleware that checks for valid tokens or sessions before allowing access to protected routes."
+  },
+  {
+    "id": "1892",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the purpose of the express.Router() class?",
+    "answer": "It helps organize routes into modular, mountable route handlers."
+  },
+  {
+    "id": "1893",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you send a file as a response in Express?",
+    "answer": "Use res.sendFile() with the absolute path to the file."
+  },
+  {
+    "id": "1894",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous middleware in Express?",
+    "answer": "Synchronous middleware runs immediately and blocks the event loop; asynchronous middleware performs async operations and must call next() or handle promises properly."
+  },
+  {
+    "id": "1895",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you limit the size of incoming JSON payloads in Express?",
+    "answer": "Pass a limit option to express.json(), e.g., express.json({ limit: '1mb' })."
+  },
+  {
+    "id": "1896",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to use template inheritance with Express view engines.",
+    "answer": "Use engines like Pug or EJS that support layouts and partials to reuse templates."
+  },
+  {
+    "id": "1897",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle URL rewriting or redirects in Express?",
+    "answer": "Use res.redirect() or middleware to rewrite URLs before they reach route handlers."
+  },
+  {
+    "id": "1898",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you debug an Express app effectively?",
+    "answer": "Use console logs, Node inspector, debugger statements, and middleware like morgan."
+  },
+  {
+    "id": "1899",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the significance of app.listen() in an Express application?",
+    "answer": "It binds the app to a network port and starts listening for incoming requests."
+  },
+  {
+    "id": "1900",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you create APIs that support both JSON and XML responses in Express?",
+    "answer": "Check Accept headers in req and respond accordingly, using libraries to serialize XML if needed."
+  },
+  {
+    "id": "1901",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle multipart uploads with streaming in Express?",
+    "answer": "Use busboy or similar streaming middleware to process file uploads efficiently."
+  },
+  {
+    "id": "1902",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement pagination in Express APIs?",
+    "answer": "Accept page and limit parameters in query, then slice or limit data returned accordingly."
+  },
+  {
+    "id": "1903",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between res.end() and res.send()?",
+    "answer": "res.end() ends the response without any data; res.send() sends data and ends the response."
+  },
+  {
+    "id": "1904",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement request logging with custom formats in Express?",
+    "answer": "Use morgan with a custom format string or function."
+  },
+  {
+    "id": "1905",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle route conflicts in Express?",
+    "answer": "Define more specific routes before generic ones and carefully order middleware."
+  },
+  {
+    "id": "1906",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain the role of res.append() in Express.",
+    "answer": "It appends additional values to HTTP headers."
+  },
+  {
+    "id": "1907",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you set and clear cookies in Express?",
+    "answer": "Use res.cookie() to set and res.clearCookie() to clear cookies."
+  },
+  {
+    "id": "1908",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you protect Express routes from CSRF attacks?",
+    "answer": "Use CSRF middleware like csurf to validate tokens."
+  },
+  {
+    "id": "1909",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of req.originalUrl in Express?",
+    "answer": "It stores the original request URL before any routing or middleware modifications."
+  },
+  {
+    "id": "1910",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement localization in Express apps?",
+    "answer": "Use middleware like i18n or custom logic to detect and serve localized content."
+  },
+  {
+    "id": "1911",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle HTTP method overrides in Express?",
+    "answer": "Use method-override middleware to support PUT/DELETE via POST requests."
+  },
+  {
+    "id": "1912",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement conditional GET requests in Express?",
+    "answer": "Use res.set() to set ETag or Last-Modified headers and check req headers to send 304 if unchanged."
+  },
+  {
+    "id": "1913",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you serve compressed assets in Express?",
+    "answer": "Use compression middleware to gzip responses automatically."
+  },
+  {
+    "id": "1914",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to use environment-specific configurations in Express.",
+    "answer": "Load different config files or variables based on NODE_ENV environment variable."
+  },
+  {
+    "id": "1915",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement request throttling in Express?",
+    "answer": "Use express-rate-limit or custom middleware to limit request frequency."
+  },
+  {
+    "id": "1916",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the role of the next('route') function in Express middleware?",
+    "answer": "It skips the remaining middleware for the current route and moves to the next route handler."
+  },
+  {
+    "id": "1917",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement websocket authentication with Express?",
+    "answer": "Authenticate on the HTTP handshake or with tokens during websocket connection establishment."
+  },
+  {
+    "id": "1918",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement a health check endpoint in Express?",
+    "answer": "Create a simple route that returns status 200 and optionally service info."
+  },
+  {
+    "id": "1919",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between res.locals and app.locals?",
+    "answer": "res.locals is per request, app.locals is global to the app."
+  },
+  {
+    "id": "1920",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement custom headers in Express responses?",
+    "answer": "Use res.set() or res.header() to add custom headers."
+  },
+  {
+    "id": "1921",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you prevent HTTP parameter pollution in Express?",
+    "answer": "Use middleware like hpp to protect against parameter pollution attacks."
+  },
+  {
+    "id": "1922",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement OAuth with Express?",
+    "answer": "Use libraries like Passport.js with OAuth strategies."
+  },
+  {
+    "id": "1923",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the purpose of app.disable() and app.enable() in Express?",
+    "answer": "They turn off or on settings within the Express app."
+  },
+  {
+    "id": "1924",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you access request headers in Express?",
+    "answer": "Use req.headers or req.get(headerName) to access headers."
+  },
+  {
+    "id": "1925",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle multipart form uploads without saving files in Express?",
+    "answer": "Use multer's memory storage to keep files in memory buffers."
+  },
+  {
+    "id": "1926",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement WebSocket fallback for clients in Express?",
+    "answer": "Use libraries like socket.io which provide fallback transports."
+  },
+  {
+    "id": "1927",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of res.format() in Express?",
+    "answer": "It performs content negotiation and responds with different formats."
+  },
+  {
+    "id": "1928",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle errors thrown inside async route handlers in Express?",
+    "answer": "Use try-catch or middleware like express-async-errors to catch async errors."
+  },
+  {
+    "id": "1929",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement CSRF protection with cookie-based tokens in Express?",
+    "answer": "Generate token on server, send it as cookie and verify on subsequent requests."
+  },
+  {
+    "id": "1930",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle multiple middleware functions for a single route in Express?",
+    "answer": "Pass them as arguments in order before the route handler."
+  },
+  {
+    "id": "1931",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you disable the 'X-Powered-By' header in Express?",
+    "answer": "Use app.disable('x-powered-by') to remove that header."
+  },
+  {
+    "id": "1932",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement server-sent events (SSE) with Express?",
+    "answer": "Set appropriate headers and keep the response open, sending data with res.write()."
+  },
+  {
+    "id": "1933",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle static file caching in Express?",
+    "answer": "Set cacheControl options in express.static middleware or set headers manually."
+  },
+  {
+    "id": "1934",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of req.route in Express?",
+    "answer": "It contains the current matched route information."
+  },
+  {
+    "id": "1935",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement custom error pages in Express?",
+    "answer": "Use error-handling middleware to render custom views or send responses."
+  },
+  {
+    "id": "1936",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle query string parameters in Express?",
+    "answer": "Access them via req.query object."
+  },
+{
+    "id": "1937",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement rate limiting for specific routes in Express?",
+    "answer": "Use express-rate-limit middleware with route-specific configuration to limit requests."
+  },
+  {
+    "id": "1938",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between app.use() and app.all() in Express?",
+    "answer": "app.use() mounts middleware for all HTTP methods and paths matching a prefix; app.all() matches all HTTP methods for a specific route."
+  },
+  {
+    "id": "1939",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you manage sessions in Express?",
+    "answer": "Use express-session middleware to create and manage session data."
+  },
+  {
+    "id": "1940",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you serve multiple static directories in Express?",
+    "answer": "Call express.static() multiple times with different directories and mount paths."
+  },
+  {
+    "id": "1941",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle CORS preflight requests in Express?",
+    "answer": "Use the cors middleware and ensure OPTIONS method is handled properly."
+  },
+  {
+    "id": "1942",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "Explain how to mount a sub-application in Express.",
+    "answer": "Use app.use() to mount another Express app at a specific path."
+  },
+  {
+    "id": "1943",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you parse URL-encoded bodies in Express?",
+    "answer": "Use express.urlencoded() middleware."
+  },
+  {
+    "id": "1944",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you handle route parameters in Express?",
+    "answer": "Define routes with colon-prefixed parameters, e.g. /user/:id, and access via req.params."
+  },
+  {
+    "id": "1945",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle JSON parsing errors in Express?",
+    "answer": "Use error-handling middleware that checks for syntax errors thrown by express.json()."
+  },
+  {
+    "id": "1946",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What are best practices for structuring an Express project?",
+    "answer": "Organize routes, controllers, middleware, and configs in separate folders with clear naming."
+  },
+  {
+    "id": "1947",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle file uploads with Express and multer?",
+    "answer": "Configure multer storage and use as middleware on routes handling uploads."
+  },
+  {
+    "id": "1948",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement custom logging in Express?",
+    "answer": "Write middleware that logs request details before passing control."
+  },
+  {
+    "id": "1949",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement health checks that verify database connectivity in Express?",
+    "answer": "Create a route that checks DB connection and returns status accordingly."
+  },
+  {
+    "id": "1950",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle HTTP request timeouts in Express?",
+    "answer": "Use timeout middleware like connect-timeout or set time limits in reverse proxies."
+  },
+  {
+    "id": "1951",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the role of next() in Express middleware?",
+    "answer": "It passes control to the next middleware or route handler."
+  },
+  {
+    "id": "1952",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement API versioning in Express?",
+    "answer": "Use different route prefixes or headers to distinguish API versions."
+  },
+  {
+    "id": "1953",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you secure Express apps against common vulnerabilities?",
+    "answer": "Use helmet middleware, validate inputs, sanitize data, and handle errors properly."
+  },
+  {
+    "id": "1954",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you test Express routes?",
+    "answer": "Use testing libraries like supertest with Jest or Mocha."
+  },
+  {
+    "id": "1955",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle redirects in Express?",
+    "answer": "Use res.redirect() with target URL."
+  },
+  {
+    "id": "1956",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement query validation in Express?",
+    "answer": "Use validation libraries like Joi or express-validator."
+  },
+  {
+    "id": "1957",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle errors thrown by asynchronous code in Express?",
+    "answer": "Use try-catch blocks in async handlers or libraries like express-async-errors."
+  },
+  {
+    "id": "1958",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the use of res.locals in Express?",
+    "answer": "It stores data local to the response that can be accessed in middleware and views."
+  },
+  {
+    "id": "1959",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you implement content security policies in Express?",
+    "answer": "Use helmet-csp or set Content-Security-Policy headers manually."
+  },
+  {
+    "id": "1960",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle query string parsing in Express?",
+    "answer": "Express uses the qs module internally to parse query strings accessible via req.query."
+  },
+  {
+    "id": "1961",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you restrict allowed HTTP methods for a route in Express?",
+    "answer": "Define only handlers for specific HTTP methods and send 405 for others."
+  },
+  {
+    "id": "1962",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the difference between app.route() and app.use()?",
+    "answer": "app.route() creates chainable route handlers for a path; app.use() mounts middleware for any HTTP method."
+  },
+  {
+    "id": "1963",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement streaming responses in Express?",
+    "answer": "Use res.write() to send chunks of data and res.end() to finish."
+  },
+  {
+    "id": "1964",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you serve dynamic HTML with Express?",
+    "answer": "Use a templating engine like Pug, EJS, or Handlebars with res.render()."
+  },
+  {
+    "id": "1965",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle cross-site scripting (XSS) in Express apps?",
+    "answer": "Sanitize user inputs, escape output in templates, and use security middleware."
+  },
+  {
+    "id": "1966",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you add response headers globally in Express?",
+    "answer": "Use middleware that sets headers on res before next() is called."
+  },
+  {
+    "id": "1967",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you manage cookies securely in Express?",
+    "answer": "Set flags like HttpOnly, Secure, and SameSite on cookies via res.cookie()."
+  },
+  {
+    "id": "1968",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle proxy servers with Express apps?",
+    "answer": "Set app.set('trust proxy', true) to trust headers like X-Forwarded-For."
+  },
+  {
+    "id": "1969",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement authentication using JWT in Express?",
+    "answer": "Verify JWT tokens in middleware and protect routes accordingly."
+  },
+  {
+    "id": "1970",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle errors globally in Express?",
+    "answer": "Use an error-handling middleware with four arguments (err, req, res, next)."
+  },
+  {
+    "id": "1971",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How can you debug Express applications?",
+    "answer": "Use Node.js built-in debugger, logging, or debugging tools like nodemon and inspector."
+  },
+  {
+    "id": "1972",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is middleware chaining in Express?",
+    "answer": "Sequential execution of multiple middleware functions for a request."
+  },
+  {
+    "id": "1973",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle multipart form data in Express?",
+    "answer": "Use middleware like multer to parse multipart/form-data."
+  },
+  {
+    "id": "1974",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is the default template engine in Express?",
+    "answer": "Express does not have a default; you must install and set one explicitly."
+  },
+  {
+    "id": "1975",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you enable gzip compression in Express?",
+    "answer": "Use compression middleware to gzip responses."
+  },
+  {
+    "id": "1976",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle environment-specific configurations in Express?",
+    "answer": "Use environment variables and config files with dotenv or similar libraries."
+  },
+  {
+    "id": "1977",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement internationalization (i18n) in Express apps?",
+    "answer": "Use middleware like i18next or express-request-language to manage locales."
+  },
+  {
+    "id": "1978",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you implement WebSocket support alongside Express?",
+    "answer": "Use libraries like ws or socket.io together with Express server."
+  },
+  {
+    "id": "1979",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle large request bodies in Express?",
+    "answer": "Increase size limits in body-parser or express.json() middleware configuration."
+  },
+  {
+    "id": "1980",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you create reusable middleware in Express?",
+    "answer": "Write middleware functions that accept options and return middleware handlers."
+  },
+  {
+    "id": "1981",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How do you handle route redirection based on user roles in Express?",
+    "answer": "Implement middleware that checks user role and redirects accordingly."
   }
 ]
