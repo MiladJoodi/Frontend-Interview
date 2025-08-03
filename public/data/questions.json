@@ -7980,6 +7980,4906 @@
     "answer": "Use `<link rel='icon' href='favicon.ico'>` in `<head>`."
   },
   {
+    "id": "1141",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "What is TypeScript and why use it?",
+    "answer": "TypeScript is a typed superset of JavaScript that adds static types and compiles to plain JavaScript, helping catch errors early and improve code maintainability."
+  },
+  {
+    "id": "1142",
+    "category": "typescript",
+    "difficulty": "easy",
+    "question": "How do you define a variable with a specific type in TypeScript?",
+    "answer": "Use a colon followed by the type after the variable name, e.g., `let age: number = 30;`."
+  },
+  {
+    "id": "1143",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are interfaces in TypeScript?",
+    "answer": "Interfaces define the shape of an object, specifying property names and types without implementation."
+  },
+  {
+    "id": "1144",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you make a property optional in an interface?",
+    "answer": "Add a question mark after the property name, e.g., `name?: string;`."
+  },
+  {
+    "id": "1145",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `type` and `interface`?",
+    "answer": "`type` can define aliases for any type including unions and primitives; `interface` is specifically for object shapes and can be extended."
+  },
+  {
+    "id": "1146",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are union types in TypeScript?",
+    "answer": "A union type allows a variable to hold more than one type, e.g., `string | number`."
+  },
+  {
+    "id": "1147",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain type assertion in TypeScript.",
+    "answer": "Type assertion tells the compiler to treat a variable as a specific type, using syntax like `value as Type`."
+  },
+  {
+    "id": "1148",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do generics work in TypeScript?",
+    "answer": "Generics allow writing reusable components that work with various types while maintaining type safety."
+  },
+  {
+    "id": "1149",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What is the `never` type in TypeScript?",
+    "answer": "`never` represents values that never occur, used for functions that never return or throw errors."
+  },
+  {
+    "id": "1150",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a function with typed parameters and return type?",
+    "answer": "Specify types after parameters and the return type after the parameter list, e.g., `function add(a: number, b: number): number {}`."
+  },
+  {
+    "id": "1151",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are enums in TypeScript?",
+    "answer": "Enums define a set of named constants, which can be numeric or string-based."
+  },
+  {
+    "id": "1152",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create a readonly property in an interface?",
+    "answer": "Add the `readonly` modifier before the property name."
+  },
+  {
+    "id": "1153",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What is type narrowing?",
+    "answer": "Type narrowing refines a variable's type within a block using checks like `typeof` or `instanceof`."
+  },
+  {
+    "id": "1154",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain the difference between `unknown` and `any` types.",
+    "answer": "`any` disables type checking; `unknown` is safer because it forces you to check the type before use."
+  },
+  {
+    "id": "1155",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you handle nullable types in TypeScript?",
+    "answer": "Use union types with `null` or `undefined`, e.g., `string | null`."
+  },
+  {
+    "id": "1156",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `Partial<T>` utility type?",
+    "answer": "It makes all properties in type `T` optional."
+  },
+  {
+    "id": "1157",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you extend an interface in TypeScript?",
+    "answer": "Use the `extends` keyword, e.g., `interface Child extends Parent {}`."
+  },
+  {
+    "id": "1158",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are mapped types in TypeScript?",
+    "answer": "Mapped types generate new types by transforming properties of existing types."
+  },
+  {
+    "id": "1159",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a tuple in TypeScript?",
+    "answer": "A tuple is an array with fixed length and types, e.g., `[string, number]`."
+  },
+  {
+    "id": "1160",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `class` in TypeScript?",
+    "answer": "`interface` defines type shape without implementation; `class` is blueprint for creating objects with implementation."
+  },
+  {
+    "id": "1161",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you use TypeScript with React?",
+    "answer": "By typing props and state using interfaces or types and using `.tsx` files."
+  },
+  {
+    "id": "1162",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What does `readonly` do in TypeScript arrays?",
+    "answer": "Creates an immutable array that prevents modification of its elements."
+  },
+  {
+    "id": "1163",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you catch errors in asynchronous functions with TypeScript?",
+    "answer": "Use `try...catch` blocks and optionally type the error."
+  },
+  {
+    "id": "1164",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain conditional types in TypeScript.",
+    "answer": "Types that select one of two types based on a condition, e.g., `T extends U ? X : Y`."
+  },
+  {
+    "id": "1165",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What is the `infer` keyword used for?",
+    "answer": "Used inside conditional types to infer a type variable within another type."
+  },
+  {
+    "id": "1166",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a function type in TypeScript?",
+    "answer": "Use syntax like `(param: Type) => ReturnType`, e.g., `(a: number, b: number) => number`."
+  },
+  {
+    "id": "1167",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you enforce that an object must have specific keys with known types?",
+    "answer": "Define an interface or type with those keys and their types."
+  },
+  {
+    "id": "1168",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is declaration merging in TypeScript?",
+    "answer": "When multiple declarations with the same name are combined by the compiler into one."
+  },
+  {
+    "id": "1169",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define default values for function parameters in TypeScript?",
+    "answer": "Assign default values in the function signature, e.g., `function f(x = 5)`."
+  },
+  {
+    "id": "1170",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is type inference in TypeScript?",
+    "answer": "TypeScript automatically infers the type of a variable when it is declared without explicit type."
+  },
+  {
+    "id": "1171",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you make all properties in an interface readonly?",
+    "answer": "Use the `Readonly<T>` utility type."
+  },
+  {
+    "id": "1172",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between structural typing and nominal typing?",
+    "answer": "TypeScript uses structural typing where compatibility is based on the shape, not the explicit type name."
+  },
+  {
+    "id": "1173",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you represent a function that returns nothing in TypeScript?",
+    "answer": "Use the `void` return type."
+  },
+  {
+    "id": "1174",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are intersection types?",
+    "answer": "They combine multiple types into one that has all properties of the combined types, e.g., `A & B`."
+  },
+  {
+    "id": "1175",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you handle external JavaScript libraries without type definitions?",
+    "answer": "Use `declare` statements or install `@types` packages if available."
+  },
+  {
+    "id": "1176",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain how to create custom type guards.",
+    "answer": "Create functions returning `param is Type` and use type checks inside."
+  },
+  {
+    "id": "1177",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type rest parameters in TypeScript?",
+    "answer": "Use syntax like `(...args: number[])`."
+  },
+  {
+    "id": "1178",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `keyof` operator?",
+    "answer": "Returns a union of keys of a given type."
+  },
+  {
+    "id": "1179",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you exclude certain types from a union?",
+    "answer": "Use the `Exclude` utility type."
+  },
+  {
+    "id": "1180",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `as const` assertion?",
+    "answer": "It tells TypeScript to infer the narrowest literal types instead of general types."
+  },
+  {
+    "id": "1181",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type an object with dynamic keys?",
+    "answer": "Use index signatures like `{ [key: string]: number }`."
+  },
+  {
+    "id": "1182",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `type` for object types?",
+    "answer": "`interface` can be extended and merged, `type` is more flexible but cannot be merged."
+  },
+  {
+    "id": "1183",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "Can you override methods in subclasses with different types in TypeScript?",
+    "answer": "Yes, but the overriding method must be compatible with the base class method's type."
+  },
+  {
+    "id": "1184",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How does TypeScript handle enums at runtime?",
+    "answer": "Enums are compiled to objects with both forward and reverse mappings for numeric enums."
+  },
+  {
+    "id": "1185",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is declaration merging for namespaces?",
+    "answer": "Multiple namespace declarations with the same name merge into a single namespace."
+  },
+  {
+    "id": "1186",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you disable implicit any errors in TypeScript?",
+    "answer": "Set `noImplicitAny` to `false` in `tsconfig.json`."
+  },
+  {
+    "id": "1187",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain variance in TypeScript generics.",
+    "answer": "Variance describes how subtyping between complex types relates to subtyping between their components."
+  },
+  {
+    "id": "1188",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a class with private properties?",
+    "answer": "Use the `private` keyword before properties or methods."
+  },
+  {
+    "id": "1189",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `unknown` type used for?",
+    "answer": "Represents any value but requires type checking before use, safer than `any`."
+  },
+  {
+    "id": "1190",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create a readonly array?",
+    "answer": "Use `ReadonlyArray<T>` or `readonly T[]` syntax."
+  },
+  {
+    "id": "1191",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How does TypeScript's `strictNullChecks` affect type checking?",
+    "answer": "It forces explicit handling of `null` and `undefined` values."
+  },
+  {
+    "id": "1192",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you write a function overload in TypeScript?",
+    "answer": "Provide multiple function declarations with different parameter types followed by a single implementation."
+  },
+{
+    "id": "1193",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define optional chaining in TypeScript?",
+    "answer": "Use the `?.` operator to safely access nested properties without causing errors if a reference is null or undefined."
+  },
+  {
+    "id": "1194",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `abstract class`?",
+    "answer": "Interfaces declare type contracts without implementation; abstract classes can provide implementation and be extended."
+  },
+  {
+    "id": "1195",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create a discriminated union in TypeScript?",
+    "answer": "Create a union of types with a common literal property to differentiate them."
+  },
+  {
+    "id": "1196",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain the use of the `this` keyword in TypeScript classes.",
+    "answer": "`this` refers to the current instance of the class and helps with method chaining and property access."
+  },
+  {
+    "id": "1197",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `unknown` type and how is it different from `any`?",
+    "answer": "`unknown` is a safer alternative to `any` requiring type checking before use."
+  },
+  {
+    "id": "1198",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you enforce immutability in TypeScript?",
+    "answer": "Use `readonly` properties and types like `Readonly<T>` or `ReadonlyArray<T>`."
+  },
+  {
+    "id": "1199",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is a type predicate in TypeScript?",
+    "answer": "A function returning `param is Type` to help narrow types within conditionals."
+  },
+  {
+    "id": "1200",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare and use enums with string values?",
+    "answer": "Use `enum Name { A = 'a', B = 'b' }` syntax for string enums."
+  },
+  {
+    "id": "1201",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain the difference between nominal and structural typing in TypeScript.",
+    "answer": "TypeScript uses structural typing, where compatibility depends on type shape, not explicit declarations."
+  },
+  {
+    "id": "1202",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `infer` keyword used for in conditional types?",
+    "answer": "To extract and infer types within a conditional type expression."
+  },
+  {
+    "id": "1203",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create a read-only tuple?",
+    "answer": "Add the `readonly` modifier, e.g., `readonly [string, number]`."
+  },
+  {
+    "id": "1204",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you handle unknown property keys in TypeScript objects?",
+    "answer": "Use index signatures like `{ [key: string]: any }`."
+  },
+  {
+    "id": "1205",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What is the difference between `Pick<T, K>` and `Omit<T, K>` utility types?",
+    "answer": "`Pick` selects a subset of properties; `Omit` excludes certain properties from a type."
+  },
+  {
+    "id": "1206",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a type-safe event handler in TypeScript for DOM events?",
+    "answer": "Use the appropriate event type, e.g., `(event: React.ChangeEvent<HTMLInputElement>) => void`."
+  },
+  {
+    "id": "1207",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What does the `as` keyword do in TypeScript?",
+    "answer": "It performs type assertion, telling the compiler to treat a value as a specific type."
+  },
+  {
+    "id": "1208",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain how to create a utility type that makes all properties nullable.",
+    "answer": "Use mapped types: `{ [P in keyof T]: T[P] | null }`."
+  },
+  {
+    "id": "1209",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `class` in terms of implementation?",
+    "answer": "`interface` only defines the shape, `class` provides actual implementation."
+  },
+  {
+    "id": "1210",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you define a recursive type in TypeScript?",
+    "answer": "By referencing the type name within its own definition."
+  },
+  {
+    "id": "1211",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are conditional types and give an example?",
+    "answer": "Types that depend on a condition, e.g., `T extends U ? X : Y`."
+  },
+  {
+    "id": "1212",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a variable that can be a string or a number?",
+    "answer": "Use a union type: `let value: string | number;`."
+  },
+  {
+    "id": "1213",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `type` aliases?",
+    "answer": "`interface` can be extended and merged; `type` is more flexible but cannot be reopened."
+  },
+  {
+    "id": "1214",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a generic function in TypeScript?",
+    "answer": "Use angle brackets with a type parameter, e.g., `function identity<T>(arg: T): T`."
+  },
+  {
+    "id": "1215",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is type inference and how does it work in TypeScript?",
+    "answer": "The compiler automatically deduces the type based on assigned values or return statements."
+  },
+  {
+    "id": "1216",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type an object with optional properties?",
+    "answer": "Use the `?` operator in the property declaration, e.g., `name?: string`."
+  },
+  {
+    "id": "1217",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain intersection types with an example.",
+    "answer": "Combine multiple types into one with all properties, e.g., `type A = B & C;`."
+  },
+  {
+    "id": "1218",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `never` type and when is it used?",
+    "answer": "`never` represents values that never occur, like functions that throw or infinite loops."
+  },
+  {
+    "id": "1219",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define readonly properties in classes?",
+    "answer": "Use the `readonly` keyword before the property name."
+  },
+  {
+    "id": "1220",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are the benefits of using TypeScript with React?",
+    "answer": "Better type safety for props and state, improved IDE support, and catching errors early."
+  },
+  {
+    "id": "1221",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you handle external JavaScript libraries without types in TypeScript?",
+    "answer": "Use `declare module` or install community type definitions from DefinitelyTyped."
+  },
+  {
+    "id": "1222",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What does the `keyof` operator return?",
+    "answer": "A union of the keys of the given type."
+  },
+  {
+    "id": "1223",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a tuple type with specific types?",
+    "answer": "Use square brackets with types in order, e.g., `[string, number, boolean]`."
+  },
+  {
+    "id": "1224",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "Explain the use of `as const` in TypeScript.",
+    "answer": "It infers literal types and makes the value immutable."
+  },
+  {
+    "id": "1225",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "How can you create a mapped type that makes all properties optional?",
+    "answer": "Use `type Partial<T> = { [P in keyof T]?: T[P] }`."
+  },
+  {
+    "id": "1226",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is type compatibility in TypeScript?",
+    "answer": "Two types are compatible if their structures match according to structural typing rules."
+  },
+  {
+    "id": "1227",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an interface for a function type?",
+    "answer": "Use call signatures, e.g., `interface Fn { (arg: string): number }`."
+  },
+  {
+    "id": "1228",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you extend an interface?",
+    "answer": "Use `interface NewInterface extends ExistingInterface {}`."
+  },
+  {
+    "id": "1229",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `type` alias and `enum`?",
+    "answer": "`type` defines custom types or unions; `enum` defines a set of named constants."
+  },
+  {
+    "id": "1230",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a function that returns a promise in TypeScript?",
+    "answer": "Use `Promise<T>` as the return type, e.g., `function fetch(): Promise<string>`."
+  },
+  {
+    "id": "1231",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you narrow types in TypeScript?",
+    "answer": "Use type guards like `typeof`, `instanceof`, or user-defined type predicates."
+  },
+  {
+    "id": "1232",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are utility types in TypeScript?",
+    "answer": "Predefined generic types like `Partial`, `Pick`, `Omit` to transform existing types."
+  },
+  {
+    "id": "1233",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a type for an array of strings?",
+    "answer": "Use `string[]` or `Array<string>`."
+  },
+  {
+    "id": "1234",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create an alias for a union type?",
+    "answer": "Use `type Name = A | B | C;`."
+  },
+  {
+    "id": "1235",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you prevent properties from being modified in TypeScript?",
+    "answer": "Use the `readonly` modifier on properties."
+  },
+{
+    "id": "1236",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `null` and `undefined` in TypeScript?",
+    "answer": "`undefined` means a variable has been declared but not assigned a value; `null` is an assigned value indicating 'no value'."
+  },
+  {
+    "id": "1237",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a generic interface?",
+    "answer": "Use angle brackets with a type parameter, e.g., `interface Box<T> { value: T }`."
+  },
+  {
+    "id": "1238",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is type assertion and when should it be used?",
+    "answer": "It tells the compiler to treat a variable as a specific type, used when you know more about the variable than TypeScript."
+  },
+  {
+    "id": "1239",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain how to create a type-safe event handler for custom events.",
+    "answer": "Define event types with generics and use them in event listener declarations to ensure correct typing."
+  },
+  {
+    "id": "1240",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the utility of the `never` type in exhaustive checks?",
+    "answer": "It helps detect unreachable code and ensures all cases are handled, especially in switch statements."
+  },
+  {
+    "id": "1241",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type a function with rest parameters?",
+    "answer": "Use the rest syntax with a typed array, e.g., `function fn(...args: number[]): void`."
+  },
+  {
+    "id": "1242",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` merging and `type` alias merging?",
+    "answer": "Interfaces can be merged automatically by the compiler; type aliases cannot be merged."
+  },
+  {
+    "id": "1243",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you enforce a function parameter to be a literal type?",
+    "answer": "Use literal types or string literal unions for the parameter type."
+  },
+  {
+    "id": "1244",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare a readonly array type?",
+    "answer": "Use `readonly` modifier before the array type, e.g., `readonly string[]`."
+  },
+  {
+    "id": "1245",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "Explain how conditional types can improve API design in TypeScript.",
+    "answer": "They enable types to adapt based on inputs, allowing flexible yet type-safe APIs."
+  },
+  {
+    "id": "1246",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the `Exclude` utility type?",
+    "answer": "It creates a type by excluding from union `T` all types assignable to `U`."
+  },
+  {
+    "id": "1247",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you ensure a property exists on an object before accessing it?",
+    "answer": "Use optional chaining or explicit checks for property existence."
+  },
+  {
+    "id": "1248",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the use of the `ReturnType<T>` utility?",
+    "answer": "It extracts the return type of a function type `T`."
+  },
+  {
+    "id": "1249",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type a function that takes another function as an argument?",
+    "answer": "Specify the parameter as a function type, e.g., `(callback: (x: number) => void) => void`."
+  },
+  {
+    "id": "1250",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you represent a function that never returns in TypeScript?",
+    "answer": "Declare its return type as `never`."
+  },
+  {
+    "id": "1251",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What does the `Parameters<T>` utility type do?",
+    "answer": "Extracts the parameter types of function type `T` as a tuple."
+  },
+  {
+    "id": "1252",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare an index signature with number keys?",
+    "answer": "Use `[key: number]: Type` syntax."
+  },
+  {
+    "id": "1253",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between structural and nominal typing?",
+    "answer": "TypeScript uses structural typing: types are compatible based on their shape, not explicit names."
+  },
+  {
+    "id": "1254",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define a type guard function?",
+    "answer": "A function returning `param is Type` to narrow down types within conditional blocks."
+  },
+  {
+    "id": "1255",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `declare` keyword?",
+    "answer": "To tell the compiler about variables or types defined elsewhere (e.g., global libraries)."
+  },
+  {
+    "id": "1256",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an intersection type?",
+    "answer": "Combine multiple types using `&`, e.g., `type A = B & C`."
+  },
+  {
+    "id": "1257",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `unknown` and `any`?",
+    "answer": "`unknown` requires type checking before use, `any` disables type checking."
+  },
+  {
+    "id": "1258",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you enforce exhaustive checks in switch statements?",
+    "answer": "Use a `never`-typed default case that throws errors if reached."
+  },
+  {
+    "id": "1259",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are mapped types?",
+    "answer": "Types created by transforming properties of another type with a mapping."
+  },
+  {
+    "id": "1260",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you create an alias for a tuple type?",
+    "answer": "Use `type Name = [Type1, Type2, ...]`."
+  },
+  {
+    "id": "1261",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define an abstract class?",
+    "answer": "Use the `abstract` keyword before the class declaration."
+  },
+  {
+    "id": "1262",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the benefit of using literal types?",
+    "answer": "They allow exact value matching, improving type safety and narrowing."
+  },
+  {
+    "id": "1263",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you specify that a function parameter can only accept specific string values?",
+    "answer": "Use string literal union types, e.g., `'start' | 'stop' | 'pause'`."
+  },
+  {
+    "id": "1264",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you make all properties of a type required?",
+    "answer": "Use the `Required<T>` utility type."
+  },
+  {
+    "id": "1265",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is a type alias?",
+    "answer": "A new name for a type, created using the `type` keyword."
+  },
+  {
+    "id": "1266",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you declare an enum with numeric values?",
+    "answer": "Use `enum Name { A, B, C }` where values default to 0, 1, 2."
+  },
+  {
+    "id": "1267",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type a function that returns another function?",
+    "answer": "Specify return type as a function, e.g., `() => () => string`."
+  },
+  {
+    "id": "1268",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `Partial<T>` utility type?",
+    "answer": "Makes all properties of `T` optional."
+  },
+  {
+    "id": "1269",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you use `keyof` with generics?",
+    "answer": "Constrain types to keys of a generic parameter using `K extends keyof T`."
+  },
+  {
+    "id": "1270",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you define a type-safe wrapper for third-party libraries?",
+    "answer": "Use declaration files (`.d.ts`) to specify types."
+  },
+  {
+    "id": "1271",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between interface extension and declaration merging?",
+    "answer": "Extension adds new members; declaration merging combines multiple declarations."
+  },
+  {
+    "id": "1272",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type a class that implements multiple interfaces?",
+    "answer": "Use `class MyClass implements Interface1, Interface2 {}`."
+  },
+  {
+    "id": "1273",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you represent optional properties in interfaces?",
+    "answer": "Add a question mark, e.g., `property?: Type`."
+  },
+  {
+    "id": "1274",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type asynchronous functions with async/await?",
+    "answer": "Declare return type as `Promise<ReturnType>`, e.g., `async function f(): Promise<string>`."
+  },
+  {
+    "id": "1275",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How can you type discriminate union types?",
+    "answer": "Use a common discriminant property to narrow types."
+  },
+  {
+    "id": "1276",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the use of the `unknown` type over `any`?",
+    "answer": "`unknown` forces type checks before usage, increasing type safety."
+  },
+  {
+    "id": "1277",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you define recursive types?",
+    "answer": "Use type aliases that refer to themselves, e.g., `type Tree = { value: number; children?: Tree[] }`."
+  },
+  {
+    "id": "1278",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type default function parameters?",
+    "answer": "Specify the type normally; defaults do not affect typing."
+  },
+  {
+    "id": "1279",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What is the difference between `interface` and `class` in TypeScript?",
+    "answer": "`interface` defines shapes; `class` implements logic and structure."
+  },
+  {
+    "id": "1280",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "How do you type a function that accepts multiple overloads?",
+    "answer": "Declare multiple function signatures before the implementation."
+  },
+{
+    "id": "1281",
+    "category": "sass",
+    "difficulty": "easy",
+    "question": "What is Sass and why is it used?",
+    "answer": "Sass is a CSS preprocessor that adds features like variables, nesting, and mixins to make writing CSS more efficient and maintainable."
+  },
+  {
+    "id": "1282",
+    "category": "sass",
+    "difficulty": "easy",
+    "question": "What is the difference between Sass and SCSS syntax?",
+    "answer": "Sass uses indentation-based syntax without braces or semicolons, while SCSS is a superset of CSS with braces and semicolons."
+  },
+  {
+    "id": "1283",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do variables work in Sass?",
+    "answer": "Variables in Sass are defined with a `$` prefix and can store values like colors, fonts, or any CSS value, which can then be reused throughout the stylesheet."
+  },
+  {
+    "id": "1284",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain nesting in Sass and its advantages.",
+    "answer": "Nesting allows selectors to be nested inside one another, reflecting the HTML structure and making the stylesheet more organized and easier to read."
+  },
+  {
+    "id": "1285",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are mixins in Sass and how do you use them?",
+    "answer": "Mixins are reusable blocks of code defined with `@mixin` and included with `@include`, allowing you to avoid repetition and manage styles better."
+  },
+  {
+    "id": "1286",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@extend` and mixins?",
+    "answer": "`@extend` inherits styles from another selector, merging selectors in output, while mixins copy code and can accept parameters."
+  },
+  {
+    "id": "1287",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you pass arguments to mixins?",
+    "answer": "Define parameters inside parentheses in `@mixin` and pass values when using `@include`."
+  },
+  {
+    "id": "1288",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is a placeholder selector in Sass?",
+    "answer": "Placeholders start with `%` and are used with `@extend` to share styles without outputting a CSS selector."
+  },
+  {
+    "id": "1289",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how control directives like `@if` and `@for` work in Sass.",
+    "answer": "`@if` runs conditional code blocks; `@for` creates loops, both allowing dynamic CSS generation."
+  },
+  {
+    "id": "1290",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the advantages of using functions in Sass?",
+    "answer": "Functions help compute values dynamically, reducing duplication and increasing flexibility in styles."
+  },
+  {
+    "id": "1291",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How does Sass handle importing files?",
+    "answer": "Sass uses `@import` or the newer `@use` to include and modularize stylesheets, avoiding duplicate CSS output with `@use`."
+  },
+  {
+    "id": "1292",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@import` and `@use` in Sass?",
+    "answer": "`@import` merges files and can cause duplication, while `@use` loads a module once and scopes variables to avoid conflicts."
+  },
+  {
+    "id": "1293",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create and use maps in Sass?",
+    "answer": "Maps are key-value pairs, defined with parentheses and colons, accessed with `map-get()`."
+  },
+  {
+    "id": "1294",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to loop over maps in Sass.",
+    "answer": "Use `@each $key, $value in $map` to iterate through map entries."
+  },
+  {
+    "id": "1295",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are some common pitfalls when using nesting in Sass?",
+    "answer": "Over-nesting leads to overly specific CSS selectors, increasing CSS size and complexity."
+  },
+  {
+    "id": "1296",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How do you optimize Sass for maintainability and performance?",
+    "answer": "Use modular files, avoid deep nesting, prefer `@use` over `@import`, and minimize unnecessary mixins or extends."
+  },
+  {
+    "id": "1297",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Can you explain the concept of ‘scope’ in Sass variables?",
+    "answer": "Variables have lexical scope; those declared inside blocks are local and override outer scopes."
+  },
+  {
+    "id": "1298",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do default values for variables work in Sass?",
+    "answer": "Using `!default`, variables are assigned only if they haven’t been defined before."
+  },
+  {
+    "id": "1299",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you create responsive design using Sass?",
+    "answer": "Use mixins and media query nesting to apply styles based on viewport sizes."
+  },
+  {
+    "id": "1300",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the role of the ampersand `&` in Sass selectors?",
+    "answer": "It references the parent selector, allowing complex selector concatenation and pseudo-classes."
+  },
+  {
+    "id": "1301",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you conditionally include styles in Sass?",
+    "answer": "Use `@if` directives to include or exclude style blocks based on conditions."
+  },
+  {
+    "id": "1302",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you debug Sass code?",
+    "answer": "Use `@debug` and `@warn` directives to output messages during compilation."
+  },
+  {
+    "id": "1303",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `lighten()` and `darken()` functions?",
+    "answer": "`lighten()` increases the lightness of a color; `darken()` decreases it."
+  },
+  {
+    "id": "1304",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create custom functions in Sass?",
+    "answer": "Use `@function` to define reusable logic that returns values."
+  },
+  {
+    "id": "1305",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@mixin` and `@function`?",
+    "answer": "`@mixin` outputs CSS rules; `@function` returns values for use in expressions."
+  },
+  {
+    "id": "1306",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain the concept of silent classes or placeholders.",
+    "answer": "Silent classes (`%placeholder`) are not output unless extended, useful for shared styles."
+  },
+  {
+    "id": "1307",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How does inheritance work in Sass?",
+    "answer": "Using `@extend`, selectors inherit properties from other selectors to avoid duplication."
+  },
+  {
+    "id": "1308",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How do you handle large-scale Sass projects and architecture?",
+    "answer": "Organize with partials, use `@use`, maintain consistent naming, and follow methodologies like BEM or SMACSS."
+  },
+  {
+    "id": "1309",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the common functions for color manipulation in Sass?",
+    "answer": "Functions like `lighten()`, `darken()`, `saturate()`, `desaturate()`, `rgba()`."
+  },
+  {
+    "id": "1310",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Can you explain how to use `@content` in mixins?",
+    "answer": "It allows mixins to accept blocks of styles as content for flexible code reuse."
+  },
+  {
+    "id": "1311",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@forward` and `@use`?",
+    "answer": "`@forward` re-exports modules, while `@use` imports and scopes them."
+  },
+  {
+    "id": "1312",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you handle theming with Sass?",
+    "answer": "Use variables, maps, and mixins to define and switch between themes."
+  },
+  {
+    "id": "1313",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain the importance of modular Sass and partials.",
+    "answer": "Partials split code into manageable files, improving maintainability and reusability."
+  },
+  {
+    "id": "1314",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you generate dynamic grid layouts using Sass?",
+    "answer": "Use loops and mixins to generate grid classes with customizable columns and gaps."
+  },
+  {
+    "id": "1315",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are silent comments in Sass and how are they used?",
+    "answer": "Silent comments (`//`) are not included in compiled CSS and used for developer notes."
+  },
+  {
+    "id": "1316",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you use math operations in Sass?",
+    "answer": "Sass supports operators like `+`, `-`, `*`, `/`, `%` for calculations in properties."
+  },
+  {
+    "id": "1317",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Can you explain the concept of parent selector referencing `&`?",
+    "answer": "It refers to the current selector, useful in nesting for pseudo-classes or modifiers."
+  },
+  {
+    "id": "1318",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you prevent code duplication in Sass?",
+    "answer": "By using mixins, placeholders, variables, and `@extend`."
+  },
+  {
+    "id": "1319",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "Explain how you can use Sass to implement a design system.",
+    "answer": "Use variables for colors/fonts, mixins for components, and maps for spacing to build scalable styles."
+  },
+  {
+    "id": "1320",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How does Sass compilation work?",
+    "answer": "Sass files are processed by the compiler to generate standard CSS files."
+  },
+  {
+    "id": "1321",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you integrate Sass with modern frontend build tools?",
+    "answer": "Use loaders/plugins for tools like Webpack, Vite, or Next.js to compile Sass into CSS."
+  },
+  {
+    "id": "1322",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `!global` flag in Sass variables?",
+    "answer": "It forces a variable assignment in the global scope, overriding local scope."
+  },
+  {
+    "id": "1323",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you handle vendor prefixes in Sass?",
+    "answer": "Use mixins or tools like Autoprefixer to manage vendor prefixes automatically."
+  },
+  {
+    "id": "1324",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to use interpolation in Sass.",
+    "answer": "Interpolation `#{$variable}` injects variables into selectors or property names."
+  },
+  {
+    "id": "1325",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you write conditional logic in Sass?",
+    "answer": "Using `@if`, `@else if`, and `@else` directives."
+  },
+  {
+    "id": "1326",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are some common use cases for `@each` in Sass?",
+    "answer": "Iterating over lists or maps to generate repeated styles or utility classes."
+  },
+  {
+    "id": "1327",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you manage state-based styles using Sass?",
+    "answer": "Use mixins and conditional logic to apply styles based on component states."
+  },
+{
+    "id": "1328",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you modularize Sass files effectively?",
+    "answer": "Break styles into partials, use `@use` to import them, and keep related styles grouped by feature or component."
+  },
+  {
+    "id": "1329",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@debug` and `@warn` in Sass?",
+    "answer": "`@debug` outputs debug messages during compilation, while `@warn` issues warnings without stopping compilation."
+  },
+  {
+    "id": "1330",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you use Sass to manage font stacks and typography?",
+    "answer": "Define font stacks as variables or maps and create mixins to apply consistent typography styles."
+  },
+  {
+    "id": "1331",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you avoid specificity issues when using Sass nesting?",
+    "answer": "Limit nesting depth and avoid nesting selectors with IDs or overly specific classes."
+  },
+  {
+    "id": "1332",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how `@content` can enhance mixins with examples.",
+    "answer": "`@content` allows passing blocks of styles into mixins, making them more flexible and reusable."
+  },
+  {
+    "id": "1333",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the purpose of `@forward` in Sass modules?",
+    "answer": "`@forward` re-exports a module's members, letting you create public APIs for Sass libraries."
+  },
+  {
+    "id": "1334",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create responsive utilities in Sass?",
+    "answer": "Write mixins with media queries and use loops to generate utility classes for different breakpoints."
+  },
+  {
+    "id": "1335",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Can you explain the difference between static and dynamic Sass functions?",
+    "answer": "Static functions return fixed values; dynamic functions calculate values based on inputs."
+  },
+  {
+    "id": "1336",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you use Sass maps to manage colors in a project?",
+    "answer": "Store colors as key-value pairs and retrieve them with `map-get()` to keep color usage consistent."
+  },
+  {
+    "id": "1337",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the benefits of using placeholders `%` over mixins for shared styles?",
+    "answer": "Placeholders avoid duplicated CSS by merging selectors, while mixins copy styles each time they’re included."
+  },
+  {
+    "id": "1338",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you handle browser support and fallbacks in Sass?",
+    "answer": "Use mixins and functions to provide vendor prefixes or fallback values conditionally."
+  },
+  {
+    "id": "1339",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to create theme toggling using Sass variables and maps.",
+    "answer": "Define theme colors in maps and switch themes by changing which map is used in your styles."
+  },
+  {
+    "id": "1340",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the best practice for organizing partials in a large Sass project?",
+    "answer": "Group partials by features or components, keep a clear folder structure, and use `@use` for imports."
+  },
+  {
+    "id": "1341",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can Sass help in maintaining consistent spacing across a project?",
+    "answer": "Use spacing variables or maps and apply them through mixins or functions for uniform spacing."
+  },
+  {
+    "id": "1342",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Describe the use of `@media` queries inside Sass mixins.",
+    "answer": "Encapsulate media queries within mixins to reuse responsive behavior across components."
+  },
+  {
+    "id": "1343",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How does Sass improve CSS maintainability?",
+    "answer": "Through variables, nesting, mixins, functions, and modular architecture that reduce repetition and improve clarity."
+  },
+  {
+    "id": "1344",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the limitations of Sass?",
+    "answer": "It can't manipulate DOM, has a compile step, and excessive nesting or poor architecture can cause bloated CSS."
+  },
+  {
+    "id": "1345",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how Sass handles arithmetic operations with units.",
+    "answer": "Sass can add, subtract, multiply, and divide numbers with compatible units, automatically managing unit conversions."
+  },
+  {
+    "id": "1346",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you use `@each` with lists in Sass?",
+    "answer": "Loop through list items with `@each $item in $list` to generate repeated CSS rules."
+  },
+  {
+    "id": "1347",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What role do conditionals play in Sass scripts?",
+    "answer": "Conditionals let you generate CSS selectively based on variables or logic."
+  },
+  {
+    "id": "1348",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you avoid duplication when using Sass mixins?",
+    "answer": "Keep mixins focused and small; use placeholders for shared styles when possible."
+  },
+  {
+    "id": "1349",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Can you explain the concept of `@content` blocks in mixins?",
+    "answer": "They allow passing a block of CSS to be inserted inside a mixin call for flexible styles."
+  },
+  {
+    "id": "1350",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can Sass be used to build utility-first CSS?",
+    "answer": "Generate utility classes dynamically using loops and mixins for common properties like margin, padding, and colors."
+  },
+  {
+    "id": "1351",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the key benefits of using `@use` over `@import`?",
+    "answer": "`@use` prevents duplicate CSS, scopes variables, and supports namespaces for better modularity."
+  },
+  {
+    "id": "1352",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you generate classes dynamically in Sass using loops?",
+    "answer": "Use `@for` or `@each` loops to create repetitive classes with variable names or values."
+  },
+  {
+    "id": "1353",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to implement dark mode support with Sass.",
+    "answer": "Use variables for colors and switch their values based on a `.dark` class or media queries."
+  },
+  {
+    "id": "1354",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are silent comments in Sass and why use them?",
+    "answer": "Comments starting with `//` are not included in compiled CSS, useful for notes and documentation."
+  },
+  {
+    "id": "1355",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you create reusable button styles with Sass?",
+    "answer": "Define mixins or placeholders for buttons and use variables for colors, padding, and borders."
+  },
+  {
+    "id": "1356",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you handle complex selector combinations in Sass?",
+    "answer": "Use the parent selector `&` with nesting and interpolation for dynamic selectors."
+  },
+  {
+    "id": "1357",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the common pitfalls when using `@extend`?",
+    "answer": "It can create unexpected selector chains, increasing specificity and CSS size."
+  },
+  {
+    "id": "1358",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to create responsive typography with Sass.",
+    "answer": "Use mixins with media queries and variables for font sizes that adapt to screen sizes."
+  },
+  {
+    "id": "1359",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the difference between `@function` and JavaScript functions?",
+    "answer": "Sass functions run at compile time and return CSS values; JS functions run in the browser or server."
+  },
+  {
+    "id": "1360",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you use Sass to create consistent grid systems?",
+    "answer": "Use loops and variables to generate grid columns and gutters with customizable values."
+  },
+  {
+    "id": "1361",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you manage z-index layers with Sass?",
+    "answer": "Define z-index values as variables or maps to keep layering consistent across components."
+  },
+  {
+    "id": "1362",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to use Sass with CSS custom properties (variables).",
+    "answer": "Use Sass variables for static values and CSS custom properties for runtime dynamic styling."
+  },
+  {
+    "id": "1363",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What are the benefits of using Sass partials?",
+    "answer": "Partials modularize code, reduce duplication, and speed up development."
+  },
+  {
+    "id": "1364",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How can you write DRY code with Sass?",
+    "answer": "Use variables, mixins, functions, placeholders, and modular files to avoid repetition."
+  },
+  {
+    "id": "1365",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the significance of the `!default` flag in Sass variables?",
+    "answer": "It allows variables to be overridden only if they are not already assigned."
+  },
+  {
+    "id": "1366",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create a Sass map from a list?",
+    "answer": "Use functions like `map-merge` and loops to convert lists into key-value maps."
+  },
+  {
+    "id": "1367",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "Explain how to debug Sass code effectively.",
+    "answer": "Use `@debug` statements, check compiled CSS, and simplify complex nesting."
+  },
+  {
+    "id": "1368",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you write maintainable Sass for large teams?",
+    "answer": "Follow consistent naming conventions, modularize files, document code, and avoid deep nesting."
+  },
+  {
+    "id": "1369",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "What is the use of the `@error` directive in Sass?",
+    "answer": "It throws compilation errors when certain conditions aren't met, helping catch issues early."
+  },
+  {
+    "id": "1370",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you write custom functions in Sass?",
+    "answer": "Define `@function` blocks that take parameters and return computed values."
+  },
+{
+    "id": "1371",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What is a regular expression (regex)?",
+    "answer": "A regex is a sequence of characters that defines a search pattern, mainly used for string matching and manipulation."
+  },
+  {
+    "id": "1372",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What does the dot `.` symbol mean in regex?",
+    "answer": "The dot matches any single character except newline characters."
+  },
+  {
+    "id": "1373",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "How do you match a digit using regex?",
+    "answer": "Use `\\d` to match any single digit (0-9)."
+  },
+  {
+    "id": "1374",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What is the difference between `+` and `*` quantifiers?",
+    "answer": "`+` matches one or more occurrences, `*` matches zero or more."
+  },
+  {
+    "id": "1375",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "How do you specify the start and end of a string in regex?",
+    "answer": "`^` matches the start, `$` matches the end."
+  },
+  {
+    "id": "1376",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What are character classes in regex?",
+    "answer": "Character classes, like `[abc]`, match any one character inside the brackets."
+  },
+  {
+    "id": "1377",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "How do you escape special characters in regex?",
+    "answer": "Use a backslash `\\` before special characters like `.`, `*`, `+`, `?`, `(`, `)`, etc."
+  },
+  {
+    "id": "1378",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What does the `?` quantifier mean?",
+    "answer": "`?` matches zero or one occurrence of the preceding element."
+  },
+  {
+    "id": "1379",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "How do you create a group in regex?",
+    "answer": "Use parentheses `()` to group parts of the regex."
+  },
+  {
+    "id": "1380",
+    "category": "regex",
+    "difficulty": "easy",
+    "question": "What is the difference between greedy and lazy quantifiers?",
+    "answer": "Greedy quantifiers match as much as possible; lazy quantifiers match as little as possible."
+  },
+  {
+    "id": "1381",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How do you match an email address using regex?",
+    "answer": "Use a pattern like `^[\\w.-]+@[\\w.-]+\\.\\w{2,}$` but note that fully accurate email validation is complex."
+  },
+  {
+    "id": "1382",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "Explain lookahead assertions in regex.",
+    "answer": "Lookaheads check if a pattern is followed (or not) by another pattern without consuming characters."
+  },
+  {
+    "id": "1383",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What is a non-capturing group?",
+    "answer": "A group `(?:...)` that groups expressions without capturing them for back-references."
+  },
+  {
+    "id": "1384",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How do you use regex to validate phone numbers?",
+    "answer": "Create a pattern that matches the expected format, e.g., `^\\+?\\d{1,3}?[- .]?\\(?(\\d{1,4})\\)?[- .]?\\d{1,4}[- .]?\\d{1,9}$`."
+  },
+  {
+    "id": "1385",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What is the difference between `\b` and `\B`?",
+    "answer": "`\\b` matches a word boundary; `\\B` matches a position that is not a word boundary."
+  },
+  {
+    "id": "1386",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How can you reference a previously captured group?",
+    "answer": "Use backreferences like `\\1`, `\\2` to refer to captured groups."
+  },
+  {
+    "id": "1387",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `g` flag in JavaScript regex?",
+    "answer": "The `g` flag enables global matching, allowing multiple matches in the input string."
+  },
+  {
+    "id": "1388",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "Explain the difference between `match()` and `test()` methods in JavaScript regex.",
+    "answer": "`match()` returns matched substrings or null; `test()` returns a boolean indicating if the pattern exists."
+  },
+  {
+    "id": "1389",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How do you match a URL using regex?",
+    "answer": "A simplified pattern could be `(https?:\\/\\/)?([\\w.-]+)\\.([a-z]{2,6})([\\/\\w .-]*)*\\/?`."
+  },
+  {
+    "id": "1390",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What is the use of `^` and `$` inside character classes?",
+    "answer": "Inside `[]`, `^` negates the class; `$` has no special meaning."
+  },
+  {
+    "id": "1391",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How does regex engine handle backtracking?",
+    "answer": "The engine tries different match paths and backtracks on failures until a match is found or all paths fail."
+  },
+  {
+    "id": "1392",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How do you match a hex color code with regex?",
+    "answer": "Use `^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$`."
+  },
+  {
+    "id": "1393",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What does the `i` flag do in regex?",
+    "answer": "It makes the matching case-insensitive."
+  },
+  {
+    "id": "1394",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How do you use regex to split a string by commas but ignore commas inside quotes?",
+    "answer": "Use a more advanced pattern with lookaheads or parse manually; regex alone is tricky for nested structures."
+  },
+  {
+    "id": "1395",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "What is the difference between greedy and possessive quantifiers?",
+    "answer": "Greedy quantifiers backtrack to find a match; possessive quantifiers don't backtrack, which can cause failures."
+  },
+  {
+    "id": "1396",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you optimize regex for performance?",
+    "answer": "Avoid excessive backtracking, use atomic groups, avoid ambiguous quantifiers, and keep patterns as specific as possible."
+  },
+  {
+    "id": "1397",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "Explain recursive patterns and if they're supported in JavaScript regex.",
+    "answer": "Recursive patterns match nested structures; JavaScript regex does not support recursion natively."
+  },
+  {
+    "id": "1398",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How can you match balanced parentheses with regex?",
+    "answer": "Regex alone can't match balanced parentheses due to lack of recursion; parser or custom logic is needed."
+  },
+  {
+    "id": "1399",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What are lookbehind assertions in regex?",
+    "answer": "Lookbehinds assert that what precedes the current position matches a pattern; supported in modern JS with `(?<=...)`."
+  },
+  {
+    "id": "1400",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you debug complex regex patterns?",
+    "answer": "Use online tools like regex101, add comments in verbose mode, and test step-by-step."
+  },
+  {
+    "id": "1401",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "Explain the difference between capturing and non-capturing groups with examples.",
+    "answer": "Capturing groups `()` save matched text for backreferences; non-capturing `(?:)` group without saving."
+  },
+  {
+    "id": "1402",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What is the difference between `\s` and `\S`?",
+    "answer": "`\\s` matches whitespace characters; `\\S` matches non-whitespace characters."
+  },
+  {
+    "id": "1403",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How can regex be used for input sanitization?",
+    "answer": "Use regex to validate allowed characters or patterns and reject unwanted input."
+  },
+  {
+    "id": "1404",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "Explain the difference between `.*?` and `.*`.",
+    "answer": "`.*?` is lazy (matches as little as possible); `.*` is greedy (matches as much as possible)."
+  },
+  {
+    "id": "1405",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you handle multiline strings in regex?",
+    "answer": "Use the `m` flag to allow `^` and `$` to match start and end of lines, not just string."
+  },
+  {
+    "id": "1406",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What are atomic groups and how do they help in regex?",
+    "answer": "Atomic groups `(?>...)` prevent backtracking inside the group, improving performance."
+  },
+  {
+    "id": "1407",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How can you extract all URLs from a large text using regex?",
+    "answer": "Use a global regex matching URL patterns with the `g` flag and iterate over all matches."
+  },
+  {
+    "id": "1408",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What is the role of the `u` flag in JavaScript regex?",
+    "answer": "The `u` flag enables full Unicode matching, allowing matching of astral symbols."
+  },
+  {
+    "id": "1409",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "Explain how to use regex to validate JSON strings.",
+    "answer": "Regex is not suitable for validating full JSON due to complexity; use parsers instead."
+  },
+  {
+    "id": "1410",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you perform conditional matching in regex?",
+    "answer": "Conditional matching `(?(condition)true-pattern|false-pattern)` is supported in some engines but not JavaScript."
+  },
+  {
+    "id": "1411",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What are Unicode property escapes in regex?",
+    "answer": "Syntax like `\\p{Property}` to match characters with specific Unicode properties; available with the `u` flag."
+  },
+  {
+    "id": "1412",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you prevent catastrophic backtracking in regex?",
+    "answer": "Make patterns more specific, avoid nested quantifiers, and use atomic groups or possessive quantifiers if available."
+  },
+  {
+    "id": "1413",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "Explain the difference between `\w` and `[a-zA-Z0-9_]`.",
+    "answer": "`\\w` matches any word character including underscore; equivalent to `[a-zA-Z0-9_]`."
+  },
+  {
+    "id": "1414",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you match a date format like YYYY-MM-DD using regex?",
+    "answer": "Use `^\\d{4}-\\d{2}-\\d{2}$` but note this does not validate the actual date values."
+  },
+  {
+    "id": "1415",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What are backreferences and how are they used?",
+    "answer": "Backreferences refer to previously captured groups using `\\1`, `\\2` etc., useful for matching repeated patterns."
+  },
+  {
+    "id": "1416",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you match either 'cat' or 'dog' in regex?",
+    "answer": "Use alternation: `(cat|dog)`."
+  },
+  {
+    "id": "1417",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How do you strip HTML tags using regex?",
+    "answer": "Use a pattern like `<[^>]*>` to match and remove tags, though regex isn't ideal for complex HTML."
+  },
+  {
+    "id": "1418",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What is the purpose of the `s` flag in regex?",
+    "answer": "The `s` flag makes the dot `.` match newline characters as well."
+  },
+  {
+    "id": "1419",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How can regex be used for password validation?",
+    "answer": "Create patterns that enforce rules like minimum length, required characters, and exclusions."
+  },
+  {
+    "id": "1420",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "What are the main limitations of regex?",
+    "answer": "Regex can't parse nested structures well, has limited context awareness, and can be inefficient for complex tasks."
+  },
+{
+    "id": "1421",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What is Prisma?",
+    "answer": "Prisma is an ORM (Object-Relational Mapping) tool that simplifies database access in Node.js and TypeScript applications."
+  },
+  {
+    "id": "1422",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you define a model in Prisma schema?",
+    "answer": "Models are defined using the `model` keyword in the Prisma schema file, specifying fields and their types."
+  },
+  {
+    "id": "1423",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What databases does Prisma support?",
+    "answer": "Prisma supports PostgreSQL, MySQL, SQLite, SQL Server, and MongoDB."
+  },
+  {
+    "id": "1424",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you run migrations in Prisma?",
+    "answer": "Use the command `prisma migrate dev` to create and apply migrations during development."
+  },
+  {
+    "id": "1425",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What is Prisma Client?",
+    "answer": "Prisma Client is an auto-generated, type-safe query builder for your database."
+  },
+  {
+    "id": "1426",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you generate Prisma Client?",
+    "answer": "Run `prisma generate` after defining your schema or migrations."
+  },
+  {
+    "id": "1427",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What is the Prisma schema file?",
+    "answer": "It's a `.prisma` file where you define your data models, datasource, and generators."
+  },
+  {
+    "id": "1428",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you define relations between models in Prisma?",
+    "answer": "Use fields with relation types and specify `@relation` attributes in the schema."
+  },
+  {
+    "id": "1429",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you perform CRUD operations with Prisma Client?",
+    "answer": "Use methods like `create`, `findMany`, `update`, and `delete` on the Prisma Client instance."
+  },
+  {
+    "id": "1430",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What is Prisma Migrate?",
+    "answer": "A tool to create, manage, and apply database schema migrations."
+  },
+  {
+    "id": "1431",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you handle relations when querying with Prisma Client?",
+    "answer": "Use the `include` or `select` options to fetch related records."
+  },
+  {
+    "id": "1432",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the difference between `include` and `select` in Prisma queries?",
+    "answer": "`include` fetches related models entirely, `select` fetches specific fields."
+  },
+  {
+    "id": "1433",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How can you handle transactions in Prisma?",
+    "answer": "Use `prisma.$transaction()` to run multiple queries atomically."
+  },
+  {
+    "id": "1434",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you implement pagination with Prisma?",
+    "answer": "Use `take` and `skip` options to paginate results."
+  },
+  {
+    "id": "1435",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the `@id` attribute in Prisma schema?",
+    "answer": "It marks a field as the primary key of the model."
+  },
+  {
+    "id": "1436",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you define composite primary keys in Prisma?",
+    "answer": "Use the `@@id` attribute on multiple fields inside the model."
+  },
+  {
+    "id": "1437",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is Prisma's `datasource` block used for?",
+    "answer": "It configures the database connection details."
+  },
+  {
+    "id": "1438",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you use environment variables with Prisma?",
+    "answer": "Reference them in the schema file using `env()` in the datasource URL."
+  },
+  {
+    "id": "1439",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What are Prisma generators?",
+    "answer": "Generators create artifacts like Prisma Client based on the schema."
+  },
+  {
+    "id": "1440",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you handle database indexes in Prisma schema?",
+    "answer": "Use `@@index` or `@@unique` attributes on model fields."
+  },
+  {
+    "id": "1441",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "Can Prisma work with raw SQL queries?",
+    "answer": "Yes, use `prisma.$queryRaw` or `prisma.$executeRaw` for raw SQL."
+  },
+  {
+    "id": "1442",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the difference between `findUnique` and `findFirst`?",
+    "answer": "`findUnique` finds a record by unique fields, `findFirst` returns the first match based on filters."
+  },
+  {
+    "id": "1443",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How does Prisma handle nullability in schema?",
+    "answer": "Fields are nullable by default if marked with `?` or not required."
+  },
+  {
+    "id": "1444",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you handle migrations in production with Prisma?",
+    "answer": "Use `prisma migrate deploy` to apply migrations safely."
+  },
+  {
+    "id": "1445",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the Prisma Studio?",
+    "answer": "A GUI tool to explore and manipulate your database visually."
+  },
+  {
+    "id": "1446",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you handle enums in Prisma schema?",
+    "answer": "Define enums with the `enum` keyword and use them as field types."
+  },
+  {
+    "id": "1447",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What are some limitations of Prisma?",
+    "answer": "Limited support for advanced SQL features, some database-specific quirks, and no native support for certain NoSQL databases."
+  },
+  {
+    "id": "1448",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you handle relations with many-to-many in Prisma?",
+    "answer": "Define relation tables explicitly or use implicit many-to-many relations if supported."
+  },
+  {
+    "id": "1449",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `@@map` attribute?",
+    "answer": "It maps a model or field to a different database table or column name."
+  },
+  {
+    "id": "1450",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you update multiple records with Prisma?",
+    "answer": "Use `updateMany` with filters and update data."
+  },
+  {
+    "id": "1451",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "Can Prisma handle soft deletes?",
+    "answer": "Not natively; implement soft deletes by adding a boolean or timestamp field."
+  },
+  {
+    "id": "1452",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How does Prisma Client ensure type safety?",
+    "answer": "It generates TypeScript types based on your schema, so queries and results are strongly typed."
+  },
+  {
+    "id": "1453",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you optimize Prisma queries for performance?",
+    "answer": "Select only needed fields, use indexes, limit nested relations, and use raw queries when necessary."
+  },
+  {
+    "id": "1454",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What are middleware functions in Prisma?",
+    "answer": "Functions that run before or after queries to modify behavior, useful for logging, validation, or auditing."
+  },
+  {
+    "id": "1455",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you handle migrations conflicts in Prisma?",
+    "answer": "Manually resolve migration files, rebase changes, or reset the database if needed."
+  },
+  {
+    "id": "1456",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How does Prisma support working with MongoDB?",
+    "answer": "Prisma supports MongoDB with specific features and some limitations compared to SQL databases."
+  },
+  {
+    "id": "1457",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What is the use of `prisma.$disconnect()`?",
+    "answer": "It closes the database connection, important to call on app shutdown."
+  },
+  {
+    "id": "1458",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you handle recursive relations in Prisma?",
+    "answer": "Define relations within the same model referencing itself."
+  },
+  {
+    "id": "1459",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you manage schema changes with active users in production?",
+    "answer": "Use migrations carefully, deploy backward-compatible changes, and handle downtime planning."
+  },
+  {
+    "id": "1460",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What is Prisma's `previewFeatures`?",
+    "answer": "Experimental features that can be enabled in the schema for early access but might be unstable."
+  },
+  {
+    "id": "1461",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How does Prisma's query engine work under the hood?",
+    "answer": "It translates Prisma Client queries into optimized SQL or MongoDB queries executed by the database."
+  },
+  {
+    "id": "1462",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you handle circular dependencies in Prisma relations?",
+    "answer": "Design your schema to break cycles or use optional relations to avoid strict cycles."
+  },
+  {
+    "id": "1463",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What are some best practices for Prisma schema design?",
+    "answer": "Keep models simple, define explicit relations, use indexes wisely, and keep migrations small."
+  },
+  {
+    "id": "1464",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How can you customize generated Prisma Client?",
+    "answer": "Use generators with custom configs or use middleware to alter query behavior."
+  },
+  {
+    "id": "1465",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you debug Prisma queries?",
+    "answer": "Enable query logging with environment variables or Prisma Client options."
+  },
+  {
+    "id": "1466",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What strategies exist to seed data with Prisma?",
+    "answer": "Create seed scripts using Prisma Client to insert initial data."
+  },
+  {
+    "id": "1467",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you manage multiple environments with Prisma?",
+    "answer": "Use different `.env` files and configure datasources accordingly."
+  },
+  {
+    "id": "1468",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What is the difference between Prisma's `findMany` and raw SQL queries in performance?",
+    "answer": "`findMany` is optimized but raw SQL can be faster for complex queries."
+  },
+  {
+    "id": "1469",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you use Prisma with GraphQL?",
+    "answer": "Use Prisma Client in resolvers to fetch and mutate data."
+  },
+  {
+    "id": "1470",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What are the benefits of Prisma over traditional ORMs?",
+    "answer": "Type safety, auto-generated clients, modern API, and good developer experience."
+  },
+{
+    "id": "1471",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you install Prisma in a Node.js project?",
+    "answer": "Run `npm install @prisma/client` and `npm install prisma --save-dev`."
+  },
+  {
+    "id": "1472",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What is the command to initialize a new Prisma project?",
+    "answer": "Use `npx prisma init` to create the Prisma folder and initial schema."
+  },
+  {
+    "id": "1473",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "Where is the Prisma schema file located by default?",
+    "answer": "It is located in the `prisma/schema.prisma` file."
+  },
+  {
+    "id": "1474",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you specify the database provider in Prisma schema?",
+    "answer": "In the `datasource` block, use `provider = \"postgresql\"` or other supported databases."
+  },
+  {
+    "id": "1475",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "What does the `prisma migrate dev` command do?",
+    "answer": "It creates a new migration and applies it to the database during development."
+  },
+  {
+    "id": "1476",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "How do you generate Prisma Client types after schema changes?",
+    "answer": "Run `npx prisma generate`."
+  },
+  {
+    "id": "1477",
+    "category": "prisma",
+    "difficulty": "easy",
+    "question": "Can Prisma be used with TypeScript?",
+    "answer": "Yes, Prisma Client has full TypeScript support and auto-generated types."
+  },
+  {
+    "id": "1478",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `@default` attribute in Prisma schema?",
+    "answer": "It sets a default value for a field when creating new records."
+  },
+  {
+    "id": "1479",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you define optional fields in Prisma models?",
+    "answer": "Append `?` to the field type to make it optional, e.g., `name String?`."
+  },
+  {
+    "id": "1480",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "Explain the difference between `create` and `upsert` in Prisma Client.",
+    "answer": "`create` inserts a new record; `upsert` inserts or updates if it exists."
+  },
+  {
+    "id": "1481",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the use of `@@unique` in Prisma schema?",
+    "answer": "It enforces uniqueness on one or more fields in a model."
+  },
+  {
+    "id": "1482",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How can you query related data with Prisma?",
+    "answer": "Use the `include` option to load related models."
+  },
+  {
+    "id": "1483",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the `@@map` attribute used for in Prisma?",
+    "answer": "It maps the model or fields to a different table or column name in the database."
+  },
+  {
+    "id": "1484",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you perform batch updates in Prisma?",
+    "answer": "Use the `updateMany` method with filter criteria."
+  },
+  {
+    "id": "1485",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you implement many-to-many relationships in Prisma?",
+    "answer": "Define relation tables explicitly or use implicit many-to-many relations supported by Prisma."
+  },
+  {
+    "id": "1486",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How does Prisma handle cascading deletes?",
+    "answer": "Define `onDelete` behavior in schema relations, such as `Cascade` or `Restrict`."
+  },
+  {
+    "id": "1487",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the command to reset the database in Prisma?",
+    "answer": "Run `npx prisma migrate reset` to drop and recreate the database."
+  },
+  {
+    "id": "1488",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you log Prisma Client queries?",
+    "answer": "Set environment variable `DEBUG="prisma:client"` or configure logging in Prisma Client options."
+  },
+  {
+    "id": "1489",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you implement validations in Prisma schema?",
+    "answer": "Use database constraints like `@unique` or custom validations in application code."
+  },
+  {
+    "id": "1490",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the Prisma Studio?",
+    "answer": "A web-based GUI for viewing and editing database records."
+  },
+  {
+    "id": "1491",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How can you seed a database using Prisma?",
+    "answer": "Write a script that uses Prisma Client to insert initial data."
+  },
+  {
+    "id": "1492",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "What is the difference between `findUnique` and `findFirst`?",
+    "answer": "`findUnique` finds by unique fields; `findFirst` finds the first record matching filters."
+  },
+  {
+    "id": "1493",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "How do you use raw SQL queries in Prisma?",
+    "answer": "Use `prisma.$queryRaw` for SELECT queries and `prisma.$executeRaw` for other SQL commands."
+  },
+  {
+    "id": "1494",
+    "category": "prisma",
+    "difficulty": "medium",
+    "question": "Can Prisma work with NoSQL databases?",
+    "answer": "Prisma supports MongoDB but has limited support for other NoSQL databases."
+  },
+  {
+    "id": "1495",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "Explain Prisma middleware and its use cases.",
+    "answer": "Middleware intercepts queries for logging, validation, or modifying behavior before/after execution."
+  },
+  {
+    "id": "1496",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you handle concurrency issues with Prisma?",
+    "answer": "Use transactions with `prisma.$transaction()` to ensure atomic operations."
+  },
+  {
+    "id": "1497",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How to handle large datasets efficiently with Prisma?",
+    "answer": "Use pagination with `take` and `skip`, and select only required fields."
+  },
+  {
+    "id": "1498",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What are preview features in Prisma and how do you enable them?",
+    "answer": "Experimental features enabled via `previewFeatures` in the generator block in schema."
+  },
+  {
+    "id": "1499",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How does Prisma Client caching work?",
+    "answer": "Prisma Client doesn’t provide built-in caching; caching must be implemented separately."
+  },
+  {
+    "id": "1500",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you optimize Prisma schema for complex queries?",
+    "answer": "Use indexes, avoid unnecessary relations, and denormalize data when needed."
+  },
+  {
+    "id": "1501",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What is the recommended way to handle migrations in CI/CD pipelines with Prisma?",
+    "answer": "Use `prisma migrate deploy` to apply migrations safely during deployments."
+  },
+  {
+    "id": "1502",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you handle schema evolution in production without downtime?",
+    "answer": "Apply backward-compatible migrations, use feature flags, and plan gradual rollouts."
+  },
+  {
+    "id": "1503",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What are some common pitfalls when using Prisma in production?",
+    "answer": "Ignoring connection limits, unoptimized queries, improper migration handling, and missing error handling."
+  },
+  {
+    "id": "1504",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How to implement soft deletes with Prisma?",
+    "answer": "Add a boolean or timestamp field and filter queries to exclude deleted records."
+  },
+  {
+    "id": "1505",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How can you debug Prisma query errors effectively?",
+    "answer": "Enable detailed logging, check generated SQL, and use Prisma Studio for inspection."
+  },
+  {
+    "id": "1506",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What is the role of `prisma.$disconnect()` and when should it be used?",
+    "answer": "It closes the database connection, important to call when the app shuts down."
+  },
+  {
+    "id": "1507",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How does Prisma compare to other ORMs like TypeORM or Sequelize?",
+    "answer": "Prisma focuses on type safety, auto-generation, and modern developer experience, whereas others offer broader feature sets."
+  },
+  {
+    "id": "1508",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "Explain how to use Prisma with serverless functions.",
+    "answer": "Initialize Prisma Client per function invocation and properly disconnect to avoid connection leaks."
+  },
+  {
+    "id": "1509",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "How do you test Prisma queries in unit tests?",
+    "answer": "Use an in-memory or test database, seed test data, and clean up after tests."
+  },
+  {
+    "id": "1510",
+    "category": "prisma",
+    "difficulty": "hard",
+    "question": "What strategies help reduce Prisma Client bundle size in frontend projects?",
+    "answer": "Avoid bundling Prisma Client on the frontend; use it only on the server."
+  },
+ {
+    "id": "1511",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "What is Drizzle ORM?",
+    "answer": "Drizzle ORM is a TypeScript-first ORM designed for type-safe and simple database access."
+  },
+  {
+    "id": "1512",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "Which databases does Drizzle ORM support?",
+    "answer": "It supports PostgreSQL, MySQL, SQLite, and SQL Server."
+  },
+  {
+    "id": "1513",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How do you define a table schema in Drizzle?",
+    "answer": "Use the `pgTable` or `mysqlTable` functions with column definitions."
+  },
+  {
+    "id": "1514",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How do you insert data using Drizzle ORM?",
+    "answer": "Use the `insert` method on the table object."
+  },
+  {
+    "id": "1515",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "Does Drizzle ORM support TypeScript types for queries?",
+    "answer": "Yes, it provides full type inference for queries and results."
+  },
+  {
+    "id": "1516",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How do you perform a select query in Drizzle?",
+    "answer": "Use the `select` method with optional filters on the table object."
+  },
+  {
+    "id": "1517",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "What is the syntax to update a record in Drizzle?",
+    "answer": "Use the `update` method with `set` and `where` clauses."
+  },
+  {
+    "id": "1518",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How does Drizzle handle relations between tables?",
+    "answer": "Relations are defined manually using foreign key columns and joined in queries."
+  },
+  {
+    "id": "1519",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Can you perform transactions with Drizzle ORM?",
+    "answer": "Yes, Drizzle supports transactions through its query runner interface."
+  },
+  {
+    "id": "1520",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you delete records in Drizzle ORM?",
+    "answer": "Use the `delete` method with a `where` clause specifying records to remove."
+  },
+  {
+    "id": "1521",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "What is the advantage of Drizzle being TypeScript-first?",
+    "answer": "It reduces runtime errors by catching type mismatches at compile time."
+  },
+  {
+    "id": "1522",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you handle migrations in Drizzle ORM?",
+    "answer": "Drizzle provides a migration system to apply incremental schema changes."
+  },
+  {
+    "id": "1523",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Can you explain how to use raw SQL queries in Drizzle?",
+    "answer": "Drizzle allows raw SQL queries using its `sql` tagged template literal."
+  },
+  {
+    "id": "1524",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How does Drizzle compare to Prisma in terms of type safety?",
+    "answer": "Both offer strong TypeScript integration, but Drizzle is more lightweight and minimalistic."
+  },
+  {
+    "id": "1525",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you paginate results with Drizzle?",
+    "answer": "Use `limit` and `offset` methods on the query builder."
+  },
+  {
+    "id": "1526",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Is Drizzle ORM compatible with Next.js?",
+    "answer": "Yes, it can be integrated with Next.js for server-side database queries."
+  },
+  {
+    "id": "1527",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you perform joins in Drizzle ORM?",
+    "answer": "Use the `innerJoin`, `leftJoin`, or raw SQL with the query builder."
+  },
+  {
+    "id": "1528",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you implement complex nested queries in Drizzle?",
+    "answer": "Compose queries using the fluent API and subqueries with raw SQL if necessary."
+  },
+  {
+    "id": "1529",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How does Drizzle ensure SQL injection safety?",
+    "answer": "By using parameterized queries and its SQL tagged template to sanitize inputs."
+  },
+  {
+    "id": "1530",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Can you explain how to use transactions in Drizzle with examples?",
+    "answer": "Use `db.transaction(async (trx) => { ... })` to run multiple queries atomically."
+  },
+  {
+    "id": "1531",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you optimize Drizzle queries for performance?",
+    "answer": "Select only required columns, use indexes, and avoid N+1 queries."
+  },
+  {
+    "id": "1532",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What challenges might you face when scaling Drizzle ORM?",
+    "answer": "Managing complex relations manually and handling large datasets without built-in caching."
+  },
+  {
+    "id": "1533",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain how to integrate Drizzle ORM with GraphQL APIs.",
+    "answer": "Use Drizzle queries inside resolvers for type-safe data fetching."
+  },
+  {
+    "id": "1534",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How does Drizzle handle schema migrations compared to Prisma?",
+    "answer": "Drizzle has a simpler migration system focusing on SQL files; Prisma uses declarative schema-based migrations."
+  },
+  {
+    "id": "1535",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you handle database connection pooling with Drizzle?",
+    "answer": "Configure your database driver or connection pooler outside Drizzle ORM."
+  },
+  {
+    "id": "1536",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What is the recommended way to handle error handling in Drizzle ORM?",
+    "answer": "Catch exceptions in async functions and handle database errors gracefully."
+  },
+  {
+    "id": "1537",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Can Drizzle ORM be used in serverless environments? If yes, how?",
+    "answer": "Yes, by initializing the connection per invocation and properly closing it."
+  },
+  {
+    "id": "1538",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you handle migrations in a team environment using Drizzle?",
+    "answer": "Use version control for migration files and coordinate schema changes carefully."
+  },
+  {
+    "id": "1539",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to handle soft deletes in Drizzle ORM?",
+    "answer": "Add a boolean or timestamp column and filter queries accordingly."
+  },
+  {
+    "id": "1540",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain the process of debugging Drizzle ORM queries.",
+    "answer": "Enable query logging, inspect generated SQL, and test queries independently."
+  },
+  {
+    "id": "1541",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What is the best practice for organizing Drizzle ORM code in a large project?",
+    "answer": "Separate schema definitions, queries, and transaction logic in modular files."
+  },
+  {
+    "id": "1542",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM support database schema versioning?",
+    "answer": "Through migration files that apply incremental SQL changes."
+  },
+  {
+    "id": "1543",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Can you use Drizzle ORM with NoSQL databases?",
+    "answer": "No, Drizzle is designed for SQL-based relational databases only."
+  },
+  {
+    "id": "1544",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to use raw SQL fragments within Drizzle queries?",
+    "answer": "Use the `sql` tagged template literal for inserting raw SQL safely."
+  },
+  {
+    "id": "1545",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How does Drizzle's type inference improve developer experience?",
+    "answer": "It reduces errors by providing accurate autocompletion and type checking."
+  },
+  {
+    "id": "1546",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What are the limitations of Drizzle ORM compared to full-featured ORMs?",
+    "answer": "Less built-in relation management, no built-in caching or advanced lifecycle hooks."
+  },
+  {
+    "id": "1547",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you rollback a migration in Drizzle ORM?",
+    "answer": "Manually apply a rollback SQL migration; no automated rollback command."
+  },
+  {
+    "id": "1548",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to write unit tests for database logic using Drizzle?",
+    "answer": "Use a test database instance, seed data, and clean after each test."
+  },
+  {
+    "id": "1549",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain how to handle schema synchronization issues with Drizzle.",
+    "answer": "Track schema versions carefully and apply migrations in order."
+  },
+  {
+    "id": "1550",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to extend Drizzle ORM with custom query helpers?",
+    "answer": "Write utility functions wrapping Drizzle queries to reuse complex logic."
+  },
+ {
+    "id": "1551",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "What is the basic setup process for Drizzle ORM in a new project?",
+    "answer": "Install the Drizzle package, configure the database connection, and define your tables."
+  },
+  {
+    "id": "1552",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How do you define primary keys in Drizzle table schemas?",
+    "answer": "Use the `primaryKey()` method on the column definition."
+  },
+  {
+    "id": "1553",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How to define nullable columns in Drizzle ORM?",
+    "answer": "Use `.nullable()` on the column definition."
+  },
+  {
+    "id": "1554",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "What types of columns are supported by Drizzle?",
+    "answer": "Common types like string, number, boolean, date, and JSON are supported."
+  },
+  {
+    "id": "1555",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How to add default values to columns in Drizzle?",
+    "answer": "Use `.default()` method in the column definition."
+  },
+  {
+    "id": "1556",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "How do you run raw SQL migrations with Drizzle?",
+    "answer": "Place raw SQL files in migration folders and run them via the CLI."
+  },
+  {
+    "id": "1557",
+    "category": "drizzle",
+    "difficulty": "easy",
+    "question": "Can Drizzle ORM handle JSON column types?",
+    "answer": "Yes, Drizzle supports JSON column types if the database supports them."
+  },
+  {
+    "id": "1558",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you handle composite primary keys in Drizzle?",
+    "answer": "Define multiple columns as primary keys using the `.primaryKey()` method on the table."
+  },
+  {
+    "id": "1559",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "What is the best practice to handle ENUM types in Drizzle ORM?",
+    "answer": "Use database-native enum types or define string union types in TypeScript."
+  },
+  {
+    "id": "1560",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How to perform bulk inserts with Drizzle ORM?",
+    "answer": "Pass an array of records to the `insert` method."
+  },
+  {
+    "id": "1561",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you implement soft deletes with Drizzle?",
+    "answer": "Add a `deletedAt` timestamp column and filter queries to exclude deleted records."
+  },
+  {
+    "id": "1562",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How does Drizzle handle database migrations rollback?",
+    "answer": "You have to manually create rollback SQL scripts; no automatic rollback."
+  },
+  {
+    "id": "1563",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Explain how to create indexes in Drizzle ORM.",
+    "answer": "Use the `index()` method on the table or column definition."
+  },
+  {
+    "id": "1564",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you handle one-to-many relationships in Drizzle?",
+    "answer": "Use foreign key columns and write join queries manually."
+  },
+  {
+    "id": "1565",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "What are the advantages of Drizzle's query builder compared to raw SQL?",
+    "answer": "Type safety, better readability, and prevention of SQL injection."
+  },
+  {
+    "id": "1566",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you implement transactions spanning multiple queries in Drizzle?",
+    "answer": "Use the `transaction` method wrapping your queries inside an async function."
+  },
+  {
+    "id": "1567",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Can Drizzle ORM be used with both JavaScript and TypeScript?",
+    "answer": "Yes, but it’s designed primarily with TypeScript for type safety."
+  },
+  {
+    "id": "1568",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "How do you write conditional queries in Drizzle?",
+    "answer": "Use JavaScript conditionals to add query parts dynamically."
+  },
+  {
+    "id": "1569",
+    "category": "drizzle",
+    "difficulty": "medium",
+    "question": "Explain how to perform raw SQL queries in Drizzle safely.",
+    "answer": "Use the `sql` tagged template literal to avoid SQL injection."
+  },
+  {
+    "id": "1570",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How would you implement a complex many-to-many relationship with Drizzle?",
+    "answer": "Create a join table with foreign keys and write manual join queries."
+  },
+  {
+    "id": "1571",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you optimize Drizzle ORM queries for large datasets?",
+    "answer": "Use pagination, select only needed fields, and proper indexing."
+  },
+  {
+    "id": "1572",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you debug generated SQL queries in Drizzle?",
+    "answer": "Enable query logging or inspect SQL generated by the `sql` tagged template."
+  },
+  {
+    "id": "1573",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to handle database schema versioning and migrations in Drizzle in CI/CD pipelines?",
+    "answer": "Apply migrations via CLI in deployment scripts before application starts."
+  },
+  {
+    "id": "1574",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain how Drizzle manages connection pooling.",
+    "answer": "It relies on the underlying database driver’s pooling features."
+  },
+  {
+    "id": "1575",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How can Drizzle ORM be extended to support custom SQL functions?",
+    "answer": "Use raw SQL snippets with the `sql` template literal inside queries."
+  },
+  {
+    "id": "1576",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you implement auditing (created_at, updated_at) fields in Drizzle?",
+    "answer": "Add timestamp columns and update them via triggers or in application logic."
+  },
+  {
+    "id": "1577",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What strategies exist to avoid N+1 query problems in Drizzle?",
+    "answer": "Use joins or batch queries to fetch related data in one go."
+  },
+  {
+    "id": "1578",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to handle migrations that require data transformations in Drizzle?",
+    "answer": "Write migration scripts with raw SQL or JS to alter data during migration."
+  },
+  {
+    "id": "1579",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you test Drizzle ORM database operations in integration tests?",
+    "answer": "Run tests against a real or in-memory test database with seeded data."
+  },
+  {
+    "id": "1580",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to manage environment-specific database configurations in Drizzle projects?",
+    "answer": "Use environment variables and conditional connection setups."
+  },
+  {
+    "id": "1581",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain the differences between Drizzle ORM and Prisma ORM.",
+    "answer": "Drizzle is lighter, focuses on type safety and minimalism, while Prisma offers more features and ecosystem tools."
+  },
+  {
+    "id": "1582",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM support database transactions in serverless environments?",
+    "answer": "Transactions must be initiated and completed within the single invocation."
+  },
+  {
+    "id": "1583",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you manage schema synchronization issues between development and production with Drizzle?",
+    "answer": "Use migration files consistently and verify schema before deployments."
+  },
+  {
+    "id": "1584",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What are the common pitfalls when using Drizzle ORM in large applications?",
+    "answer": "Manual relation handling can get complex; lack of some automation features."
+  },
+  {
+    "id": "1585",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you migrate data safely when changing column types in Drizzle?",
+    "answer": "Create migration scripts with data transformations and backups."
+  },
+  {
+    "id": "1586",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Can you combine Drizzle ORM with raw SQL libraries like Knex?",
+    "answer": "Yes, but it requires careful management to avoid conflicts."
+  },
+  {
+    "id": "1587",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to implement optimistic concurrency control with Drizzle ORM?",
+    "answer": "Add version fields and check them during updates to prevent conflicts."
+  },
+  {
+    "id": "1588",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain how to monitor and log Drizzle ORM queries in production.",
+    "answer": "Use middleware or database driver logging features."
+  },
+  {
+    "id": "1589",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What are the best practices for error handling in Drizzle ORM?",
+    "answer": "Catch database errors, retry on transient issues, and log them appropriately."
+  },
+  {
+    "id": "1590",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you implement multi-tenancy with Drizzle ORM?",
+    "answer": "Separate schemas or use tenant ID columns and filter queries."
+  },
+  {
+    "id": "1591",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to integrate Drizzle ORM with server-side rendering frameworks like Next.js?",
+    "answer": "Initialize Drizzle in API routes or server components to access database."
+  },
+  {
+    "id": "1592",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Can Drizzle ORM be used in a microservices architecture?",
+    "answer": "Yes, each service can have its own Drizzle setup for its database."
+  },
+  {
+    "id": "1593",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you ensure data integrity when using Drizzle ORM?",
+    "answer": "Define constraints in the database and validate inputs in application."
+  },
+  {
+    "id": "1594",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to handle schema drift between multiple environments with Drizzle?",
+    "answer": "Regularly apply migrations and compare schemas with tools."
+  },
+  {
+    "id": "1595",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you manage connection lifecycle in serverless environments using Drizzle?",
+    "answer": "Open connections inside each invocation and close after."
+  },
+  {
+    "id": "1596",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you write performant pagination queries with Drizzle ORM?",
+    "answer": "Use keyset pagination or limit-offset with indexes."
+  },
+  {
+    "id": "1597",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "Explain how to use Drizzle ORM with NoSQL databases.",
+    "answer": "Drizzle is mainly for SQL databases; for NoSQL, use other ORMs."
+  },
+  {
+    "id": "1598",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How to handle migrations in a team setting with Drizzle ORM?",
+    "answer": "Commit migration files and coordinate schema changes via version control."
+  },
+  {
+    "id": "1599",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "What are the limitations of Drizzle ORM compared to Prisma?",
+    "answer": "Fewer automated features like schema introspection and rich relation management."
+  },
+  {
+    "id": "1600",
+    "category": "drizzle",
+    "difficulty": "hard",
+    "question": "How do you extend Drizzle ORM to support new database types or drivers?",
+    "answer": "By contributing to its core or writing custom adapters."
+  },
+{
+    "id": "1601",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What is Node.js and why is it used for backend development?",
+    "answer": "Node.js is a runtime environment that allows running JavaScript on the server side. It's used for backend development because of its event-driven, non-blocking I/O model, which makes it efficient for handling many simultaneous connections."
+  },
+  {
+    "id": "1602",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What is Express.js and how does it simplify backend development?",
+    "answer": "Express.js is a minimal web framework for Node.js that simplifies routing, middleware management, and handling HTTP requests and responses, speeding up API and server development."
+  },
+  {
+    "id": "1603",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle asynchronous operations in Node.js?",
+    "answer": "By using callbacks, Promises, or async/await syntax to avoid blocking the event loop and manage asynchronous code efficiently."
+  },
+  {
+    "id": "1604",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is middleware in Express.js?",
+    "answer": "Middleware is a function that has access to the request and response objects, and can modify them or control the flow. It's used for tasks like logging, authentication, or parsing request bodies."
+  },
+  {
+    "id": "1605",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "Explain how you manage environment variables in a Node.js application.",
+    "answer": "Use environment variables stored in a .env file and load them with packages like dotenv, so sensitive data like API keys and database credentials aren't hardcoded."
+  },
+  {
+    "id": "1606",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you scale a Node.js backend application?",
+    "answer": "By using clustering to fork multiple processes, load balancing, horizontal scaling with multiple servers, caching, and optimizing database queries."
+  },
+  {
+    "id": "1607",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What strategies do you use to handle errors in a Node.js backend?",
+    "answer": "Use try-catch with async/await, centralized error-handling middleware, proper logging, and graceful shutdown of the server."
+  },
+  {
+    "id": "1608",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are streams in Node.js and when would you use them?",
+    "answer": "Streams are objects that let you read or write data piece by piece. They are useful for handling large files or network data efficiently without loading everything into memory."
+  },
+  {
+    "id": "1609",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you secure a REST API built with Node.js and Express?",
+    "answer": "Use authentication (JWT, OAuth), input validation, HTTPS, rate limiting, CORS policies, and sanitize inputs to prevent injection attacks."
+  },
+  {
+    "id": "1610",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What is the event loop in Node.js?",
+    "answer": "The event loop is the mechanism that handles asynchronous callbacks in Node.js, allowing non-blocking I/O by queuing events and executing them one by one."
+  },
+  {
+    "id": "1611",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "Explain the difference between process.nextTick(), setImmediate(), and setTimeout() in Node.js.",
+    "answer": "process.nextTick() runs callbacks immediately after the current operation, before I/O events; setImmediate() runs callbacks on the next iteration of the event loop; setTimeout() schedules callbacks after a minimum delay."
+  },
+  {
+    "id": "1612",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you implement caching in a Node.js backend?",
+    "answer": "Use in-memory caches like Redis or Memcached to store frequent data or computation results, reducing database load and improving response times."
+  },
+  {
+    "id": "1613",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is CORS and how do you handle it in Node.js?",
+    "answer": "CORS (Cross-Origin Resource Sharing) controls access to resources from different domains. In Node.js, use the cors middleware to configure allowed origins, methods, and headers."
+  },
+  {
+    "id": "1614",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How would you implement file uploads in an Express.js application?",
+    "answer": "Use middleware like multer to handle multipart/form-data, which parses and saves uploaded files to disk or cloud storage."
+  },
+  {
+    "id": "1615",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain how you can prevent SQL injection attacks in Node.js applications.",
+    "answer": "Use parameterized queries or ORM query builders, sanitize inputs, and avoid concatenating user input directly into queries."
+  },
+  {
+    "id": "1616",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are worker threads in Node.js and when would you use them?",
+    "answer": "Worker threads allow running CPU-intensive tasks in parallel, preventing the main event loop from blocking."
+  },
+  {
+    "id": "1617",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Describe how to implement rate limiting in a Node.js API.",
+    "answer": "Use middleware like express-rate-limit to track IP requests and block or slow down requests exceeding a threshold within a time window."
+  },
+  {
+    "id": "1618",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between process.env and config files in Node.js?",
+    "answer": "process.env stores environment variables at runtime; config files hold static configuration but shouldn't contain sensitive data."
+  },
+  {
+    "id": "1619",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you implement authentication in a Node.js backend?",
+    "answer": "Use strategies like JWT tokens, session-based authentication with cookies, or OAuth flows, combined with password hashing and secure storage."
+  },
+  {
+    "id": "1620",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain how to debug performance issues in a Node.js backend.",
+    "answer": "Use profiling tools like Node.js inspector, check event loop delays, analyze CPU and memory usage, and identify blocking code."
+  },
+  {
+    "id": "1621",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the purpose of cluster module in Node.js?",
+    "answer": "The cluster module allows you to create child processes to take advantage of multi-core CPUs, enabling better concurrency."
+  },
+  {
+    "id": "1622",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "How do you create a REST API endpoint with Express.js?",
+    "answer": "Define routes using app.get, app.post, etc., and write handler functions to process requests and send responses."
+  },
+  {
+    "id": "1623",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are some common HTTP status codes used in REST APIs?",
+    "answer": "200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error."
+  },
+  {
+    "id": "1624",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle database connections in Node.js to ensure efficiency?",
+    "answer": "Use connection pooling to reuse connections and avoid overhead from opening/closing connections frequently."
+  },
+  {
+    "id": "1625",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is JWT and how does it work in authentication?",
+    "answer": "JWT (JSON Web Token) is a compact token that contains claims and is signed. It's used to authenticate users without server-side session storage."
+  },
+  {
+    "id": "1626",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain how you would implement WebSocket communication in a Node.js backend.",
+    "answer": "Use libraries like socket.io or ws to establish and manage persistent bi-directional connections for real-time data transfer."
+  },
+  {
+    "id": "1627",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you structure a Node.js project for scalability?",
+    "answer": "Separate concerns into folders (routes, controllers, services, models), use environment configs, apply modular code, and follow conventions."
+  },
+  {
+    "id": "1628",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What is npm and why is it important in Node.js development?",
+    "answer": "npm is the package manager for Node.js, used to install and manage dependencies in a project."
+  },
+  {
+    "id": "1629",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous code in Node.js?",
+    "answer": "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run concurrently."
+  },
+  {
+    "id": "1630",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you handle file system operations asynchronously in Node.js?",
+    "answer": "Use the fs module’s async methods like fs.promises.readFile or callback-based functions to avoid blocking the event loop."
+  },
+  {
+    "id": "1631",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between PUT and PATCH HTTP methods?",
+    "answer": "PUT replaces the entire resource, PATCH applies partial updates."
+  },
+  {
+    "id": "1632",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle cross-site scripting (XSS) attacks in a Node.js backend?",
+    "answer": "Sanitize user inputs, use templating engines that escape HTML, and set proper HTTP headers like Content Security Policy."
+  },
+  {
+    "id": "1633",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is Helmet.js and why is it used?",
+    "answer": "Helmet.js is middleware that helps secure Express apps by setting various HTTP headers to protect against common vulnerabilities."
+  },
+  {
+    "id": "1634",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "Explain the role of package.json in a Node.js project.",
+    "answer": "package.json manages metadata about the project, dependencies, scripts, and configurations."
+  },
+  {
+    "id": "1635",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How can you improve API response times in a Node.js backend?",
+    "answer": "Use caching, optimize database queries, compress responses, and minimize payload size."
+  },
+  {
+    "id": "1636",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between a monolithic and microservices architecture in backend development?",
+    "answer": "Monolithic architecture is a single unified codebase; microservices split functionality into independent services."
+  },
+  {
+    "id": "1637",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you manage transactions in Node.js with databases?",
+    "answer": "Use database drivers or ORMs that support transactions, wrap operations in transaction blocks, and handle commits or rollbacks properly."
+  },
+  {
+    "id": "1638",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the use of npm scripts in Node.js?",
+    "answer": "They automate common tasks like running tests, building code, or starting the server."
+  },
+  {
+    "id": "1639",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "How do you send JSON responses in Express?",
+    "answer": "Use res.json() to send a JSON response to the client."
+  },
+  {
+    "id": "1640",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are promises in JavaScript and how do they help in backend development?",
+    "answer": "Promises represent the eventual completion or failure of an asynchronous operation, making async code easier to write and manage."
+  },
+  {
+    "id": "1641",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you validate user input on the backend?",
+    "answer": "Use validation libraries like Joi or express-validator to enforce data formats and constraints."
+  },
+  {
+    "id": "1642",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain how you would implement logging in a Node.js backend application.",
+    "answer": "Use logging libraries like Winston or Bunyan, set different log levels, and output to files or external services."
+  },
+  {
+    "id": "1643",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the purpose of the package-lock.json file?",
+    "answer": "It locks the exact versions of dependencies to ensure consistent installs across environments."
+  },
+  {
+    "id": "1644",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle CORS errors in development?",
+    "answer": "Use the cors middleware in Express and configure allowed origins and headers appropriately."
+  },
+  {
+    "id": "1645",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What is the default port for an Express.js server if none is specified?",
+    "answer": "Usually, there is no default; you must specify a port explicitly (e.g., 3000)."
+  },
+  {
+    "id": "1646",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between a callback and a Promise?",
+    "answer": "Callbacks are functions passed to handle async results, while Promises provide a cleaner, chainable way to handle async operations and errors."
+  },
+  {
+    "id": "1647",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you implement Webhooks in a Node.js backend?",
+    "answer": "Create an endpoint that listens for HTTP POST requests from external services and processes the payload accordingly."
+  },
+  {
+    "id": "1648",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you prevent memory leaks in Node.js applications?",
+    "answer": "Monitor and profile the app, avoid global variables, properly clean up event listeners, and manage closures carefully."
+  },
+  {
+    "id": "1649",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between GET and POST HTTP methods?",
+    "answer": "GET requests retrieve data and can be cached; POST submits data to be processed and usually changes server state."
+  },
+  {
+    "id": "1650",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you implement pagination in a backend API?",
+    "answer": "Use query parameters like page and limit, and in the database query, use OFFSET and LIMIT or cursor-based pagination."
+  },
+ {
+    "id": "1651",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the role of the package.json 'scripts' section in a Node.js project?",
+    "answer": "It defines custom commands to automate tasks like testing, building, or starting the server."
+  },
+  {
+    "id": "1652",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "How do you read environment variables in a Node.js app?",
+    "answer": "By accessing process.env.VARIABLE_NAME."
+  },
+  {
+    "id": "1653",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is REST and why is it important for backend APIs?",
+    "answer": "REST is an architectural style for designing networked applications, focusing on stateless, resource-based interactions over HTTP."
+  },
+  {
+    "id": "1654",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle JSON parsing errors in Express middleware?",
+    "answer": "Use error-handling middleware to catch SyntaxError thrown by JSON parsing."
+  },
+  {
+    "id": "1655",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain how Node.js handles child processes and when you might use them.",
+    "answer": "Child processes allow running separate scripts or commands concurrently, useful for CPU-heavy tasks or running external programs."
+  },
+  {
+    "id": "1656",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between blocking and non-blocking code?",
+    "answer": "Blocking code halts execution until complete, non-blocking allows other operations to continue."
+  },
+  {
+    "id": "1657",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you secure sensitive data in Node.js applications?",
+    "answer": "Use environment variables, encryption, secure storage, and restrict access controls."
+  },
+  {
+    "id": "1658",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'next' function in Express middleware?",
+    "answer": "It passes control to the next middleware or route handler."
+  },
+  {
+    "id": "1659",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you implement pagination in MongoDB queries?",
+    "answer": "Use skip() and limit() methods or use a cursor-based approach for better performance."
+  },
+  {
+    "id": "1660",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the role of the 'body-parser' middleware in Express?",
+    "answer": "It parses incoming request bodies and makes the data available under req.body."
+  },
+  {
+    "id": "1661",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "How do you start an Express server on port 3000?",
+    "answer": "Use app.listen(3000, callback)."
+  },
+  {
+    "id": "1662",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous file reading in Node.js?",
+    "answer": "Synchronous blocks execution until the file is read; asynchronous reads the file and executes a callback once done."
+  },
+  {
+    "id": "1663",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle database migrations in Node.js projects?",
+    "answer": "Use migration tools like Knex, Sequelize CLI, or Prisma migrate to version and apply schema changes."
+  },
+  {
+    "id": "1664",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "Explain event-driven architecture in Node.js.",
+    "answer": "It's a design where the flow is determined by events and callbacks, enabling asynchronous processing."
+  },
+  {
+    "id": "1665",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you configure CORS in Express for multiple origins?",
+    "answer": "Use the cors middleware with an origin function that checks and allows specific origins."
+  },
+  {
+    "id": "1666",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "What does npm install do?",
+    "answer": "It installs dependencies listed in package.json."
+  },
+  {
+    "id": "1667",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between session and token-based authentication?",
+    "answer": "Sessions store data server-side; tokens (like JWT) store auth info client-side."
+  },
+  {
+    "id": "1668",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle uncaught exceptions in a Node.js app?",
+    "answer": "Listen for process 'uncaughtException' event and perform cleanup or restart."
+  },
+  {
+    "id": "1669",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are streams and how can they improve performance?",
+    "answer": "Streams process data piece-by-piece, reducing memory usage and improving speed for large datasets."
+  },
+  {
+    "id": "1670",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you implement role-based access control (RBAC) in a Node.js API?",
+    "answer": "Check user roles in middleware before granting access to routes."
+  },
+  {
+    "id": "1671",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the use of the fs module in Node.js?",
+    "answer": "It provides APIs to interact with the file system."
+  },
+  {
+    "id": "1672",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you connect a Node.js app to a PostgreSQL database?",
+    "answer": "Use clients like pg or ORMs such as Prisma or Sequelize."
+  },
+  {
+    "id": "1673",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between PUT and POST in RESTful APIs?",
+    "answer": "PUT is idempotent and replaces a resource; POST creates a new resource."
+  },
+  {
+    "id": "1674",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you prevent cross-site request forgery (CSRF) in Node.js apps?",
+    "answer": "Use CSRF tokens, verify Origin headers, and set SameSite cookies."
+  },
+  {
+    "id": "1675",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the role of npm scripts?",
+    "answer": "To automate common tasks like building, testing, or running servers."
+  },
+  {
+    "id": "1676",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you manage package versions in Node.js projects?",
+    "answer": "Use package.json to specify versions; package-lock.json locks them."
+  },
+  {
+    "id": "1677",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is middleware chaining in Express?",
+    "answer": "Calling next() in middleware to pass control to the next middleware function."
+  },
+  {
+    "id": "1678",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "Explain how you would implement logging with Winston in Node.js.",
+    "answer": "Configure Winston transports for console and file, set log levels, and integrate into the app."
+  },
+  {
+    "id": "1679",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is a promise and how is it different from a callback?",
+    "answer": "A promise represents the result of an async operation and supports chaining and error handling; callbacks are functions called after completion."
+  },
+  {
+    "id": "1680",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle input validation in Express?",
+    "answer": "Use middleware libraries like express-validator or Joi to check inputs."
+  },
+  {
+    "id": "1681",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is cluster module used for in Node.js?",
+    "answer": "To create child processes that share server ports, improving performance on multi-core systems."
+  },
+  {
+    "id": "1682",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "How do you optimize database queries in Node.js?",
+    "answer": "Use indexes, avoid N+1 queries, cache results, and use query builders or ORMs efficiently."
+  },
+  {
+    "id": "1683",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is a RESTful API?",
+    "answer": "An API following REST principles, using HTTP methods and stateless communication."
+  },
+  {
+    "id": "1684",
+    "category": "backend",
+    "difficulty": "easy",
+    "question": "How do you send a 404 response in Express?",
+    "answer": "Use res.status(404).send('Not Found')."
+  },
+  {
+    "id": "1685",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is JWT and how is it used in authentication?",
+    "answer": "JSON Web Token is a compact token for securely transmitting user claims, often used for stateless authentication."
+  },
+  {
+    "id": "1686",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you debug a Node.js application?",
+    "answer": "Use console logs, Node inspector, or debugging tools integrated in editors."
+  },
+  {
+    "id": "1687",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the event loop in Node.js?",
+    "answer": "It's a mechanism that handles async callbacks, keeping Node.js non-blocking."
+  },
+  {
+    "id": "1688",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle file uploads in Express?",
+    "answer": "Use middleware like multer to process multipart/form-data."
+  },
+  {
+    "id": "1689",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the use of the crypto module in Node.js?",
+    "answer": "It provides cryptographic functionalities like hashing and encryption."
+  },
+  {
+    "id": "1690",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you implement rate limiting in Express?",
+    "answer": "Use middleware like express-rate-limit to restrict repeated requests."
+  },
+  {
+    "id": "1691",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "SQL databases are relational, NoSQL are non-relational, more flexible with schema."
+  },
+  {
+    "id": "1692",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you test a Node.js API?",
+    "answer": "Use testing frameworks like Mocha, Jest, or supertest for endpoint testing."
+  },
+  {
+    "id": "1693",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is a callback hell and how to avoid it?",
+    "answer": "It’s nested callbacks leading to hard-to-read code; avoid with promises or async/await."
+  },
+  {
+    "id": "1694",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you secure a Node.js app from SQL injection?",
+    "answer": "Use parameterized queries or ORM query builders that escape inputs."
+  },
+  {
+    "id": "1695",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the purpose of the package-lock.json file?",
+    "answer": "It locks dependency versions to ensure consistent installs."
+  },
+  {
+    "id": "1696",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you handle real-time communication in Node.js?",
+    "answer": "Use libraries like Socket.io or WebSockets."
+  },
+  {
+    "id": "1697",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is a promise chain?",
+    "answer": "A sequence of promises where each waits for the previous to resolve."
+  },
+  {
+    "id": "1698",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "How do you configure environment variables for production?",
+    "answer": "Set variables on the server or use dotenv files excluded from version control."
+  },
+  {
+    "id": "1699",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What are microservices?",
+    "answer": "An architecture breaking an app into small independent services."
+  },
+  {
+    "id": "1700",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is the difference between require() and import in Node.js?",
+    "answer": "require() is CommonJS syntax; import is ES Modules syntax."
+  },
+ {
+    "id": "1701",
+    "category": "nodejs",
+    "difficulty": "easy",
+    "question": "What is Node.js?",
+    "answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine for executing JavaScript on the server."
+  },
+  {
+    "id": "1702",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js handle asynchronous operations?",
+    "answer": "Node.js uses an event loop and non-blocking I/O to handle asynchronous operations efficiently."
+  },
+  {
+    "id": "1703",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the event loop in Node.js?",
+    "answer": "It's a mechanism that handles callbacks and async operations to keep Node.js non-blocking."
+  },
+  {
+    "id": "1704",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are streams in Node.js?",
+    "answer": "Streams are objects that let you read or write data piece-by-piece, which improves performance with large data."
+  },
+  {
+    "id": "1705",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the difference between process.nextTick() and setImmediate() in Node.js.",
+    "answer": "process.nextTick() executes callbacks before the next event loop tick, setImmediate() runs on the next iteration after I/O events."
+  },
+  {
+    "id": "1706",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is a callback in Node.js?",
+    "answer": "A function passed as an argument to another function, called after the completion of an async task."
+  },
+  {
+    "id": "1707",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle errors in asynchronous code in Node.js?",
+    "answer": "Use error-first callbacks, try/catch with async/await, or promise catch handlers."
+  },
+  {
+    "id": "1708",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the role of the package.json file in a Node.js project?",
+    "answer": "It manages project metadata, dependencies, scripts, and configuration."
+  },
+  {
+    "id": "1709",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you create a simple HTTP server in Node.js?",
+    "answer": "Use the built-in http module and call http.createServer with a request listener."
+  },
+  {
+    "id": "1710",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between require() and import in Node.js?",
+    "answer": "require() is CommonJS syntax; import is ES Modules syntax, supported natively in newer Node.js versions."
+  },
+  {
+    "id": "1711",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "How do you debug a Node.js application?",
+    "answer": "Use the built-in debugger, inspect with Chrome DevTools, or use IDE-integrated debuggers."
+  },
+  {
+    "id": "1712",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between cluster and child_process modules?",
+    "answer": "cluster is for spawning workers to share server load; child_process runs independent scripts or commands."
+  },
+  {
+    "id": "1713",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js handle concurrency?",
+    "answer": "Node.js handles concurrency with its event loop and asynchronous, non-blocking APIs."
+  },
+  {
+    "id": "1714",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is npm and what role does it play in Node.js?",
+    "answer": "npm is the Node package manager that helps install and manage third-party libraries."
+  },
+  {
+    "id": "1715",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you read and write files asynchronously in Node.js?",
+    "answer": "Use fs.readFile and fs.writeFile methods with callbacks or promise versions."
+  },
+  {
+    "id": "1716",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are buffers in Node.js?",
+    "answer": "Buffers represent raw binary data and are used to handle streams or binary protocols."
+  },
+  {
+    "id": "1717",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you manage environment variables in a Node.js application?",
+    "answer": "Use process.env and tools like dotenv to load variables from .env files."
+  },
+  {
+    "id": "1718",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is middleware in the context of Node.js and Express?",
+    "answer": "Middleware functions process requests and responses, adding functionality like logging or authentication."
+  },
+  {
+    "id": "1719",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle uncaught exceptions in Node.js?",
+    "answer": "Listen to process 'uncaughtException' or 'unhandledRejection' events and handle or log errors."
+  },
+  {
+    "id": "1720",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous functions in Node.js?",
+    "answer": "Synchronous functions block execution; asynchronous functions allow other code to run while waiting."
+  },
+  {
+    "id": "1721",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does the require cache work in Node.js?",
+    "answer": "Modules are cached after first load; subsequent requires return cached exports."
+  },
+  {
+    "id": "1722",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are the main built-in modules of Node.js?",
+    "answer": "Modules like fs, http, path, events, stream, crypto, and os."
+  },
+  {
+    "id": "1723",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you improve performance of a Node.js application?",
+    "answer": "Use clustering, caching, asynchronous operations, and avoid blocking code."
+  },
+  {
+    "id": "1724",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the use of the process object in Node.js?",
+    "answer": "It provides info and control over the current Node.js process, including environment, args, and events."
+  },
+  {
+    "id": "1725",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle signals like SIGINT in Node.js?",
+    "answer": "Use process.on('SIGINT', callback) to handle termination signals gracefully."
+  },
+  {
+    "id": "1726",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between global and local modules in Node.js?",
+    "answer": "Global modules are installed system-wide; local modules are project-specific."
+  },
+  {
+    "id": "1727",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you use async/await in Node.js?",
+    "answer": "Mark functions as async and await promises inside them for cleaner async code."
+  },
+  {
+    "id": "1728",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js handle CPU-intensive tasks?",
+    "answer": "It offloads heavy tasks to child processes or worker threads to avoid blocking the event loop."
+  },
+  {
+    "id": "1729",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are worker threads in Node.js?",
+    "answer": "Worker threads run JavaScript in parallel, useful for CPU-bound tasks."
+  },
+  {
+    "id": "1730",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you schedule tasks in Node.js?",
+    "answer": "Use setTimeout, setInterval, or libraries like node-cron."
+  },
+  {
+    "id": "1731",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the cluster module?",
+    "answer": "It allows creating child processes that share server ports to improve scalability."
+  },
+  {
+    "id": "1732",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle HTTP requests in Node.js?",
+    "answer": "Use the http module to create servers that listen and respond to requests."
+  },
+  {
+    "id": "1733",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between HTTP/1.1 and HTTP/2 support in Node.js?",
+    "answer": "HTTP/2 supports multiplexing and header compression, improving performance over HTTP/1.1."
+  },
+  {
+    "id": "1734",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle CORS in a Node.js backend?",
+    "answer": "Use the cors middleware to set appropriate HTTP headers for cross-origin requests."
+  },
+  {
+    "id": "1735",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are event emitters in Node.js?",
+    "answer": "Objects that emit named events and allow listeners to handle those events."
+  },
+  {
+    "id": "1736",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement authentication in Node.js?",
+    "answer": "Use libraries like Passport.js or JWT-based strategies for stateless auth."
+  },
+  {
+    "id": "1737",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is middleware chaining in Express.js?",
+    "answer": "Multiple middleware functions run sequentially for processing requests."
+  },
+  {
+    "id": "1738",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you prevent memory leaks in Node.js?",
+    "answer": "Avoid global variables, remove event listeners when not needed, and profile memory usage."
+  },
+  {
+    "id": "1739",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the use of the cluster.fork() method?",
+    "answer": "It spawns a new worker process to share the load of a Node.js application."
+  },
+  {
+    "id": "1740",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you manage sessions in a Node.js application?",
+    "answer": "Use session middleware like express-session with in-memory or persistent stores."
+  },
+  {
+    "id": "1741",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'nextTick' queue in Node.js?",
+    "answer": "It queues callbacks to run immediately after the current operation completes, before I/O events."
+  },
+  {
+    "id": "1742",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you connect to a database in Node.js?",
+    "answer": "Use database drivers or ORMs like mongoose for MongoDB or sequelize for SQL databases."
+  },
+  {
+    "id": "1743",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is a package-lock.json file and why is it important?",
+    "answer": "It locks exact versions of dependencies to ensure consistent installs."
+  },
+  {
+    "id": "1744",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement logging in Node.js?",
+    "answer": "Use console methods or libraries like Winston or Bunyan for structured logging."
+  },
+  {
+    "id": "1745",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between process.exit() and process.kill()?",
+    "answer": "process.exit() stops the Node.js process; process.kill() sends signals to processes."
+  },
+  {
+    "id": "1746",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you secure sensitive information in Node.js applications?",
+    "answer": "Use environment variables, avoid hardcoding secrets, and use encryption when necessary."
+  },
+ {
+    "id": "1747",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between callback hell and promise chaining?",
+    "answer": "Callback hell happens when callbacks are nested deeply, making code hard to read; promise chaining flattens async calls, improving readability."
+  },
+  {
+    "id": "1748",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you convert a callback-based function to return a promise in Node.js?",
+    "answer": "Use the util.promisify() method to wrap the callback function and return a promise."
+  },
+  {
+    "id": "1749",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the significance of the 'this' keyword in Node.js modules?",
+    "answer": "'this' in a Node.js module refers to module.exports, which is the object exported from the module."
+  },
+  {
+    "id": "1750",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you monitor performance in a Node.js application?",
+    "answer": "Use tools like Node.js built-in profiler, clinic.js, or external monitoring services like New Relic."
+  },
+  {
+    "id": "1751",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how to handle file uploads in Node.js.",
+    "answer": "Use middleware like multer to parse multipart/form-data and handle file uploads."
+  },
+  {
+    "id": "1752",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between Buffer.alloc() and Buffer.from()?",
+    "answer": "Buffer.alloc() creates a zero-filled buffer of specified size; Buffer.from() creates a buffer from an existing data source."
+  },
+  {
+    "id": "1753",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle cross-site scripting (XSS) attacks in Node.js apps?",
+    "answer": "Sanitize user input, use libraries like helmet, and implement Content Security Policy (CSP) headers."
+  },
+  {
+    "id": "1754",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the domain module in Node.js?",
+    "answer": "It provides a way to handle multiple different I/O operations as a single group for better error handling."
+  },
+  {
+    "id": "1755",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you debug memory leaks in a Node.js application?",
+    "answer": "Use tools like Chrome DevTools heap snapshots, node-memwatch, or built-in inspector to find leaks."
+  },
+  {
+    "id": "1756",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between global, process, and module in Node.js?",
+    "answer": "global is the global object accessible everywhere; process contains info about the Node process; module contains info about the current module."
+  },
+  {
+    "id": "1757",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement rate limiting in a Node.js server?",
+    "answer": "Use middleware like express-rate-limit to limit repeated requests from clients."
+  },
+  {
+    "id": "1758",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the use of the path module in Node.js?",
+    "answer": "It provides utilities for working with file and directory paths."
+  },
+  {
+    "id": "1759",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how to secure REST APIs built with Node.js.",
+    "answer": "Use authentication (JWT, OAuth), validate inputs, enable HTTPS, and sanitize data."
+  },
+  {
+    "id": "1760",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are the differences between exec() and spawn() in child_process module?",
+    "answer": "exec() runs a command and buffers output; spawn() launches a process with streams for stdin/stdout."
+  },
+  {
+    "id": "1761",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you implement caching in Node.js applications?",
+    "answer": "Use in-memory caches like NodeCache or Redis for distributed caching."
+  },
+  {
+    "id": "1762",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the role of the crypto module in Node.js?",
+    "answer": "It provides cryptographic functionality like hashing, encryption, and signing."
+  },
+  {
+    "id": "1763",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how to handle HTTP redirects in Node.js.",
+    "answer": "Set HTTP status codes like 301 or 302 and use response.setHeader('Location', url)."
+  },
+  {
+    "id": "1764",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between process.argv and process.env?",
+    "answer": "process.argv holds command-line arguments; process.env holds environment variables."
+  },
+  {
+    "id": "1765",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js handle child processes?",
+    "answer": "Using the child_process module, Node.js can spawn or fork child processes for parallel execution."
+  },
+  {
+    "id": "1766",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement WebSockets in Node.js?",
+    "answer": "Use libraries like ws or Socket.io to enable real-time bidirectional communication."
+  },
+  {
+    "id": "1767",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are common ways to secure a Node.js application?",
+    "answer": "Use HTTPS, sanitize inputs, implement authentication, and keep dependencies updated."
+  },
+  {
+    "id": "1768",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle unhandled promise rejections in Node.js?",
+    "answer": "Listen for the 'unhandledRejection' event on process and handle or log errors."
+  },
+  {
+    "id": "1769",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between PUT and PATCH methods in REST APIs?",
+    "answer": "PUT replaces the entire resource; PATCH applies partial updates."
+  },
+  {
+    "id": "1770",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement file streaming in Node.js?",
+    "answer": "Use fs.createReadStream and fs.createWriteStream to handle large files efficiently."
+  },
+  {
+    "id": "1771",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the os module in Node.js?",
+    "answer": "It provides operating system-related utility methods and properties."
+  },
+  {
+    "id": "1772",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you use promises to avoid callback hell?",
+    "answer": "Chain promises to handle asynchronous tasks sequentially and catch errors more cleanly."
+  },
+  {
+    "id": "1773",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the use of EventEmitter in Node.js.",
+    "answer": "EventEmitter allows emitting and listening for events within Node.js apps."
+  },
+  {
+    "id": "1774",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is middleware in Express.js and how is it used?",
+    "answer": "Middleware are functions that process requests before reaching route handlers, used for logging, auth, etc."
+  },
+  {
+    "id": "1775",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are the different types of streams in Node.js?",
+    "answer": "Readable, writable, duplex (both read and write), and transform (modify data while reading/writing)."
+  },
+  {
+    "id": "1776",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js achieve scalability?",
+    "answer": "Through its non-blocking I/O, event loop, clustering, and load balancing."
+  },
+  {
+    "id": "1777",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous file operations in Node.js?",
+    "answer": "Synchronous operations block the thread until completion; asynchronous ones allow other tasks to run."
+  },
+  {
+    "id": "1778",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement authentication using JWT in Node.js?",
+    "answer": "Generate JWTs on login, send them to clients, then verify tokens on protected routes."
+  },
+  {
+    "id": "1779",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the util module in Node.js?",
+    "answer": "It provides utility functions for debugging, formatting, and promisifying callbacks."
+  },
+  {
+    "id": "1780",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how you handle cross-origin resource sharing (CORS) in Node.js.",
+    "answer": "By setting appropriate HTTP headers, often using the cors middleware."
+  },
+  {
+    "id": "1781",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is a readable stream pipe() method?",
+    "answer": "It connects a readable stream to a writable stream to automatically transfer data."
+  },
+  {
+    "id": "1782",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle concurrency in Node.js?",
+    "answer": "Using event-driven architecture, worker threads, and clustering."
+  },
+  {
+    "id": "1783",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement rate limiting in Express?",
+    "answer": "Use middleware like express-rate-limit to limit repeated requests."
+  },
+  {
+    "id": "1784",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between require and import in Node.js?",
+    "answer": "require is CommonJS syntax; import is ES module syntax, supported in newer Node.js versions."
+  },
+  {
+    "id": "1785",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle errors in asynchronous functions in Node.js?",
+    "answer": "Use try-catch with async-await or catch() with promises."
+  },
+  {
+    "id": "1786",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the event loop in Node.js?",
+    "answer": "It manages the execution of asynchronous callbacks in a single-threaded environment."
+  },
+  {
+    "id": "1787",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle file system permissions in Node.js?",
+    "answer": "Use fs module methods like chmod and chown."
+  },
+  {
+    "id": "1788",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between cluster and worker_threads in Node.js?",
+    "answer": "Cluster forks multiple processes; worker_threads runs threads within a single process."
+  },
+  {
+    "id": "1789",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement API versioning in a Node.js app?",
+    "answer": "Use route prefixes or headers to differentiate API versions."
+  },
+  {
+    "id": "1790",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you improve startup performance of a Node.js app?",
+    "answer": "Lazy-load modules, avoid blocking code, and use faster startup scripts."
+  },
+{
+    "id": "1791",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the package-lock.json file?",
+    "answer": "It locks the versions of dependencies to ensure consistent installs across environments."
+  },
+  {
+    "id": "1792",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle environment variables securely in Node.js?",
+    "answer": "Use environment files (.env) and libraries like dotenv, and avoid committing secrets to source control."
+  },
+  {
+    "id": "1793",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how to implement graceful shutdown in a Node.js server.",
+    "answer": "Listen for termination signals, close open connections, and clean up resources before exiting."
+  },
+  {
+    "id": "1794",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between setImmediate() and process.nextTick()?",
+    "answer": "process.nextTick() executes before the next event loop tick; setImmediate() runs on the next iteration."
+  },
+  {
+    "id": "1795",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement streaming JSON parsing in Node.js?",
+    "answer": "Use libraries like JSONStream to parse large JSON data without blocking."
+  },
+  {
+    "id": "1796",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between HTTP/1.1 and HTTP/2 in Node.js?",
+    "answer": "HTTP/2 supports multiplexing, header compression, and server push, improving performance."
+  },
+  {
+    "id": "1797",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you prevent SQL injection attacks in Node.js?",
+    "answer": "Use parameterized queries or ORM query builders instead of string concatenation."
+  },
+  {
+    "id": "1798",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the purpose of worker threads in Node.js.",
+    "answer": "Worker threads enable running CPU-intensive tasks in parallel without blocking the event loop."
+  },
+  {
+    "id": "1799",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does the event loop prioritize timers, I/O callbacks, and other tasks?",
+    "answer": "It follows a specific phases order: timers, pending callbacks, idle/prepare, poll, check, and close callbacks."
+  },
+  {
+    "id": "1800",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are the main security risks when deploying Node.js apps?",
+    "answer": "Risks include injection attacks, broken authentication, sensitive data exposure, and insecure dependencies."
+  },
+  {
+    "id": "1801",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you use async_hooks in Node.js?",
+    "answer": "async_hooks track async resources lifecycle, useful for debugging and context propagation."
+  },
+  {
+    "id": "1802",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the significance of the exports object in Node.js modules?",
+    "answer": "exports is a shortcut to module.exports, used to expose functions or variables from a module."
+  },
+  {
+    "id": "1803",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How can you optimize database connections in a Node.js app?",
+    "answer": "Use connection pooling to reuse database connections and reduce overhead."
+  },
+  {
+    "id": "1804",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are the differences between npm and yarn?",
+    "answer": "Both are package managers; yarn is faster in installs and uses a lockfile format that ensures deterministic installs."
+  },
+  {
+    "id": "1805",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement session management in a Node.js app?",
+    "answer": "Use packages like express-session to manage user sessions with cookies or tokens."
+  },
+  {
+    "id": "1806",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain what is an Event Loop tick in Node.js.",
+    "answer": "An event loop tick is a single cycle of the event loop where callbacks are processed."
+  },
+  {
+    "id": "1807",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle large file uploads in Node.js?",
+    "answer": "Use streaming with libraries like busboy or multer to process files efficiently without loading entire files into memory."
+  },
+  {
+    "id": "1808",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the role of the cluster module?",
+    "answer": "It allows creating child processes that share server ports to improve app scalability on multi-core systems."
+  },
+  {
+    "id": "1809",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement logging in Node.js?",
+    "answer": "Use logging libraries like Winston or Bunyan for structured and level-based logging."
+  },
+  {
+    "id": "1810",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between blocking and non-blocking code?",
+    "answer": "Blocking code stops execution until complete; non-blocking code lets other tasks run while waiting."
+  },
+  {
+    "id": "1811",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle CORS errors in Node.js applications?",
+    "answer": "Set appropriate CORS headers or use cors middleware to allow cross-origin requests."
+  },
+  {
+    "id": "1812",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are environment-specific configurations in Node.js?",
+    "answer": "Configurations like database URLs or API keys that change based on deployment environment."
+  },
+  {
+    "id": "1813",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How does Node.js handle uncaught exceptions?",
+    "answer": "By default, it crashes the process; you can catch them with 'uncaughtException' event, but graceful shutdown is recommended."
+  },
+  {
+    "id": "1814",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the use of the buffer module in Node.js?",
+    "answer": "It handles raw binary data buffers efficiently."
+  },
+  {
+    "id": "1815",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement HTTPS server in Node.js?",
+    "answer": "Use the https module with SSL certificates to create secure servers."
+  },
+  {
+    "id": "1816",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of process.exit()?",
+    "answer": "It terminates the Node.js process with an optional exit code."
+  },
+  {
+    "id": "1817",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how to test Node.js applications.",
+    "answer": "Use testing frameworks like Mocha, Jest, or Jasmine to write unit and integration tests."
+  },
+  {
+    "id": "1818",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle JSON parsing errors in Node.js?",
+    "answer": "Wrap JSON.parse in try-catch blocks to handle invalid JSON safely."
+  },
+  {
+    "id": "1819",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous require in Node.js?",
+    "answer": "require is synchronous; dynamic import() is asynchronous."
+  },
+  {
+    "id": "1820",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle uncaught promise rejections?",
+    "answer": "Listen to the 'unhandledRejection' event and log or handle the error."
+  },
+  {
+    "id": "1821",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the role of the process object in Node.js?",
+    "answer": "It provides info and control over the current Node.js process."
+  },
+  {
+    "id": "1822",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement real-time features in Node.js?",
+    "answer": "Use WebSocket libraries like Socket.io for real-time communication."
+  },
+  {
+    "id": "1823",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is a callback hell and how do you avoid it?",
+    "answer": "Nested callbacks causing complex code; avoid with promises or async/await."
+  },
+  {
+    "id": "1824",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you monitor performance in Node.js apps?",
+    "answer": "Use tools like Node.js built-in profiler, clinic.js, or external APM services."
+  },
+  {
+    "id": "1825",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the concept of streams in Node.js.",
+    "answer": "Streams handle reading/writing data piece by piece, useful for large data."
+  },
+  {
+    "id": "1826",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you prevent memory leaks in Node.js?",
+    "answer": "Avoid global variables, properly close event listeners, and use profiling tools."
+  },
+  {
+    "id": "1827",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between process.nextTick() and setTimeout(fn, 0)?",
+    "answer": "process.nextTick runs before any I/O or timer callbacks; setTimeout(fn, 0) runs after."
+  },
+  {
+    "id": "1828",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle multipart form data in Node.js?",
+    "answer": "Use middleware like multer to parse multipart/form-data."
+  },
+  {
+    "id": "1829",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain the difference between middleware and route handlers in Express.",
+    "answer": "Middleware functions run before route handlers to modify req/res or handle errors."
+  },
+  {
+    "id": "1830",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle file system operations asynchronously in Node.js?",
+    "answer": "Use fs module's async methods like fs.readFile and fs.writeFile."
+  },
+  {
+    "id": "1831",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is a Promise and how does it work in Node.js?",
+    "answer": "A Promise represents a future value, handling asynchronous operations with then/catch."
+  },
+  {
+    "id": "1832",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you debug a Node.js application?",
+    "answer": "Use built-in debugger, VSCode debug tools, or inspect with console.log."
+  },
+  {
+    "id": "1833",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the difference between global and process objects in Node.js?",
+    "answer": "global is the global namespace object; process gives info about the runtime process."
+  },
+  {
+    "id": "1834",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you implement rate limiting in Node.js APIs?",
+    "answer": "Use middleware like express-rate-limit to limit repeated requests."
+  },
+  {
+    "id": "1835",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the exports object in Node.js modules?",
+    "answer": "It exposes module functions and variables to be imported by other files."
+  },
+  {
+    "id": "1836",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you use environment variables in a Node.js app?",
+    "answer": "Access via process.env and load from .env files using libraries like dotenv."
+  },
+  {
+    "id": "1837",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What are common ways to secure a Node.js API?",
+    "answer": "Use HTTPS, validate inputs, authenticate users, and handle errors properly."
+  },
+  {
+    "id": "1838",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "Explain how you would deploy a Node.js app to production.",
+    "answer": "Use process managers like PM2, set environment variables, and monitor app health."
+  },
+  {
+    "id": "1839",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the significance of the 'use strict' directive in Node.js?",
+    "answer": "It enables strict mode for better error checking and avoids some silent errors."
+  },
+  {
+    "id": "1840",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "How do you handle cross-site scripting (XSS) in Node.js applications?",
+    "answer": "Sanitize inputs and outputs, use security headers like Content Security Policy."
+  },
+  {
     "id": "1841",
     "category": "express",
     "difficulty": "medium",
