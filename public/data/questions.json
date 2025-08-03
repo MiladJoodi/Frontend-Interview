@@ -2273,5 +2273,145 @@
     "difficulty": "hard",
     "question": "Explain how to implement a real-time traffic monitoring dashboard in Next.js",
     "answer": "Use WebSocket connections to traffic data APIs. Implement efficient data updates with visualization libraries like D3.js. Handle large datasets with windowing. Cache historical data in getStaticProps with ISR."
+  },
+  {
+    "id": "326",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is JSX in React?",
+    "answer": "JSX stands for JavaScript XML. It allows you to write HTML-like syntax in JavaScript, which gets transformed to React.createElement calls by tools like Babel."
+  },
+  {
+    "id": "327",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How does the virtual DOM improve performance in React?",
+    "answer": "The virtual DOM minimizes real DOM manipulations. React compares virtual DOM trees and batches the necessary updates to apply the least amount of real DOM changes."
+  },
+  {
+    "id": "328",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What are controlled components in React?",
+    "answer": "Controlled components are form elements that derive their values from React state. Their updates are handled via onChange and setState."
+  },
+  {
+    "id": "329",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "Explain the difference between state and props in React.",
+    "answer": "Props are read-only data passed from parent to child. State is mutable and controlled by the component itself to manage internal data."
+  },
+  {
+    "id": "330",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you implement a custom hook for form validation?",
+    "answer": "Create a function like useFormValidation that tracks field values, errors, and handles validation rules. Return state, error messages, and onChange handlers."
+  },
+  {
+    "id": "331",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is useMemo used for?",
+    "answer": "useMemo memoizes a computed value between renders to prevent expensive recalculations unless its dependencies change."
+  },
+  {
+    "id": "332",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain reconciliation in React.",
+    "answer": "Reconciliation is the diffing algorithm React uses to compare previous and next virtual DOM trees. It updates only the parts of the DOM that changed."
+  },
+  {
+    "id": "333",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What does useEffect do?",
+    "answer": "useEffect runs side-effects in functional components, such as data fetching, subscriptions, and manual DOM updates."
+  },
+  {
+    "id": "334",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the difference between useEffect and useCallback?",
+    "answer": "useEffect runs a side effect after render. useCallback returns a memoized version of a function to prevent unnecessary re-creations."
+  },
+  {
+    "id": "335",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you optimize a large list rendering in React?",
+    "answer": "Use virtualization libraries like react-window or react-virtualized. Avoid unnecessary re-renders with memo and key optimizations."
+  },
+  {
+    "id": "336",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the purpose of keys in a list?",
+    "answer": "Keys help React identify which items changed, were added, or removed, enabling efficient re-rendering of lists."
+  },
+  {
+    "id": "337",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is prop drilling and how do you avoid it?",
+    "answer": "Prop drilling is passing props through intermediate components unnecessarily. It can be avoided using context or state management libraries."
+  },
+  {
+    "id": "338",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How does React batch updates internally?",
+    "answer": "React batches multiple state updates into a single render pass in events and lifecycle methods using an internal queue."
+  },
+  {
+    "id": "339",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "When should you use React.memo?",
+    "answer": "Use React.memo to memoize functional components and prevent re-rendering when props haven't changed."
+  },
+  {
+    "id": "340",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain concurrent rendering in React.",
+    "answer": "Concurrent rendering allows React to interrupt rendering tasks to keep the UI responsive. It works with features like startTransition and Suspense."
+  },
+  {
+    "id": "341",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is context in React?",
+    "answer": "React Context provides a way to pass data through the component tree without passing props manually at every level."
+  },
+  {
+    "id": "342",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How does Suspense work in React?",
+    "answer": "Suspense lets you wait for something before rendering, like lazy-loaded components or asynchronous data. It shows fallback content during the wait."
+  },
+  {
+    "id": "343",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the purpose of defaultProps?",
+    "answer": "defaultProps allows you to set default values for props that aren't explicitly provided by the parent component."
+  },
+  {
+    "id": "344",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the difference between class and functional components?",
+    "answer": "Class components use ES6 classes and lifecycle methods. Functional components are simpler and can use hooks for state and effects."
+  },
+  {
+    "id": "345",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How does React Fiber improve rendering?",
+    "answer": "React Fiber is a reimplementation of the React core that enables incremental rendering, concurrency, and improved scheduling."
   }
 ]
