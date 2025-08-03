@@ -1048,5 +1048,614 @@
     "difficulty": "hard",
     "question": "What is the 'vm' module in Node.js and when would you use it?",
     "answer": "The 'vm' module provides APIs for compiling and running code within V8 Virtual Machine contexts. It's used for running code in isolated environments (sandboxing), though should be used carefully as it's not completely secure for running untrusted code."
+  },
+  {
+    "id": "151",
+    "category": "all",
+    "difficulty": "easy",
+    "question": "What are the benefits of using a CSS preprocessor like Sass?",
+    "answer": "Sass provides variables, nesting, mixins, functions, and other features that make CSS more maintainable, reusable, and easier to write. It helps organize large stylesheets and reduces repetition."
+  },
+  {
+    "id": "152",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "Explain the concept of 'lifting state up' in React.",
+    "answer": "Lifting state up means moving shared state to the closest common ancestor of components that need it. This allows sibling components to share and synchronize state through their parent component."
+  },
+  {
+    "id": "153",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle dynamic imports and why are they useful?",
+    "answer": "Next.js supports dynamic imports with next/dynamic, which allows code-splitting at the component level. This reduces initial bundle size by loading components only when needed, improving performance."
+  },
+  {
+    "id": "154",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How would you implement a responsive navbar using Tailwind CSS?",
+    "answer": "Use Tailwind's responsive prefixes (md:, lg:) to show/hide elements at different breakpoints. Combine with flex/grid for layout, and transition utilities for smooth mobile menu animations."
+  },
+  {
+    "id": "155",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is the difference between CSS Grid and Flexbox? When would you use each?",
+    "answer": "CSS Grid is for two-dimensional layouts (rows and columns), while Flexbox is for one-dimensional layouts (either row or column). Use Grid for overall page layout and Flexbox for aligning content within components."
+  },
+  {
+    "id": "156",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event loop in JavaScript and how does it work?",
+    "answer": "The event loop is what allows JavaScript to be non-blocking. It continuously checks the call stack and when empty, processes messages from the callback queue, enabling asynchronous behavior despite being single-threaded."
+  },
+  {
+    "id": "157",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What is the purpose of the alt attribute in image tags?",
+    "answer": "The alt attribute provides alternative text for images when they cannot be displayed. It's important for accessibility (screen readers), SEO, and when images fail to load."
+  },
+  {
+    "id": "158",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are TypeScript interfaces and how do they differ from type aliases?",
+    "answer": "Interfaces define contracts for object shapes and can be extended or implemented. Type aliases can represent any type, including primitives and unions. Interfaces are generally preferred for object shapes as they're more extensible."
+  },
+  {
+    "id": "159",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create and use mixins in Sass?",
+    "answer": "Mixins are defined with @mixin name($params) { ... } and used with @include name(args). They allow reusable blocks of styles that can accept parameters for customization."
+  },
+  {
+    "id": "160",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you write a regex to validate a URL?",
+    "answer": "A basic URL regex: /^(https?:\\/\\/)?([\\w.-]+)\\.([a-z]{2,})([\\/\\w .-]*)*\\/?$/. This matches protocol, domain, and path components while allowing for optional parts."
+  },
+  {
+    "id": "161",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle one-to-many relationships in Prisma?",
+    "answer": "In Prisma, define a @relation field on the 'many' side model that references the 'one' side. The relation can be made optional or required depending on your data model needs."
+  },
+  {
+    "id": "162",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How does Drizzle ORM handle schema migrations?",
+    "answer": "Drizzle provides a migration API where schema changes are defined in TypeScript. It generates SQL migration files that can be applied to the database while tracking which migrations have been executed."
+  },
+  {
+    "id": "163",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some common strategies for API rate limiting?",
+    "answer": "Common strategies include token bucket, fixed window, and sliding window algorithms. Implementation can be done via middleware with counters stored in memory, Redis, or a database, often using IP or API keys as identifiers."
+  },
+  {
+    "id": "164",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the package.json file in Node.js?",
+    "answer": "package.json stores project metadata, dependencies, scripts, and configuration. It's used by npm/yarn to manage packages, versions, and project setup, serving as the project manifest."
+  },
+  {
+    "id": "165",
+    "category": "express",
+    "difficulty": "easy",
+    "question": "How do you handle route parameters in Express?",
+    "answer": "Route parameters are defined with a colon (e.g., '/users/:id') and accessed via req.params. They capture values at specific positions in the URL for dynamic routing."
+  },
+  {
+    "id": "166",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is Docker and how does it benefit development?",
+    "answer": "Docker is a containerization platform that packages applications with their dependencies. Benefits include consistent environments, isolation, easy scaling, simplified dependency management, and reproducible builds across machines."
+  },
+  {
+    "id": "167",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is React Fiber and how does it improve rendering?",
+    "answer": "React Fiber is a complete rewrite of React's reconciliation algorithm. It enables features like incremental rendering, better handling of animations, and the ability to split rendering work into chunks across multiple frames."
+  },
+  {
+    "id": "168",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are API Routes in Next.js and how do they work?",
+    "answer": "API Routes allow creating API endpoints as Node.js serverless functions within Next.js. Files in the 'pages/api' directory become API endpoints that can handle HTTP requests and return responses."
+  },
+  {
+    "id": "169",
+    "category": "tailwindcss",
+    "difficulty": "hard",
+    "question": "How would you implement dark mode with Tailwind CSS?",
+    "answer": "Configure dark mode in tailwind.config.js to use a class strategy. Toggle a 'dark' class on the HTML element, then use dark: prefixes for dark mode styles (e.g., dark:bg-gray-800)."
+  },
+  {
+    "id": "170",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the CSS Box Model and how does it work?",
+    "answer": "The CSS Box Model describes how elements are laid out, consisting of content, padding, border, and margin. The box-sizing property controls whether width/height include padding and border (border-box) or just content (content-box)."
+  },
+  {
+    "id": "171",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are JavaScript Generators and how do they work?",
+    "answer": "Generators are functions that can be paused and resumed (function*). They yield values via yield and can be iterated manually with .next() or in loops. Useful for lazy evaluation and custom iterables."
+  },
+  {
+    "id": "172",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are semantic HTML elements and why are they important?",
+    "answer": "Semantic elements (<header>, <article>, <nav>) clearly describe their meaning to browsers and developers. They improve accessibility, SEO, and make code more readable by replacing generic <div> elements where appropriate."
+  },
+  {
+    "id": "173",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are conditional types in TypeScript?",
+    "answer": "Conditional types select between two types based on a condition: T extends U ? X : Y. They're powerful when combined with generics, allowing type transformations based on input types."
+  },
+  {
+    "id": "174",
+    "category": "sass",
+    "difficulty": "easy",
+    "question": "How do you create variables in Sass?",
+    "answer": "Variables in Sass are declared with $ followed by the name: $primary-color: #333;. They're used by referencing the variable: color: $primary-color;. Variables can store colors, numbers, strings, lists, maps, and more."
+  },
+  {
+    "id": "175",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to validate an email address?",
+    "answer": "A basic email regex: /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/. Note that complete email validation is complex and often better handled with simple confirmation emails or specialized libraries."
+  },
+  {
+    "id": "176",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How does Prisma handle database transactions?",
+    "answer": "Prisma provides $transaction for interactive transactions where operations can depend on previous results. For batch transactions of independent operations, use transaction([]). Both ensure atomicity - all operations succeed or none do."
+  },
+  {
+    "id": "177",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM handle raw SQL queries?",
+    "answer": "Drizzle provides a sql template tag for writing raw SQL queries with type safety. Values can be interpolated safely, and return types can be inferred. This allows leveraging database-specific features while maintaining type safety."
+  },
+  {
+    "id": "178",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is JWT authentication and how does it work?",
+    "answer": "JWT (JSON Web Tokens) are compact, URL-safe tokens that represent claims between parties. They consist of a header, payload, and signature. JWTs are stateless - the server validates the signature without storing session data."
+  },
+  {
+    "id": "179",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What are worker threads in Node.js and when would you use them?",
+    "answer": "Worker threads allow running JavaScript in parallel. They're useful for CPU-intensive tasks that would block the event loop, though I/O operations are still better handled asynchronously via the main thread."
+  },
+  {
+    "id": "180",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "What is middleware in Express.js?",
+    "answer": "Middleware are functions that have access to the request, response, and next function in the request-response cycle. They can execute code, modify objects, or end the cycle. Middleware runs in the order it's defined."
+  },
+  {
+    "id": "181",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "What are microservices and when would you choose them over a monolith?",
+    "answer": "Microservices are small, independent services that work together. Choose them for large teams, independent scaling needs, different tech stacks per component, or organizational alignment. Monoliths are simpler for small projects."
+  },
+  {
+    "id": "182",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Portals and when would you use them?",
+    "answer": "Portals provide a way to render children into a DOM node outside the parent component's hierarchy. Useful for modals, tooltips, or any UI that needs to break out of its container (e.g., for CSS z-index or positioning)."
+  },
+  {
+    "id": "183",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "What is Incremental Static Regeneration (ISR) in Next.js?",
+    "answer": "ISR allows updating static pages after build time without rebuilding the entire site. You specify a revalidation time, and Next.js will regenerate the page in the background when requested after that time."
+  },
+  {
+    "id": "184",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you customize Tailwind's default configuration?",
+    "answer": "In tailwind.config.js, use the theme.extend property to add to defaults without overriding them. For complete overrides, add properties directly to theme. Plugins can also add new utilities or components."
+  },
+  {
+    "id": "185",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is CSS containment and how does it optimize performance?",
+    "answer": "CSS containment (contain property) tells the browser that an element's subtree is independent of the rest of the page. This allows optimizations like limiting paint/layout to specific subtrees, improving rendering performance."
+  },
+  {
+    "id": "186",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between '==' and '===' in JavaScript?",
+    "answer": "'==' performs type coercion before comparison, while '===' (strict equality) checks both value and type without coercion. '===' is generally preferred as it's more predictable and avoids unexpected type conversions."
+  },
+  {
+    "id": "187",
+    "category": "html",
+    "difficulty": "hard",
+    "question": "What are Web Components and how do they work?",
+    "answer": "Web Components are a set of web platform APIs that allow creating reusable custom elements with encapsulated functionality. They consist of Custom Elements, Shadow DOM, and HTML Templates."
+  },
+  {
+    "id": "188",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are type guards in TypeScript?",
+    "answer": "Type guards are expressions that perform runtime checks to narrow down the type of a variable within a block. They include typeof, instanceof checks, or custom functions with 'is' type predicates."
+  },
+  {
+    "id": "189",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you implement a theming system with Sass?",
+    "answer": "Create a map of themes with color variables, then use mixins or functions to apply themes. Example: @mixin theme($theme) { --primary: map-get($theme, primary); } and apply with @include theme($light-theme);"
+  },
+  {
+    "id": "190",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to find all numbers in a string?",
+    "answer": "In JavaScript: const numbers = str.match(/\\d+/g); This returns an array of all sequences of digits. For decimal numbers: /\\d+\\.?\\d*/g. Adjust based on specific number format requirements."
+  },
+  {
+    "id": "191",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle many-to-many relationships in Prisma?",
+    "answer": "Prisma supports implicit many-to-many relations where you define @relation fields on both models. For explicit relations (with additional fields), create a join model with two @relation fields pointing to each side."
+  },
+  {
+    "id": "192",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How would you implement pagination with Drizzle ORM?",
+    "answer": "Use the .limit() and .offset() methods on queries. Example: db.select().from(users).limit(10).offset(20). For cursor-based pagination, use .where() with conditions based on the cursor value."
+  },
+  {
+    "id": "193",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some strategies for optimizing database performance?",
+    "answer": "Strategies include: adding proper indexes, optimizing query structure, implementing caching, using connection pooling, denormalizing where appropriate, partitioning large tables, and analyzing query execution plans."
+  },
+  {
+    "id": "194",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the 'cluster' module in Node.js and why would you use it?",
+    "answer": "The cluster module allows creating child processes (workers) that share server ports, enabling better utilization of multi-core systems. It helps improve performance by running multiple Node.js instances to handle the load."
+  },
+  {
+    "id": "195",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you implement file uploads in Express?",
+    "answer": "Use middleware like 'multer' to handle multipart/form-data. Configure storage (disk/memory), file filters, size limits, and processing. For large files, consider streaming processing to avoid memory issues."
+  },
+  {
+    "id": "196",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What is CI/CD and why is it important?",
+    "answer": "CI (Continuous Integration) means regularly merging code changes into a shared repo with automated testing. CD (Continuous Delivery/Deployment) automates release processes. Together they enable faster, more reliable software releases."
+  },
+  {
+    "id": "197",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is React Suspense and how does it work?",
+    "answer": "Suspense lets components 'wait' for something before rendering. It's primarily used for code-splitting (with React.lazy) and data fetching. Components can suspend while loading, showing fallback UI until ready."
+  },
+  {
+    "id": "198",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does Next.js handle image optimization?",
+    "answer": "Next.js provides an Image component that automatically optimizes images (resizing, format conversion, lazy loading) and serves them via a built-in image optimization API. It works with both local and remote images."
+  },
+  {
+    "id": "199",
+    "category": "tailwindcss",
+    "difficulty": "easy",
+    "question": "What is Tailwind CSS and how does it differ from traditional CSS frameworks?",
+    "answer": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs directly in markup, rather than offering pre-designed components like Bootstrap."
+  },
+  {
+    "id": "200",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is BEM methodology in CSS?",
+    "answer": "BEM (Block, Element, Modifier) is a naming convention: .block__element--modifier. Blocks are standalone components, elements are parts of blocks, and modifiers alter appearance/behavior. It aims to make CSS more maintainable."
+  },
+  {
+    "id": "201",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain the prototype chain in JavaScript.",
+    "answer": "JavaScript uses prototypal inheritance where objects can inherit properties from other objects. Each object has a prototype (accessed via __proto__), and when a property isn't found, JavaScript looks up the prototype chain until it finds it or reaches null."
+  },
+  {
+    "id": "202",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'defer' and 'async' attributes in script tags?",
+    "answer": "'defer' scripts execute after HTML parsing is complete, in order. 'async' scripts download in parallel and execute as soon as available, potentially out of order. Both allow parallel downloading without blocking parsing."
+  },
+  {
+    "id": "203",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are template literal types in TypeScript?",
+    "answer": "Template literal types allow creating new string types by combining existing ones, similar to template literals in JavaScript. Example: type EventName<T extends string> = `${T}Changed` lets you create 'nameChanged', 'ageChanged', etc."
+  },
+  {
+    "id": "204",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create loops in Sass and what are they useful for?",
+    "answer": "Sass has @for, @each, and @while loops. Useful for generating utility classes, grid systems, or any repetitive CSS patterns. Example: @for $i from 1 through 12 { .col-#{$i} { width: $i * 8.33%; } }"
+  },
+  {
+    "id": "205",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to parse and extract data from a URL?",
+    "answer": "Example to extract parts: /^(https?:\\/\\/)?([^\\/?#]+)([^?#]*)(\\?[^#]*)?(#.*)?/. This captures protocol, domain, path, query, and hash segments. More specific patterns can be created for particular URL structures."
+  },
+  {
+    "id": "206",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How does Prisma handle database schema validation?",
+    "answer": "Prisma validates the schema against the database during introspection (when pulling the schema from an existing DB) and when generating the client. It checks for type consistency, relation integrity, and other constraints."
+  },
+  {
+    "id": "207",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How would you implement soft deletes with Drizzle ORM?",
+    "answer": "Add a 'deleted_at' column to your tables, then filter queries with .where(isNull(deletedAt)) or create a helper function that adds this condition automatically. For actual deletes, use a separate hard delete operation."
+  },
+  {
+    "id": "208",
+    "category": "backend",
+    "difficulty": "medium",
+    "question": "What is CORS and how do you handle it in a backend service?",
+    "answer": "CORS (Cross-Origin Resource Sharing) is a security mechanism that restricts cross-origin requests. Handle it by setting proper headers (Access-Control-Allow-Origin, etc.), implementing preflight request handling, and configuring allowed methods/headers."
+  },
+  {
+    "id": "209",
+    "category": "nodejs",
+    "difficulty": "hard",
+    "question": "What is the 'stream' module in Node.js and when would you use it?",
+    "answer": "Streams are collections of data that might not be available all at once. They're useful for processing large files, handling real-time data, or any I/O operations where memory efficiency is important."
+  },
+  {
+    "id": "210",
+    "category": "express",
+    "difficulty": "medium",
+    "question": "How would you structure a large Express application?",
+    "answer": "Organize by features/routes (not by file type), separate concerns (routes, controllers, services), use middleware for cross-cutting concerns, implement proper error handling, and consider using a DI container for complex apps."
+  },
+  {
+    "id": "211",
+    "category": "other",
+    "difficulty": "hard",
+    "question": "What is the CAP theorem and how does it affect database design?",
+    "answer": "CAP theorem states a distributed system can only guarantee two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition tolerance (system works despite network failures). Affects choice between CP (like MongoDB) or AP (like Cassandra) systems."
+  },
+  {
+    "id": "212",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React Fragments and why are they useful?",
+    "answer": "Fragments (<></> or <Fragment>) let you group elements without adding extra DOM nodes. Useful when a component needs to return multiple adjacent elements but must have a single root, or when adding wrapper elements would break styling."
+  },
+  {
+    "id": "213",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle client-side navigation?",
+    "answer": "Next.js uses client-side navigation via its Link component, which prefetches linked pages in the background. This provides SPA-like navigation without full page reloads, while maintaining SEO benefits and proper URL handling."
+  },
+  {
+    "id": "214",
+    "category": "tailwindcss",
+    "difficulty": "medium",
+    "question": "How do you handle responsive design in Tailwind CSS?",
+    "answer": "Tailwind uses mobile-first breakpoints (sm, md, lg, xl, 2xl) as prefixes to utility classes. Example: 'md:text-lg' applies the large text size from the 'md' breakpoint up. Customize breakpoints in the config file."
+  },
+  {
+    "id": "215",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is CSS-in-JS and what are its advantages?",
+    "answer": "CSS-in-JS is a pattern where CSS is written in JavaScript instead of separate files. Advantages include scoped styles, dynamic styling based on props/state, automatic vendor prefixing, and elimination of unused CSS."
+  },
+  {
+    "id": "216",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript Promises and how do they work?",
+    "answer": "Promises represent eventual completion of async operations. They can be in pending, fulfilled, or rejected states. You chain .then() for success cases and .catch() for errors, avoiding callback hell. Async/await provides syntactic sugar over promises."
+  },
+  {
+    "id": "217",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'loading' attribute in images?",
+    "answer": "The 'loading' attribute controls lazy loading behavior: 'lazy' defers loading until near viewport, 'eager' loads immediately. It improves performance by prioritizing visible content loading, especially for long pages with many images."
+  },
+  {
+    "id": "218",
+    "category": "typescript",
+    "difficulty": "medium",
+    "question": "What are utility types in TypeScript and how are they useful?",
+    "answer": "Utility types (like Partial, Pick, Omit, Record) transform existing types in useful ways. They help create new types from existing ones without repetition, making type definitions more maintainable."
+  },
+  {
+    "id": "219",
+    "category": "sass",
+    "difficulty": "hard",
+    "question": "How would you implement a responsive grid system with Sass?",
+    "answer": "Create a mixin that generates grid classes based on breakpoints: @mixin grid($columns, $breakpoint) { @media (min-width: $breakpoint) { .grid-#{$columns} { display: grid; grid-template-columns: repeat($columns, 1fr); } } }. Call for each breakpoint/column count needed."
+  },
+  {
+    "id": "220",
+    "category": "regex",
+    "difficulty": "medium",
+    "question": "How would you use regex to validate a password with specific requirements?",
+    "answer": "Example for 8+ chars with uppercase, lowercase, number: /^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\\d]{8,}$/. This uses positive lookaheads to ensure each requirement is met before matching the password string."
+  },
+  {
+    "id": "221",
+    "category": "prisma orm",
+    "difficulty": "medium",
+    "question": "How do you handle database seeding with Prisma?",
+    "answer": "Create a seed script that uses the Prisma client to insert initial data. You can run it with 'prisma db seed' or a custom script. For larger datasets, consider using raw SQL for better performance."
+  },
+  {
+    "id": "222",
+    "category": "drizzle orm",
+    "difficulty": "medium",
+    "question": "How does Drizzle ORM handle complex joins?",
+    "answer": "Drizzle provides a query builder with methods like .innerJoin(), .leftJoin(), etc. You can chain these to build complex joins while maintaining type safety, and use the .fields() method to select specific columns."
+  },
+  {
+    "id": "223",
+    "category": "backend",
+    "difficulty": "hard",
+    "question": "What are some common API authentication methods?",
+    "answer": "Common methods include: API keys, JWT (JSON Web Tokens), OAuth/OAuth2, Session cookies, Basic Auth, and OpenID Connect. The choice depends on factors like security needs, client types, and whether you need third-party access."
+  },
+  {
+    "id": "224",
+    "category": "nodejs",
+    "difficulty": "medium",
+    "question": "What is the 'require' cache in Node.js and how does it work?",
+    "answer": "Node caches modules after first require to improve performance. Subsequent requires return the cached version. The cache is stored in require.cache and can be deleted if you need to reload a module."
+  },
+  {
+    "id": "225",
+    "category": "express",
+    "difficulty": "hard",
+    "question": "How would you implement real-time features in Express?",
+    "answer": "Use WebSockets with libraries like Socket.IO or ws. For HTTP-based approaches, consider Server-Sent Events (SSE) or long polling. Integrate with a pub/sub system like Redis for scaling across multiple servers."
+  },
+  {
+    "id": "226",
+    "category": "other",
+    "difficulty": "medium",
+    "question": "What are WebSockets and when would you use them?",
+    "answer": "WebSockets provide full-duplex communication over a single TCP connection. Use them for real-time features like chat, live updates, multiplayer games, or any app needing low-latency server-client communication."
+  },
+  {
+    "id": "227",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is React Server Components?",
+    "answer": "React Server Components are components that render on the server and can access server-side resources directly. They're sent to the client as a lightweight serialized format, reducing bundle size and enabling zero-bundle-size components."
+  },
+  {
+    "id": "228",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are Dynamic Routes in Next.js and how do they work?",
+    "answer": "Dynamic Routes allow creating pages with variable paths (like [id].js). The parameter is available in the router query object and during getStaticProps/getServerSideProps for data fetching based on the route."
+  },
+  {
+    "id": "229",
+    "category": "tailwindcss",
+    "difficulty": "hard",
+    "question": "How would you implement a design system with Tailwind CSS?",
+    "answer": "Define a comprehensive theme in tailwind.config.js with colors, typography, spacing, etc. Create reusable component templates. Use plugins for custom utilities. Document with Storybook or similar, and enforce consistency with linting rules."
+  },
+  {
+    "id": "230",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS pseudo-elements and how do they differ from pseudo-classes?",
+    "answer": "Pseudo-elements (::before, ::first-line) style specific parts of an element or generate content. Pseudo-classes (:hover, :nth-child()) style elements based on state or position. Pseudo-elements create virtual elements, pseudo-classes select existing ones in specific states."
+  },
+  {
+    "id": "231",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is the Temporal API in JavaScript?",
+    "answer": "The Temporal API is a new proposal for better date/time handling in JavaScript. It provides immutable objects for dates, times, and durations, with better timezone support, arithmetic operations, and parsing/formatting capabilities than the Date object."
+  },
+  {
+    "id": "232",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are ARIA attributes and why are they important?",
+    "answer": "ARIA (Accessible Rich Internet Applications) attributes provide semantic information to assistive technologies. They're crucial for accessibility when native HTML semantics aren't sufficient, helping screen readers understand dynamic content and UI controls."
+  },
+  {
+    "id": "233",
+    "category": "typescript",
+    "difficulty": "hard",
+    "question": "What are declaration files (.d.ts) in TypeScript?",
+    "answer": "Declaration files provide type information for existing JavaScript code. They contain type declarations but no implementations, allowing TypeScript to understand the shape of JavaScript libraries without changing the original code."
+  },
+  {
+    "id": "234",
+    "category": "sass",
+    "difficulty": "medium",
+    "question": "How do you create and use maps in Sass?",
+    "answer": "Define maps with $map: (key: value, ...). Access values with map-get($map, key). Use @each to iterate: @each $key, $value in $map { ... }. Maps are useful for theme variables, breakpoints, or any key-value data."
+  },
+  {
+    "id": "235",
+    "category": "regex",
+    "difficulty": "hard",
+    "question": "How would you use regex to match a hexadecimal color code?",
+    "answer": "Pattern: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/. Matches # followed by 3 or 6 hex digits. For strict CSS colors (no shorthand): /^#([A-Fa-f0-9]{3}){1,2}$/. Add word boundaries if needed: /\\b#[A-Fa-f0-9]{3,6}\\b/"
+  },
+  {
+    "id": "236",
+    "category": "prisma orm",
+    "difficulty": "hard",
+    "question": "How do you handle database indexing with Prisma?",
+    "answer": "Define indexes in your Prisma schema using the @@index attribute on models. For complex indexes or full-text search, you may need to use raw SQL in migrations. Prisma also supports defining unique constraints with @@unique."
+  },
+  {
+    "id": "237",
+    "category": "drizzle orm",
+    "difficulty": "hard",
+    "question": "How does Drizzle ORM handle full-text search?",
+    "answer": "Drizzle provides SQL functions that can be used for full-text search, like to_tsvector and to_tsquery in PostgreSQL. You can write raw SQL queries with these functions or create helper functions that abstract the search implementation."
   }
 ]
