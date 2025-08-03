@@ -4898,5 +4898,1272 @@
     "difficulty": "medium",
     "question": "How does the `min-width` property affect responsive design?",
     "answer": "`min-width` sets the smallest width an element can shrink to, preventing it from becoming too narrow."
+  },
+  {
+    "id": "701",
+    "category": "javascript",
+    "difficulty": "easy",
+    "question": "What is the difference between `var`, `let`, and `const`?",
+    "answer": "`var` is function-scoped and can be redeclared. `let` and `const` are block-scoped; `const` cannot be reassigned."
+  },
+  {
+    "id": "702",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how closures work in JavaScript.",
+    "answer": "A closure is a function that remembers the variables from its outer scope even after the outer function has finished executing."
+  },
+  {
+    "id": "703",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event loop in JavaScript?",
+    "answer": "The event loop handles asynchronous callbacks by continuously checking the call stack and the task queue, executing tasks when the stack is empty."
+  },
+  {
+    "id": "704",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does `this` keyword work in JavaScript?",
+    "answer": "`this` refers to the context in which a function is called; in methods it’s the object, in regular functions it’s the global object or undefined in strict mode."
+  },
+  {
+    "id": "705",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What are Promises and how do they improve asynchronous programming?",
+    "answer": "Promises represent a value that may be available now, later, or never, making async code easier to read and manage than nested callbacks."
+  },
+  {
+    "id": "706",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `==` and `===` in JavaScript?",
+    "answer": "`==` compares values with type coercion; `===` compares both value and type without coercion."
+  },
+  {
+    "id": "707",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do arrow functions differ from regular functions?",
+    "answer": "Arrow functions have a lexical `this` binding, no own `arguments`, and cannot be used as constructors."
+  },
+  {
+    "id": "708",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting moves variable and function declarations to the top of their scope before code execution."
+  },
+  {
+    "id": "709",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between synchronous and asynchronous code.",
+    "answer": "Synchronous code runs sequentially, blocking further execution until done; asynchronous code runs independently, allowing other code to run."
+  },
+  {
+    "id": "710",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the `async/await` syntax simplify working with Promises?",
+    "answer": "`async/await` lets you write async code that looks synchronous, making it easier to read and handle errors with try/catch."
+  },
+  {
+    "id": "711",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules and how do you use them?",
+    "answer": "Modules allow you to split code into reusable files using `export` and `import` statements."
+  },
+  {
+    "id": "712",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the prototype chain?",
+    "answer": "It’s how JavaScript objects inherit properties and methods from other objects through a linked chain."
+  },
+  {
+    "id": "713",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the spread operator work in JavaScript?",
+    "answer": "The spread operator `...` expands iterable elements like arrays or objects into individual elements or properties."
+  },
+  {
+    "id": "714",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `null` and `undefined`?",
+    "answer": "`undefined` means a variable is declared but not assigned; `null` is an explicit assignment indicating no value."
+  },
+  {
+    "id": "715",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle errors in JavaScript?",
+    "answer": "Using `try/catch` blocks or Promise `.catch()` methods to capture and handle exceptions."
+  },
+  {
+    "id": "716",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain event delegation and its benefits.",
+    "answer": "Event delegation uses a single event listener on a parent to manage events on child elements, improving performance and dynamic content handling."
+  },
+  {
+    "id": "717",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `call()`, `apply()`, and `bind()`?",
+    "answer": "`call()` and `apply()` invoke functions immediately with a specified `this`; `bind()` returns a new function with bound `this`."
+  },
+  {
+    "id": "718",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are generators in JavaScript?",
+    "answer": "Generators are functions that can pause and resume execution using `yield` to produce a sequence of values."
+  },
+  {
+    "id": "719",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "How do you prevent memory leaks in JavaScript?",
+    "answer": "Avoid global variables, clear timers and event listeners, and manage references to DOM elements properly."
+  },
+  {
+    "id": "720",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a callback function?",
+    "answer": "A callback is a function passed as an argument to be executed after another function completes."
+  },
+  {
+    "id": "721",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between shallow copy and deep copy.",
+    "answer": "Shallow copy copies only top-level properties; deep copy recursively copies all nested objects."
+  },
+  {
+    "id": "722",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the `typeof` operator work?",
+    "answer": "`typeof` returns a string indicating the type of a variable or expression."
+  },
+  {
+    "id": "723",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template literals in JavaScript?",
+    "answer": "Template literals use backticks to embed expressions and create multi-line strings easily."
+  },
+  {
+    "id": "724",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you debounce a function?",
+    "answer": "Debouncing delays a function call until a specified time has passed without new events, preventing excessive calls."
+  },
+  {
+    "id": "725",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `Map` and `Object`?",
+    "answer": "`Map` is an iterable collection of key-value pairs with any key types; `Object` keys are strings or symbols."
+  },
+  {
+    "id": "726",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the use of `Set` in JavaScript.",
+    "answer": "`Set` stores unique values of any type and allows easy checking and manipulation of unique items."
+  },
+  {
+    "id": "727",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are IIFEs and why are they useful?",
+    "answer": "Immediately Invoked Function Expressions run once immediately to create isolated scopes and avoid polluting global scope."
+  },
+  {
+    "id": "728",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you clone an object in JavaScript?",
+    "answer": "Use `Object.assign({}, obj)` for shallow copy or `JSON.parse(JSON.stringify(obj))` for deep copy with limitations."
+  },
+  {
+    "id": "729",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is event bubbling?",
+    "answer": "Event bubbling is when an event propagates from the target element up through its ancestors."
+  },
+  {
+    "id": "730",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you check if a variable is an array?",
+    "answer": "Use `Array.isArray(variable)`."
+  },
+  {
+    "id": "731",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between synchronous and asynchronous functions.",
+    "answer": "Synchronous functions block execution until complete; asynchronous functions allow code to run without waiting."
+  },
+  {
+    "id": "732",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a promise chain?",
+    "answer": "Chaining `.then()` calls on promises to sequence async operations."
+  },
+  {
+    "id": "733",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does destructuring assignment work?",
+    "answer": "It extracts values from arrays or properties from objects into distinct variables."
+  },
+  {
+    "id": "734",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between function declaration and function expression?",
+    "answer": "Declarations are hoisted and can be called before definition; expressions are not hoisted."
+  },
+  {
+    "id": "735",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you create private variables in JavaScript?",
+    "answer": "Use closures or private class fields (`#privateField`)."
+  },
+  {
+    "id": "736",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of `Symbol` in JavaScript?",
+    "answer": "Symbols create unique identifiers, often used as object keys to avoid naming conflicts."
+  },
+  {
+    "id": "737",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between `for...in` and `for...of` loops.",
+    "answer": "`for...in` iterates over object keys; `for...of` iterates over iterable values like arrays."
+  },
+  {
+    "id": "738",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are the different ways to create objects in JavaScript?",
+    "answer": "Using object literals, constructors, `Object.create()`, or classes."
+  },
+  {
+    "id": "739",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you use the `new` keyword?",
+    "answer": "`new` creates an instance of an object from a constructor function or class."
+  },
+  {
+    "id": "740",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a promise.all() and when would you use it?",
+    "answer": "`Promise.all()` runs multiple promises in parallel and resolves when all succeed or rejects on any failure."
+  },
+  {
+    "id": "741",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how to handle asynchronous errors in promises.",
+    "answer": "Use `.catch()` on the promise chain or try/catch inside async/await functions."
+  },
+  {
+    "id": "742",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `Array.map()` and `Array.forEach()`?",
+    "answer": "`map()` returns a new array with transformed elements; `forEach()` executes a function on each item without returning."
+  },
+  {
+    "id": "743",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does JavaScript handle floating point precision?",
+    "answer": "It uses IEEE 754 double precision, which can cause rounding errors with decimal arithmetic."
+  },
+  {
+    "id": "744",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the role of the `constructor` method in a class?",
+    "answer": "It initializes new object instances with properties and setup logic."
+  },
+  {
+    "id": "745",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you memoize a function in JavaScript?",
+    "answer": "Store results of expensive function calls and return cached results on the same inputs."
+  },
+  {
+    "id": "746",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `Object.freeze()` and `Object.seal()`?",
+    "answer": "`freeze()` prevents adding, deleting, or modifying properties; `seal()` prevents adding or deleting but allows modification."
+  },
+  {
+    "id": "747",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is tail call optimization?",
+    "answer": "Optimization where a function call in tail position reuses the current stack frame to avoid growing the stack."
+  },
+  {
+    "id": "748",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between synchronous generators and async generators.",
+    "answer": "Sync generators yield values; async generators yield promises and support `for await...of` iteration."
+  },
+  {
+    "id": "749",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the Temporal Dead Zone (TDZ)?",
+    "answer": "The TDZ is the time between entering a block and when a `let` or `const` variable is declared, where accessing it causes an error."
+  },
+  {
+    "id": "750",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you prevent default behavior in event handling?",
+    "answer": "Use `event.preventDefault()` inside the event handler."
+  },
+ {
+    "id": "751",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `Object.assign()` and the spread operator when cloning objects?",
+    "answer": "`Object.assign()` copies enumerable own properties from source objects to a target object. The spread operator does the same but is often syntactically cleaner for shallow copies."
+  },
+  {
+    "id": "752",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you create a custom iterable object in JavaScript?",
+    "answer": "Implement the `Symbol.iterator` method that returns an iterator object with a `next()` method returning `{ value, done }`."
+  },
+  {
+    "id": "753",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain how the `new.target` meta-property works.",
+    "answer": "`new.target` allows functions and constructors to detect if they were called with `new` and which constructor was invoked."
+  },
+  {
+    "id": "754",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are tagged template literals?",
+    "answer": "Tagged templates allow you to parse template literals with a function, useful for custom string processing like localization or sanitization."
+  },
+  {
+    "id": "755",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Describe the differences between `setTimeout` and `setInterval`.",
+    "answer": "`setTimeout` executes a function once after a delay; `setInterval` repeatedly executes a function at fixed intervals."
+  },
+  {
+    "id": "756",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `globalThis`, `window`, and `self`?",
+    "answer": "`globalThis` is a universal global object reference, `window` refers to the browser window, and `self` usually points to the global scope in workers or windows."
+  },
+  {
+    "id": "757",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "Explain the purpose and use of WeakMap.",
+    "answer": "WeakMap holds weak references to keys (which must be objects), allowing garbage collection if there are no other references, useful for private data storage."
+  },
+  {
+    "id": "758",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `document.readyState` values?",
+    "answer": "`loading`: document is still loading, `interactive`: DOM parsed but subresources might not be loaded, `complete`: fully loaded."
+  },
+  {
+    "id": "759",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do JavaScript engines optimize code execution?",
+    "answer": "They use Just-In-Time (JIT) compilation, inline caching, and speculative optimizations based on runtime information."
+  },
+  {
+    "id": "760",
+    "category": "javascript",
+    "difficulty": "hard",
+    "question": "What is the difference between microtasks and macrotasks in the event loop?",
+    "answer": "Microtasks (e.g., Promise callbacks) run immediately after the current task, before rendering and before macrotasks like `setTimeout`."
+  },
+  {
+    "id": "761",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a Proxy in JavaScript and how is it used?",
+    "answer": "Proxy allows you to define custom behavior for fundamental operations like property lookup, assignment, and function calls."
+  },
+  {
+    "id": "762",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the use of `Reflect` in JavaScript.",
+    "answer": "`Reflect` provides methods for interceptable JavaScript operations, complementing Proxies and enabling default behavior calls."
+  },
+  {
+    "id": "763",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is tail recursion and does JavaScript support it?",
+    "answer": "Tail recursion is a function calling itself as its last action. Some JS engines optimize it, but it’s not guaranteed across all."
+  },
+  {
+    "id": "764",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you achieve method chaining in JavaScript?",
+    "answer": "Return the current object (`this`) from methods so calls can be chained."
+  },
+  {
+    "id": "765",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `void` operator?",
+    "answer": "`void` evaluates an expression and returns undefined, often used to prevent default link behavior or discard return values."
+  },
+  {
+    "id": "766",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does `JSON.stringify` handle circular references?",
+    "answer": "It throws a TypeError when circular references are detected unless you provide a custom replacer function."
+  },
+  {
+    "id": "767",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between an Error, a SyntaxError, and a ReferenceError?",
+    "answer": "Error is the base error type; SyntaxError happens on invalid code parsing; ReferenceError occurs when accessing undefined variables."
+  },
+  {
+    "id": "768",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how to use the `instanceof` operator.",
+    "answer": "`instanceof` checks if an object’s prototype chain contains the prototype property of a constructor."
+  },
+  {
+    "id": "769",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a JavaScript event loop starvation?",
+    "answer": "When long-running synchronous tasks block the event loop, preventing async tasks from running."
+  },
+  {
+    "id": "770",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does garbage collection work in JavaScript?",
+    "answer": "JavaScript engines use algorithms like mark-and-sweep to free memory occupied by unreachable objects."
+  },
+  {
+    "id": "771",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are the differences between classical inheritance and prototypal inheritance?",
+    "answer": "Classical inheritance uses classes and instances; prototypal inheritance uses objects inheriting directly from other objects."
+  },
+  {
+    "id": "772",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you implement a debounce function?",
+    "answer": "Return a function that delays invoking the original function until after a wait period has elapsed without calls."
+  },
+  {
+    "id": "773",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are Symbols and how are they different from strings as object keys?",
+    "answer": "Symbols create unique keys that avoid property name collisions; strings can be duplicated."
+  },
+  {
+    "id": "774",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between `bind`, `call`, and `apply`.",
+    "answer": "`call` and `apply` invoke functions immediately with a specified `this`; `bind` returns a new function with bound `this`."
+  },
+  {
+    "id": "775",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `yield` keyword?",
+    "answer": "Used in generator functions to pause and resume execution, returning a value each time."
+  },
+  {
+    "id": "776",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you implement a polyfill?",
+    "answer": "By checking if a feature exists and providing your own implementation if it doesn’t."
+  },
+  {
+    "id": "777",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between the DOMContentLoaded and load events?",
+    "answer": "DOMContentLoaded fires when the DOM is fully parsed; load fires after all resources like images are fully loaded."
+  },
+  {
+    "id": "778",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the concept of currying in JavaScript.",
+    "answer": "Currying transforms a function with multiple arguments into a sequence of functions each taking a single argument."
+  },
+  {
+    "id": "779",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are the new features introduced in ES6?",
+    "answer": "Let/const, arrow functions, template literals, destructuring, classes, modules, promises, and more."
+  },
+  {
+    "id": "780",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you check for an object's own properties?",
+    "answer": "Using `Object.hasOwnProperty()` or `Object.hasOwn()` in newer specs."
+  },
+  {
+    "id": "781",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are the drawbacks of using `eval()`?",
+    "answer": "Security risks, performance issues, and debugging difficulties."
+  },
+  {
+    "id": "782",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how `async`/`await` simplifies promise handling.",
+    "answer": "It lets you write asynchronous code in a synchronous style, making it easier to read and maintain."
+  },
+  {
+    "id": "783",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are the main differences between `var`, `let`, and `const`?",
+    "answer": "`var` is function-scoped and hoisted, `let` and `const` are block-scoped; `const` cannot be reassigned."
+  },
+  {
+    "id": "784",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you detect the type of a variable?",
+    "answer": "Using `typeof` for primitives, `instanceof` for objects, or `Object.prototype.toString.call()` for more precise checks."
+  },
+  {
+    "id": "785",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is event delegation and why is it useful?",
+    "answer": "Attaching a single event listener to a parent to handle events on its children, reducing memory and improving performance."
+  },
+  {
+    "id": "786",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you shallow copy an array or object?",
+    "answer": "Using spread operator `[...]` for arrays and `{...}` for objects or methods like `Array.slice()`."
+  },
+  {
+    "id": "787",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a closure and when would you use it?",
+    "answer": "A function that remembers variables from its lexical scope even when executed outside that scope."
+  },
+  {
+    "id": "788",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain hoisting in JavaScript.",
+    "answer": "Variable and function declarations are moved to the top of their scope before code execution."
+  },
+  {
+    "id": "789",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the module pattern?",
+    "answer": "A design pattern that encapsulates private variables and exposes public methods, often implemented with IIFEs."
+  },
+  {
+    "id": "790",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does JavaScript handle multiple identical keys in an object literal?",
+    "answer": "The last property with the same key overwrites previous ones."
+  },
+  {
+    "id": "791",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are generator functions and their benefits?",
+    "answer": "Functions that can pause execution and resume later, useful for managing async workflows or implementing iterators."
+  },
+  {
+    "id": "792",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you use default parameters in functions?",
+    "answer": "Specify default values in function signatures, e.g., `function fn(a = 1) {}`."
+  },
+  {
+    "id": "793",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between deep and shallow copy.",
+    "answer": "Shallow copy copies top-level properties; deep copy recursively clones nested objects."
+  },
+  {
+    "id": "794",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `==` and `===`?",
+    "answer": "`==` compares with type coercion; `===` compares without coercion (strict equality)."
+  },
+  {
+    "id": "795",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you create private variables in JavaScript classes?",
+    "answer": "Using `#` prefix for private fields or closures inside constructors."
+  },
+  {
+    "id": "796",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is event bubbling and event capturing?",
+    "answer": "Event bubbling propagates events from target up to ancestors; capturing goes from ancestors down to target."
+  },
+  {
+    "id": "797",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you detect if an object is an array?",
+    "answer": "Using `Array.isArray()` or `Object.prototype.toString.call()`."
+  },
+  {
+    "id": "798",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between function declarations and function expressions?",
+    "answer": "Declarations are hoisted and can be called before definition; expressions are not hoisted."
+  },
+  {
+    "id": "799",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how you would handle errors in asynchronous JavaScript code.",
+    "answer": "Use `.catch()` on promises or try/catch inside async functions."
+  },
+  {
+    "id": "800",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the role of the `this` keyword in JavaScript?",
+    "answer": "`this` refers to the object that is the current execution context, varying based on how the function is called."
+  },
+{
+    "id": "801",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are promises and how do they improve asynchronous programming?",
+    "answer": "Promises represent the eventual completion or failure of an async operation, allowing cleaner chaining and error handling."
+  },
+  {
+    "id": "802",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous code?",
+    "answer": "Synchronous code blocks execution until complete; asynchronous code allows other tasks to run while waiting for completion."
+  },
+  {
+    "id": "803",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do arrow functions affect the value of `this`?",
+    "answer": "Arrow functions do not have their own `this`; they inherit it lexically from the surrounding scope."
+  },
+  {
+    "id": "804",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is function hoisting in JavaScript?",
+    "answer": "Function declarations are hoisted, meaning their definitions are moved to the top of their scope before execution."
+  },
+  {
+    "id": "805",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you shallow copy an object in JavaScript?",
+    "answer": "Using the spread operator `{...obj}` or `Object.assign({}, obj)`."
+  },
+  {
+    "id": "806",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `null` and `undefined`?",
+    "answer": "`null` is an assigned empty value, `undefined` means a variable has been declared but not assigned."
+  },
+  {
+    "id": "807",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the concept of closures with an example.",
+    "answer": "A closure is a function that remembers the variables from its creation scope, e.g., a function returning another function that accesses outer variables."
+  },
+  {
+    "id": "808",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template literals and how are they used?",
+    "answer": "Template literals are string literals allowing embedded expressions using backticks, e.g., `Hello ${name}`."
+  },
+  {
+    "id": "809",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the event loop work in JavaScript?",
+    "answer": "It handles the execution of code, callbacks, and async operations by managing task queues and the call stack."
+  },
+  {
+    "id": "810",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript data types?",
+    "answer": "Primitive types (string, number, boolean, null, undefined, symbol, bigint) and objects."
+  },
+  {
+    "id": "811",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does destructuring assignment work in JavaScript?",
+    "answer": "It extracts values from arrays or properties from objects into distinct variables."
+  },
+  {
+    "id": "812",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `for...in` and `for...of` loops?",
+    "answer": "`for...in` iterates over enumerable property names; `for...of` iterates over iterable values."
+  },
+  {
+    "id": "813",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you prevent object mutation in JavaScript?",
+    "answer": "Use `Object.freeze()` to make an object immutable."
+  },
+  {
+    "id": "814",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the spread operator and how is it used?",
+    "answer": "It expands iterables into individual elements, useful for arrays and object literals."
+  },
+  {
+    "id": "815",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how default parameters work in functions.",
+    "answer": "Parameters can have default values if no argument or undefined is passed."
+  },
+  {
+    "id": "816",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `typeof` operator?",
+    "answer": "Returns a string indicating the type of the operand."
+  },
+  {
+    "id": "817",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you create and use a JavaScript Promise?",
+    "answer": "By creating a new Promise with `new Promise((resolve, reject) => { })` and using `.then()` and `.catch()`."
+  },
+  {
+    "id": "818",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `Object.keys()`, `Object.values()`, and `Object.entries()`?",
+    "answer": "`keys()` returns an array of property names, `values()` returns values, and `entries()` returns [key, value] pairs."
+  },
+  {
+    "id": "819",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are higher-order functions?",
+    "answer": "Functions that take other functions as arguments or return them."
+  },
+  {
+    "id": "820",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you debounce a function in JavaScript?",
+    "answer": "By using a timer to delay function execution until a specified wait time after the last call."
+  },
+  {
+    "id": "821",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `map()`, `filter()`, and `reduce()`?",
+    "answer": "`map()` transforms array elements, `filter()` selects elements based on a condition, `reduce()` accumulates array values into one."
+  },
+  {
+    "id": "822",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you clone an array in JavaScript?",
+    "answer": "Using `slice()`, spread operator `[...arr]`, or `Array.from()`."
+  },
+  {
+    "id": "823",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the use of `Array.prototype.some()`?",
+    "answer": "Checks if at least one element passes the provided test function."
+  },
+  {
+    "id": "824",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain how JavaScript handles type coercion.",
+    "answer": "Automatically converts types to match expected operations, sometimes leading to unexpected results."
+  },
+  {
+    "id": "825",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `setTimeout` and `requestAnimationFrame`?",
+    "answer": "`setTimeout` schedules code after a delay; `requestAnimationFrame` schedules code to run before the next repaint."
+  },
+  {
+    "id": "826",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle exceptions in JavaScript?",
+    "answer": "Using `try...catch` blocks."
+  },
+  {
+    "id": "827",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the use of the `new` keyword?",
+    "answer": "Creates a new object instance from a constructor function or class."
+  },
+  {
+    "id": "828",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you check if a variable is undefined?",
+    "answer": "Using `typeof variable === 'undefined'` or `variable === undefined`."
+  },
+  {
+    "id": "829",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules and how do you use them?",
+    "answer": "Files that export/import code to encapsulate and reuse functionality, using `export` and `import` keywords."
+  },
+  {
+    "id": "830",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous iteration?",
+    "answer": "Synchronous iteration uses `for...of`; asynchronous iteration uses `for await...of` for promises."
+  },
+  {
+    "id": "831",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you make a function return multiple values?",
+    "answer": "By returning an array or an object with multiple values."
+  },
+  {
+    "id": "832",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are template strings and how do they differ from regular strings?",
+    "answer": "Template strings allow embedded expressions and multiline strings using backticks."
+  },
+  {
+    "id": "833",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you check if a property exists in an object?",
+    "answer": "Using the `in` operator or `hasOwnProperty` method."
+  },
+  {
+    "id": "834",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the `arguments` object?",
+    "answer": "An array-like object available inside functions containing all passed arguments."
+  },
+  {
+    "id": "835",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `null` and `undefined`?",
+    "answer": "`null` is an explicit assignment indicating no value; `undefined` means a variable has not been assigned."
+  },
+  {
+    "id": "836",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between `Function.prototype.call` and `Function.prototype.apply`.",
+    "answer": "`call` invokes a function with arguments passed individually; `apply` uses an array of arguments."
+  },
+  {
+    "id": "837",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the event propagation in JavaScript?",
+    "answer": "The order in which events are received on elements, including capturing, target, and bubbling phases."
+  },
+{
+    "id": "838",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you create a read-only property on an object?",
+    "answer": "Using `Object.defineProperty()` with `writable: false`."
+  },
+{
+    "id": "839",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `var`, `let`, and `const`?",
+    "answer": "`var` is function-scoped and hoisted, `let` and `const` are block-scoped; `const` cannot be reassigned."
+  },
+  {
+    "id": "840",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle asynchronous operations in JavaScript?",
+    "answer": "Using callbacks, promises, async/await syntax."
+  },
+  {
+    "id": "841",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are async functions and how do they work?",
+    "answer": "Functions declared with `async` return a promise and allow `await` to pause execution until a promise resolves."
+  },
+  {
+    "id": "842",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the use of `Promise.all()`.",
+    "answer": "It takes an array of promises and returns a new promise that resolves when all input promises resolve or rejects if any fail."
+  },
+  {
+    "id": "843",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is event delegation?",
+    "answer": "Attaching a single event listener to a parent element to handle events on its children using event bubbling."
+  },
+  {
+    "id": "844",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you create a private variable in JavaScript?",
+    "answer": "Using closures or the new `#` syntax for private class fields."
+  },
+  {
+    "id": "845",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `==` and `===`?",
+    "answer": "`==` performs type coercion before comparison; `===` compares without coercion (strict equality)."
+  },
+  {
+    "id": "846",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `bind()` method?",
+    "answer": "It creates a new function with `this` bound to a specified object."
+  },
+  {
+    "id": "847",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain what a generator function is.",
+    "answer": "A function that can pause and resume execution using `yield` to produce a sequence of values."
+  },
+  {
+    "id": "848",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you memoize a function in JavaScript?",
+    "answer": "By caching results of expensive function calls and returning cached results for the same inputs."
+  },
+  {
+    "id": "849",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a JavaScript Symbol?",
+    "answer": "A unique and immutable primitive value used as an object property key to avoid name collisions."
+  },
+  {
+    "id": "850",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does the `this` keyword behave in different contexts?",
+    "answer": "In a method, `this` refers to the owner object; in a function, it depends on call context; arrow functions inherit `this` lexically."
+  },
+  {
+    "id": "851",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the module pattern?",
+    "answer": "A design pattern that encapsulates private and public members using closures, providing a modular structure."
+  },
+  {
+    "id": "852",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `call()`, `apply()`, and `bind()`?",
+    "answer": "`call()` and `apply()` invoke a function immediately with different argument styles; `bind()` returns a new bound function."
+  },
+  {
+    "id": "853",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you detect if a variable is an array?",
+    "answer": "Using `Array.isArray(variable)`."
+  },
+  {
+    "id": "854",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a callback hell and how can it be avoided?",
+    "answer": "Nested callbacks making code hard to read; avoided by using promises or async/await."
+  },
+  {
+    "id": "855",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between shallow and deep copy.",
+    "answer": "Shallow copy duplicates the first level only; deep copy duplicates all nested objects."
+  },
+  {
+    "id": "856",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you throttle a function?",
+    "answer": "Limit the function execution to once every specified time interval."
+  },
+  {
+    "id": "857",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the purpose of `Object.freeze()`?",
+    "answer": "To prevent modifications to an object (making it immutable)."
+  },
+  {
+    "id": "858",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are Proxies in JavaScript?",
+    "answer": "Objects that define custom behavior for fundamental operations (like property lookup or assignment)."
+  },
+  {
+    "id": "859",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the concept of event bubbling and capturing.",
+    "answer": "Bubbling propagates events from child to parent; capturing propagates from parent to child."
+  },
+  {
+    "id": "860",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is a pure function?",
+    "answer": "A function that returns the same output for the same inputs and has no side effects."
+  },
+  {
+    "id": "861",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you handle memory leaks in JavaScript?",
+    "answer": "By removing references to unused objects, avoiding global variables, and cleaning up event listeners."
+  },
+  {
+    "id": "862",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `setInterval` and `setTimeout`?",
+    "answer": "`setInterval` runs repeatedly at intervals; `setTimeout` runs once after a delay."
+  },
+  {
+    "id": "863",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the Temporal Dead Zone?",
+    "answer": "The period between entering a scope and when a variable declared with `let` or `const` is initialized, during which accessing it throws an error."
+  },
+  {
+    "id": "864",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What are WeakMap and WeakSet?",
+    "answer": "Collections that hold weak references to objects, allowing garbage collection if no other references exist."
+  },
+  {
+    "id": "865",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you implement inheritance in JavaScript?",
+    "answer": "Using prototypes or ES6 classes with `extends`."
+  },
+  {
+    "id": "866",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between a constructor function and a factory function?",
+    "answer": "Constructor functions use `new` to create instances; factory functions return new objects without `new`."
+  },
+  {
+    "id": "867",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the difference between synchronous and asynchronous errors.",
+    "answer": "Synchronous errors occur during code execution; asynchronous errors happen in async operations and must be handled with promises or callbacks."
+  },
+  {
+    "id": "868",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the significance of the `__proto__` property?",
+    "answer": "It references the object's prototype, used for inheritance."
+  },
+  {
+    "id": "869",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you create a custom iterable in JavaScript?",
+    "answer": "By defining a `[Symbol.iterator]` method that returns an iterator object."
+  },
+  {
+    "id": "870",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `function` declarations and function expressions?",
+    "answer": "Declarations are hoisted and can be called before definition; expressions are not hoisted."
+  },
+  {
+    "id": "871",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you detect memory leaks caused by closures?",
+    "answer": "By identifying functions that hold references to large objects no longer needed."
+  },
+  {
+    "id": "872",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the use of `Symbol.iterator`?",
+    "answer": "It defines the default iterator for an object, enabling it to be iterable in loops."
+  },
+  {
+    "id": "873",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How do you merge two objects in JavaScript?",
+    "answer": "Using `Object.assign()` or spread operator `{...obj1, ...obj2}`."
+  },
+  {
+    "id": "874",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is event loop starvation?",
+    "answer": "When long-running synchronous code blocks the event loop, preventing async callbacks from executing."
+  },
+  {
+    "id": "875",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is tail call optimization?",
+    "answer": "An optimization where the last function call of a function reuses the current stack frame, preventing stack growth."
+  },
+  {
+    "id": "876",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How does JavaScript's garbage collection work?",
+    "answer": "It automatically frees memory by removing objects no longer reachable from the root references."
+  },
+  {
+    "id": "877",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between `JSON.stringify()` and `JSON.parse()`?",
+    "answer": "`stringify()` converts JavaScript objects to JSON strings; `parse()` converts JSON strings back to objects."
+  },
+  {
+    "id": "878",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "Explain the concept of promises chaining.",
+    "answer": "Attaching multiple `.then()` handlers where each returns a new promise allowing sequential async operations."
+  },
+  {
+    "id": "879",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the use of `async/await` over plain promises?",
+    "answer": "Provides cleaner, more readable asynchronous code that looks synchronous."
+  },
+  {
+    "id": "880",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "How can you avoid callback hell?",
+    "answer": "By using promises or async/await to write linear, readable async code."
+  },
+  {
+    "id": "881",
+    "category": "javascript",
+    "difficulty": "medium",
+    "question": "What is the difference between property descriptors and attributes?",
+    "answer": "Property descriptors define configuration like writable, enumerable, configurable for object properties."
   }
 ]
