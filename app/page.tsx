@@ -214,15 +214,15 @@ export default function Component() {
           </div>
         </div>
         {/* Search and Filter */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-6">
-          <div className="relative flex-1">
+        <div className="flex flex-col gap-4 mb-6">
+          <div className="relative w-full">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4 cursor-pointer" />
             <Input
               type="text"
               placeholder="Search questions..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 bg-white/70 backdrop-blur-sm border-gray-200"
+              className="pl-10 bg-white/70 backdrop-blur-sm border-gray-200 w-full"
             />
           </div>
         </div>
@@ -233,7 +233,7 @@ export default function Component() {
               key={category.id}
               variant={selectedCategory === category.id ? "default" : "outline"}
               onClick={() => handleCategoryChange(category.id)}
-              className={`cursor-pointer px-3 py-1 text-sm font-medium transition-colors duration-200 ${
+              className={`cursor-pointer px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium transition-colors duration-200 ${
                 selectedCategory === category.id
                   ? "bg-gray-900 text-white hover:bg-gray-800" // Active style
                   : "bg-white/70 backdrop-blur-sm border-gray-200 text-gray-700 hover:bg-gray-100" // Inactive style
@@ -244,12 +244,12 @@ export default function Component() {
           ))}
         </div>
         {/* Stats */}
-        <div className="flex justify-between items-center mb-6 text-sm text-muted-foreground">
-          <div>
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 text-sm text-muted-foreground gap-2">
+          <div className="text-center sm:text-left">
             Showing {startIndex + 1} to {Math.min(startIndex + ITEMS_PER_PAGE, filteredQuestions.length)} of{" "}
             {filteredQuestions.length} questions
           </div>
-          <div>
+          <div className="text-center sm:text-right">
             Page {currentPage} of {totalPages}
           </div>
         </div>
@@ -269,12 +269,12 @@ export default function Component() {
                   className="border rounded-lg px-4 hover:shadow-md transition-all duration-200 cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4 cursor-pointer">
-                    <div className="flex items-center justify-between w-full">
-                      <div className="flex items-center gap-3">
-                        <span className="text-sm text-gray-400 font-medium min-w-[2rem]">#{questionNumber}</span>
-                        <span className="font-medium text-left">{item.question}</span>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2">
+                      <div className="flex items-start gap-3 flex-1">
+                        <span className="text-sm text-gray-400 font-medium min-w-[2rem] flex-shrink-0">#{questionNumber}</span>
+                        <span className="font-medium text-left leading-relaxed">{item.question}</span>
                       </div>
-                      <div className="flex items-center gap-2 ml-4">
+                      <div className="flex items-center gap-2 ml-11 sm:ml-4 flex-shrink-0">
                         <Badge className={`text-[0.65rem] px-1 py-0.5 ${getDifficultyColor(item.difficulty)}`}>
                           {" "}
                           {/* Smaller difficulty badge */}
@@ -296,58 +296,60 @@ export default function Component() {
         )}
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-2 mt-8">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-            >
-              <ChevronLeft className="h-4 w-4 cursor-pointer" />
-              Previous
-            </Button>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mt-8">
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+              >
+                <ChevronLeft className="h-4 w-4 cursor-pointer" />
+                <span className="hidden sm:inline">Previous</span>
+              </Button>
 
-            <div className="flex gap-1">
-              {getPaginationButtons().map((page, index) =>
-                page === "..." ? (
-                  <span key={index} className="px-2 py-1 text-muted-foreground">
-                    ...
-                  </span>
-                ) : (
-                  <Button
-                    key={page}
-                    variant={currentPage === page ? "default" : "outline"}
-                    size="sm"
-                    onClick={() => handlePageChange(page as number)}
-                    className={`cursor-pointer min-w-[40px] ${
-                      currentPage === page
-                        ? "bg-gray-900 text-white hover:bg-gray-800" // Simple dark active style
-                        : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-                    }`}
-                  >
-                    {page}
-                  </Button>
-                ),
-              )}
+              <div className="flex gap-1">
+                {getPaginationButtons().map((page, index) =>
+                  page === "..." ? (
+                    <span key={index} className="px-2 py-1 text-muted-foreground">
+                      ...
+                    </span>
+                  ) : (
+                    <Button
+                      key={page}
+                      variant={currentPage === page ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => handlePageChange(page as number)}
+                      className={`cursor-pointer min-w-[35px] sm:min-w-[40px] text-xs sm:text-sm ${
+                        currentPage === page
+                          ? "bg-gray-900 text-white hover:bg-gray-800" // Simple dark active style
+                          : "bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+                      }`}
+                    >
+                      {page}
+                    </Button>
+                  ),
+                )}
+              </div>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
+              >
+                <span className="hidden sm:inline">Next</span>
+                <ChevronRight className="h-4 w-4 cursor-pointer" />
+              </Button>
             </div>
-
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className="cursor-pointer bg-white/70 backdrop-blur-sm border-gray-200 hover:bg-white/90"
-            >
-              Next
-              <ChevronRight className="h-4 w-4 cursor-pointer" />
-            </Button>
           </div>
         )}
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground border-t pt-6">
           <p>Made with ❤️ for the developer community</p>
-          <div className="flex justify-center items-center gap-4 mt-2">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mt-2">
             <a
               href="https://github.com/MiladJoodi/Frontend-Interview"
               target="_blank"
@@ -357,7 +359,7 @@ export default function Component() {
               <ExternalLink className="h-3 w-3 cursor-pointer" />
               Contribute on GitHub
             </a>
-            <span className="text-gray-300">•</span>
+            <span className="text-gray-300 hidden sm:inline">•</span>
             <a
               href="https://www.linkedin.com/in/joodi/"
               target="_blank"
