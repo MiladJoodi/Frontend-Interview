@@ -3008,5 +3008,355 @@
     "difficulty": "medium",
     "question": "What is the virtual DOM?",
     "answer": "The virtual DOM is an in-memory representation of the real DOM. React uses it to compute minimal DOM updates for performance."
+  },
+  {
+    "id": "431",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What is Tailwind CSS?",
+    "answer": "Tailwind is a utility-first CSS framework for rapidly building custom user interfaces without writing traditional CSS."
+  },
+  {
+    "id": "432",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you install Tailwind CSS in a project?",
+    "answer": "Use npm: `npm install -D tailwindcss`, then run `npx tailwindcss init` and configure the content paths and plugins."
+  },
+  {
+    "id": "433",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `content` array in tailwind.config.js?",
+    "answer": "It tells Tailwind which files to scan for class names, so unused styles can be purged in production."
+  },
+  {
+    "id": "434",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you apply padding and margin in Tailwind?",
+    "answer": "Use utility classes like `p-4`, `pt-2`, `m-4`, `mx-auto`, etc."
+  },
+  {
+    "id": "435",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you create a responsive layout with Tailwind?",
+    "answer": "Use responsive prefixes like `sm:`, `md:`, `lg:`, etc. Example: `text-sm md:text-lg`."
+  },
+  {
+    "id": "436",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "How can you customize the Tailwind design system?",
+    "answer": "Extend or override the default theme in tailwind.config.js under the `theme` or `extend` keys."
+  },
+  {
+    "id": "437",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What does `hover:` do in Tailwind?",
+    "answer": "It applies the style on hover. Example: `hover:bg-blue-500` changes background on hover."
+  },
+  {
+    "id": "438",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is JIT mode in Tailwind?",
+    "answer": "Just-In-Time mode generates styles on-demand for only the classes you use, making builds faster and smaller."
+  },
+  {
+    "id": "439",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you center a div horizontally in Tailwind?",
+    "answer": "Use `mx-auto` and give it a width. Example: `w-1/2 mx-auto`."
+  },
+  {
+    "id": "440",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What class sets text to bold in Tailwind?",
+    "answer": "`font-bold`"
+  },
+  {
+    "id": "441",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you conditionally apply Tailwind classes in React?",
+    "answer": "Use libraries like `clsx` or `classnames` to dynamically toggle classes based on state or props."
+  },
+  {
+    "id": "442",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "How can you make a custom utility class in Tailwind?",
+    "answer": "Use the `addUtilities` function inside a plugin in tailwind.config.js."
+  },
+  {
+    "id": "443",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What Tailwind class makes an element flex?",
+    "answer": "`flex`"
+  },
+  {
+    "id": "444",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you hide an element on mobile but show it on desktop?",
+    "answer": "Use `hidden md:block`."
+  },
+  {
+    "id": "445",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What does `prose` do in Tailwind?",
+    "answer": "It’s a class from the typography plugin that applies sensible styles to HTML content like blog posts."
+  },
+  {
+    "id": "446",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make text uppercase?",
+    "answer": "`uppercase`"
+  },
+  {
+    "id": "447",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between `gap` and `space-x`?",
+    "answer": "`gap` works in flex/grid layouts. `space-x` adds margin between siblings but not on the outer edges."
+  },
+  {
+    "id": "448",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you use Tailwind with dark mode?",
+    "answer": "Enable `darkMode` in config (`media` or `class`) and use classes like `dark:bg-gray-800`."
+  },
+  {
+    "id": "449",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you use Tailwind with Next.js?",
+    "answer": "Install Tailwind, configure PostCSS, add the content paths in `tailwind.config.js`, and import Tailwind in `globals.css`."
+  },
+  {
+    "id": "450",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "What are important variants in Tailwind and how do you enable them?",
+    "answer": "Variants like `hover`, `focus`, `disabled` etc. are enabled in the config under `variants` key. You can customize which utilities respond to which variants."
+  },
+  {
+    "id": "451",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What is the class for setting background color in Tailwind?",
+    "answer": "`bg-*` (e.g. `bg-red-500`, `bg-blue-100`, etc.)"
+  },
+  {
+    "id": "452",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What are plugin utilities in Tailwind?",
+    "answer": "They are custom functions that let you extend Tailwind’s functionality, like adding new components or utilities via the `plugin()` API."
+  },
+  {
+    "id": "453",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you apply a border in Tailwind?",
+    "answer": "`border`, `border-2`, `border-gray-300`, etc."
+  },
+  {
+    "id": "454",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make a div full width?",
+    "answer": "`w-full`"
+  },
+  {
+    "id": "455",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make text center aligned?",
+    "answer": "`text-center`"
+  },
+  {
+    "id": "456",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle RTL with Tailwind?",
+    "answer": "Use plugins like `tailwindcss-rtl` or manage direction styles manually with `ltr:` and `rtl:` variants."
+  },
+  {
+    "id": "457",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you add custom fonts in Tailwind?",
+    "answer": "Extend the `fontFamily` key in the config and import the fonts via CSS or @import."
+  },
+  {
+    "id": "458",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the `@apply` directive in Tailwind?",
+    "answer": "It lets you compose utility classes inside CSS files or styled components. Example: `.btn { @apply px-4 py-2 bg-blue-500 }`."
+  },
+  {
+    "id": "459",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make text italic in Tailwind?",
+    "answer": "`italic`"
+  },
+  {
+    "id": "460",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you round corners?",
+    "answer": "Use `rounded`, `rounded-lg`, `rounded-full`, etc."
+  },
+  {
+    "id": "461",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you enable line-clamp in Tailwind?",
+    "answer": "Install the `@tailwindcss/line-clamp` plugin and use classes like `line-clamp-3`."
+  },
+  {
+    "id": "462",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you apply shadow in Tailwind?",
+    "answer": "`shadow`, `shadow-md`, `shadow-lg`, etc."
+  },
+  {
+    "id": "463",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you set custom breakpoints?",
+    "answer": "Extend the `screens` key in tailwind.config.js with your custom breakpoint names and values."
+  },
+  {
+    "id": "464",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you control overflow in Tailwind?",
+    "answer": "`overflow-hidden`, `overflow-scroll`, `overflow-auto`, etc."
+  },
+  {
+    "id": "465",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How does Tailwind handle responsive design compared to Bootstrap?",
+    "answer": "Tailwind uses mobile-first utility classes that apply styles at breakpoints. Bootstrap uses a component-first approach with utility classes as optional."
+  },
+  {
+    "id": "466",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "How would you build a design system with Tailwind?",
+    "answer": "Customize `tailwind.config.js` with your theme, components, spacing, typography, and create reusable UI patterns using utility classes."
+  },
+  {
+    "id": "467",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between `grid` and `flex` in Tailwind?",
+    "answer": "`flex` is for 1D layouts (row or column), `grid` is for 2D layouts. Both use utility classes like `grid-cols-*`, `flex-row`, etc."
+  },
+  {
+    "id": "468",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What class do you use to make a background image cover the container?",
+    "answer": "`bg-cover`"
+  },
+  {
+    "id": "469",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make an element absolute positioned?",
+    "answer": "`absolute`"
+  },
+  {
+    "id": "470",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you make a sticky navbar in Tailwind?",
+    "answer": "Use `sticky top-0 z-50` along with `bg-white` or your background color."
+  },
+  {
+    "id": "471",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you define a custom color palette?",
+    "answer": "Extend the `colors` object in tailwind.config.js under the `theme.extend` key."
+  },
+  {
+    "id": "472",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What is `z-index` utility in Tailwind?",
+    "answer": "Use `z-0`, `z-10`, `z-50`, etc., to control stacking context."
+  },
+  {
+    "id": "473",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make a button full width?",
+    "answer": "`w-full`"
+  },
+  {
+    "id": "474",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What’s the use of `aspect-ratio` plugin in Tailwind?",
+    "answer": "It lets you set the aspect ratio of elements using `aspect-[value]` classes, e.g., `aspect-video`."
+  },
+  {
+    "id": "475",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "How would you structure a large-scale project with Tailwind and components?",
+    "answer": "Use atomic design principles, component libraries like Shadcn or Headless UI, and extract common UI blocks into components or partials."
+  },
+  {
+    "id": "476",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Can you combine Tailwind with CSS Modules or Styled Components?",
+    "answer": "Yes. Tailwind can be used inside classNames or combined with CSS-in-JS, though it’s often redundant."
+  },
+  {
+    "id": "477",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between `min-h-screen` and `h-screen`?",
+    "answer": "`h-screen` sets exact height, `min-h-screen` ensures at least full viewport height, useful for layouts with overflow."
+  },
+  {
+    "id": "478",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you set letter spacing in Tailwind?",
+    "answer": "Use `tracking-*`, e.g., `tracking-wide`, `tracking-tighter`."
+  },
+  {
+    "id": "479",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make an element rounded only on the top corners?",
+    "answer": "`rounded-t-lg`, `rounded-tl`, `rounded-tr`"
+  },
+  {
+    "id": "480",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you add transition effects?",
+    "answer": "Use `transition`, `duration-300`, `ease-in-out`, and `hover:` states."
   }
 ]
