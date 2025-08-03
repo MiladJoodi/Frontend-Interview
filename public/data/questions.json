@@ -1657,5 +1657,621 @@
     "difficulty": "hard",
     "question": "How does Drizzle ORM handle full-text search?",
     "answer": "Drizzle provides SQL functions that can be used for full-text search, like to_tsvector and to_tsquery in PostgreSQL. You can write raw SQL queries with these functions or create helper functions that abstract the search implementation."
+  },
+  {
+    "id": "238",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "What is the purpose of the '_app.js' file in Next.js?",
+    "answer": "The '_app.js' file is used to initialize pages and override it to control page initialization. It allows you to persist layout between page changes, keep state when navigating pages, and inject additional data into pages."
+  },
+  {
+    "id": "239",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "How does Next.js handle automatic code splitting?",
+    "answer": "Next.js automatically code splits by pages - each page in the 'pages' directory becomes a separate bundle. It also supports dynamic imports for component-level code splitting using 'next/dynamic'."
+  },
+  {
+    "id": "240",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how Next.js implements hybrid static & server rendering",
+    "answer": "Next.js allows pages to choose their rendering method: Static Generation (SSG) at build time, Server-side Rendering (SSR) per request, or client-side rendering. This hybrid approach lets developers optimize each page based on its needs."
+  },
+  {
+    "id": "241",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/head' component?",
+    "answer": "The 'next/head' component allows you to append elements to the head of the HTML document. It's commonly used to set page titles, meta tags, links, and other head elements that need to change between pages."
+  },
+  {
+    "id": "242",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you create a dynamic route in Next.js?",
+    "answer": "Create a file with square brackets like '[id].js' in the pages directory. The parameter will be available in the router query object and in getStaticProps/getServerSideProps context."
+  },
+  {
+    "id": "243",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is 'getStaticPaths' and when would you use it?",
+    "answer": "'getStaticPaths' is used with 'getStaticProps' for dynamic routes to specify which paths should be pre-rendered at build time. It returns an object with 'paths' (which paths to render) and 'fallback' (how to handle paths not generated at build time)."
+  },
+  {
+    "id": "244",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle CSS and Sass support?",
+    "answer": "Next.js has built-in support for CSS modules (file.module.css) and Sass (.scss/.sass). You can also use global styles by importing CSS files in '_app.js'. For Sass support, you need to install 'sass' package."
+  },
+  {
+    "id": "245",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next.config.js' file?",
+    "answer": "The 'next.config.js' file is used to customize advanced Next.js behavior. You can configure redirects, rewrites, environment variables, webpack modifications, internationalization, and other framework settings."
+  },
+  {
+    "id": "246",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you add environment variables in Next.js?",
+    "answer": "Create a '.env.local' file in your project root and prefix variables with 'NEXT_PUBLIC_' to expose them to the browser. For server-only variables, omit the prefix and access them in API routes or getServerSideProps."
+  },
+  {
+    "id": "247",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how Next.js handles automatic static optimization",
+    "answer": "Next.js automatically determines if a page can be prerendered to static HTML by checking if it has blocking data requirements (getServerSideProps/getInitialProps). Pages without these are automatically optimized as static HTML."
+  },
+  {
+    "id": "248",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the difference between 'getServerSideProps' and 'getStaticProps'?",
+    "answer": "'getServerSideProps' runs on every request and provides fresh data (SSR), while 'getStaticProps' runs at build time to generate static pages (SSG). Use the former for frequently updated data, the latter for better performance."
+  },
+  {
+    "id": "249",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement internationalization (i18n) in Next.js?",
+    "answer": "Next.js has built-in i18n routing support configured in 'next.config.js'. Define locales, default locale, and routing strategy (sub-path, domain, or hybrid). Use 'next/router' to handle locale switching and localized routing."
+  },
+  {
+    "id": "250",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How does Next.js handle API routes middleware?",
+    "answer": "API routes can use external middleware like 'micro' or 'connect'. For built-in solutions, you can create higher-order functions that wrap handlers to implement middleware logic like authentication, logging, or CORS."
+  },
+  {
+    "id": "251",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of '_document.js' file?",
+    "answer": "'_document.js' allows you to customize the entire HTML document structure. It's rendered only on the server and used to change the initial server-side rendered document markup, like adding lang attribute or third-party scripts."
+  },
+  {
+    "id": "252",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you handle 404 pages in Next.js?",
+    "answer": "Create a '404.js' file in the pages directory. Next.js will automatically use this as the 404 page. For custom 404s in getStaticPaths, return 'notFound: true' from getStaticProps."
+  },
+  {
+    "id": "253",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement authentication in Next.js",
+    "answer": "Common approaches include: using NextAuth.js for built-in auth, JWT tokens with API routes, session cookies with getServerSideProps, or third-party providers. Consider SSR for protected routes to prevent flash of unprotected content."
+  },
+  {
+    "id": "254",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using Next.js Image component?",
+    "answer": "The Image component provides automatic image optimization (resizing, format conversion), lazy loading, and responsive images. It improves performance by serving correctly sized images for each device and using modern formats like WebP."
+  },
+  {
+    "id": "255",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you create a custom error page in Next.js?",
+    "answer": "Create '_error.js' in the pages directory to override the default error page. It receives statusCode and err props. You can also create specific error pages like '500.js' for server errors."
+  },
+  {
+    "id": "256",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement A/B testing in Next.js?",
+    "answer": "Approaches include: using middleware to assign variants, feature flags in getServerSideProps, client-side variant selection with cookies, or edge functions for instant rollouts. Consider SSR for consistent variant assignment."
+  },
+  {
+    "id": "257",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/script' component?",
+    "answer": "The 'next/script' component optimizes loading of third-party scripts. It provides strategies like 'beforeInteractive' (before page is interactive), 'afterInteractive' (default, after hydration), and 'lazyOnload' (during idle time)."
+  },
+  {
+    "id": "258",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you add analytics to a Next.js application?",
+    "answer": "Common approaches: use 'next/script' to load analytics scripts, implement tracking in '_app.js', use API routes to proxy analytics requests, or leverage Next.js middleware for edge analytics."
+  },
+  {
+    "id": "259",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement GraphQL in Next.js",
+    "answer": "Options include: Apollo Client with SSR support, URQL, or direct GraphQL requests in getServerSideProps/getStaticProps. For API routes, you can implement a GraphQL server using libraries like graphql-js or Apollo Server."
+  },
+  {
+    "id": "260",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the limitations of API routes in Next.js?",
+    "answer": "API routes have a 10MB payload limit, timeout after 10s on Vercel, can't use getStaticProps/getServerSideProps, and are designed for serverless functions. For complex backends, consider a separate server or middleware."
+  },
+  {
+    "id": "261",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement redirects in Next.js?",
+    "answer": "Configure redirects in 'next.config.js' for simple cases. For dynamic redirects, use 'res.redirect()' in API routes or getServerSideProps. Client-side redirects can use 'router.push()'."
+  },
+  {
+    "id": "262",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you optimize a large Next.js application?",
+    "answer": "Strategies include: code splitting with dynamic imports, optimizing images, using ISR, implementing caching headers, reducing bundle size with tree-shaking, enabling compression, and using CDN for static assets."
+  },
+  {
+    "id": "263",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/link' component?",
+    "answer": "'next/link' enables client-side navigation between pages, prefetching linked pages in the background. It wraps anchor tags and provides SPA-like navigation without full page reloads while maintaining SEO benefits."
+  },
+  {
+    "id": "264",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you handle forms in Next.js?",
+    "answer": "Options include: standard HTML forms with API route handlers, client-side libraries like React Hook Form, or server-side handling with getServerSideProps. Consider CSR for complex forms, SSR for progressive enhancement."
+  },
+  {
+    "id": "265",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement real-time features in Next.js",
+    "answer": "Use WebSocket connections (via API routes), Server-Sent Events, or third-party services like Firebase, Pusher, or Ably. For frequent updates, consider SWR or React Query with fast refresh rates."
+  },
+  {
+    "id": "266",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the security best practices for Next.js applications?",
+    "answer": "Key practices: sanitize user input, use CSP headers, implement proper authentication, validate API responses, secure environment variables, use HTTPS, limit API route exposure, and keep dependencies updated."
+  },
+  {
+    "id": "267",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement cookies in Next.js?",
+    "answer": "Use the 'cookies' package or 'cookie' library in API routes or getServerSideProps. For client-side, use js-cookie or document.cookie. Consider httpOnly flags for secure cookies."
+  },
+  {
+    "id": "268",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a multi-tenant SaaS application in Next.js?",
+    "answer": "Approaches include: dynamic routing for tenants, database-level isolation, middleware for tenant resolution, feature flags, and tenant-specific configurations. Consider ISR for public tenant pages and SSR for private content."
+  },
+  {
+    "id": "269",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/dynamic'?",
+    "answer": "'next/dynamic' enables component-level code splitting by dynamically importing components. It helps reduce initial bundle size by loading components only when needed. Supports loading states via the 'loading' property."
+  },
+  {
+    "id": "270",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement pagination in Next.js?",
+    "answer": "Options include: query parameters for page numbers, infinite scroll with SWR, or cursor-based pagination. For SSG, use getStaticPaths with paginated paths. For SSR, handle in getServerSideProps."
+  },
+  {
+    "id": "271",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a headless CMS with Next.js",
+    "answer": "Fetch content via the CMS API in getStaticProps/getServerSideProps. Use ISR for content updates. For preview mode, implement API routes to handle draft content. Consider using webhooks for rebuild triggers."
+  },
+  {
+    "id": "272",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using Next.js middleware?",
+    "answer": "Middleware runs before cached content, enabling: A/B testing, authentication, bot detection, geolocation-based redirects, logging, and feature flags at the edge. It executes close to users for low latency."
+  },
+  {
+    "id": "273",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a sitemap in Next.js?",
+    "answer": "Options: generate dynamically via API route, create static 'sitemap.xml' in public folder, or use 'next-sitemap' package. For dynamic routes, include all paths from getStaticPaths or database queries."
+  },
+  {
+    "id": "274",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a custom server with Next.js?",
+    "answer": "Create a 'server.js' file using Express, Fastify, etc., and customize the request handling. However, this loses automatic static optimization and is discouraged unless necessary for specific server-side requirements."
+  },
+  {
+    "id": "275",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/router'?",
+    "answer": "'next/router' provides programmatic navigation and route information. It allows accessing query parameters, listening to route changes, and navigating between pages programmatically with methods like push, replace, and prefetch."
+  },
+  {
+    "id": "276",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a loading indicator between page transitions?",
+    "answer": "Use 'next/router' events ('routeChangeStart', 'routeChangeComplete') to track navigation state. Display a loading component in '_app.js' based on this state. Libraries like 'nprogress' provide stylish progress bars."
+  },
+  {
+    "id": "277",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement WebSockets in Next.js",
+    "answer": "Create a WebSocket server in an API route or separate server. On client-side, connect to the WebSocket in useEffect. For production, consider services like Pusher or Socket.IO with Redis for scaling across multiple servers."
+  },
+  {
+    "id": "278",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the deployment options for Next.js applications?",
+    "answer": "Options include: Vercel (optimized for Next.js), Node.js servers, Docker containers, static exports, serverless platforms (AWS Lambda, Netlify), and edge networks. Choose based on your rendering strategy and scalability needs."
+  },
+  {
+    "id": "279",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a custom 500 error page?",
+    "answer": "Create a '500.js' file in the pages directory. It will be used for server-side errors. You can customize the design and add helpful information like contact details or a way to report the error."
+  },
+  {
+    "id": "280",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a multi-language blog in Next.js?",
+    "answer": "Use Next.js i18n routing for language detection and URL structure. Store content in markdown files or CMS with language fields. Use 'next-mdx-remote' for MDX content. Implement language switcher with 'next/router'."
+  },
+  {
+    "id": "281",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next/amp'?",
+    "answer": "'next/amp' helps create AMP (Accelerated Mobile Pages) versions of your pages. It provides components and configuration to ensure AMP compatibility. You can create hybrid pages that work in both regular and AMP modes."
+  },
+  {
+    "id": "282",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a contact form in Next.js?",
+    "answer": "Create a form component with client-side validation. Handle submission via an API route that processes the data (sends email, saves to database). Consider using libraries like React Hook Form for form management."
+  },
+  {
+    "id": "283",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a shopping cart in Next.js",
+    "answer": "Options include: client-side state (context/Redux), cookies for persistence, API routes for server-side cart management. For SSR, use getServerSideProps to fetch cart data. Consider optimistic UI updates for better UX."
+  },
+  {
+    "id": "284",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using SWR with Next.js?",
+    "answer": "SWR provides client-side data fetching with caching, revalidation, focus tracking, and error handling. It complements Next.js SSR/SSG by handling client-side updates, reducing boilerplate for data fetching."
+  },
+  {
+    "id": "285",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a dark mode toggle in Next.js?",
+    "answer": "Use a context/provider to manage theme state. Store preference in localStorage. Apply dark classes to HTML element. For SSR, detect preference in getServerSideProps or use a CSS-only approach with prefers-color-scheme."
+  },
+  {
+    "id": "286",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a real-time dashboard in Next.js?",
+    "answer": "Use WebSockets or Server-Sent Events for real-time updates. Implement client-side state management (SWR/React Query) with fast refresh rates. Consider ISR for initial data with client-side updates for fresh data."
+  },
+  {
+    "id": "287",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-compose-plugins'?",
+    "answer": "'next-compose-plugins' simplifies using multiple Next.js plugins together. It provides a clean way to compose plugin configurations without nested syntax, making the 'next.config.js' file more readable and maintainable."
+  },
+  {
+    "id": "288",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a blog with Next.js?",
+    "answer": "Options include: Markdown/MDX files in your project, headless CMS, or database content. Use getStaticPaths/getStaticProps for SSG. Implement dynamic routes for blog posts. Consider 'next-mdx-remote' for MDX content."
+  },
+  {
+    "id": "289",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a search feature in Next.js",
+    "answer": "Options: client-side filtering for small datasets, API route with database query, or third-party search service (Algolia, Elasticsearch). For SSR, handle in getServerSideProps. Consider debouncing input for performance."
+  },
+  {
+    "id": "290",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the limitations of static export in Next.js?",
+    "answer": "Static export doesn't support: API routes, getServerSideProps, rewrites/redirects, i18n routing, or fallback: true in getStaticPaths. It's best for fully static sites without server-side functionality."
+  },
+  {
+    "id": "291",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a dropdown menu in Next.js?",
+    "answer": "Create a component with state for open/closed. Use CSS for styling and transitions. Handle outside clicks to close. For accessibility, manage focus and ARIA attributes. Consider libraries like HeadlessUI for complex cases."
+  },
+  {
+    "id": "292",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a payment system in Next.js?",
+    "answer": "Integrate with Stripe, PayPal, etc. using their SDKs. Handle sensitive operations in API routes. Use webhooks for payment confirmation. Implement SSR for checkout pages to prevent client-side manipulation of prices."
+  },
+  {
+    "id": "293",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-connect'?",
+    "answer": "'next-connect' is a router/middleware for Next.js API routes, inspired by Express.js. It provides a familiar middleware pattern, route handlers, and error handling, making API route organization more structured and maintainable."
+  },
+  {
+    "id": "294",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a modal in Next.js?",
+    "answer": "Create a portal component that renders outside the main DOM hierarchy. Manage open/close state with context or props. Ensure proper focus management and ARIA attributes for accessibility. Consider libraries like React Modal."
+  },
+  {
+    "id": "295",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a real-time chat in Next.js",
+    "answer": "Use WebSockets via API routes or services like Pusher/Socket.IO. Implement message persistence in a database. For UI, consider optimistic updates. Handle online status with heartbeat checks. Implement proper auth for private chats."
+  },
+  {
+    "id": "296",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using 'next-seo'?",
+    "answer": "'next-seo' simplifies managing SEO metadata in Next.js. It provides components for common SEO tags, JSON-LD structured data, and default configurations. Helps ensure consistent and optimized SEO across your application."
+  },
+  {
+    "id": "297",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a carousel in Next.js?",
+    "answer": "Options include: building a custom component with React state, using libraries like 'embla-carousel', or CSS-only solutions. Ensure responsive design and accessibility with proper ARIA attributes and keyboard navigation."
+  },
+  {
+    "id": "298",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a video streaming platform in Next.js?",
+    "answer": "Use API routes for video metadata. Implement adaptive streaming (HLS/DASH) with services like Mux or AWS Media Services. For UI, consider custom controls with 'react-player'. Implement caching for thumbnails and metadata."
+  },
+  {
+    "id": "299",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-pwa'?",
+    "answer": "'next-pwa' simplifies adding PWA (Progressive Web App) capabilities to Next.js. It handles service worker generation, offline support, and manifest configuration. Helps make your Next.js app installable and work offline."
+  },
+  {
+    "id": "300",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a toast notification system in Next.js?",
+    "answer": "Create a context/provider to manage notifications. Render toasts in a portal at app root. Implement different types (success, error) with auto-dismissal. Consider libraries like 'react-hot-toast' for pre-built solutions."
+  },
+  {
+    "id": "301",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a real-time collaborative editor in Next.js",
+    "answer": "Use WebSockets or services like Firebase, Ably for real-time sync. Implement operational transformation or CRDTs for conflict resolution. Use contenteditable or libraries like Slate.js for the editor. Handle presence with heartbeat checks."
+  },
+  {
+    "id": "302",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using 'next-i18next'?",
+    "answer": "'next-i18next' provides advanced i18n features for Next.js including: namespaced translations, pluralization, context, formatting, and efficient loading of translation files. It builds on Next.js i18n routing with more localization features."
+  },
+  {
+    "id": "303",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a tooltip in Next.js?",
+    "answer": "Create a component that shows on hover/focus. Position with CSS or libraries like Popper.js. Ensure accessibility with ARIA attributes. Consider delay for hover intent. For complex cases, use libraries like Tippy.js."
+  },
+  {
+    "id": "304",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a real-time multiplayer game in Next.js?",
+    "answer": "Use WebSockets for game state sync. Implement client-side prediction and server reconciliation. Handle matchmaking via API routes. Use requestAnimationFrame for smooth animations. Consider game engines like Phaser for complex games."
+  },
+  {
+    "id": "305",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-sitemap'?",
+    "answer": "'next-sitemap' automates sitemap generation for Next.js apps. It handles dynamic routes from getStaticPaths, creates sitemap index files for large sites, and can automatically update sitemaps when content changes."
+  },
+  {
+    "id": "306",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a loading skeleton in Next.js?",
+    "answer": "Create placeholder components that mimic content structure. Show while data is loading (use SWR's isLoading or custom state). Animate with CSS for better perceived performance. Consider libraries like 'react-loading-skeleton'."
+  },
+  {
+    "id": "307",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a voice search feature in Next.js",
+    "answer": "Use the Web Speech API for voice recognition. Handle permissions and fallbacks for unsupported browsers. Process voice input in API routes for complex queries. Provide visual feedback during speech input."
+  },
+  {
+    "id": "308",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using 'next-auth'?",
+    "answer": "'next-auth' provides complete authentication for Next.js with: built-in providers (OAuth, email), JWT & session management, CSRF protection, and database adapters. Simplifies implementing secure auth without writing boilerplate."
+  },
+  {
+    "id": "309",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a responsive table in Next.js?",
+    "answer": "Options: horizontal scroll for small screens, stack columns on mobile, or hide less important columns. Use CSS media queries. Consider libraries like 'react-table' for complex cases with sorting/pagination."
+  },
+  {
+    "id": "310",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a virtualized list in Next.js?",
+    "answer": "Use libraries like 'react-window' or 'react-virtualized' that render only visible items. Implement proper item sizing and dynamic measurement. Consider intersection observers for infinite loading with getServerSideProps."
+  },
+  {
+    "id": "311",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-bundle-analyzer'?",
+    "answer": "'next-bundle-analyzer' visualizes the size of webpack output files. It helps identify large dependencies, duplicate code, and optimization opportunities. Run during build to analyze and optimize your bundle size."
+  },
+  {
+    "id": "312",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a date picker in Next.js?",
+    "answer": "Use libraries like 'react-datepicker' or 'react-day-picker'. Handle timezones properly if needed. For accessibility, ensure proper labeling and keyboard navigation. Style to match your design system."
+  },
+  {
+    "id": "313",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a real-time stock market dashboard in Next.js",
+    "answer": "Use WebSocket connections to market data APIs. Implement efficient data updates with windowing for large datasets. Use visualization libraries like Chart.js. Cache historical data in getStaticProps with ISR for updates."
+  },
+  {
+    "id": "314",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using 'next-mdx-remote'?",
+    "answer": "'next-mdx-remote' allows MDX content to be loaded from anywhere (CMS, database, filesystem). It supports frontmatter, custom components, and efficient hydration. Useful for blogs, docs, and content-heavy sites."
+  },
+  {
+    "id": "315",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a color picker in Next.js?",
+    "answer": "Use libraries like 'react-colorful' or native input[type=color]. Handle color conversions if needed. Provide accessible labels and output formats. Consider integrating with your design system's color palette."
+  },
+  {
+    "id": "316",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a real-time collaborative whiteboard in Next.js?",
+    "answer": "Use WebSocket connections for drawing data. Implement operational transformation for conflict resolution. Use Canvas API or libraries like Konva.js for rendering. Handle presence with heartbeat checks. Optimize data transfer with throttling."
+  },
+  {
+    "id": "317",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-fonts'?",
+    "answer": "'next-fonts' optimizes font loading in Next.js. It automatically generates required @font-face CSS, preloads fonts, and can self-host font files. Helps avoid layout shifts and improves performance metrics like LCP."
+  },
+  {
+    "id": "318",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a file upload in Next.js?",
+    "answer": "Create a form with input[type=file]. Handle submission in an API route using 'multer' or similar. Show upload progress. Validate file types/sizes. Store files in cloud storage or filesystem with proper security."
+  },
+  {
+    "id": "319",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a real-time sports scoreboard in Next.js",
+    "answer": "Use WebSocket connections to score data APIs. Implement efficient updates with batched re-renders. Use animation for score changes. Cache historical data in getStaticProps with ISR. Consider server push for critical updates."
+  },
+  {
+    "id": "320",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What are the benefits of using 'next-optimized-images'?",
+    "answer": "'next-optimized-images' automatically optimizes images during build. Features include: format conversion (WebP), resizing, lazy loading, and placeholders. Reduces image size without manual optimization while maintaining quality."
+  },
+  {
+    "id": "321",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a rating component in Next.js?",
+    "answer": "Create interactive stars or other visual elements. Manage hover/selection state. Handle submission via API route if needed. Ensure accessibility with ARIA attributes. Consider libraries like 'react-rating' for advanced features."
+  },
+  {
+    "id": "322",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "How would you implement a real-time auction platform in Next.js?",
+    "answer": "Use WebSockets for bid updates. Implement server-side validation for bids. Handle concurrency with optimistic UI updates. Use timers for auction end. Implement SSR for critical auction data to prevent manipulation."
+  },
+  {
+    "id": "323",
+    "category": "nextjs",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'next-redux-wrapper'?",
+    "answer": "'next-redux-wrapper' simplifies using Redux with Next.js. It handles store creation for each request, proper hydration between server and client, and integration with Next.js data fetching methods."
+  },
+  {
+    "id": "324",
+    "category": "nextjs",
+    "difficulty": "easy",
+    "question": "How do you implement a tab component in Next.js?",
+    "answer": "Manage active tab state. Handle keyboard navigation for accessibility. Style active tab distinctly. Consider URL integration for bookmarkable tabs. For complex cases, use libraries like 'react-tabs'."
+  },
+  {
+    "id": "325",
+    "category": "nextjs",
+    "difficulty": "hard",
+    "question": "Explain how to implement a real-time traffic monitoring dashboard in Next.js",
+    "answer": "Use WebSocket connections to traffic data APIs. Implement efficient data updates with visualization libraries like D3.js. Handle large datasets with windowing. Cache historical data in getStaticProps with ISR."
   }
 ]
