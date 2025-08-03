@@ -2588,5 +2588,425 @@
     "difficulty": "easy",
     "question": "How do you conditionally apply classes in React? (variant 3)",
     "answer": "You can use template literals or libraries like clsx or classnames to apply classes based on conditions."
+  },
+  {
+  "id": "371",
+  "category": "react",
+  "difficulty": "easy",
+  "question": "What are controlled and uncontrolled components in React?",
+  "answer": "Controlled components are form elements whose values are controlled by React state. Uncontrolled components store their own state internally and use refs for access."
+},
+{
+  "id": "372",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "When should you use useRef over useState?",
+  "answer": "Use useRef when you need to persist a mutable value across renders without triggering a re-render. It’s great for DOM references or instance variables."
+},
+{
+  "id": "373",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "How does React handle reconciliation?",
+  "answer": "React uses the virtual DOM to compare the new element tree with the previous one and updates the DOM efficiently based on changes using a diffing algorithm."
+},
+{
+  "id": "374",
+  "category": "react",
+  "difficulty": "hard",
+  "question": "What is the purpose of key props in lists?",
+  "answer": "Keys help React identify which items have changed, been added, or removed. They should be stable, predictable, and unique to avoid unnecessary re-renders."
+},
+{
+  "id": "375",
+  "category": "react",
+  "difficulty": "easy",
+  "question": "What does JSX stand for and how is it compiled?",
+  "answer": "JSX stands for JavaScript XML. It’s syntactic sugar for React.createElement calls and is compiled using tools like Babel before reaching the browser."
+},
+{
+  "id": "376",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "What are portals in React and when would you use them?",
+  "answer": "Portals allow rendering children into a DOM node outside the parent component hierarchy. They’re useful for modals, tooltips, and overlays."
+},
+{
+  "id": "377",
+  "category": "react",
+  "difficulty": "hard",
+  "question": "What are higher-order components (HOCs)?",
+  "answer": "A HOC is a function that takes a component and returns a new component. It’s used to reuse component logic like authentication or data fetching."
+},
+{
+  "id": "378",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "How do you implement code-splitting in a React app?",
+  "answer": "Use dynamic import() and React.lazy with Suspense to load components only when needed. This improves performance by reducing initial bundle size."
+},
+{
+  "id": "379",
+  "category": "react",
+  "difficulty": "easy",
+  "question": "What is prop drilling and how can it be avoided?",
+  "answer": "Prop drilling is passing props through many layers. It can be avoided using the Context API, Redux, or other state management libraries."
+},
+{
+  "id": "380",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "How do you memoize expensive functions in React?",
+  "answer": "Use useMemo to memoize the result of a calculation and avoid re-executing it on every render unless dependencies change."
+},
+   {
+    "id": "381",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the difference between React and ReactDOM?",
+    "answer": "React provides the core functionality for building components, while ReactDOM handles rendering those components to the DOM in web applications."
+  },
+  {
+    "id": "382",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How does React batch state updates?",
+    "answer": "React batches multiple setState calls into a single update for performance. This means state updates might not be applied immediately."
+  },
+  {
+    "id": "383",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are synthetic events in React?",
+    "answer": "Synthetic events are React’s wrapper around native browser events, ensuring consistent behavior across different browsers."
+  },
+  {
+    "id": "384",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you optimize a React app with a large list of items?",
+    "answer": "Use virtualization libraries like react-window or react-virtualized to render only visible items. Also, memoize components and avoid unnecessary re-renders."
+  },
+  {
+    "id": "385",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the difference between class and functional components?",
+    "answer": "Class components use ES6 classes and can hold state and lifecycle methods. Functional components are simpler and rely on hooks for state and effects."
+  },
+  {
+    "id": "386",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are hooks rules in React?",
+    "answer": "Hooks should only be called at the top level of a functional component or custom hook. They must not be called conditionally or inside loops."
+  },
+  {
+    "id": "387",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How do you share logic between React components?",
+    "answer": "Use custom hooks or higher-order components to extract reusable logic across multiple components."
+  },
+  {
+    "id": "388",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is a fragment in React?",
+    "answer": "A fragment allows grouping multiple elements without adding extra nodes to the DOM. Use <></> or <React.Fragment>."
+  },
+  {
+    "id": "389",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is the difference between useCallback and useMemo?",
+    "answer": "useCallback memoizes functions, while useMemo memoizes values returned from functions. Both help prevent unnecessary recalculations or re-renders."
+  },
+  {
+    "id": "390",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How does React detect changes to trigger re-renders?",
+    "answer": "React re-renders when component state or props change. It compares the virtual DOM trees to determine minimal updates."
+  },
+  {
+    "id": "391",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you handle forms in React?",
+    "answer": "Use controlled components where form state is managed using useState, or use libraries like React Hook Form for complex cases."
+  },
+  {
+    "id": "392",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What’s the difference between useReducer and useState?",
+    "answer": "useReducer is better for complex state logic or multiple related values. useState is simpler and used for basic local state."
+  },
+  {
+    "id": "393",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How can you prevent props drilling in large applications?",
+    "answer": "Use Context API or global state managers like Redux, Zustand, or Recoil to share state across deeply nested components."
+  },
+  {
+    "id": "394",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What’s reconciliation in React and how does it work?",
+    "answer": "Reconciliation is the process where React compares the current virtual DOM with the previous one and calculates the minimal set of changes to update the real DOM."
+  },
+  {
+    "id": "395",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React keys and why are they important?",
+    "answer": "Keys identify list elements uniquely, allowing React to track and efficiently update individual components during re-renders."
+  },
+  {
+    "id": "396",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you pass data from child to parent in React?",
+    "answer": "Use a callback function passed as a prop from parent to child. The child calls it with the data to send it upward."
+  },
+  {
+    "id": "397",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What’s the difference between lifting state up and using context?",
+    "answer": "Lifting state up shares state between sibling components by moving it to their common parent. Context is better for sharing state across many levels of the component tree."
+  },
+  {
+    "id": "398",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How do you test React components?",
+    "answer": "Use libraries like React Testing Library or Enzyme for rendering and interaction. Jest is commonly used as the test runner and assertion library."
+  },
+  {
+    "id": "399",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is PropTypes in React?",
+    "answer": "PropTypes is a type-checking library for validating the types of props passed to components at runtime."
+  },
+  {
+    "id": "400",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How does React handle component state under the hood?",
+    "answer": "React maintains a fiber tree with hooks state attached to each fiber. State updates trigger scheduling and reconciliation of affected fibers."
+  },
+  {
+    "id": "401",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the difference between context and Redux?",
+    "answer": "Context is built-in and best for low-frequency global state. Redux is more powerful and suited for complex apps with predictable state updates and middleware."
+  },
+  {
+    "id": "402",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is suspense in React?",
+    "answer": "Suspense lets you delay rendering part of the UI until a condition is met, often used with lazy loading or data fetching."
+  },
+  {
+    "id": "403",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is Concurrent Mode in React?",
+    "answer": "Concurrent Mode allows React to interrupt rendering to make apps more responsive. It helps with better scheduling and prioritization of UI updates."
+  },
+  {
+    "id": "404",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain React’s render phase and commit phase.",
+    "answer": "Render phase builds the virtual DOM and calculates changes. Commit phase applies changes to the real DOM and runs side-effects."
+  },
+  {
+    "id": "405",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you conditionally render JSX in React?",
+    "answer": "Use ternary operators, logical &&, or conditional functions to render different JSX based on state or props."
+  },
+  {
+    "id": "406",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are error boundaries in React?",
+    "answer": "Error boundaries are React components that catch JavaScript errors in child components and display a fallback UI instead of crashing the app."
+  },
+  {
+    "id": "407",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is a controlled input element?",
+    "answer": "A controlled input has its value managed by React state. Changes are handled via onChange and useState."
+  },
+  {
+    "id": "408",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you implement a custom hook for API data fetching?",
+    "answer": "Create a function using useEffect and useState that handles loading, error, and data. Return these from the hook for reuse across components."
+  },
+  {
+    "id": "409",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you force a component to re-render in React?",
+    "answer": "Update its state using useState or useReducer. You can also trigger a change in key or props to force re-rendering."
+  },
+  {
+    "id": "410",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the role of keys in dynamic components?",
+    "answer": "Keys help React identify which elements changed, added, or removed. This improves performance and avoids bugs during list rendering."
+  },
+  {
+    "id": "411",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "Can you update props in a component?",
+    "answer": "No. Props are read-only. To update them, the parent component must pass new values as props."
+  },
+  {
+    "id": "412",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you bind event handlers in class components?",
+    "answer": "Bind them in the constructor or use arrow functions to preserve the correct 'this' context."
+  },
+  {
+    "id": "413",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the purpose of the key attribute in React lists?",
+    "answer": "It gives each element a stable identity, helping React optimize updates and avoid bugs during reordering."
+  },
+  {
+    "id": "414",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What’s the difference between shallow rendering and full rendering in testing React?",
+    "answer": "Shallow rendering tests only one level deep of a component tree; full rendering renders all children too, useful for integration testing."
+  },
+  {
+    "id": "415",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is hydration in React?",
+    "answer": "Hydration is the process of attaching event handlers to static HTML rendered on the server so it becomes interactive."
+  },
+  {
+    "id": "416",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How can you lazy load a component in React?",
+    "answer": "Use React.lazy and Suspense to load a component only when it’s needed, improving initial load performance."
+  },
+  {
+    "id": "417",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What is useImperativeHandle and when would you use it?",
+    "answer": "It allows customizing the instance value exposed when using ref in parent components. Useful for exposing controlled APIs from custom components."
+  },
+  {
+    "id": "418",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you handle button click events in React?",
+    "answer": "Use the onClick prop and pass a callback function that handles the event logic."
+  },
+  {
+    "id": "419",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are React dev tools and what can you do with them?",
+    "answer": "React DevTools is a browser extension that lets you inspect React component hierarchies, view props and state, and debug re-renders."
+  },
+  {
+    "id": "420",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain how React handles fiber reconciliation differently than older versions.",
+    "answer": "Fiber allows React to pause, abort, and restart work, enabling concurrency. It breaks rendering into units of work instead of synchronous blocking updates."
+  },
+  {
+    "id": "421",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is useTransition in React?",
+    "answer": "useTransition lets you mark certain updates as non-urgent, allowing React to keep the UI responsive by deferring slow updates."
+  },
+  {
+    "id": "422",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are fallback UIs in Suspense?",
+    "answer": "A fallback UI is shown while a component is loading (lazy or fetching). It's passed to the Suspense component’s fallback prop."
+  },
+  {
+    "id": "423",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What does 'lifting state up' mean?",
+    "answer": "It means moving shared state to the closest common ancestor of components that need access to that state."
+  },
+  {
+    "id": "424",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is an effect dependency array in useEffect?",
+    "answer": "The array tells React when to re-run the effect. React compares previous and current values to determine if dependencies changed."
+  },
+  {
+    "id": "425",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is a default prop in React?",
+    "answer": "Default props provide fallback values for props when no value is passed from the parent component."
+  },
+  {
+    "id": "426",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What’s the difference between React and Preact?",
+    "answer": "Preact is a lightweight alternative to React with the same API. It’s faster and smaller, but lacks some advanced features like Suspense."
+  },
+  {
+    "id": "427",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you handle focus management in complex forms?",
+    "answer": "Use refs with useEffect to set focus. For accessibility, follow keyboard navigation patterns and ARIA roles."
+  },
+  {
+    "id": "428",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What are render props?",
+    "answer": "Render props are a technique where a component uses a function prop to know what to render. It’s useful for sharing logic."
+  },
+  {
+    "id": "429",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is children prop in React?",
+    "answer": "children is a special prop that allows components to pass nested JSX elements as content from parent to child."
+  },
+  {
+    "id": "430",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the virtual DOM?",
+    "answer": "The virtual DOM is an in-memory representation of the real DOM. React uses it to compute minimal DOM updates for performance."
   }
 ]
