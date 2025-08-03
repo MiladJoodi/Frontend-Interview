@@ -6165,5 +6165,1818 @@
     "difficulty": "medium",
     "question": "What is the difference between property descriptors and attributes?",
     "answer": "Property descriptors define configuration like writable, enumerable, configurable for object properties."
+  },
+  {
+    "id": "882",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What does HTML stand for?",
+    "answer": "HTML stands for HyperText Markup Language."
+  },
+  {
+    "id": "883",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What is the purpose of the `<head>` element in HTML?",
+    "answer": "The `<head>` contains meta-information about the document, like its title, character set, styles, and scripts."
+  },
+  {
+    "id": "884",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What is the difference between `<div>` and `<span>` elements?",
+    "answer": "`<div>` is a block-level element used for grouping content, while `<span>` is inline and used for styling parts of text."
+  },
+  {
+    "id": "885",
+    "category": "html",
+    "difficulty": "easy",
+    "question": "What are semantic HTML elements? Give examples.",
+    "answer": "Elements that convey meaning about content, such as `<article>`, `<section>`, `<header>`, `<footer>`, and `<nav>`."
+  },
+  {
+    "id": "886",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the role of the `<meta charset='UTF-8'>` tag?",
+    "answer": "It specifies the character encoding for the HTML document, ensuring correct display of characters."
+  },
+  {
+    "id": "887",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make a website mobile-friendly using HTML?",
+    "answer": "By using the viewport meta tag and responsive design techniques."
+  },
+  {
+    "id": "888",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between ordered and unordered lists.",
+    "answer": "Ordered lists (`<ol>`) are numbered, unordered lists (`<ul>`) use bullets."
+  },
+  {
+    "id": "889",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `alt` attribute in images?",
+    "answer": "Provides alternative text for images, important for accessibility and SEO."
+  },
+  {
+    "id": "890",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include a JavaScript file in an HTML document?",
+    "answer": "Using the `<script src='path/to/file.js'></script>` tag."
+  },
+  {
+    "id": "891",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between block-level and inline elements?",
+    "answer": "Block-level elements take up the full width and start on a new line; inline elements flow within text."
+  },
+  {
+    "id": "892",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you create a hyperlink that opens in a new tab?",
+    "answer": "By adding `target='_blank'` attribute to the `<a>` tag."
+  },
+  {
+    "id": "893",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the role of the `<form>` element?",
+    "answer": "It defines an HTML form for user input."
+  },
+  {
+    "id": "894",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between `id` and `class` attributes.",
+    "answer": "`id` is unique per page; `class` can be shared by multiple elements."
+  },
+  {
+    "id": "895",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<label>` element in forms?",
+    "answer": "It defines a label for an input element, improving accessibility."
+  },
+  {
+    "id": "896",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed a video in an HTML page?",
+    "answer": "Using the `<video>` tag with `src` attribute and optional controls."
+  },
+  {
+    "id": "897",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are data attributes and how are they used?",
+    "answer": "Custom attributes prefixed with `data-` to store extra data on elements."
+  },
+  {
+    "id": "898",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between the `<section>` and `<div>` elements.",
+    "answer": "`<section>` is semantic and groups related content; `<div>` is a generic container."
+  },
+  {
+    "id": "899",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make a form input required?",
+    "answer": "By adding the `required` attribute to the input element."
+  },
+  {
+    "id": "900",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<head>` vs `<body>` elements?",
+    "answer": "`<head>` contains meta and setup info; `<body>` contains the actual content displayed."
+  },
+  {
+    "id": "901",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a character encoding for an HTML document?",
+    "answer": "Using the `<meta charset='UTF-8'>` tag in the head."
+  },
+  {
+    "id": "902",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<input type='text'>` and `<textarea>`?",
+    "answer": "`<input type='text'>` is a single-line text input; `<textarea>` allows multi-line input."
+  },
+  {
+    "id": "903",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are void elements? Give examples.",
+    "answer": "Elements that do not have closing tags, like `<img>`, `<br>`, `<input>`."
+  },
+  {
+    "id": "904",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the use of the `<canvas>` element.",
+    "answer": "It provides a drawable region for graphics via JavaScript."
+  },
+  {
+    "id": "905",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `href` and `src` attributes?",
+    "answer": "`href` specifies the link destination; `src` specifies the source of embedded content."
+  },
+  {
+    "id": "906",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add comments in HTML?",
+    "answer": "Using `<!-- comment here -->` syntax."
+  },
+  {
+    "id": "907",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `lang` attribute in the `<html>` tag?",
+    "answer": "Specifies the language of the document for accessibility and SEO."
+  },
+  {
+    "id": "908",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a dropdown list in HTML?",
+    "answer": "Using the `<select>` element with nested `<option>` elements."
+  },
+  {
+    "id": "909",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are the global attributes in HTML?",
+    "answer": "Attributes common to all HTML elements, like `id`, `class`, `style`, `title`, and `data-*`."
+  },
+  {
+    "id": "910",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<iframe>` and `<embed>`?",
+    "answer": "`<iframe>` embeds another HTML page; `<embed>` embeds external content like PDFs or videos."
+  },
+  {
+    "id": "911",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you disable a form input?",
+    "answer": "By adding the `disabled` attribute to the input element."
+  },
+  {
+    "id": "912",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<noscript>` tag?",
+    "answer": "Defines alternate content displayed when JavaScript is disabled."
+  },
+  {
+    "id": "913",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between absolute and relative URLs.",
+    "answer": "Absolute URLs include the full path; relative URLs are relative to the current page."
+  },
+  {
+    "id": "914",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<blockquote>` element?",
+    "answer": "Used for indicating a section quoted from another source."
+  },
+  {
+    "id": "915",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a checkbox and radio buttons?",
+    "answer": "Using `<input type='checkbox'>` for checkboxes and `<input type='radio'>` for radio buttons."
+  },
+  {
+    "id": "916",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `id` and `name` attributes in form elements?",
+    "answer": "`id` is used for identification and label association; `name` is used to submit form data."
+  },
+  {
+    "id": "917",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `defer` attribute in script tags?",
+    "answer": "It delays script execution until the HTML document has been parsed."
+  },
+  {
+    "id": "918",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create an ordered list starting at a number other than 1?",
+    "answer": "By using the `start` attribute on the `<ol>` tag."
+  },
+  {
+    "id": "919",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `download` attribute in anchor tags?",
+    "answer": "It tells the browser to download the linked resource instead of navigating to it."
+  },
+  {
+    "id": "920",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are microdata attributes in HTML?",
+    "answer": "Attributes that allow embedding metadata within HTML content for better SEO."
+  },
+  {
+    "id": "921",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a placeholder text in input fields?",
+    "answer": "Using the `placeholder` attribute."
+  },
+{
+    "id": "922",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `contenteditable` attribute do?",
+    "answer": "It makes an element's content editable directly by the user."
+  },
+  {
+    "id": "923",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include a favicon in an HTML document?",
+    "answer": "Using `<link rel='icon' href='path/to/favicon.ico'>` inside the `<head>`."
+  },
+  {
+    "id": "924",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `<b>` and `<strong>` tags?",
+    "answer": "`<b>` applies bold styling without semantic meaning; `<strong>` indicates important text."
+  },
+  {
+    "id": "925",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between `<i>` and `<em>` tags.",
+    "answer": "`<i>` italicizes text without emphasis; `<em>` indicates emphasized text with semantic meaning."
+  },
+  {
+    "id": "926",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `autocomplete` attribute in form elements?",
+    "answer": "It suggests whether the browser should enable autofill for the input."
+  },
+  {
+    "id": "927",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make a form reset button?",
+    "answer": "Using `<button type='reset'>` or `<input type='reset'>`."
+  },
+  {
+    "id": "928",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<script async>` and `<script defer>`?",
+    "answer": "`async` loads and executes the script as soon as possible; `defer` loads the script and executes it after parsing."
+  },
+  {
+    "id": "929",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed a Google Map in an HTML page?",
+    "answer": "Using an `<iframe>` with the Google Maps embed URL."
+  },
+  {
+    "id": "930",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<output>` element?",
+    "answer": "It represents the result of a calculation or user action."
+  },
+  {
+    "id": "931",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a character set other than UTF-8?",
+    "answer": "By changing the charset value in `<meta charset='value'>`, e.g. `ISO-8859-1`."
+  },
+  {
+    "id": "932",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between `<article>` and `<section>`.",
+    "answer": "`<article>` is for self-contained content; `<section>` is for grouping related content."
+  },
+  {
+    "id": "933",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `hidden` attribute?",
+    "answer": "It hides the element from the page but keeps it in the DOM."
+  },
+  {
+    "id": "934",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make an HTML element draggable?",
+    "answer": "By setting the `draggable='true'` attribute."
+  },
+  {
+    "id": "935",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<progress>` element?",
+    "answer": "It displays progress of a task, like a progress bar."
+  },
+  {
+    "id": "936",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify the default selected option in a dropdown?",
+    "answer": "Add the `selected` attribute to the desired `<option>` element."
+  },
+  {
+    "id": "937",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<fieldset>` and `<legend>` elements?",
+    "answer": "`<fieldset>` groups related inputs; `<legend>` provides a caption for the group."
+  },
+  {
+    "id": "938",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed audio in an HTML page?",
+    "answer": "Using the `<audio>` tag with `src` and optional `controls` attribute."
+  },
+  {
+    "id": "939",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between the `<link>` and `<style>` tags.",
+    "answer": "`<link>` references external stylesheets; `<style>` contains internal CSS."
+  },
+  {
+    "id": "940",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `sandbox` attribute do in `<iframe>`?",
+    "answer": "It applies extra restrictions for security, like disabling scripts or forms."
+  },
+  {
+    "id": "941",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add metadata for social media sharing?",
+    "answer": "Using Open Graph (`og:`) meta tags in the `<head>` section."
+  },
+  {
+    "id": "942",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<template>` element?",
+    "answer": "It holds HTML that isn’t rendered immediately but can be cloned via JavaScript."
+  },
+  {
+    "id": "943",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make a table accessible?",
+    "answer": "Use proper `<th>` for headers, scope attributes, and captions."
+  },
+  {
+    "id": "944",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `rel` attribute in the `<a>` tag?",
+    "answer": "Defines the relationship between the linked resource and the current document."
+  },
+  {
+    "id": "945",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify language direction in HTML?",
+    "answer": "Using the `dir` attribute, values can be `ltr`, `rtl`, or `auto`."
+  },
+  {
+    "id": "946",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `<code>`, `<pre>`, and `<samp>` tags?",
+    "answer": "`<code>` displays inline code, `<pre>` preserves whitespace for blocks, `<samp>` shows sample output."
+  },
+  {
+    "id": "947",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you force a page to refresh without cache?",
+    "answer": "By adding meta tags or using HTTP headers like `Cache-Control` set to `no-cache`."
+  },
+  {
+    "id": "948",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how to make an image responsive in HTML.",
+    "answer": "Use CSS properties like `max-width: 100%` and `height: auto` or use the `srcset` attribute."
+  },
+  {
+    "id": "949",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `sandbox` attribute in `<iframe>`?",
+    "answer": "It enables an extra set of restrictions for the content inside the iframe for security."
+  },
+  {
+    "id": "950",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `tabindex` attribute do?",
+    "answer": "Controls the tab order for keyboard navigation."
+  },
+  {
+    "id": "951",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify multiple classes for an element?",
+    "answer": "By listing class names separated by spaces in the `class` attribute."
+  },
+  {
+    "id": "952",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are ARIA roles and why are they important?",
+    "answer": "ARIA roles define accessibility semantics for assistive technologies."
+  },
+  {
+    "id": "953",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include a CSS file in an HTML document?",
+    "answer": "Using `<link rel='stylesheet' href='path/to/file.css'>` in the `<head>`."
+  },
+  {
+    "id": "954",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `<base>` tag do in HTML?",
+    "answer": "Specifies the base URL for all relative URLs in the document."
+  },
+  {
+    "id": "955",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make a button submit a form?",
+    "answer": "By using `<button type='submit'>` inside a `<form>`."
+  },
+  {
+    "id": "956",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<main>` and `<section>`?",
+    "answer": "`<main>` represents the dominant content; `<section>` groups thematic content."
+  },
+  {
+    "id": "957",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add tooltips to elements?",
+    "answer": "Using the `title` attribute."
+  },
+  {
+    "id": "958",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<details>` and `<summary>` elements?",
+    "answer": "`<details>` creates a collapsible block; `<summary>` defines its visible heading."
+  },
+  {
+    "id": "959",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you specify input type for dates?",
+    "answer": "Using `<input type='date'>`."
+  },
+  {
+    "id": "960",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `name` and `id` attributes in HTML?",
+    "answer": "`name` is used for form submission; `id` is used for unique identification and CSS/JS."
+  },
+  {
+    "id": "961",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how to optimize HTML for SEO.",
+    "answer": "Use semantic tags, meaningful titles, meta descriptions, alt attributes, and structured data."
+  },
+  {
+    "id": "962",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the function of the `<meta name='viewport'>` tag?",
+    "answer": "Controls layout on mobile browsers by setting the viewport size and scale."
+  },
+{
+    "id": "963",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<iframe>` and `<embed>`?",
+    "answer": "`<iframe>` embeds another HTML page inside the current page; `<embed>` is for embedding external resources like PDFs, videos, or plugins."
+  },
+  {
+    "id": "964",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a semantic footer in HTML?",
+    "answer": "Use the `<footer>` tag, which typically contains copyright, contact info, or links."
+  },
+  {
+    "id": "965",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `loading='lazy'` attribute do in `<img>` and `<iframe>`?",
+    "answer": "It defers loading the resource until it’s near the viewport, improving performance."
+  },
+  {
+    "id": "966",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you define custom data attributes in HTML and access them in JavaScript?",
+    "answer": "Add attributes starting with `data-` like `data-id='123'`. Access with `element.dataset.id` in JS."
+  },
+  {
+    "id": "967",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<nav>` element?",
+    "answer": "Defines a section for navigation links."
+  },
+  {
+    "id": "968",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make text selectable or unselectable in HTML?",
+    "answer": "Use CSS properties `user-select: text` to enable and `user-select: none` to disable selection."
+  },
+  {
+    "id": "969",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a form to open in a new tab when submitted?",
+    "answer": "Set the form’s `target` attribute to `_blank`."
+  },
+  {
+    "id": "970",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `meta name='description'` and `meta property='og:description'`?",
+    "answer": "`description` is used by search engines; `og:description` is for social media sharing previews."
+  },
+  {
+    "id": "971",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you implement an accessible skip link in HTML?",
+    "answer": "Add an `<a href='#main' class='skip-link'>Skip to content</a>` for keyboard users to bypass navigation."
+  },
+  {
+    "id": "972",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `section` and `div`?",
+    "answer": "`section` is semantic grouping of related content; `div` is a generic container with no semantic meaning."
+  },
+  {
+    "id": "973",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed a video using the `<video>` tag with fallback content?",
+    "answer": "Use `<video controls><source src='video.mp4' type='video/mp4'>Fallback text</video>`."
+  },
+  {
+    "id": "974",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What attributes can you use with the `<input type='file'>` element?",
+    "answer": "Attributes like `accept`, `multiple`, `capture` to specify file types, multiple files, or capture directly."
+  },
+  {
+    "id": "975",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<mark>` tag?",
+    "answer": "Highlights text, typically used for search terms or relevant info."
+  },
+  {
+    "id": "976",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between relative and absolute URLs.",
+    "answer": "Relative URLs depend on the current page’s URL; absolute URLs include the full path starting with the protocol."
+  },
+  {
+    "id": "977",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include a web font in HTML?",
+    "answer": "Use `<link>` in `<head>` to import from services like Google Fonts or use `@font-face` in CSS."
+  },
+  {
+    "id": "978",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<cite>` element?",
+    "answer": "Represents a reference to a creative work, like a book or article."
+  },
+  {
+    "id": "979",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a responsive iframe?",
+    "answer": "Wrap iframe in a container with CSS aspect-ratio or use padding hacks for responsiveness."
+  },
+  {
+    "id": "980",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `nowrap` and `pre` white-space values?",
+    "answer": "`nowrap` prevents line breaks but collapses whitespace; `pre` preserves whitespace and line breaks."
+  },
+  {
+    "id": "981",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you force a link to open in a new tab securely?",
+    "answer": "Use `target='_blank'` with `rel='noopener noreferrer'` to prevent security risks."
+  },
+  {
+    "id": "982",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the function of the `<abbr>` tag?",
+    "answer": "Represents an abbreviation or acronym with an optional tooltip for full expansion."
+  },
+  {
+    "id": "983",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you disable autocomplete for a specific input?",
+    "answer": "Set `autocomplete='off'` on the input element."
+  },
+  {
+    "id": "984",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `form` attribute do in input elements?",
+    "answer": "Associates the input with a form by its `id`, allowing placement outside the form tag."
+  },
+  {
+    "id": "985",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a horizontal line in HTML?",
+    "answer": "Using the `<hr>` tag."
+  },
+  {
+    "id": "986",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<meta http-equiv='refresh'>` tag?",
+    "answer": "Automatically refreshes or redirects the page after a specified time."
+  },
+  {
+    "id": "987",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make an element visually hidden but accessible to screen readers?",
+    "answer": "Use CSS techniques like `position: absolute; width: 1px; height: 1px; overflow: hidden;` or `sr-only` classes."
+  },
+  {
+    "id": "988",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `<wbr>` tag do?",
+    "answer": "Indicates a position where the browser can optionally break a word to wrap text."
+  },
+  {
+    "id": "989",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you define a character encoding for a document?",
+    "answer": "Using `<meta charset='UTF-8'>` in the `<head>` section."
+  },
+  {
+    "id": "990",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `block`, `inline`, and `inline-block` elements?",
+    "answer": "`block` takes full width and starts on a new line; `inline` flows with text; `inline-block` flows inline but can have width/height."
+  },
+  {
+    "id": "991",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What attribute would you use to define an image as decorative?",
+    "answer": "Set `alt=''` (empty alt) to mark it as decorative for screen readers."
+  },
+  {
+    "id": "992",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a checkbox group with a single label?",
+    "answer": "Wrap checkboxes in a `<fieldset>` with a `<legend>` describing the group."
+  },
+  {
+    "id": "993",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the use of the `required` attribute in form elements.",
+    "answer": "It marks an input as mandatory for form submission."
+  },
+  {
+    "id": "994",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you preload important resources in HTML?",
+    "answer": "Using `<link rel='preload' href='file' as='resource-type'>`."
+  },
+  {
+    "id": "995",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<time>` element?",
+    "answer": "Represents a specific time or date, often machine-readable."
+  },
+  {
+    "id": "996",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a language for a document or element?",
+    "answer": "Using the `lang` attribute, e.g. `<html lang='en'>` or `<p lang='fr'>`."
+  },
+  {
+    "id": "997",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<label>` and placeholder text?",
+    "answer": "Labels remain visible describing the input; placeholders disappear when user types."
+  },
+  {
+    "id": "998",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you group options inside a `<select>` dropdown?",
+    "answer": "Using the `<optgroup>` tag with a label attribute."
+  },
+  {
+    "id": "999",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `novalidate` attribute do in a form?",
+    "answer": "Disables built-in HTML5 form validation on submission."
+  },
+  {
+    "id": "1000",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add comments in HTML?",
+    "answer": "Using `<!-- comment text -->`."
+  },
+{
+    "id": "1001",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<strong>` and `<b>` tags?",
+    "answer": "`<strong>` indicates importance and is semantic; `<b>` is purely stylistic for bold text."
+  },
+  {
+    "id": "1002",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How does the `<details>` and `<summary>` elements work?",
+    "answer": "`<details>` creates a collapsible content block, and `<summary>` defines the visible heading."
+  },
+  {
+    "id": "1003",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<output>` element?",
+    "answer": "Represents the result of a calculation or user action."
+  },
+  {
+    "id": "1004",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you use the `<picture>` element for responsive images?",
+    "answer": "Define multiple `<source>` elements with different media queries and fallback `<img>`."
+  },
+  {
+    "id": "1005",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the function of the `aria-label` attribute?",
+    "answer": "Provides an accessible name to elements for screen readers."
+  },
+  {
+    "id": "1006",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a button that behaves like a link?",
+    "answer": "Use `<button>` with JavaScript `window.location` or style `<a>` as a button."
+  },
+  {
+    "id": "1007",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `id` and `class` attributes?",
+    "answer": "`id` is unique per page; `class` can be shared by multiple elements."
+  },
+  {
+    "id": "1008",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you embed SVG inline in HTML?",
+    "answer": "Include `<svg>` markup directly inside HTML."
+  },
+  {
+    "id": "1009",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `hidden` attribute?",
+    "answer": "It hides an element from the page but keeps it in the DOM."
+  },
+  {
+    "id": "1010",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add metadata to your HTML page for social media?",
+    "answer": "Use Open Graph meta tags (`og:title`, `og:description`, etc.) in `<head>`."
+  },
+  {
+    "id": "1011",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between `iframe` sandbox attributes.",
+    "answer": "Sandbox restricts iframe capabilities like scripts, forms, or same-origin access."
+  },
+  {
+    "id": "1012",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you optimize forms for better accessibility?",
+    "answer": "Use proper labels, fieldsets, aria attributes, and keyboard-friendly markup."
+  },
+  {
+    "id": "1013",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `tabindex` attribute do?",
+    "answer": "Controls keyboard navigation order and focus behavior."
+  },
+  {
+    "id": "1014",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a custom favicon in HTML?",
+    "answer": "Use `<link rel='icon' href='path/to/favicon.ico'>` in the `<head>`."
+  },
+  {
+    "id": "1015",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<main>` and `<section>`?",
+    "answer": "`<main>` is the primary content of the document; `<section>` is a thematic grouping."
+  },
+  {
+    "id": "1016",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a checkbox that toggles visibility of other elements?",
+    "answer": "Use JavaScript to listen for change events and toggle element visibility."
+  },
+  {
+    "id": "1017",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<code>` tag?",
+    "answer": "Represents inline code snippets or programming text."
+  },
+  {
+    "id": "1018",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you define a blockquote with a citation?",
+    "answer": "Use `<blockquote>` with an optional `<cite>` inside or an external citation."
+  },
+  {
+    "id": "1019",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are void elements in HTML?",
+    "answer": "Elements that don’t have closing tags like `<img>`, `<br>`, `<hr>`."
+  },
+  {
+    "id": "1020",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make an image responsive in HTML?",
+    "answer": "Set CSS max-width to 100% and height auto or use the `srcset` attribute."
+  },
+  {
+    "id": "1021",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the use of the `contenteditable` attribute.",
+    "answer": "Allows the content of an element to be edited by the user."
+  },
+  {
+    "id": "1022",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<sup>` and `<sub>` tags?",
+    "answer": "`<sup>` for superscript text; `<sub>` for subscript text."
+  },
+  {
+    "id": "1023",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you declare the document type in HTML5?",
+    "answer": "With `<!DOCTYPE html>` at the top of the document."
+  },
+  {
+    "id": "1024",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the role of the `<template>` tag?",
+    "answer": "Holds HTML markup that isn't rendered but can be cloned and used by scripts."
+  },
+  {
+    "id": "1025",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include external JavaScript files in HTML?",
+    "answer": "Using `<script src='file.js'></script>`."
+  },
+  {
+    "id": "1026",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `defer` and `async` attributes on `<script>`?",
+    "answer": "`defer` waits for parsing and executes after; `async` executes as soon as possible."
+  },
+  {
+    "id": "1027",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you define a comment in HTML?",
+    "answer": "Using `<!-- comment -->` syntax."
+  },
+  {
+    "id": "1028",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how to embed audio in HTML.",
+    "answer": "Use `<audio controls><source src='audio.mp3' type='audio/mpeg'>Fallback text</audio>`."
+  },
+  {
+    "id": "1029",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `<bdo>` and `<dir>` tags?",
+    "answer": "`<bdo>` overrides text direction; `<dir>` is obsolete for directory lists."
+  },
+  {
+    "id": "1030",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you prevent a form from submitting by default?",
+    "answer": "Use JavaScript `event.preventDefault()` inside the submit handler."
+  },
+  {
+    "id": "1031",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `rel='stylesheet'` and `rel='preload'`?",
+    "answer": "`stylesheet` loads CSS normally; `preload` hints the browser to load resources early."
+  },
+  {
+    "id": "1032",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create an ordered list starting from a specific number?",
+    "answer": "Use `<ol start='number'>`."
+  },
+  {
+    "id": "1033",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are the differences between `<section>`, `<article>`, and `<div>`?",
+    "answer": "`section` groups related content, `article` is independent content, `div` is generic."
+  },
+  {
+    "id": "1034",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `lang` attribute on elements?",
+    "answer": "Defines the language of the element's content for accessibility and SEO."
+  },
+  {
+    "id": "1035",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a placeholder in a textarea element?",
+    "answer": "Use the `placeholder` attribute."
+  },
+  {
+    "id": "1036",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `autofocus` attribute do?",
+    "answer": "Automatically focuses the element on page load."
+  },
+  {
+    "id": "1037",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you mark up an address in HTML?",
+    "answer": "Use the `<address>` element for contact information."
+  },
+  {
+    "id": "1038",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the purpose of the `<hr>` element.",
+    "answer": "Represents a thematic break or horizontal rule in content."
+  },
+  {
+    "id": "1039",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are some common ARIA roles used in HTML?",
+    "answer": "Roles like `button`, `navigation`, `main`, `banner`, `contentinfo` improve accessibility."
+  },
+  {
+    "id": "1040",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you link to a specific part of the page?",
+    "answer": "Use anchor links with `href='#id'` pointing to an element with that id."
+  },
+  {
+    "id": "1041",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<textarea>` and `<input type='text'>`?",
+    "answer": "`textarea` allows multiline input; `input type='text'` is single line."
+  },
+  {
+    "id": "1042",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify multiple CSS classes on an element?",
+    "answer": "List classes separated by spaces in the `class` attribute."
+  },
+  {
+    "id": "1043",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<figcaption>` element?",
+    "answer": "Provides a caption for a `<figure>` element."
+  },
+  {
+    "id": "1044",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you disable a button element?",
+    "answer": "Add the `disabled` attribute to the button."
+  },
+  {
+    "id": "1045",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how the `download` attribute works on `<a>` elements.",
+    "answer": "It tells the browser to download the linked file instead of navigating."
+  },
+  {
+    "id": "1046",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `meta charset` and `meta viewport`?",
+    "answer": "`charset` defines character encoding; `viewport` controls layout on mobile devices."
+  },
+  {
+    "id": "1047",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make a form element required?",
+    "answer": "Add the `required` attribute."
+  },
+  {
+    "id": "1048",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `<link>` and `<script>` tags?",
+    "answer": "`link` imports external resources like CSS; `script` loads JavaScript."
+  },
+  {
+    "id": "1049",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed a video with multiple formats for compatibility?",
+    "answer": "Use `<video>` with multiple `<source>` elements for different codecs."
+  },
+  {
+    "id": "1050",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the role of the `<nav>` element?",
+    "answer": "Defines a section with navigation links."
+  },
+{
+    "id": "1051",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `name` and `id` attributes in form elements?",
+    "answer": "`name` is used for form data submission; `id` uniquely identifies an element in the DOM."
+  },
+  {
+    "id": "1052",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a dropdown list in HTML?",
+    "answer": "Use the `<select>` element with nested `<option>` elements."
+  },
+  {
+    "id": "1053",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are data attributes in HTML and how do you use them?",
+    "answer": "Custom attributes prefixed with `data-` used to store extra info accessible via JavaScript."
+  },
+  {
+    "id": "1054",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how the `<label>` element works with form inputs.",
+    "answer": "`<label>` associates text with a form input for accessibility, linked via `for` attribute."
+  },
+  {
+    "id": "1055",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify character encoding in an HTML document?",
+    "answer": "Using `<meta charset='UTF-8'>` in the `<head>`."
+  },
+  {
+    "id": "1056",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `button`, `submit`, and `reset` types for `<button>`?",
+    "answer": "`button` is generic, `submit` submits a form, `reset` resets form fields."
+  },
+  {
+    "id": "1057",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a fieldset and why is it useful?",
+    "answer": "Wrap inputs in `<fieldset>` to group related controls, improves accessibility."
+  },
+  {
+    "id": "1058",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<datalist>` element?",
+    "answer": "Provides predefined options for input elements with autocomplete."
+  },
+  {
+    "id": "1059",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you embed a Google Map in an HTML page?",
+    "answer": "Use an `<iframe>` with the Google Maps embed URL."
+  },
+  {
+    "id": "1060",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `form` attribute do on input elements?",
+    "answer": "Associates an input with a form by its id, allowing inputs outside the form tag."
+  },
+  {
+    "id": "1061",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you implement semantic HTML for articles and blog posts?",
+    "answer": "Use `<article>` for self-contained content, `<section>` for grouping inside it."
+  },
+  {
+    "id": "1062",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `accept` attribute in file input elements?",
+    "answer": "Limits file types that users can select for upload."
+  },
+  {
+    "id": "1063",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how to use the `<progress>` element.",
+    "answer": "Displays progress of a task; use `value` and `max` attributes."
+  },
+  {
+    "id": "1064",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<b>` and `<mark>` tags?",
+    "answer": "`<b>` bolds text without semantic meaning; `<mark>` highlights text as relevant."
+  },
+  {
+    "id": "1065",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you prevent an anchor tag from navigating?",
+    "answer": "Use JavaScript `event.preventDefault()` in click event."
+  },
+  {
+    "id": "1066",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are the global attributes in HTML?",
+    "answer": "Attributes like `id`, `class`, `style`, `title`, `data-*` usable on almost all elements."
+  },
+  {
+    "id": "1067",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you include an external CSS file in HTML?",
+    "answer": "Using `<link rel='stylesheet' href='style.css'>` inside `<head>`."
+  },
+  {
+    "id": "1068",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<iframe>` element?",
+    "answer": "Embeds another HTML document inside the current page."
+  },
+  {
+    "id": "1069",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you implement lazy loading for images in HTML?",
+    "answer": "Add the `loading='lazy'` attribute to `<img>` elements."
+  },
+  {
+    "id": "1070",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<meta name='description'>` and `<title>`?",
+    "answer": "`title` sets page title shown in tab; `description` is for SEO summaries."
+  },
+  {
+    "id": "1071",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you define a custom data attribute and access it in JavaScript?",
+    "answer": "Use attributes like `data-info='value'` and access with `element.dataset.info`."
+  },
+  {
+    "id": "1072",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain how to use the `<blockquote>` tag correctly.",
+    "answer": "Wrap quoted content; optionally include a `cite` attribute for source URL."
+  },
+  {
+    "id": "1073",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the role of the `<meta http-equiv>` attribute?",
+    "answer": "Simulates HTTP headers, e.g., content-type, refresh."
+  },
+  {
+    "id": "1074",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include custom fonts in your HTML page?",
+    "answer": "Use `<link>` to Google Fonts or `@font-face` in CSS."
+  },
+  {
+    "id": "1075",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a language direction in HTML?",
+    "answer": "Use the `dir` attribute with values like `ltr` or `rtl`."
+  },
+  {
+    "id": "1076",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make an image a clickable link?",
+    "answer": "Wrap the `<img>` inside an `<a>` tag."
+  },
+  {
+    "id": "1077",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the function of the `sandbox` attribute on iframes?",
+    "answer": "Restricts iframe capabilities for security, like blocking scripts."
+  },
+  {
+    "id": "1078",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you use the `<meta viewport>` tag for responsive design?",
+    "answer": "Set `<meta name='viewport' content='width=device-width, initial-scale=1'>`."
+  },
+  {
+    "id": "1079",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `autocomplete` attribute in forms?",
+    "answer": "Controls browser autofill behavior for inputs."
+  },
+  {
+    "id": "1080",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you use the `<abbr>` element properly?",
+    "answer": "Wrap abbreviations and provide full text with the `title` attribute."
+  },
+  {
+    "id": "1081",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between block-level and inline elements?",
+    "answer": "Block elements take full width and start on new lines; inline elements flow within text."
+  },
+  {
+    "id": "1082",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a multi-select dropdown in HTML?",
+    "answer": "Add the `multiple` attribute to the `<select>` element."
+  },
+  {
+    "id": "1083",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<canvas>` element?",
+    "answer": "Provides a drawable area for graphics via JavaScript."
+  },
+  {
+    "id": "1084",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a favicon in an HTML document?",
+    "answer": "Use `<link rel='icon' href='favicon.ico'>` in `<head>`."
+  },
+  {
+    "id": "1085",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you add comments in HTML?",
+    "answer": "Use `<!-- comment -->` syntax."
+  },
+  {
+    "id": "1086",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<section>` and `<div>`?",
+    "answer": "`section` is semantic grouping of related content; `div` is a generic container."
+  },
+  {
+    "id": "1087",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you disable autocomplete on form inputs?",
+    "answer": "Add `autocomplete='off'` attribute to inputs or form."
+  },
+  {
+    "id": "1088",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<input type='text'>` and `<textarea>`?",
+    "answer": "`input` is for single-line text; `textarea` is for multi-line."
+  },
+  {
+    "id": "1089",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a responsive table?",
+    "answer": "Use CSS techniques like overflow scroll or display block on small screens."
+  },
+  {
+    "id": "1090",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are void elements in HTML?",
+    "answer": "Elements that do not have closing tags, e.g., `<img>`, `<input>`, `<br>`."
+  },
+  {
+    "id": "1091",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create an accessible form?",
+    "answer": "Use semantic tags, labels linked to inputs, and ARIA attributes as needed."
+  },
+  {
+    "id": "1092",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the use of the `role` attribute in HTML.",
+    "answer": "Defines the purpose of an element to assistive technologies for accessibility."
+  },
+  {
+    "id": "1093",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<output>` element?",
+    "answer": "Represents the result of a calculation or user action."
+  },
+  {
+    "id": "1094",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you ensure keyboard accessibility for interactive elements?",
+    "answer": "Use semantic HTML, tabindex, and keyboard event handlers."
+  },
+  {
+    "id": "1095",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed audio in an HTML page?",
+    "answer": "Use the `<audio>` element with `<source>` tags for different formats."
+  },
+{
+    "id": "1096",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between the `<main>` and `<section>` elements?",
+    "answer": "`<main>` is used for the primary content unique to the page, while `<section>` groups related content."
+  },
+  {
+    "id": "1097",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a hidden element that is still accessible to screen readers?",
+    "answer": "Use CSS with `position: absolute; left: -9999px;` or ARIA attributes like `aria-hidden='false'`."
+  },
+  {
+    "id": "1098",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the function of the `<figure>` and `<figcaption>` elements?",
+    "answer": "`<figure>` wraps media content, and `<figcaption>` provides a caption describing it."
+  },
+  {
+    "id": "1099",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify that a form input is required?",
+    "answer": "Add the `required` attribute to the input element."
+  },
+  {
+    "id": "1100",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are ARIA attributes and why are they important?",
+    "answer": "Attributes that enhance accessibility by providing extra info to assistive technologies."
+  },
+  {
+    "id": "1101",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you create an accessible navigation menu?",
+    "answer": "Use semantic `<nav>`, proper landmarks, focus management, and ARIA roles."
+  },
+  {
+    "id": "1102",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the difference between the `<header>` and `<footer>` elements.",
+    "answer": "`<header>` contains introductory content or navigation; `<footer>` contains closing info or links."
+  },
+  {
+    "id": "1103",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `tabindex` attribute?",
+    "answer": "Controls keyboard navigation order and focusability of elements."
+  },
+  {
+    "id": "1104",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you embed a video in HTML with fallback content?",
+    "answer": "Use the `<video>` element with nested fallback content inside it."
+  },
+  {
+    "id": "1105",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `iframe` and `object` elements?",
+    "answer": "`iframe` embeds another webpage; `object` can embed various types like media or plugins."
+  },
+  {
+    "id": "1106",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a default value for a form input?",
+    "answer": "Use the `value` attribute for inputs or default content inside `<textarea>`."
+  },
+  {
+    "id": "1107",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are semantic tags and why are they important?",
+    "answer": "Tags that clearly describe their meaning to browsers and developers, improving accessibility and SEO."
+  },
+  {
+    "id": "1108",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make an HTML element draggable?",
+    "answer": "Add the attribute `draggable='true'` and handle drag events with JavaScript."
+  },
+  {
+    "id": "1109",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<template>` element?",
+    "answer": "Holds inert DOM content that can be cloned and used dynamically via JavaScript."
+  },
+  {
+    "id": "1110",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you make a form submit without a submit button?",
+    "answer": "Use JavaScript to trigger form submission or add `onkeydown` event handlers."
+  },
+  {
+    "id": "1111",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `nonce` attribute in script tags?",
+    "answer": "Used to allow inline scripts when Content Security Policy is enabled."
+  },
+  {
+    "id": "1112",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include metadata for social media previews?",
+    "answer": "Add Open Graph meta tags like `<meta property='og:title'>` and Twitter card tags."
+  },
+  {
+    "id": "1113",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the use of the `<time>` element.",
+    "answer": "Represents dates or times, improving machine readability and accessibility."
+  },
+  {
+    "id": "1114",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you disable a button element?",
+    "answer": "Add the `disabled` attribute."
+  },
+  {
+    "id": "1115",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `rel='stylesheet'` and `rel='preload'`?",
+    "answer": "`stylesheet` loads CSS normally; `preload` hints browser to load resource early."
+  },
+  {
+    "id": "1116",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a base URL for relative links?",
+    "answer": "Use the `<base href='URL'>` tag inside the `<head>`."
+  },
+  {
+    "id": "1117",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<b>` and `<strong>` tags?",
+    "answer": "`<b>` is for stylistic bolding; `<strong>` indicates importance semantically."
+  },
+  {
+    "id": "1118",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add a tooltip to an element?",
+    "answer": "Use the `title` attribute."
+  },
+  {
+    "id": "1119",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you optimize loading of external scripts?",
+    "answer": "Use `async` or `defer` attributes to control script loading."
+  },
+  {
+    "id": "1120",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the use of the `<noscript>` tag?",
+    "answer": "Displays content when JavaScript is disabled."
+  },
+  {
+    "id": "1121",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a description list in HTML?",
+    "answer": "Use `<dl>` with `<dt>` for terms and `<dd>` for definitions."
+  },
+  {
+    "id": "1122",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<em>` and `<i>`?",
+    "answer": "`<em>` emphasizes text semantically; `<i>` is for italic styling without emphasis."
+  },
+  {
+    "id": "1123",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a checkbox group in HTML?",
+    "answer": "Use multiple `<input type='checkbox'>` elements with the same `name` attribute."
+  },
+  {
+    "id": "1124",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `aria-label` attribute?",
+    "answer": "Provides an accessible name for elements without visible labels."
+  },
+  {
+    "id": "1125",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a responsive image using `srcset`?",
+    "answer": "Provide multiple image sources with different sizes inside the `srcset` attribute."
+  },
+  {
+    "id": "1126",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "Explain the purpose of the `<link rel='manifest'>` tag.",
+    "answer": "Links to a JSON file that defines a web app’s metadata for installation."
+  },
+  {
+    "id": "1127",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `hidden` attribute?",
+    "answer": "Hides an element from display and accessibility APIs."
+  },
+  {
+    "id": "1128",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How can you make text italic in HTML?",
+    "answer": "Use `<em>` or `<i>` tags."
+  },
+  {
+    "id": "1129",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What does the `action` attribute do in a form?",
+    "answer": "Specifies the URL where form data is sent on submission."
+  },
+  {
+    "id": "1130",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you add multiple classes to an HTML element?",
+    "answer": "List class names separated by spaces inside the `class` attribute."
+  },
+  {
+    "id": "1131",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `id` and `class` attributes?",
+    "answer": "`id` uniquely identifies an element; `class` groups elements for styling or scripting."
+  },
+  {
+    "id": "1132",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you create a link that opens in a new tab?",
+    "answer": "Add `target='_blank'` attribute to the `<a>` tag."
+  },
+  {
+    "id": "1133",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<meta charset='UTF-8'>` tag?",
+    "answer": "Specifies the character encoding of the document."
+  },
+  {
+    "id": "1134",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify language for an HTML document?",
+    "answer": "Add `lang` attribute in the `<html>` tag, e.g., `<html lang='en'>`."
+  },
+  {
+    "id": "1135",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the difference between `<ol>` and `<ul>`?",
+    "answer": "`<ol>` is an ordered (numbered) list; `<ul>` is unordered (bulleted)."
+  },
+  {
+    "id": "1136",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you include a web font in HTML?",
+    "answer": "Use `<link>` tag to include from services like Google Fonts."
+  },
+  {
+    "id": "1137",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What are microdata attributes and how are they used?",
+    "answer": "Attributes like `itemscope` and `itemprop` to add metadata for search engines."
+  },
+  {
+    "id": "1138",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you set the viewport for responsive design?",
+    "answer": "Add `<meta name='viewport' content='width=device-width, initial-scale=1'>`."
+  },
+  {
+    "id": "1139",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `<canvas>` element?",
+    "answer": "Provides a drawable area for graphics via JavaScript."
+  },
+  {
+    "id": "1140",
+    "category": "html",
+    "difficulty": "medium",
+    "question": "How do you specify a favicon in an HTML document?",
+    "answer": "Use `<link rel='icon' href='favicon.ico'>` in `<head>`."
   }
 ]
