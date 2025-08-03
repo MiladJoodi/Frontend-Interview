@@ -2413,5 +2413,180 @@
     "difficulty": "hard",
     "question": "How does React Fiber improve rendering?",
     "answer": "React Fiber is a reimplementation of the React core that enables incremental rendering, concurrency, and improved scheduling."
+  },
+  {
+  "id": "346",
+  "category": "react",
+  "difficulty": "easy",
+  "question": "What is the purpose of the useState hook? (variant 1)",
+  "answer": "useState lets you add state to functional components and returns a pair: the current state value and a function that updates it."
+},
+{
+  "id": "347",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "What is the Context API and when should you use it? (variant 1)",
+  "answer": "The Context API is a way to pass data through the component tree without prop drilling. It's useful for global data like themes or authentication."
+},
+{
+  "id": "348",
+  "category": "react",
+  "difficulty": "hard",
+  "question": "Explain how React handles asynchronous state updates. (variant 1)",
+  "answer": "React batches multiple setState calls for performance. Updates may not happen immediately, and you should avoid relying on current state directly in updates."
+},
+{
+  "id": "349",
+  "category": "react",
+  "difficulty": "medium",
+  "question": "How does useEffect cleanup work? (variant 1)",
+  "answer": "The function returned from useEffect runs during cleanup, like before a component unmounts or before re-running the effect."
+},
+{
+  "id": "350",
+  "category": "react",
+  "difficulty": "easy",
+  "question": "How do you conditionally apply classes in React? (variant 1)",
+  "answer": "You can use template literals or libraries like clsx or classnames to apply classes based on conditions."
+},
+  {
+    "id": "351",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What’s the difference between useEffect and useLayoutEffect? (variant 1)",
+    "answer": "useEffect runs after painting the screen; useLayoutEffect runs before painting, useful for measuring DOM changes or avoiding flickers."
+  },
+  {
+    "id": "352",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What are React Fiber’s key design goals? (variant 1)",
+    "answer": "React Fiber improves rendering by allowing incremental rendering, prioritization, and better handling of asynchronous rendering."
+  },
+  {
+    "id": "353",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is a functional component? (variant 1)",
+    "answer": "A functional component is a plain JavaScript function that returns JSX. It can use hooks to manage state and side effects."
+  },
+  {
+    "id": "354",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the difference between mounting and unmounting in React? (variant 1)",
+    "answer": "Mounting is when a component is inserted into the DOM. Unmounting is when it’s removed. React lifecycle or useEffect helps handle these phases."
+  },
+  {
+    "id": "355",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you prevent unnecessary re-renders in deeply nested components? (variant 1)",
+    "answer": "Use React.memo, useCallback, and Context wisely. Ensure props don't change unless needed, and avoid inline functions or objects when possible."
+  },
+  {
+    "id": "356",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the purpose of the useState hook? (variant 2)",
+    "answer": "useState lets you add state to functional components and returns a pair: the current state value and a function that updates it."
+  },
+  {
+    "id": "357",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the Context API and when should you use it? (variant 2)",
+    "answer": "The Context API is a way to pass data through the component tree without prop drilling. It's useful for global data like themes or authentication."
+  },
+  {
+    "id": "358",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain how React handles asynchronous state updates. (variant 2)",
+    "answer": "React batches multiple setState calls for performance. Updates may not happen immediately, and you should avoid relying on current state directly in updates."
+  },
+  {
+    "id": "359",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How does useEffect cleanup work? (variant 2)",
+    "answer": "The function returned from useEffect runs during cleanup, like before a component unmounts or before re-running the effect."
+  },
+  {
+    "id": "360",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you conditionally apply classes in React? (variant 2)",
+    "answer": "You can use template literals or libraries like clsx or classnames to apply classes based on conditions."
+  },
+  {
+    "id": "361",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What’s the difference between useEffect and useLayoutEffect? (variant 2)",
+    "answer": "useEffect runs after painting the screen; useLayoutEffect runs before painting, useful for measuring DOM changes or avoiding flickers."
+  },
+  {
+    "id": "362",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "What are React Fiber’s key design goals? (variant 2)",
+    "answer": "React Fiber improves rendering by allowing incremental rendering, prioritization, and better handling of asynchronous rendering."
+  },
+  {
+    "id": "363",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is a functional component? (variant 2)",
+    "answer": "A functional component is a plain JavaScript function that returns JSX. It can use hooks to manage state and side effects."
+  },
+  {
+    "id": "364",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the difference between mounting and unmounting in React? (variant 2)",
+    "answer": "Mounting is when a component is inserted into the DOM. Unmounting is when it’s removed. React lifecycle or useEffect helps handle these phases."
+  },
+  {
+    "id": "365",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "How would you prevent unnecessary re-renders in deeply nested components? (variant 2)",
+    "answer": "Use React.memo, useCallback, and Context wisely. Ensure props don't change unless needed, and avoid inline functions or objects when possible."
+  },
+  {
+    "id": "366",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "What is the purpose of the useState hook? (variant 3)",
+    "answer": "useState lets you add state to functional components and returns a pair: the current state value and a function that updates it."
+  },
+  {
+    "id": "367",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "What is the Context API and when should you use it? (variant 3)",
+    "answer": "The Context API is a way to pass data through the component tree without prop drilling. It's useful for global data like themes or authentication."
+  },
+  {
+    "id": "368",
+    "category": "react",
+    "difficulty": "hard",
+    "question": "Explain how React handles asynchronous state updates. (variant 3)",
+    "answer": "React batches multiple setState calls for performance. Updates may not happen immediately, and you should avoid relying on current state directly in updates."
+  },
+  {
+    "id": "369",
+    "category": "react",
+    "difficulty": "medium",
+    "question": "How does useEffect cleanup work? (variant 3)",
+    "answer": "The function returned from useEffect runs during cleanup, like before a component unmounts or before re-running the effect."
+  },
+  {
+    "id": "370",
+    "category": "react",
+    "difficulty": "easy",
+    "question": "How do you conditionally apply classes in React? (variant 3)",
+    "answer": "You can use template literals or libraries like clsx or classnames to apply classes based on conditions."
   }
 ]
