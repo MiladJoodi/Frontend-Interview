@@ -3358,5 +3358,1551 @@
     "difficulty": "easy",
     "question": "How do you add transition effects?",
     "answer": "Use `transition`, `duration-300`, `ease-in-out`, and `hover:` states."
+  },
+  {
+    "id": "481",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you customize the container width in Tailwind?",
+    "answer": "Extend the `container` key in `theme` inside `tailwind.config.js` with custom widths for each breakpoint."
+  },
+  {
+    "id": "482",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What Tailwind class would you use to make text truncate with an ellipsis?",
+    "answer": "`truncate`"
+  },
+  {
+    "id": "483",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you handle custom animations in Tailwind?",
+    "answer": "Define keyframes and animations in `tailwind.config.js` under `extend.animation` and `extend.keyframes`."
+  },
+  {
+    "id": "484",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you apply a gradient background in Tailwind?",
+    "answer": "Use `bg-gradient-to-r`, `from-*`, `to-*` classes."
+  },
+  {
+    "id": "485",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What does the `pointer-events-none` class do?",
+    "answer": "It disables mouse events on the element, making it not interactive."
+  },
+  {
+    "id": "486",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you use the `space-y` utility?",
+    "answer": "It adds vertical margin between child elements, e.g. `space-y-4`."
+  },
+  {
+    "id": "487",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What class would you use to make text bold and uppercase simultaneously?",
+    "answer": "`font-bold uppercase`"
+  },
+  {
+    "id": "488",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How does Tailwind handle hover and focus states together?",
+    "answer": "You can chain variants like `hover:focus:bg-blue-500` to apply styles on both states."
+  },
+  {
+    "id": "489",
+    "category": "tailwind",
+    "difficulty": "hard",
+    "question": "How would you create a responsive grid layout with Tailwind?",
+    "answer": "Use `grid` and define columns per breakpoint using `grid-cols-*`, e.g. `grid-cols-1 sm:grid-cols-2 lg:grid-cols-4`."
+  },
+  {
+    "id": "490",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you hide scrollbars in Tailwind?",
+    "answer": "Use custom CSS or plugins since Tailwind doesn’t have built-in scrollbar utilities."
+  },
+  {
+    "id": "491",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How can you optimize Tailwind CSS size in production?",
+    "answer": "Configure PurgeCSS by specifying content paths to remove unused styles."
+  },
+  {
+    "id": "492",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What is the Tailwind class to make a button full width but limited max width?",
+    "answer": "`w-full max-w-xs` or any max-width utility."
+  },
+  {
+    "id": "493",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you implement accessibility considerations using Tailwind?",
+    "answer": "Use focus-visible states like `focus:outline-none focus:ring` and semantic HTML."
+  },
+  {
+    "id": "494",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you apply box shadow only on hover?",
+    "answer": "`hover:shadow-lg`"
+  },
+  {
+    "id": "495",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "Explain how to use `container` with responsive padding in Tailwind.",
+    "answer": "`container` auto applies max-width; use padding utilities like `px-4 md:px-6` for horizontal padding."
+  },
+  {
+    "id": "496",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between `hidden` and `invisible` in Tailwind?",
+    "answer": "`hidden` removes the element from layout; `invisible` makes it transparent but keeps its space."
+  },
+  {
+    "id": "497",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you set the cursor style to pointer in Tailwind?",
+    "answer": "`cursor-pointer`"
+  },
+  {
+    "id": "498",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you extend Tailwind to support new font sizes?",
+    "answer": "Add new sizes under `theme.extend.fontSize` in tailwind.config.js."
+  },
+  {
+    "id": "499",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the purpose of `object-fit` utilities like `object-cover`?",
+    "answer": "They control how images or videos fit inside their containers."
+  },
+  {
+    "id": "500",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How to apply a ring (outline) to an element in Tailwind?",
+    "answer": "`ring`, `ring-2`, `ring-blue-500` etc."
+  },
+  {
+    "id": "501",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you control the stacking order with Tailwind?",
+    "answer": "Use `z-*` classes like `z-10`, `z-20`, etc."
+  },
+  {
+    "id": "502",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you add focus-visible styles for accessibility in Tailwind?",
+    "answer": "Use `focus-visible:outline-none focus-visible:ring` to only show outlines when keyboard focusing."
+  },
+  {
+    "id": "503",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you make an element take full viewport height?",
+    "answer": "`h-screen`"
+  },
+  {
+    "id": "504",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you add a solid border with a specific color?",
+    "answer": "`border border-red-500`"
+  },
+  {
+    "id": "505",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the use of `divide-x` and `divide-y` classes?",
+    "answer": "They add borders between child elements horizontally or vertically."
+  },
+  {
+    "id": "506",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you make a flex container column direction in Tailwind?",
+    "answer": "`flex flex-col`"
+  },
+  {
+    "id": "507",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What class controls letter case to lowercase?",
+    "answer": "`lowercase`"
+  },
+  {
+    "id": "508",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you set max-width for images responsively?",
+    "answer": "Use `max-w-full` to prevent overflow and responsive sizing utilities."
+  },
+  {
+    "id": "509",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you apply custom box shadows in Tailwind?",
+    "answer": "Extend the `boxShadow` key in the config with custom shadow definitions."
+  },
+  {
+    "id": "510",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you remove underline from links in Tailwind?",
+    "answer": "`no-underline`"
+  },
+  {
+    "id": "511",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to apply ring offset in Tailwind?",
+    "answer": "Use `ring-offset-*` classes to add space between the element and ring."
+  },
+  {
+    "id": "512",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you enable important utilities in Tailwind config?",
+    "answer": "Set `important: true` or provide a selector string in the tailwind.config.js."
+  },
+  {
+    "id": "513",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How do you set minimum width in Tailwind?",
+    "answer": "`min-w-*` classes like `min-w-full` or `min-w-0`."
+  },
+  {
+    "id": "514",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to customize transition timing functions in Tailwind?",
+    "answer": "Extend the `transitionTimingFunction` in tailwind.config.js under `theme.extend`."
+  },
+  {
+    "id": "515",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "What class would make text italic?",
+    "answer": "`italic`"
+  },
+  {
+    "id": "516",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you apply ring with a specific color and width?",
+    "answer": "Combine `ring`, `ring-[width]`, and `ring-[color]` classes."
+  },
+  {
+    "id": "517",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How to set custom z-index values in Tailwind?",
+    "answer": "Extend `zIndex` in the config file with custom numeric values."
+  },
+  {
+    "id": "518",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "How do you enable dark mode in Tailwind?",
+    "answer": "Set `darkMode` in tailwind.config.js to `'media'` or `'class'`."
+  },
+  {
+    "id": "519",
+    "category": "tailwind",
+    "difficulty": "easy",
+    "question": "How to center content horizontally in Tailwind?",
+    "answer": "`mx-auto`"
+  },
+  {
+    "id": "520",
+    "category": "tailwind",
+    "difficulty": "medium",
+    "question": "What is the difference between `gap-x` and `space-x`?",
+    "answer": "`gap-x` controls gaps between grid/flex items, `space-x` adds margin between siblings."
+  },
+اینم ۵۰ سوال با موضوع CSS، از id 521 شروع کردم:
+
+json
+Copy
+Edit
+[
+  {
+    "id": "521",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "What is the difference between `class` and `id` selectors in CSS?",
+    "answer": "`id` is unique per page and has higher specificity; `class` can be reused multiple times."
+  },
+  {
+    "id": "522",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the CSS Box Model.",
+    "answer": "It consists of content, padding, border, and margin areas that define element size and spacing."
+  },
+  {
+    "id": "523",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "How do you center a block element horizontally?",
+    "answer": "Set a width and use `margin: 0 auto`."
+  },
+  {
+    "id": "524",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are pseudo-classes in CSS? Give examples.",
+    "answer": "They define a special state of an element like `:hover`, `:focus`, `:nth-child()`."
+  },
+  {
+    "id": "525",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How does `position: absolute` differ from `position: relative`?",
+    "answer": "`absolute` positions relative to nearest positioned ancestor; `relative` offsets relative to its normal position."
+  },
+  {
+    "id": "526",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "What does `z-index` do?",
+    "answer": "Controls the stack order of overlapping elements."
+  },
+  {
+    "id": "527",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "Explain how Flexbox works and common properties.",
+    "answer": "Flexbox arranges items in a flexible container. Key properties: `flex-direction`, `justify-content`, `align-items`, `flex-grow`."
+  },
+  {
+    "id": "528",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `em` and `rem` units?",
+    "answer": "`em` is relative to the parent element font size; `rem` is relative to the root (`html`) font size."
+  },
+  {
+    "id": "529",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do CSS Grid and Flexbox differ?",
+    "answer": "Grid is 2D (rows and columns); Flexbox is 1D (row or column). Grid is better for layouts, Flexbox for components."
+  },
+  {
+    "id": "530",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "What does `overflow: hidden` do?",
+    "answer": "Hides content that overflows its container."
+  },
+  {
+    "id": "531",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How does the `calc()` function work in CSS?",
+    "answer": "Allows dynamic calculations combining units, e.g. `width: calc(100% - 50px)`."
+  },
+  {
+    "id": "532",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are vendor prefixes in CSS?",
+    "answer": "Browser-specific prefixes like `-webkit-`, `-moz-` for experimental or non-standard features."
+  },
+  {
+    "id": "533",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you implement responsive typography in CSS?",
+    "answer": "Use relative units like `em`, `rem`, and CSS clamp or media queries."
+  },
+  {
+    "id": "534",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "What is the `contain` property in CSS and when do you use it?",
+    "answer": "Optimizes rendering by limiting browser's scope for layout, style, or paint containment."
+  },
+  {
+    "id": "535",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the difference between `visibility: hidden` and `display: none`.",
+    "answer": "`visibility: hidden` hides element but keeps space; `display: none` removes element from layout."
+  },
+  {
+    "id": "536",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is specificity in CSS and how is it calculated?",
+    "answer": "Specificity determines which rules apply; calculated by counting inline styles, IDs, classes, and element selectors."
+  },
+  {
+    "id": "537",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "How can you create a sticky footer with CSS?",
+    "answer": "Use `flex` layout on container with `min-height: 100vh` and push footer with `margin-top: auto`."
+  },
+  {
+    "id": "538",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `min-width`, `max-width`, and `width`?",
+    "answer": "`width` sets exact width; `min-width` sets minimum allowed; `max-width` sets maximum allowed."
+  },
+  {
+    "id": "539",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the `object-fit` property used for?",
+    "answer": "Controls how replaced content like images or videos fit inside their container."
+  },
+  {
+    "id": "540",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "How do you select the first child element in CSS?",
+    "answer": "Using the `:first-child` pseudo-class."
+  },
+  {
+    "id": "541",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain how to use media queries.",
+    "answer": "Apply CSS rules conditionally based on viewport size, resolution, or device features."
+  },
+  {
+    "id": "542",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS variables and how do you define them?",
+    "answer": "Custom properties declared with `--var-name` syntax inside selectors, accessed via `var()`."
+  },
+  {
+    "id": "543",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you apply multiple background images in CSS?",
+    "answer": "List images separated by commas in `background-image` property."
+  },
+  {
+    "id": "544",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "Explain critical rendering path optimization in CSS.",
+    "answer": "Minimize and prioritize CSS to reduce render-blocking and speed up page load."
+  },
+  {
+    "id": "545",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you clear floats in CSS?",
+    "answer": "Use clearfix method or set parent `overflow: hidden`."
+  },
+  {
+    "id": "546",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "What does the `box-sizing` property do?",
+    "answer": "Determines whether padding and border are included in element’s total width and height."
+  },
+  {
+    "id": "547",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `relative`, `absolute`, `fixed`, and `sticky` positioning?",
+    "answer": "`relative` moves element relative to itself; `absolute` relative to nearest positioned ancestor; `fixed` relative to viewport; `sticky` toggles between relative and fixed."
+  },
+  {
+    "id": "548",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you create a CSS animation?",
+    "answer": "Define keyframes with `@keyframes` and apply animation properties to elements."
+  },
+  {
+    "id": "549",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are pseudo-elements and give examples?",
+    "answer": "Virtual elements like `::before` and `::after` used to insert content."
+  },
+  {
+    "id": "550",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "How do you change the font family in CSS?",
+    "answer": "Use the `font-family` property."
+  },
+  {
+    "id": "551",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How does the cascade and inheritance work in CSS?",
+    "answer": "Cascade resolves conflicts by specificity and order; inheritance passes certain properties from parent to child."
+  },
+  {
+    "id": "552",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does the `opacity` property do?",
+    "answer": "Controls transparency level of an element."
+  },
+  {
+    "id": "553",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "How do you make text bold in CSS?",
+    "answer": "Use `font-weight: bold` or the shorthand class if using frameworks."
+  },
+  {
+    "id": "554",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the use of the `transition` property?",
+    "answer": "Allows smooth animation between property changes."
+  },
+  {
+    "id": "555",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you style form inputs on focus?",
+    "answer": "Use the `:focus` pseudo-class."
+  },
+  {
+    "id": "556",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you create a responsive layout using CSS Grid?",
+    "answer": "Define grid-template-columns with repeat and minmax inside media queries or use auto-fit/auto-fill."
+  },
+  {
+    "id": "557",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "Explain how to implement a fluid typography system.",
+    "answer": "Use CSS clamp() with viewport units to create scalable font sizes."
+  },
+  {
+    "id": "558",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `max-content`, `min-content`, and `fit-content`?",
+    "answer": "`max-content` expands to max intrinsic size; `min-content` shrinks to min intrinsic size; `fit-content` clamps size within limits."
+  },
+  {
+    "id": "559",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you use the `aspect-ratio` property?",
+    "answer": "Controls the width-to-height ratio of an element."
+  },
+  {
+    "id": "560",
+    "category": "css",
+    "difficulty": "easy",
+    "question": "How do you make an element take full width of its container?",
+    "answer": "`width: 100%` or `w-full` in utility frameworks."
+  },
+{
+"id": "561",
+"category": "css",
+"difficulty": "easy",
+"question": "What does the float property do?",
+"answer": "It allows elements to be taken out of the normal flow and positioned to the left or right."
+},
+{
+"id": "562",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you clear a floated element?",
+"answer": "Use the clear property or a clearfix hack to contain floats."
+},
+{
+"id": "563",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the difference between inline, block, and inline-block elements.",
+"answer": "Inline elements flow within text and don’t start on a new line; block elements take full width and start on a new line; inline-block behaves like inline but respects width and height."
+},
+{
+"id": "564",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you make an element responsive?",
+"answer": "Use relative units like %, em, rem, viewport units, and media queries."
+},
+{
+"id": "565",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between rem and % units?",
+"answer": "rem is relative to root font size; % is relative to parent element."
+},
+{
+"id": "566",
+"category": "css",
+"difficulty": "easy",
+"question": "How do you hide an element visually but keep it accessible for screen readers?",
+"answer": "Use CSS like position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px);."
+},
+{
+"id": "567",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between absolute and fixed positioning?",
+"answer": "absolute is positioned relative to nearest positioned ancestor; fixed is relative to viewport and doesn’t move on scroll."
+},
+{
+"id": "568",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the difference between opacity and visibility.",
+"answer": "opacity changes transparency but the element still takes space; visibility: hidden hides element but keeps space."
+},
+{
+"id": "569",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you make images responsive?",
+"answer": "Use max-width: 100% and height: auto."
+},
+{
+"id": "570",
+"category": "css",
+"difficulty": "easy",
+"question": "What is the purpose of the display property?",
+"answer": "Controls how an element is displayed, like block, inline, flex, grid, none."
+},
+{
+"id": "571",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a CSS grid container?",
+"answer": "Use display: grid on the parent container."
+},
+{
+"id": "572",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the use of the place-items property?",
+"answer": "Shorthand for align-items and justify-items to align grid items."
+},
+{
+"id": "573",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you apply styles only for print media?",
+"answer": "Use @media print queries."
+},
+{
+"id": "574",
+"category": "css",
+"difficulty": "hard",
+"question": "Explain how CSS specificity works when multiple selectors apply.",
+"answer": "The browser applies the rule with highest specificity calculated from inline styles, IDs, classes, and elements."
+},
+{
+"id": "575",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between auto and initial values in CSS?",
+"answer": "auto lets the browser calculate the value, initial resets property to default."
+},
+{
+"id": "576",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you implement a CSS tooltip?",
+"answer": "Use position: relative on the parent and position: absolute with visibility controls on tooltip text."
+},
+{
+"id": "577",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the clip-path property used for?",
+"answer": "Defines a visible region of an element, clipping the rest."
+},
+{
+"id": "578",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the difference between rem and vw units.",
+"answer": "rem is relative to root font size; vw is relative to viewport width."
+},
+{
+"id": "579",
+"category": "css",
+"difficulty": "medium",
+"question": "What does the filter property do in CSS?",
+"answer": "Applies visual effects like blur, brightness, contrast on elements."
+},
+{
+"id": "580",
+"category": "css",
+"difficulty": "easy",
+"question": "How do you change the cursor when hovering over an element?",
+"answer": "Use the cursor property, e.g. cursor: pointer."
+},
+{
+"id": "581",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the use of object-position in CSS?",
+"answer": "Controls the position of replaced content within its box."
+},
+{
+"id": "582",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you implement dark mode using CSS only?",
+"answer": "Use prefers-color-scheme media query."
+},
+{
+"id": "583",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between transition and animation?",
+"answer": "transition is for simple property changes; animation supports complex keyframes."
+},
+{
+"id": "584",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you make a circle with CSS?",
+"answer": "Set equal width and height and use border-radius: 50%."
+},
+{
+"id": "585",
+"category": "css",
+"difficulty": "easy",
+"question": "How do you add space between words in CSS?",
+"answer": "Use word-spacing property."
+},
+{
+"id": "586",
+"category": "css",
+"difficulty": "medium",
+"question": "What are the differences between padding and margin?",
+"answer": "padding is space inside the border; margin is space outside the border."
+},
+{
+"id": "587",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you make a sticky navigation bar with CSS?",
+"answer": "Use position: sticky with a top value."
+},
+{
+"id": "588",
+"category": "css",
+"difficulty": "medium",
+"question": "What does the white-space property control?",
+"answer": "Controls how whitespace inside an element is handled."
+},
+{
+"id": "589",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the purpose of the content property.",
+"answer": "Used with pseudo-elements to insert generated content."
+},
+{
+"id": "590",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the use of the pointer-events property?",
+"answer": "Controls whether an element reacts to mouse events."
+},
+{
+"id": "591",
+"category": "css",
+"difficulty": "hard",
+"question": "How do you implement a responsive grid that changes column count based on screen size?",
+"answer": "Use CSS Grid with grid-template-columns: repeat(auto-fit, minmax(...)) and media queries."
+},
+{
+"id": "592",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between border-box and content-box?",
+"answer": "border-box includes padding and border in width/height; content-box doesn’t."
+},
+{
+"id": "593",
+"category": "css",
+"difficulty": "medium",
+"question": "How does CSS inheritance work with properties like color and font-family?",
+"answer": "These properties inherit from parent elements by default unless overridden."
+},
+{
+"id": "594",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between nth-child and nth-of-type selectors?",
+"answer": "nth-child counts all children; nth-of-type counts only siblings of same element type."
+},
+{
+"id": "595",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a gradient background in CSS?",
+"answer": "Use linear-gradient or radial-gradient in the background-image property."
+},
+{
+"id": "596",
+"category": "css",
+"difficulty": "easy",
+"question": "How do you change the text color in CSS?",
+"answer": "Use the color property."
+},
+{
+"id": "597",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the effect of vertical-align property?",
+"answer": "Controls vertical alignment of inline or table-cell elements."
+},
+{
+"id": "598",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you make a div element scrollable?",
+"answer": "Use overflow: auto or overflow: scroll."
+},
+{
+"id": "599",
+"category": "css",
+"difficulty": "medium",
+"question": "What are media features used in media queries?",
+"answer": "Features like width, height, resolution, orientation, prefers-color-scheme."
+},
+{
+"id": "600",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you optimize CSS delivery for performance?",
+"answer": "Minify CSS, use critical CSS inline, defer non-critical CSS."
+},
+{
+"id": "601",
+"category": "css",
+"difficulty": "medium",
+"question": "What are pseudo-classes in CSS?",
+"answer": "Pseudo-classes define a special state of an element, like :hover or :focus."
+},
+{
+"id": "602",
+"category": "css",
+"difficulty": "medium",
+"question": "How does the z-index property work?",
+"answer": "z-index controls stacking order of positioned elements; higher values appear on top."
+},
+{
+"id": "603",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the box model in CSS.",
+"answer": "The box model consists of content, padding, border, and margin areas that define element size and spacing."
+},
+{
+"id": "604",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you center a block element horizontally?",
+"answer": "Set a width and use margin: 0 auto."
+},
+{
+"id": "605",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between min-width and max-width?",
+"answer": "min-width sets the minimum width an element can have, max-width sets the maximum."
+},
+{
+"id": "606",
+"category": "css",
+"difficulty": "medium",
+"question": "How do CSS variables work?",
+"answer": "CSS variables are custom properties defined with -- and accessed using var()."
+},
+{
+"id": "607",
+"category": "css",
+"difficulty": "hard",
+"question": "How do you implement a complex layout using CSS Grid?",
+"answer": "Define rows and columns, assign grid areas, and place items using grid lines or area names."
+},
+{
+"id": "608",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between relative, absolute, and fixed positioning?",
+"answer": "Relative positions element relative to normal flow, absolute relative to nearest positioned ancestor, fixed relative to viewport."
+},
+{
+"id": "609",
+"category": "css",
+"difficulty": "medium",
+"question": "How does flexbox handle overflow when flex items are too large?",
+"answer": "Flex items can shrink or grow depending on flex-shrink and flex-grow; overflow can be controlled with overflow property."
+},
+{
+"id": "610",
+"category": "css",
+"difficulty": "medium",
+"question": "What are media queries and how do you use them?",
+"answer": "Media queries apply CSS conditionally based on device features like screen size or resolution."
+},
+{
+"id": "611",
+"category": "css",
+"difficulty": "easy",
+"question": "How do you change the font size of text in CSS?",
+"answer": "Use the font-size property."
+},
+{
+"id": "612",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between visibility: hidden and display: none?",
+"answer": "visibility: hidden hides the element but keeps its space; display: none removes the element from the document flow."
+},
+{
+"id": "613",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you apply styles to multiple selectors in CSS?",
+"answer": "Separate selectors with commas in the CSS rule."
+},
+{
+"id": "614",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the purpose of overflow: hidden?",
+"answer": "It hides any content that overflows the element’s box."
+},
+{
+"id": "615",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you prevent text from wrapping in CSS?",
+"answer": "Use white-space: nowrap."
+},
+{
+"id": "616",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between em and rem units?",
+"answer": "em is relative to the font-size of the parent; rem is relative to the root element’s font-size."
+},
+{
+"id": "617",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the difference between position: static and position: relative.",
+"answer": "static is default positioning, elements follow normal flow; relative allows positioning relative to itself without removing from flow."
+},
+{
+"id": "618",
+"category": "css",
+"difficulty": "medium",
+"question": "What are vendor prefixes and why are they used?",
+"answer": "Vendor prefixes like -webkit- or -moz- are used for experimental or browser-specific CSS properties."
+},
+{
+"id": "619",
+"category": "css",
+"difficulty": "hard",
+"question": "How can you create an animation using CSS keyframes?",
+"answer": "Define keyframes using @keyframes, then apply it with animation-name, animation-duration, and other properties."
+},
+{
+"id": "620",
+"category": "css",
+"difficulty": "medium",
+"question": "How does the box-sizing property affect element sizing?",
+"answer": "box-sizing: border-box includes padding and border in width/height calculations, content-box excludes them."
+},
+{
+"id": "621",
+"category": "css",
+"difficulty": "medium",
+"question": "What does the flex-grow property do?",
+"answer": "Defines how much a flex item will grow relative to the rest."
+},
+{
+"id": "622",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you make images cover their container without stretching?",
+"answer": "Use object-fit: cover."
+},
+{
+"id": "623",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain how nth-child selector works.",
+"answer": "Selects elements based on their position among siblings, counting all types."
+},
+{
+"id": "624",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a vertical scrollbar only when needed?",
+"answer": "Use overflow-y: auto."
+},
+{
+"id": "625",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between grid-template-rows and grid-auto-rows?",
+"answer": "grid-template-rows explicitly defines rows; grid-auto-rows sets size for implicit rows."
+},
+{
+"id": "626",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you align flex items vertically in a container?",
+"answer": "Use align-items property."
+},
+{
+"id": "627",
+"category": "css",
+"difficulty": "medium",
+"question": "What does the visibility property do?",
+"answer": "Controls whether an element is visible or hidden but still occupies space."
+},
+{
+"id": "628",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the difference between pseudo-elements and pseudo-classes.",
+"answer": "Pseudo-classes target states of elements (:hover), pseudo-elements create virtual elements (::before)."
+},
+{
+"id": "629",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you make text bold in CSS?",
+"answer": "Use font-weight: bold or numeric values like 700."
+},
+{
+"id": "630",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the use of line-height in CSS?",
+"answer": "Controls vertical spacing between lines of text."
+},
+{
+"id": "631",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you create a drop shadow effect?",
+"answer": "Use the box-shadow property."
+},
+{
+"id": "632",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between max-height and height?",
+"answer": "height sets the fixed height; max-height limits how tall an element can grow."
+},
+{
+"id": "633",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you change the background color of an element?",
+"answer": "Use the background-color property."
+},
+{
+"id": "634",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between inline and block elements?",
+"answer": "Inline elements flow within text, block elements take full width and start on new lines."
+},
+{
+"id": "635",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you make a button look disabled with CSS?",
+"answer": "Use opacity to fade and pointer-events: none to disable interaction."
+},
+{
+"id": "636",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the inherit value in CSS?",
+"answer": "It forces a property to take the same computed value as its parent."
+},
+{
+"id": "637",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain how to use the calc() function in CSS.",
+"answer": "calc() allows calculations to mix units like percentages and pixels."
+},
+{
+"id": "638",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you vertically center content in a flex container?",
+"answer": "Use align-items: center."
+},
+{
+"id": "639",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a fixed footer at the bottom of the page?",
+"answer": "Use position: fixed and bottom: 0."
+},
+{
+"id": "640",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the default display value for a <span> element?",
+"answer": "inline."
+},
+{
+"id": "641",
+"category": "css",
+"difficulty": "medium",
+"question": "How can you make text italic in CSS?",
+"answer": "Use font-style: italic."
+},
+{
+"id": "642",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between visibility: collapse and visibility: hidden?",
+"answer": "collapse removes element in table layouts, hidden hides but keeps space."
+},
+{
+"id": "643",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you apply multiple background images to a single element?",
+"answer": "Use a comma-separated list in the background-image property."
+},
+{
+"id": "644",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the use of the order property in flexbox?",
+"answer": "Controls the visual order of flex items."
+},
+{
+"id": "645",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you remove default margin and padding from all elements?",
+"answer": "Use a CSS reset like * { margin: 0; padding: 0; }."
+},
+{
+"id": "646",
+"category": "css",
+"difficulty": "medium",
+"question": "What does white-space: pre do?",
+"answer": "Preserves whitespace and line breaks like in the source."
+},
+{
+"id": "647",
+"category": "css",
+"difficulty": "medium",
+"question": "Explain the use of word-break property.",
+"answer": "Controls how words break when reaching the end of a line."
+},
+{
+"id": "648",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a responsive typography system?",
+"answer": "Use relative units like em, rem, and media queries."
+},
+{
+"id": "649",
+"category": "css",
+"difficulty": "medium",
+"question": "What is the difference between auto and inherit in CSS?",
+"answer": "auto lets the browser calculate the value, inherit copies the parent's value."
+},
+{
+"id": "650",
+"category": "css",
+"difficulty": "medium",
+"question": "How do you create a CSS class that applies only on hover?",
+"answer": "Use the :hover pseudo-class in your selector."
+},
+{
+    "id": "651",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS pseudo-elements and how are they used?",
+    "answer": "Pseudo-elements allow you to style parts of an element, like ::before and ::after insert content before or after an element’s content."
+  },
+  {
+    "id": "652",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the difference between `absolute` and `fixed` positioning.",
+    "answer": "`absolute` positions relative to nearest positioned ancestor, `fixed` positions relative to the viewport and doesn’t move on scroll."
+  },
+  {
+    "id": "653",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you make an element responsive using CSS?",
+    "answer": "Use relative units like %, em, rem, and media queries to adapt styles based on screen size."
+  },
+  {
+    "id": "654",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does the `clear` property do in CSS?",
+    "answer": "`clear` controls the behavior of floating elements and specifies which sides of an element other floating elements are not allowed."
+  },
+  {
+    "id": "655",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "How can you create a CSS-only tooltip?",
+    "answer": "Use the `:hover` pseudo-class with `::after` or `::before` pseudo-elements to show tooltip content on hover."
+  },
+  {
+    "id": "656",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are the differences between inline, block, and inline-block elements?",
+    "answer": "Inline elements flow with text, block elements take full width, inline-block behave like inline but respect width/height."
+  },
+  {
+    "id": "657",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do CSS transitions work?",
+    "answer": "CSS transitions smoothly animate changes to CSS properties over a specified duration."
+  },
+  {
+    "id": "658",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain how specificity works in CSS.",
+    "answer": "Specificity determines which CSS rule applies by calculating weight of selectors; inline > ID > class > element."
+  },
+  {
+    "id": "659",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "How can you implement a sticky header using CSS?",
+    "answer": "Use `position: sticky` with top value to keep header visible after scrolling past it."
+  },
+  {
+    "id": "660",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are some ways to optimize CSS for performance?",
+    "answer": "Minify CSS, reduce unused styles, use shorthand properties, avoid deep selectors, and leverage caching."
+  },
+  {
+    "id": "661",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you create a circle shape with CSS?",
+    "answer": "Set equal width and height and use `border-radius: 50%`."
+  },
+  {
+    "id": "662",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does the `opacity` property do?",
+    "answer": "Controls the transparency level of an element from 0 (transparent) to 1 (opaque)."
+  },
+  {
+    "id": "663",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you hide content visually but keep it accessible for screen readers?",
+    "answer": "Use CSS like `position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px);`."
+  },
+  {
+    "id": "664",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `rem` and `%` units in CSS?",
+    "answer": "`rem` is relative to root font-size, `%` is relative to the parent element’s property."
+  },
+  {
+    "id": "665",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain how the CSS cascade works.",
+    "answer": "The cascade decides which CSS rule applies by order, specificity, and importance."
+  },
+  {
+    "id": "666",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you use the `overflow` property to create scrollable containers?",
+    "answer": "Set `overflow: auto` or `overflow: scroll` on a container to enable scrollbars when content overflows."
+  },
+  {
+    "id": "667",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `vh` and `vw` units?",
+    "answer": "`vh` is 1% of viewport height; `vw` is 1% of viewport width."
+  },
+  {
+    "id": "668",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How does the `object-fit` property affect images?",
+    "answer": "Controls how images or videos fit their container, options include `cover`, `contain`, `fill`."
+  },
+  {
+    "id": "669",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does `pointer-events: none` do?",
+    "answer": "Disables mouse interactions on the element."
+  },
+  {
+    "id": "670",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you prevent margin collapse between elements?",
+    "answer": "Add padding, border, or use overflow property to prevent collapsing margins."
+  },
+  {
+    "id": "671",
+    "category": "css",
+    "difficulty": "hard",
+    "question": "Explain how to create a complex grid layout with named grid areas.",
+    "answer": "Define grid-template-areas in container, assign grid-area names to children for layout."
+  },
+  {
+    "id": "672",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you customize scrollbar styles?",
+    "answer": "Use vendor-specific selectors like `::-webkit-scrollbar` to style scrollbars."
+  },
+  {
+    "id": "673",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the use of the `transition-delay` property?",
+    "answer": "Sets a delay before the transition starts after the property changes."
+  },
+  {
+    "id": "674",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you use `calc()` for responsive width calculations?",
+    "answer": "Combine fixed and relative units, e.g., `width: calc(100% - 50px)`."
+  },
+  {
+    "id": "675",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What’s the difference between `em` and `ex` units?",
+    "answer": "`em` is relative to font-size, `ex` is relative to x-height of the font."
+  },
+  {
+    "id": "676",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you create a responsive image gallery using CSS grid?",
+    "answer": "Define grid-template-columns with auto-fit and minmax for responsive columns."
+  },
+  {
+    "id": "677",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the difference between `overflow: hidden` and `clip-path`.",
+    "answer": "`overflow: hidden` hides overflow content; `clip-path` defines visible areas with shapes."
+  },
+  {
+    "id": "678",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you vertically align text inside a div?",
+    "answer": "Use `line-height` equal to the div height or flexbox with `align-items: center`."
+  },
+  {
+    "id": "679",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does the `box-shadow` property accept as values?",
+    "answer": "Horizontal offset, vertical offset, blur radius, spread radius, and color."
+  },
+  {
+    "id": "680",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you create a responsive navigation menu with CSS?",
+    "answer": "Use media queries to toggle menu styles and flexbox or grid for layout."
+  },
+  {
+    "id": "681",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the effect of the `float` property and how is it cleared?",
+    "answer": "Float removes element from normal flow to the left or right; clear fixes container collapse."
+  },
+  {
+    "id": "682",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you apply styles only to the first letter of a paragraph?",
+    "answer": "Use the `::first-letter` pseudo-element."
+  },
+  {
+    "id": "683",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `max-content`, `min-content`, and `auto` in CSS sizing?",
+    "answer": "`max-content` sizes to max intrinsic content, `min-content` to min intrinsic, `auto` is default behavior."
+  },
+  {
+    "id": "684",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you make an element visually hidden but still accessible to screen readers?",
+    "answer": "Use `position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);`."
+  },
+  {
+    "id": "685",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the use of the `z-index` property and stacking context.",
+    "answer": "`z-index` controls stack order of positioned elements; stacking context determines how layers are rendered."
+  },
+  {
+    "id": "686",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the difference between `visibility: hidden` and `display: none`?",
+    "answer": "`visibility: hidden` hides element but keeps layout space; `display: none` removes it completely."
+  },
+  {
+    "id": "687",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you implement a fade-in animation using CSS?",
+    "answer": "Use `@keyframes` with opacity from 0 to 1 and apply it with `animation` property."
+  },
+  {
+    "id": "688",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you center a div horizontally and vertically using flexbox?",
+    "answer": "Set container to `display: flex; justify-content: center; align-items: center;`."
+  },
+  {
+    "id": "689",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `content` property in CSS?",
+    "answer": "Used with pseudo-elements to insert generated content."
+  },
+  {
+    "id": "690",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you implement dark mode support in CSS?",
+    "answer": "Use media query `prefers-color-scheme` and provide alternate styles."
+  },
+  {
+    "id": "691",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are media queries and how are they used?",
+    "answer": "Media queries apply CSS rules based on device characteristics like width or resolution."
+  },
+  {
+    "id": "692",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the difference between `em`, `rem`, and `px` units.",
+    "answer": "`px` is absolute pixels, `em` is relative to parent font-size, `rem` relative to root font-size."
+  },
+  {
+    "id": "693",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How can you optimize CSS delivery for faster page load?",
+    "answer": "Minify CSS, use critical CSS inline, defer non-critical CSS, and use media queries."
+  },
+  {
+    "id": "694",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What is the use of the `object-position` property?",
+    "answer": "Defines the alignment of replaced elements like images within their container."
+  },
+  {
+    "id": "695",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you implement a CSS grid with fixed and flexible columns?",
+    "answer": "Combine fixed widths and `fr` units in `grid-template-columns`."
+  },
+  {
+    "id": "696",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What does the `box-sizing` property do?",
+    "answer": "Determines if width and height include padding and border (`border-box`) or not (`content-box`)."
+  },
+  {
+    "id": "697",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "Explain the concept of stacking context in CSS.",
+    "answer": "Stacking context is a hierarchy of elements that determines the painting order."
+  },
+  {
+    "id": "698",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How do you use the `flex-grow` property?",
+    "answer": "`flex-grow` defines how much a flex item will grow relative to others."
+  },
+  {
+    "id": "699",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "What are CSS variables and how do you declare them?",
+    "answer": "CSS variables (custom properties) are declared with `--` prefix inside selectors and accessed with `var()`."
+  },
+  {
+    "id": "700",
+    "category": "css",
+    "difficulty": "medium",
+    "question": "How does the `min-width` property affect responsive design?",
+    "answer": "`min-width` sets the smallest width an element can shrink to, preventing it from becoming too narrow."
   }
 ]
