@@ -4,9 +4,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'App',
-  description: 'Created',
-  generator: '',
+  title: 'WikiFront - Frontend Interview Q&A',
+  description: 'A comprehensive frontend interview question bank with 2000+ questions, built with Next.js and TypeScript.',
+  generator: 'Next.js 15 App Router',
 }
 
 export default function RootLayout({
