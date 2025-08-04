@@ -17,9 +17,7 @@ A simple, fast, and responsive web app to browse, search, and filter over **2000
 - 🔍 **Search**: Find questions instantly by keyword
 - 📁 **Filter**: Explore questions by category (React, TypeScript, CSS, etc.)
 - ⚡️ **Fast** and **lightweight** UI built with Radix UI and Shadcn
-- 🌘 Fully **responsive** and supports **dark/light mode**
 - 🧠 Over **2000+ real-world interview questions** (updated regularly)
-- 🧩 Built with modular, modern tools: Zustand, Zod, React Hook Form
 - 🛠️ Open-source and easy to fork or customize
 
 ---
